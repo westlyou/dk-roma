@@ -1,0 +1,707 @@
+<odoo>
+  <data>
+
+    <template id="home">
+
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+        <title>DK WEBSITE</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amethysta" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+SC" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,800" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+        <link rel="stylesheet" href="/eshop_site/static/src/Home_files/fontawesome5-overrides.css" />
+        <link rel="stylesheet" href="/eshop_site/static/src/Home_files/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+      </head>
+
+      <body style="margin: 0;background-repeat: no-repeat;background-color: #fdfdfd;font-family: Poppins, sans-serif;">
+        <nav class="navbar navbar-light navbar-expand-lg" style="height: 80px;background-color: #a6a6a6;color: rgb(249,250,252);position: relative;padding-right: 20px;padding-left: 20px; margin-top: 0;">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navcol-1">
+              <a class="navbar-brand " style="color: #faf8f8; font-family: Lora, serif;font-size: 1rem;font-weight: bold;" href="#">
+                <img style="max-width: 250px;" src="/eshop_site/static/src/Home_files/DK-LOGO-in-White.png" />
+              </a>
+
+              <ul class="nav navbar-nav">
+                <li role="presentation" class="nav-item">
+                  <a class="nav-link" href="http://floral-mountain-3432.bss.design/aromaProducts.html" style="color: #f7f5f5;">Products</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <a class="nav-link" href="http://floral-mountain-3432.bss.design/aromaServices.html" style="color: #faf8f8;">Services</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <a class="nav-link" href="http://floral-mountain-3432.bss.design/aromaGiftVoucher.html" style="color: #faf8f8;">Gifts</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <a class="nav-link" href="http://floral-mountain-3432.bss.design/aromaDiscovery.html" style="color: #faf8f8;">Discovery</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <a class="nav-link" href="http://floral-mountain-3432.bss.design/aromaNews.html" style="color: #faf8f8;">News</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <a class="nav-link" href="http://floral-mountain-3432.bss.design/aromaAbout.html" style="color: #faf8f8;">About DK</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <button data-target="#navcol-1" data-toggle="collapse" class="navbar-toggler" style="color: rgba(248,244,244,0.5);">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon" style="color: #f7f4f4;background-color: rgba(255,255,255,0.76);"></span>
+              </button>
+              <a class="navbar-brand " style="color: #faf8f8; font-family: Lora, serif;font-size: 1rem;font-weight: bold;" href="#">
+                <img style="max-width: 200px;" src="/eshop_site/static/src/Home_files/DK-LOGO-in-White.png" id="nav-logo" />
+              </a>
+            </div>
+            <ul class="nav navbar-nav ml-auto" style="display: flex;flex-direction: row;">
+              <li role="presentation" class="nav-item">
+                <a class="nav-link" href="#" style="color: #fcf9f9; margin-right: 10px">
+                  <i class="fa fa-search" style="font-size: 150%;"></i>
+                </a>
+              </li>
+
+              <li role="presentation" class="nav-item nav-search">
+                <input type="text" class="nav-link nav-search-inp" placeholder="I'm looking for something" />
+              </li>
+
+              <li role="presentation" class="nav-item">
+                <a class="nav-link" href="http://floral-mountain-3432.bss.design/aromaCart.html" style="color: #fcf9f9;margin-right: 10px;">
+                  <i class="fa fa-shopping-cart" style="font-size: 150%;"></i>
+                </a>
+              </li>
+              <li role="presentation" class="nav-item">
+                <a class="nav-link" href="#" style="color: #fcfafa;margin-left: 10px;">
+                  <i class="fa fa-user-circle-o" style="font-size: 150%;"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section id="carousel">
+          <section></section>
+          <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="jumbotron text-left pulse animated hero-photography carousel-hero" style="color: rgba(255,255,255,0);padding-top: 30%;background: rgba(233,236,239,0);">
+                  <p class="jumbo-paragraph" style="margin-left: 10%;">
+                    <a class="btn" href="#">
+                      <img class="website-button" src="/eshop_site/static/src/Home_files/know-more.png" />
+                    </a>
+                  </p>
+                  <img class="jumbo-img" src="/eshop_site/static/src/Home_files/img3.jpeg" />
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <div class="jumbotron text-left pulse animated hero-photography carousel-hero" style="background: rgba(233,236,239,0);padding-top: 30%;">
+                  <p class="jumbo-paragraph" style="margin-left: 10%;">
+                    <a class="btn" href="#">
+                      <img class="website-button" src="/eshop_site/static/src/Home_files/know-more.png" />
+                    </a>
+                  </p>
+                  <img class="jumbo-img" src="/eshop_site/static/src/Home_files/img1.jpeg" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="jumbotron text-left pulse animated hero-photography carousel-hero" style="background: rgba(233,236,239,0);padding-top: 30%;">
+                  <p class="jumbo-paragraph" style="margin-left: 10%;">
+                    <a class="btn" href="#">
+                      <img class="website-button" src="/eshop_site/static/src/Home_files/know-more.png" />
+                    </a>
+                  </p>
+                  <img class="jumbo-img" src="/eshop_site/static/src/Home_files/img6.jpeg" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev" style="max-width: 10%;">
+                <i class="fa fa-chevron-left" style="color: #9bbcc5;"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next" style="max-width: 10%;">
+                <i class="fa fa-chevron-right" style="color: #9bbcc5;"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-1" data-slide-to="0" id="carou-indicator"></li>
+              <li data-target="#carousel-1" data-slide-to="1" class="active" id="carou-indicator"></li>
+              <li data-target="#carousel-1" data-slide-to="2" id="carou-indicator"></li>
+            </ol>
+          </div>
+        </section>
+        <div style="padding: 0;background-image: url(&quot;/assets/img/shutterstock_730693177-Camellia.png?h=590064e666765280019d2108fb150fb7&quot;);background-repeat: no-repeat;background-position: 100% 0;background-color: rgba(255,255,255,0);">
+          <div style="height: 100%;padding-top: 50px;padding-bottom: 50px;background: rgba(255,255,255,0.83);">
+            <div class="container">
+              <div class="intro" style="margin-bottom: 50px;">
+                <h2 class="text-center" style="font-weight: bold;">AT YOUR SERVICE </h2>
+                <p class="text-center">Free delivery for orders over HK$800</p>
+              </div>
+              <div class="row feat-products" style="padding-right: 40px;padding-left: 40px;">
+                <div class="col-md-6 col-sm-12" style="max-width: 100%;margin: 0 auto;margin-top: 10px;margin-bottom: 10px;">
+                  <div class="text-center border rounded-0 shadow-lg" style="background: #f1f3f4;">
+                    <div style="margin-bottom: -5px;background: url(&quot;/assets/img/Flower-outline-5.png?h=2247ef4e912b8b3cccfd75b66dc0084d&quot;) left / contain no-repeat;">
+                      <div style="padding: 20px 0;background: rgba(241,243,244,0.68);">
+                        <h3 class="text-center name" style="font-weight: bold;font-size: 25px;margin-bottom: 15px;color: #58595b;">Your Gift</h3>
+                        <p class="text-center description">Free delivery for orders over HK$800</p>
+                        <div style="max-width: 150px;margin: 0 auto;margin-bottom: 10px;">
+                          <a class="text-center" href="#" style="max-width: 150px;">
+                            <img src="/eshop_site/static/src/Home_files/SHOP-NOW-Flower.png" style="text-align: center;width: 100%;max-width: 150px;margin: 0 auto;max-height: 63px;" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/eshop_site/static/src/Home_files/WhatsApp%2520Image%25202020-11-18%2520at%25203.jpeg" />
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12" style="max-width: 100%;margin: 0 auto;margin-top: 10px;margin-bottom: 10px;">
+                  <div class="text-center border rounded-0 shadow-lg" style="background: #f1f3f4;">
+                    <div style="margin-bottom: -5px;background: url(&quot;/assets/img/Flower-outline-1.png?h=7ef8da490e75bc5441b1055e529531f6&quot;) left / contain no-repeat;">
+                      <div style="padding: 20px 0;background: rgba(241,243,244,0.68);">
+                        <h3 class="text-center name" style="font-weight: bold;font-size: 25px;margin-bottom: 15px;color: #58595b;">The Art of Aromatherapy</h3>
+                        <p class="text-center description">Free delivery for orders over HK$800</p>
+                        <div style="max-width: 150px;margin: 0 auto;margin-bottom: 10px;">
+                          <a class="text-center" href="#" style="max-width: 150px;">
+                            <img src="/eshop_site/static/src/Home_files/SHOP-NOW-Flower.png" style="text-align: center;width: 100%;max-width: 150px;margin: 0 auto;max-height: 63px;" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/eshop_site/static/src/Home_files/WhatsApp%252520Image%2525202020-11-18%252520at%2525203_003.jpeg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="outer-slide-div" class="outer-slide-div" style="height: 400px;max-width: 100vw;background: url(&quot;/assets/img/shutterstock_730693177-Camellia%20copy1.png?h=6e7099c85d776726308a9489ab183aab&quot;) no-repeat;background-size: contain;">
+          <div style="background: rgba(255,255,255,0.83);height: 400px;">
+            <div id="horizontal-slide-row" class="horizontal-slide-row" style="width: 85vw;margin: 0 auto;">
+              <div class="slide-head" style="padding: 10px;padding-top: 50px;">
+                <h2>
+                  <strong>The Art of Aromatherapy</strong>
+                </h2>
+                <p class="text-left" style="font-size: 17px;">Free delivery for orders over HK$800</p>
+                <div style="margin-bottom: 10px;max-width: 140px;">
+                  <a class="text-center" href="#" style="max-width: 150px;">
+                    <img src="/eshop_site/static/src/Home_files/SHOP-NOW-Flower.png" style="text-align: center;width: 100%;max-width: 150px;max-height: 63px;" />
+                  </a>
+                </div>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/samp.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #626161;">Paragraph</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center scroll-btn-left hidden" id="scroll-btn-left" style="padding-top: 20px;">
+            <i class="fa fa-arrow-circle-o-left" data-bs-hover-animate="pulse" style="font-size: 50px;color: rgb(154,174,174);border-color: #9bbcc5;"></i>
+          </div>
+          <div class="text-center scroll-btn-right hidden" id="scroll-btn-right" style="padding-top: 20px;">
+            <i class="fa fa-arrow-circle-o-right" data-bs-hover-animate="pulse" style="font-size: 50px;color: rgb(172,187,182);border-color: #9bbcc5;"></i>
+          </div>
+        </section>
+        <div style="padding: 0;background-image: url(&quot;/assets/img/shutterstock_730693177-Camellia%20copy.png?h=08fb62fc95db7165e95cd0260a373d30&quot;);background-repeat: no-repeat;background-position: 0;background-color: rgba(255,255,255,0);background-size: contain;">
+          <div style="height: 100%;padding-top: 50px;padding-bottom: 50px;background: rgba(255,255,255,0.83);">
+            <div class="container">
+              <div class="row feat-products" style="padding-right: 40px;padding-left: 40px;">
+                <div class="col-md-6 col-sm-12" style="max-width: 100%;margin: 0 auto;margin-top: 10px;margin-bottom: 10px;">
+                  <div class="text-center border rounded-0 shadow-lg" style="background: #f1f3f4;">
+                    <div style="margin-bottom: -5px;background: url(&quot;/assets/img/Flower-outline-1.png?h=7ef8da490e75bc5441b1055e529531f6&quot;) left / contain no-repeat;">
+                      <div style="padding: 20px 0;background: rgba(241,243,244,0.68);">
+                        <h3 class="text-center name" style="font-weight: bold;font-size: 25px;margin-bottom: 15px;color: #1d1d1e;">Your Gifts</h3>
+                        <p class="text-center description">Free delivery for orders over HK$800</p>
+                        <div style="max-width: 150px;margin: 0 auto;margin-bottom: 10px;">
+                          <a class="text-center" href="#" style="max-width: 150px;">
+                            <img src="/eshop_site/static/src/Home_files/SHOP-NOW-Flower.png" style="text-align: center;width: 100%;max-width: 150px;margin: 0 auto;max-height: 63px;" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/eshop_site/static/src/Home_files/WhatsApp%252520Image%2525202020-11-18%252520at%2525203_004.jpeg" />
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12" style="max-width: 100%;margin: 0 auto;margin-top: 10px;margin-bottom: 10px;">
+                  <div class="text-center border rounded-0 shadow-lg" style="background: #f1f3f4;">
+                    <div style="margin-bottom: -5px;background: url(&quot;/assets/img/Flower-outline-5-another%20copy.png?h=4138a8b00965a90f3b8897bc8d2e89ae&quot;) right / contain no-repeat;">
+                      <div style="padding: 20px 0;background: rgba(241,243,244,0.68);">
+                        <h3 class="text-center name" style="font-weight: bold;font-size: 25px;margin-bottom: 15px;color: #1d1d1e;">The Art of Aromatherapy</h3>
+                        <p class="text-center description">Free delivery for orders over HK$800</p>
+                        <div style="max-width: 150px;margin: 0 auto;margin-bottom: 10px;">
+                          <a class="text-center" href="#" style="max-width: 150px;">
+                            <img src="/eshop_site/static/src/Home_files/SHOP-NOW-Flower.png" style="text-align: center;width: 100%;max-width: 150px;margin: 0 auto;max-height: 63px;" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/eshop_site/static/src/Home_files/WhatsApp%252520Image%2525202020-11-18%252520at%2525203_002.jpeg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="outer-slide-div-2" class="outer-slide-div" style="height: 400px;max-width: 100vw;">
+          <div>
+            <div id="horizontal-slide-row-1" class="horizontal-slide-row" style="width: 85vw;margin: 0 auto;">
+              <div class="slide-head" style="padding: 10px;padding-top: 50px;">
+                <h2 style="color: rgb(33,32,32);">
+                  <strong>Promotion</strong>
+                </h2>
+                <p class="text-left" style="font-size: 17px;">Free delivery for orders over HK$800</p>
+                <div style="margin-bottom: 10px;max-width: 140px;">
+                  <a class="text-center" href="#" style="max-width: 150px;">
+                    <img src="/eshop_site/static/src/Home_files/SHOP-NOW-Flower.png" style="text-align: center;width: 100%;max-width: 150px;max-height: 63px;" />
+                  </a>
+                </div>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/BSAA04OC_Organic%2520Jojoba%2520Based%2520Oil%2520100ml.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #434040;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/BSAA04OC_Organic%2520Jojoba%2520Based%2520Oil%2520100ml.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #434040;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/BSAA04OC_Organic%2520Jojoba%2520Based%2520Oil%2520100ml.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #434040;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/BSAA04OC_Organic%2520Jojoba%2520Based%2520Oil%2520100ml.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #434040;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/BSAA04OC_Organic%2520Jojoba%2520Based%2520Oil%2520100ml.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #434040;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/BSAA04OC_Organic%2520Jojoba%2520Based%2520Oil%2520100ml.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #434040;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/BSAA04OC_Organic%2520Jojoba%2520Based%2520Oil%2520100ml.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #434040;">Paragraph</p>
+                </a>
+              </div>
+              <div class="slide-item">
+                <a href="#">
+                  <img src="/eshop_site/static/src/Home_files/BSAA04OC_Organic%2520Jojoba%2520Based%2520Oil%2520100ml.png" style="max-height: 100%;" />
+                  <p class="text-center" style="font-family: Poppins, sans-serif;color: #434040;">Paragraph</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center scroll-btn-left hidden" id="scroll-btn-left-1" style="padding-top: 20px;">
+            <i class="fa fa-arrow-circle-o-left" data-bs-hover-animate="pulse" style="font-size: 50px;color: #9bbcc5;"></i>
+          </div>
+          <div class="text-center scroll-btn-right hidden" id="scroll-btn-right-1" style="padding-top: 20px;">
+            <i class="fa fa-arrow-circle-o-right" data-bs-hover-animate="pulse" style="font-size: 50px;color: #9bbcc5;"></i>
+          </div>
+          <p class="text-center" style="margin: 10px;">* By using a promotion offer you are agreeing to the content of our terms and conditions.</p>
+        </section>
+        <div class="newsletter-subscribe" style="border-bottom: solid;background: #323232;">
+          <div class="container news-container" style="align-items: center;">
+            <div class="intro">
+              <h2 class="text-center" style="color: rgb(244,246,247);">
+                <strong>Stay up to date</strong>
+              </h2>
+              <p class="text-center">
+                Sign up for the latest news and offers from DK Aromatherapy.
+                <br />
+                Your personal data will be used as described in our privacy
+                <br />
+                policy. You can unsubscribe at any time
+              </p>
+            </div>
+            <form class="form-inline newsletter-form" method="post">
+              <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Your Email" style="width: 95%;margin-right: 0;" />
+              </div>
+              <div class="form-group">
+                <a href="#">
+                  <img class="newsletter-button" src="/eshop_site/static/src/Home_files/subscribe.png" />
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-dark" style="padding: 0;background: url('/assets/img/Flower-outline-3.png?h=f0b735b7e5af1947a06cf2ca9b654c28') 100% 100% / auto no-repeat, #323232;">
+          <div style="padding-top: 50px;padding-bottom: 50px;background: rgba(50,49,49,0.72);">
+            <footer>
+              <div class="container">
+                <div class="text-left intro" style="margin-bottom: 20px;">
+                  <h2 class="footer-header" style="color: rgb(244,246,247);margin-bottom: 30px;font-family: Poppins, sans-serif;">
+                    <strong>Or shop by category</strong>
+                    <br />
+                  </h2>
+                </div>
+                <div class="row footer-row" style="border-bottom: solid;border-bottom-width: thin;margin-bottom: 20px;padding-bottom: 20px;">
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>Aromatherapy</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Essential Oil Set</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Pure Essential Oil</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Organic Essential Oil</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Blend Essential Oil</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Flower Water and Hydrosol</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Eye and Face Product</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Body and Hair Product</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Aroma Accessory</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Diffuser and Burner</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">DIY Materials</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Bottles</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Candle</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Bioson Ear Candle</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>Flower Essences</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">DTW Flower Essence</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Pet Flower Essence</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>DK Cuppa Tea</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Afternoon Tea Delivery</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Dine in Afternoon Tea</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Other Food Menu</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>Tailor Made Aroma</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Personal Blend Service</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Space Aroma Design</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>Gift Coupon</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Gift Coupon for DK Cuppa Tea</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Gift Coupon for DK Aromatherapy</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>Workshop</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">DIY Workshop</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Corporate Workshop</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Certification Course</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row footer-row" style="margin-top: 15px;">
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>Customers Service</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Shipping &amp; returns</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">FAQ</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Contact</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Cookie Policy</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Cookie Setting</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>Discovery</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Podcast</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Blog</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Video</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Book</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,248,248);font-family: Poppins, sans-serif;">
+                      <strong>Our Brand</strong>
+                      <br />
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">DK Aromatheraoy</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">DK Cuppa Tea</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">KAT LAI</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-2 item">
+                    <h3 style="color: rgb(250,247,247);font-family: Poppins, sans-serif;">
+                      <strong>About Us</strong>
+                      <br />
+                    </h3>
+                    <ul>
+                      <li style="font-family: Poppins, sans-serif;">
+                        <a href="#">About DK</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Store Location</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Department Stores</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Brand Story</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Mission</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">CSR &amp; ESG</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">DK Equilibrium People/ Plant</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-sm-12 text-center item text">
+                    <h3 class="text-center" style="color: rgb(249,245,245);font-size: 14px;font-family: Poppins, sans-serif;">Choose Your Country and Language</h3>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="color: rgb(241,243,246);border-radius: 0px;border-style: none;border-color: #f7f3f3;border-bottom-style: solid;margin-bottom: 5px;">country </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">First Item</a>
+                        <a class="dropdown-item" href="#">Second Item</a>
+                        <a class="dropdown-item" href="#">Third Item</a>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="color: rgb(241,243,246);border-bottom-style: solid;border-bottom-color: #fcf9f9;">Language </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">First Item</a>
+                        <a class="dropdown-item" href="#">Second Item</a>
+                        <a class="dropdown-item" href="#">Third Item</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row footer-row">
+                  <div class="col-sm-6 col-md-3 item">
+                    <h3 style="color: rgb(250,247,247);font-family: Poppins, sans-serif;">
+                      <strong>Need help?</strong>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Tel: +852+2386 3588</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Whatsapp: +852 9788 9378</a>
+                      </li>
+                      <li>
+                        <a href="#" style="font-family: Poppins, sans-serif;">Email: dk@aroma.com.hk</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col item social">
+                    <a href="#">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-envelope-o"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-wechat"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-telegram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-google-plus"></i>
+                    </a>
+                    <p class="copyright" style="color: rgb(242,245,247);"> DK Aromatherapy © 2020</p>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script src="/eshop_site/static/src/Home_files/script.js"></script>
+      </body>
+    </template>
+
+  </data>
+</odoo>
