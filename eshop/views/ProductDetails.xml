@@ -1,0 +1,2318 @@
+<odoo>
+    <data>
+        <template id="product_details">
+        
+        <head class="no-js">
+            <title>Product Detail</title>
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/styles.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/mobile-header.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/header.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/slider.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/hero.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/main.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/modes.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/selectric-styles.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/product-details.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/minicart.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/footer.css"/>
+            <link rel="stylesheet" href="/dkaroma/static/css/sticky-bar.css"/>
+        </head>
+            
+
+        <body class="zoomed-in body-class">
+        
+            <!-- nav -->
+
+            <nav class="navbar navbar-expand-lg navbar-dark header bg-header navigation-wrapper fixed-top navbar-fixed-top" id="mainNav">
+                
+
+                    <button class="nav-toggle" type="button" id="navToggleButton">
+                            <span class=""></span>
+                            <img src="/dkaroma/static/img/icons/menu.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                        </button>
+
+                    <nav class="navigation-inner">
+
+                        <div class="inner-wrapper nav-inner-wrapper">
+
+                            <div class="nav-mobile">
+
+                                <div class="nav-mobile-inner">
+
+                                    <ul class="nav-mobile-main-list">
+                                        <li class="nav-item">
+                                            <button type="button" class="nav-item-link">
+                                                    Products
+                                                </button>
+
+                                            <div class="nav-mobile-layer ">
+
+                                                <button type="button" class="nav-back">
+                                                        <span class="sr-only"> 
+                                                            Back
+                                                        </span>
+                                                </button>
+
+                                                <div class="nav-mobile-layer-inner">
+                                                    <ul class="nav-mobile-subnav">
+                                                        <li class="has-children">
+                                                            <a>
+
+                                                            </a>
+
+                                                            <button type="button" class="nav-mobile-subnav-link">
+                                                                    <span>New</span>
+                                                            </button>
+
+                                                            <div class="nav-mobile-layer">
+
+                                                                <button type="button" class="nav-back">
+                                                                        <span class="sr-only"> 
+                                                                            Back
+                                                                        </span>
+                                                                    </button>
+
+                                                                <div class="nav-mobile-layer-inner">
+                                                                    <ul class="nav-mobile-subnav">
+                                                                        <li>
+                                                                            <a class="nav-mobile-subnav-link">
+                                                                                    All New
+                                                                                </a>
+                                                                        </li>
+
+                                                                        <li>
+                                                                            <a class="nav-mobile-subnav-link">
+                                                                                    All New
+                                                                                </a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+
+                                                                <span class="bottom-gradient-el">
+                        
+                                                                </span>
+
+                                                            </div>
+
+                                                        </li>
+
+                                                        <li class="has-children">
+                                                            <a>
+
+                                                            </a>
+
+                                                            <button type="button" class="nav-mobile-subnav-link">
+                                                                    <span>New</span>
+                                                                </button>
+                                                        </li>
+
+                                                        <li class="has-children">
+                                                            <a>
+
+                                                            </a>
+
+                                                            <button type="button" class="nav-mobile-subnav-link">
+                                                                    <span>New</span>
+                                                            </button>
+                                                        </li>
+
+                                                        <li class="has-children">
+                                                            <a>
+
+                                                            </a>
+
+                                                            <button type="button" class="nav-mobile-subnav-link">
+                                                                    <span>New</span>
+                                                                </button>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                        
+                                                    </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <button type="button" class="nav-item-link">
+                                                    Products
+                                                </button>
+
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <button type="button" class="nav-item-link">
+                                                    Products
+                                                </button>
+
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="nav-desktop" id="navbarNavDropdown">
+                                <ul class="navbar-nav-fix nav-dektop-main-list">
+                                    <li class="nav-item active" id="productNav">
+
+                                        <Button type="button" class="nav-item-link">
+                                                Products
+                                            </Button>
+
+                                        <div class="nav-desktop-layer" id="productDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                            <div class="nav-first-layer">
+
+                                                <div class="nav-desktop-layer-inner">
+
+                                                    <ul class="nav-inner-subnav">
+
+                                                        <li>
+                                                            <a class="nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        All Products
+                                                                    </span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        Essential Oil
+                                                                    </span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-subnav">
+                                                                            <li>
+                                                                                <a class="nav-link nav-desktop-subnav-link" href="#">Features</a>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <a class="nav-link nav-desktop-subnav-link" href="#">Features</a>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <a class="nav-link nav-desktop-subnav-link" href="#">Features</a>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el">
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        Antiseptic
+                                                                    </span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-subnav">
+                                                                            <li>
+                                                                                <a class="nav-link nav-desktop-subnav-link" href="#">New Features</a>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <a class="nav-link nav-desktop-subnav-link" href="#">Old Features</a>
+                                                                            </li>
+
+                                                                            <li>
+                                                                                <a class="nav-link nav-desktop-subnav-link" href="#">Modern Features</a>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el">
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+
+                                                        <li>
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        Food
+                                                                    </span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-subnav">
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el">
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+
+                                                        <li>
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        Five Element Essential Oil
+                                                                    </span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-subnav">
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el">
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+
+                                                        <li>
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        Candle
+                                                                    </span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-subnav">
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el">
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+
+                                                        <li>
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        Organic Essential Oil
+                                                                    </span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-subnav">
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el">
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        Natural Clay and Hydrosol
+                                                                    </span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-subnav">
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el">
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link" href="#">
+                                                                <span>
+                                                                        Australian Bush Essence
+                                                                    </span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-subnav">
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el">
+                                                                        </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                                                    </span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                        <span class="sr-only">Close navigation</span>
+                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+
+
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link">
+                                                Services
+                                            </Button>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link">
+                                                Gifts
+                                            </Button>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link">
+                                                Discovery
+                                            </Button>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link">
+                                                News
+                                            </Button>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <a class="header-logo" href="/home">
+                                <span class="sr-only">DK logo</span>
+
+                                <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy"/>
+                            </a>
+
+
+                            <ul class="header-action-links" id="headerActionLinks">
+                                <li class="header--search">
+
+                                    <form class="search-input-wrapper" role="search" action="" method="" name="searchForm" autocomplete="off">
+
+                                        <button type="submit" class="btn-stripped icon-search-magnifier" id="searchInputToggle">
+                                                <span class="sr-only">
+                                                    I'm looking for...
+                                                </span>
+                                                <img src="/dkaroma/static/img/icons/search.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                            </button>
+
+                                        <label class="sr-only" for="headerSearch">
+                                        </label>
+
+                                        <input id="headerSearch" class="search-input" type="text" name="query" placeholder="I'm looking for..." autocomplete="off"/>
+
+                                        <button type="button" class="icon-close search-icon-close" id="closeSearchButton">
+                                                <span class="sr-only">Close search</span>
+                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                            </button>
+
+                                        <button type="button" class="icon-close search-clear">
+                                                <span class="sr-only">Clear text from input</span>
+                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                        </button>
+
+        
+                                    </form>
+                                </li>
+
+                                <li class="header--user-account">
+                                    <a class="header--user-account-link" href="#">
+                                        <span class="sr-only">User account</span>
+                                        <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                    </a>
+                                </li>
+
+                                <li class="header--cart">
+                                    <a class="header--cart-link js-open-minicart" href="#">
+                                        <span class="sr-only">View Cart</span>
+                                        <img src="/dkaroma/static/img/icons/shopping-bag.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+
+                                        <span class="cart-number">
+                                            2
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </nav>
+
+            <div class="js-scroll-magic-trigger"></div>
+
+            <div id="wrapper" class="pt_product-details js-pt-product-details animate-scroll">
+
+                <div id="main" role="main" class="main body-container">
+
+                    <div id="primary" class="primary-content">
+
+                        <div id="pdpMain" class="pdp-main-container js-pdp-main dk-bg-color">
+
+                            <div class="product-background-video background-video js-background-video">
+                            </div>
+
+                            <div class="product-details-container js-product-details-container">
+
+                                <div class="pdp-breadcrumbs-wrapper">
+                                    <div class="inner-wrapper">
+                                        <div class="breadcrumb">
+
+                                        </div>
+
+                                        <div class="pdp-back-button-wrapper">
+                                            <button type="button" class="back-button js-pdp-back">
+                                                <span class="icon icon-close">
+                                                    <img src="/dkaroma/static/img/icons/chevron-left.svg" width="16" height="16" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                </span>
+            
+                                                Back
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="opaque-overlay js-pdp-opaque-overlay">
+                                </div>
+
+                                <div class="inner-wrapper pdp-inner-wrapper">
+
+                                    <div class="">
+                                    </div>
+
+                                    <div class="product-details-column column-images js-product-images show-image-only">
+
+                                        <div class="pdp-images-holder js-image-wrapper">
+
+                                            <div class="images-wrapper">
+
+                                                <div class="product-images">
+
+                                                    <p class="visually-hidden">Images</p>
+
+
+                                                    <div class="js-slider images-slider js-pdp-images-slider slick-initialized slick-slider">
+                                                        <div>
+                                                            <img src="/dkaroma/static/img/product-sample-2.png" class="cover productthumbnail js-product-thumbnail product-main-image js-product-main-image"/>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="promotional-label js-promotional-label">
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Details section -->
+                                    <div class="product-details-column column-details js-product-details-block">
+                                        <section class="product-details-content">
+
+                                            <div class="product-title">
+                                                <h1 class="product-name">
+                                                    <span class="category-title">
+                                                        Essential Oil
+                                                    </span> Savage Garden (private collection)
+                                                </h1>
+                                            </div>
+
+                                            <div class="product-content js-product-details-content">
+
+                                                <div class="product-short-info">
+                                                    <div class="short-description">
+                                                        Anti-aging day cream, 50 ml
+                                                    </div>
+                                                </div>
+
+                                                <div class="long-description">
+                                                    Get your glow on every day thanks to this anti-aging day cream from the Ritual of Namaste. This light cream revitalises the skin
+
+                                                    <span class="ellipsis js-ellipsis">...</span>
+
+                                                    <a class="read-more-link js-read-more-link">
+                                                        Show more
+                                                    </a>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <div class="prices-container">
+                                                        <span class="price-sales">
+                                                            HK$768
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <form action="" method="" class="pdpForm js-add-to-cart-form dk-form" onsubmit="return addToCart();">
+                                                    <fieldset>
+                                                        <div class="product-add-to-cart">
+                                                            <!-- Add necessary hidden inputs -->
+
+                                                            <div class="btn-wrapper">
+                                                                <button type="submit" value="" class="btn btn-add-to-cart js-add-to-cart js-open-minicart">
+                                                                    Add to cart
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+
+                                                <div class="shipping-info">
+                                                    <div class="content-asset">
+                                                        <ul>
+                                                            <li class="shipping-info-point">
+                                                                <span>
+                                                                    Free delivery with orders above HK800.
+                                                                </span>
+                                                            </li>
+
+                                                            <li class="shipping-info-point">
+                                                                <span>
+                                                                    <strong>Not sure about this product?</strong>
+                                                                    Ask our experts via
+                                                                    <a href="">
+                                                                        Whatsapp
+                                                                    </a>
+                                                                    or
+                                                                    <a href="">
+                                                                        Messenger
+                                                                    </a>
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <br/>
+                                                </div>
+
+                                            </div>
+
+                                        </section>
+                            
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Ingredients section -->
+                        <div class="product-ingredients-container js-product-ingredients-block js-bottom-animation-block dk-bg-full-color essentialoil-bg-full-color">
+
+                            <div class="product-ingredients-column column-image js-extend-image-pin">
+                            </div>
+
+                            <div class="product-ingredients-column column-details js-product-ingredients-details">
+
+                                <div class="product-ingredients-content js-ingredient-scene-element show">
+
+                                    <div class="ingredient-item">
+                                        <h3>Safron Flower</h3>
+
+                                        <p>Saffron flower, also known as "the red gold of the East", contains antioxidants and anti-wrinkle properties.</p>
+                                    </div>
+
+                                    <div class="ingredient-item">
+                                        <h3>Holly Lotus</h3>
+
+                                        <p>Holy lotus is a symbol of purity, beauty and wisdom and is known for its soothing and caring properties.</p>
+                                    </div>
+
+                                    <a class="btn btn--white btn-show-more js-scroll-ingredients">View all ingredients</a>
+
+                                    <button type="button" class="btn btn--white js-expand-ingredients">
+                                        <span class="more">Read more</span>
+                                        <span class="less">Show less</span>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- How to use section -->
+                        <div class="product-hero-container dk-bg-color how-to-use-block js-how-to-use-block dk-bg-color">
+                            <div class="product-hero-media js-responsive-bg">
+                                <div class="cover-wrapper">
+                                    <img src="/dkaroma/static/img/car-2.jpeg" class="w-100 h-100  cover" alt="..."/>
+                                </div>
+                            </div>
+
+                            <div class="product-hero-content">
+                                <div class="product-hero-box">
+                                    <h3>How to Use</h3>
+
+                                    <p>Apply each morning onto a clean face. Sweep upwards in circular motions until fully absorbed.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Tabs section -->
+                        <div class="js-product-tabs product-tabs-container">
+
+                            <div class="inner-wrapper">
+
+                                <div class="tabs-holder js-tabs-holder">
+
+                                    <ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs large-tabs" id="product-details-tabs" role="tablist">
+                                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" id="information">Information</a></li>
+                                        <li class="tabs-title"><a href="#panel2" id="about">About</a></li>
+                                        <li class="tabs-title"><a href="#panel3" id="function">Function</a></li>
+                                        <li class="tabs-title" id="ingredients"><a href="#panel4">Ingredients</a></li>
+                                        <li class="tabs-title"><a href="#panel5" id="more">More</a></li>
+                                    </ul>
+
+                                    <div class="tabs-content" data-tabs-content="product-details-tabs">
+                                        <div class="tabs-panel is-active" id="panel1">
+                                            <h3>Product Information</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                                est laborum.
+                                            </p>
+                                            <br/>
+                                            <h3>Product Information</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                                est laborum.
+                                            </p>
+
+                                        </div>
+                                        <div class="tabs-panel" id="panel2">
+                                            <h3>About Product</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                                est laborum.
+                                            </p>
+                                        </div>
+                                        <div class="tabs-panel" id="panel3">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                                est laborum.
+                                            </p>
+                                        </div>
+                                        <div class="tabs-panel" id="panel4">
+                                            <strong>Botanical Name</strong>
+                                            <p>5407X</p>
+
+
+                                            <strong>Plant Part</strong>
+                                            <p> Skincare, Eyecare</p>
+
+
+                                            <strong>Extraction</strong>
+                                            <p> Hong Kong</p>
+                                        </div>
+                                        <div class="tabs-panel" id="panel5">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <section class="product-grid-block js-product-grid-block dk-bg-color">
+
+                            <div class="inner-wrapper">
+
+                                <div>
+                                    <h3 class="grid-heading heading-h3">
+                                        Other customers also viewed
+                                    </h3>
+
+                                    <div class="search-result-content">
+
+                                        <div class="">
+
+                                            <div class="spinner">
+
+                                            </div>
+
+                                            <!-- START: results container -->
+
+                                            <ul class="justify-content-around search-result-items grid-wrap hide-compare grid-initialized">
+
+                                                <li class="item">
+                                                    <div class="product-tile product-detail-tile linked-block">
+
+                                                        <div class="product-image">
+                                                            <a class="thumb-link" href="#">
+                                                                <img src="/dkaroma/static/img/product-sample.png" class="cover"/>
+                                                            </a>
+                                                        </div>
+
+                                                        <section class="product-details-content">
+
+                                                            <div class="product-title">
+                                                                <a class="product-name-link">
+                                                                    <span>Savage Garden (private collection)</span>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="short-description">
+                                                                Just the right scent.
+                                                            </div>
+
+                                                            <div class="product-user-actions">
+                                                                <div class="product-price">
+                                                                    <span class="product-standard-price">
+                                                                        HK$768
+                                                                    </span>
+                                                                </div>
+
+                                                                <form novalidate="novalidate" class="dk-form">
+                                                                    <fieldset>
+                                                                        <div class="product-add-to-cart">
+
+                                                                            <!-- HIDDEN INPUT FIELDS -->
+
+                                                                            <div class="btn-wrapper">
+                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
+                
+                                                                                    <span class="icon icon-item icon-item-light">
+                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                                    </span>
+                
+                                                                                    Add to cart
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </form>
+
+                                                            </div>
+
+                                                            <a href="#" class="link--large view-full-details-link">
+                                                                View full details
+                                                            </a>
+
+                                                        </section>
+
+                                                    </div>
+                                                </li>
+
+                                                <li class="item">
+                                                    <div class="product-tile product-detail-tile linked-block">
+
+                                                        <div class="product-image">
+                                                            <a class="thumb-link" href="#">
+                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
+                                                            </a>
+                                                        </div>
+
+                                                        <section class="product-details-content">
+
+                                                            <div class="product-title">
+                                                                <a class="product-name-link">
+                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="short-description">
+                                                                Essential oils help you balance your body, mind and soul!
+                                                            </div>
+
+                                                            <div class="product-user-actions">
+                                                                <div class="product-price">
+                                                                    <span class="product-standard-price">
+                                                                        HK$768
+                                                                    </span>
+                                                                </div>
+
+                                                                <form novalidate="novalidate" class="dk-form">
+                                                                    <fieldset>
+                                                                        <div class="product-add-to-cart">
+
+                                                                            <!-- HIDDEN INPUT FIELDS -->
+
+                                                                            <div class="btn-wrapper">
+                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
+                
+                                                                                    <span class="icon icon-item icon-item-light">
+                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                                    </span>
+                
+                                                                                    Add to cart
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </form>
+
+                                                            </div>
+
+                                                            <a href="#" class="link--large view-full-details-link">
+                                                                View full details
+                                                            </a>
+
+                                                        </section>
+
+                                                    </div>
+                                                </li>
+
+                                                <li class="item">
+                                                    <div class="product-tile product-detail-tile linked-block">
+
+                                                        <div class="product-image">
+                                                            <a class="thumb-link" href="#">
+                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
+                                                            </a>
+                                                        </div>
+
+                                                        <section class="product-details-content">
+
+                                                            <div class="product-title">
+                                                                <a class="product-name-link">
+                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="short-description">
+                                                                Essential oils help you balance your body, mind and soul!
+                                                            </div>
+
+                                                            <div class="product-user-actions">
+                                                                <div class="product-price">
+                                                                    <span class="product-standard-price">
+                                                                        HK$768
+                                                                    </span>
+                                                                </div>
+
+                                                                <form novalidate="novalidate" class="dk-form">
+                                                                    <fieldset>
+                                                                        <div class="product-add-to-cart">
+
+                                                                            <!-- HIDDEN INPUT FIELDS -->
+
+                                                                            <div class="btn-wrapper">
+                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
+                
+                                                                                    <span class="icon icon-item icon-item-light">
+                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                                    </span>
+                
+                                                                                    Add to cart
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </form>
+
+                                                            </div>
+
+                                                            <a href="#" class="link--large view-full-details-link">
+                                                                View full details
+                                                            </a>
+
+                                                        </section>
+
+                                                    </div>
+                                                </li>
+
+                                                <li class="item">
+                                                    <div class="product-tile product-detail-tile linked-block">
+
+                                                        <div class="product-image">
+                                                            <a class="thumb-link" href="#">
+                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
+                                                            </a>
+                                                        </div>
+
+                                                        <section class="product-details-content">
+
+                                                            <div class="product-title">
+                                                                <a class="product-name-link">
+                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="short-description">
+                                                                Essential oils help you balance your body, mind and soul!
+                                                            </div>
+
+                                                            <div class="product-user-actions">
+                                                                <div class="product-price">
+                                                                    <span class="product-standard-price">
+                                                                        HK$768
+                                                                    </span>
+                                                                </div>
+
+                                                                <form novalidate="novalidate" class="dk-form">
+                                                                    <fieldset>
+                                                                        <div class="product-add-to-cart">
+
+                                                                            <!-- HIDDEN INPUT FIELDS -->
+
+                                                                            <div class="btn-wrapper">
+                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
+                
+                                                                                    <span class="icon icon-item icon-item-light">
+                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                                    </span>
+                
+                                                                                    Add to cart
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </form>
+
+                                                            </div>
+
+                                                            <a href="#" class="link--large view-full-details-link">
+                                                                View full details
+                                                            </a>
+
+                                                        </section>
+
+                                                    </div>
+                                                </li>
+
+                                                <li class="item">
+                                                    <div class="product-tile product-detail-tile linked-block">
+
+                                                        <div class="product-image">
+                                                            <a class="thumb-link" href="#">
+                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
+                                                            </a>
+                                                        </div>
+
+                                                        <section class="product-details-content">
+
+                                                            <div class="product-title">
+                                                                <a class="product-name-link">
+                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="short-description">
+                                                                Essential oils help you balance your body, mind and soul!
+                                                            </div>
+
+                                                            <div class="product-user-actions">
+                                                                <div class="product-price">
+                                                                    <span class="product-standard-price">
+                                                                        HK$768
+                                                                    </span>
+                                                                </div>
+
+                                                                <form novalidate="novalidate" class="dk-form">
+                                                                    <fieldset>
+                                                                        <div class="product-add-to-cart">
+
+                                                                            <!-- HIDDEN INPUT FIELDS -->
+
+                                                                            <div class="btn-wrapper">
+                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
+                
+                                                                                    <span class="icon icon-item icon-item-light">
+                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                                    </span>
+                
+                                                                                    Add to cart
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </form>
+
+                                                            </div>
+
+                                                            <a href="#" class="link--large view-full-details-link">
+                                                                View full details
+                                                            </a>
+
+                                                        </section>
+
+                                                    </div>
+                                                </li>
+
+                                                <li class="item">
+                                                    <div class="product-tile product-detail-tile linked-block">
+
+                                                        <div class="product-image">
+                                                            <a class="thumb-link" href="#">
+                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
+                                                            </a>
+                                                        </div>
+
+                                                        <section class="product-details-content">
+
+                                                            <div class="product-title">
+                                                                <a class="product-name-link">
+                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="short-description">
+                                                                Essential oils help you balance your body, mind and soul!
+                                                            </div>
+
+                                                            <div class="product-user-actions">
+                                                                <div class="product-price">
+                                                                    <span class="product-standard-price">
+                                                                        HK$768
+                                                                    </span>
+                                                                </div>
+
+                                                                <form novalidate="novalidate" class="dk-form">
+                                                                    <fieldset>
+                                                                        <div class="product-add-to-cart">
+
+                                                                            <!-- HIDDEN INPUT FIELDS -->
+
+                                                                            <div class="btn-wrapper">
+                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
+                
+                                                                                    <span class="icon icon-item icon-item-light">
+                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                                    </span>
+                
+                                                                                    Add to cart
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </form>
+
+                                                            </div>
+
+                                                            <a href="#" class="link--large view-full-details-link">
+                                                                View full details
+                                                            </a>
+
+                                                        </section>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+            
+                    </div>
+
+                </div>
+
+
+
+                <section class="sticky-bar sticky-add-to-cart js-sticky-add-to-cart">
+
+                    <div class="sticky-product-container">
+                        <div class="image-container">
+                            <img class="image" src="/dkaroma/static/img/product-sample-2.png" alt=""/>
+                        </div>
+
+                        <div class="details-container">
+                            <span class="product-name small">
+                                <span class="the-ritual-of-title small category-title">
+                                    Essential Oil
+                                </span> Savage Garden (private collection)
+                            </span>
+                        </div>
+
+                        <div class="price-container small-price js-sticky-price-container">
+                            <div class="product-price">
+                                <div class="prices-container">
+                                    <span class="price-sales">
+                                        HK$768
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sticky-button-container">
+                        <form action="" method="" class="sticky-add-to-cart-form js-sticky-add-to-cart-form dk-form" novalidate="novalidate">
+                            <fieldset>
+                                <div class="product-add-to-cart">
+                                    <div class="btn-wrapper">
+                                        <button type="submit" class="btn btn-add-to-cart js-add-to-cart js-open-minicart">
+
+                                            <span class="icon">
+                                                <img src="/dkaroma/static/img/icons/add-to-cart-light.svg" width="32" height="32" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                            </span>
+
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </section>
+
+                <div class="minicart-flyout-container flyout-content flyout-container js-minicart-flyout-container">
+
+                    <div class="checkout-flyout-inner-content" style="padding-bottom:200px;">
+
+
+                        <section class="flyout-section">
+                            <div class="js-minicart-not-empty">
+                                <div class="minicart-flyout-wrapper">
+                                    <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true">
+                                    </span>
+
+                                    <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
+                                        <span class="sr-only">Close flyout</span>
+                                        <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                    </button>
+
+
+                                    <div class="minicart-flyout-header flyout-header">
+                                        <input type="hidden" value="" class="js-cart-quantity" tabindex="-1" />
+
+                                        <div class="centered">
+                                            <h3 class="flyout-title">
+                                                My shopping cart
+                                            </h3>
+
+                                            <span class="flyout-title-overview js-selected-products">
+                                                2 products
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="minicart-flyout-body flyout-body">
+
+                                        <div class="top-fade">
+                                        </div>
+
+                                        <div class="wrapper--minicart__list">
+                                            <!-- Cart Products START -->
+
+                                            <div class="mini-cart-product">
+                                                <div class="mini-cart-image">
+                                                    <a href="#">
+                                                        <img src="/dkaroma/static/img/product-sample-1.gif" alt="" class="cover"/>
+                                                    </a>
+                                                </div>
+
+                                                <div class="mini-cart-info">
+                                                    <div class="mini-cart-small-title">
+                                                        <!-- Five Element Essential Oils -->
+                                                    </div>
+
+                                                    <div class="mini-cart-name mini-cart-product-name">
+                                                        <a href="#" class="">
+                                                            Five Element Essential Oils
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="mini-cart-attributes">
+                                                    </div>
+
+                                                    <div class="mini-cart-details-bottom">
+                                                        <div class="mini-cart-pricing">
+                                                            <span class="label">
+                                                                Quantity:
+                                                            </span>
+
+                                                            <span class="value">
+                                                                1
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
+                                                            <span class="mini-cart-price">
+                                                                HK$800
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mini-cart-product">
+                                                <div class="mini-cart-image">
+                                                    <a href="#">
+                                                        <img src="/dkaroma/static/img/product-sample.png" alt="" class="cover"/>
+                                                    </a>
+                                                </div>
+
+                                                <div class="mini-cart-info">
+                                                    <div class="mini-cart-small-title">
+                                                        <!-- Five Element Essential Oils -->
+                                                    </div>
+
+                                                    <div class="mini-cart-name mini-cart-product-name">
+                                                        <a href="#" class="">
+                                                            Savage Garden (private collection)
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="mini-cart-attributes">
+                                                    </div>
+
+                                                    <div class="mini-cart-details-bottom">
+                                                        <div class="mini-cart-pricing">
+                                                            <span class="label">
+                                                                Quantity:
+                                                            </span>
+
+                                                            <span class="value">
+                                                                1
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
+                                                            <span class="mini-cart-price">
+                                                                HK$768
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="gwp-minicart-wrapper">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="js-minicart-empty hide">
+                                <div class="minicart-flyout-wrapper js-minicart-flyout-wrapper">
+                                    <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true">
+                                    </span>
+
+                                    <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
+                                        <span class="sr-only">Close flyout</span>
+                                        <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                    </button>
+
+                                    <div class="minicart-flyout-header flyout-header js-flyout-header">
+                                        <input type="hidden" value="" class="js-cart-quantity" tabindex="-1" />
+
+                                        <div class="centered">
+                                            <h3 class="flyout-title">
+                                                My shopping cart
+                                            </h3>
+
+                                            <span class="flyout-title-overview js-selected-products">
+                                                2 products
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="mini-cart-empty">
+                                        <div class="mini-cart-empty-text">
+                                            Oh, it's empty! Let's fill it up with joy
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="minicart-flyout-checkout js-minicart-flyout-checkout has-shadow">
+                            <div class="total">
+                                <div class="total-line">
+                                    <span class="total-label">
+                                        Order subtotal
+
+                                        <div class="content-asset">
+                                            <span class="free-delivery-message">
+                                                <div class="content-asset">
+                                                    Delivery in 1-3 workdays.
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </span>
+
+                                    <span class="total-value js-total-price">
+                                        HK$800
+                                    </span>
+                                </div>
+                            </div>
+
+                            <form method="" action="/cart" class="dk-form" novalidate="novalidate">
+                                <div class="minicart-continueshopping">
+                                    <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
+                                            Continue shopping
+                                        </button>
+                                </div>
+
+                                <button type="submit" class="btn btn--submit" tabindex="0">
+                                        Go to cart
+
+                                        <div class="spinner js-spinner-general white-spinner">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>  
+
+
+                <div class="js-modal-overlay modal-overlay">
+                </div>
+
+            </div>
+
+
+            <!-- footer -->
+
+             <div class="stay-informed ">
+
+                    <div class="newsletter-wrapper inner-wrapper ">
+
+                        <div>
+                            <h3>Stay up to date</h3>
+                        </div>
+
+                        <div class="text-form-container ">
+
+                            <p>Sign up for the latest news and offers from DK Aromatherapy. Your personal data will be used as described in our privacy policy. You can unsubscribe at any time</p>
+
+                            <div class="input-container emailform ">
+
+                                <form>
+
+                                    <div class="form-row ">
+
+                                        <div class="form-row full-width-row required ">
+
+                                            <div class="field-wrapper inputfield-row ">
+
+                                                <label for="newsletterEmail ">
+
+                                                    <span>YOUR EMAIL ADDRESS</span>
+
+                                                </label>
+
+                                                <div class="error-message "> </div>
+
+                                                <input class="inputfield-text formal email required " type="email " id="newsletterEmail " name="newsletterEmail " value="" data-required-text="This field is required "/>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="button-wrapper ">
+
+                                            <button class="btn--white btn-bg-contrast btn-bg-light btn last " type="submit " value="" name="newsletterSubmit " tabindex="0 ">
+                                                Subscribe
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="main-footer ">
+
+                    <div class="footer-top-elements ">
+
+                        <div class="inner-wrapper ">
+
+                            <h3 class="footer-title center-mobile">Or shop by category</h3>
+
+                            <div class="accordion-wrapper footer-accordion ">
+
+                                <div class="row item-grid ">
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Aromatherapy
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Essential oil set
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Pure essential oil
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Organic essential oil
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Blend essential oil
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Flower water and hydrosol
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Eye and face product   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Body and hair product   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Aroma accessory   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Diffuser and burner   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            DIY materials   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Bottles   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Candle   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Boison for candle   
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Flower Essence
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            DTW flower essences
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Pet flower essence
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                DK Cuppa Tea
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Afternoon tea delivery
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Dine in afternoon tea
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Other food menu
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Tailor-made Aroma
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Personal blend service
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Space aroma design
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Gift Coupon
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Gift coupon for DK Cuppa Tea
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Gift coupon for DK Aromatherapy
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Workshop
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            DIY workshop
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Corporate workshop
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner "> 
+                                                            Certification course
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-middle-elements ">
+
+                        <div class="inner-wrapper ">
+
+                            <div class="accordion-wrapper footer-accordion ">
+
+                                <div class="row item-grid ">
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Customer Service
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Shipping and returns
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            FAQ
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Contact
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Cookie policy
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Cookie setting
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Discovery
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible center-mobile">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Podcast
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Blog
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Video
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Book
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Our Brand
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK Aromatherapy
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK Cuppa Tea
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            KAT LAI
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                About Us
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            About DK
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Store location
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Department stores
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Brand story   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Mission   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            CSR and ESG   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK equilibrum people/plant   
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row item-grid ">
+
+                                    <div class="col-3 col-lg-9 col-md-8 col-ms-12 item-holder footer-column ">
+
+                                        <div class="footer-contact ">
+
+                                            <h3 class="center-mobile">Need help?</h3>
+
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Telephone
+                                                        </td>
+
+                                                        <td>
+                                                            +852+2386 3588
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Whatsapp
+                                                        </td>
+
+                                                        <td>
+                                                            +852 9788 9378
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Email
+                                                        </td>
+
+                                                        <td>
+                                                            dk@aroma.com.hk
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                        <div class="icons-section footer-column social--icons table">
+
+                                            <ul class="social__icons">
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-facebook-f "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-instagram "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-youtube "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-whatsapp "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-linkedin "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="far fa-envelope "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a class="wechat">
+                                                        <span class="icon icon-item">
+                                                            <img src="/dkaroma/static/img/icons/wechat.svg" width="15" height="15" class="" alt="" loading="lazy"/>
+
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-twitter "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-telegram "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-google-plus "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+
+                                                </li>
+
+                                            </ul>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-lg-3 col-md-4 col-sm-12 item-holder ">
+
+                                        <div class="footer-right-side ">
+
+                                            <div class="footer-column ">
+
+                                                <h3 class="h3 ">
+                                                    Choose your country and language
+                                                </h3>
+
+                                                <div class="wrapper__country-selector ">
+
+                                                    <label for="countrySelector ">
+                                                        Country
+                                                    </label>
+
+                                                    <div class="country-selector select-box__container ">
+
+                                                        <select id="countrySelector" class="custom-select select--custom country select-box js-custom-select js-country_select" style="background-image: url('https://www.rituals.com/on/demandware.static/Sites-Global-Site/-/en_NL/v1607668413458/images/flags/nl.svg?select=true');">
+                                                            <option>
+                                                                English (English)
+                                                            </option>
+
+                                                            <option>
+                                                                Netherlands (English)
+                                                            </option>
+                                                        </select>
+
+                                                        <em class="arrow-down ">
+                                                            <i></i>
+                                                        </em>
+
+                                                    </div>
+
+                                                    <label for="languageSelector ">
+                                                        Language
+                                                    </label>
+
+                                                    <div class="country-selector select-box__container ">
+                                                        <select id="languageSelector" class="custom-select select--custom language select-box js-custom-select js-language_select" style="background-image: url('https://www.rituals.com/on/demandware.static/Sites-Global-Site/-/en_NL/v1607668413458/images/flags/gb.svg?select=true');">
+                                                            <option>
+                                                                English
+                                                            </option>
+
+                                                            <option>
+                                                                Netherlands
+                                                            </option>
+                                                        </select>
+
+                                                        <em class="arrow-down ">
+                                                            <i></i>
+                                                        </em>
+
+                                                    </div>
+
+                                                    <a href="# " class="btn--text fright ">
+                                                        Continue
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-bottom-elements ">
+                        <div class="inner-wrapper ">
+
+                            <p class="copyright ">
+                                All rights reserved © 2020 DK Aromatherapy
+                            </p>
+
+                            <ul class="bottom-links ">
+
+                                <li>
+                                    <a href="# ">
+                                        Privacy
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="# ">
+                                        General terms
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </footer>
+
+            <script src="/dkaroma/static/js/jquery.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.2.0/what-input.min.js" integrity="sha256-7wGy9IEPmo9Jk/I86siWbZFPeclfjFitAAfmvxBUc7k=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+            <script src="/dkaroma/static/js/jquery.selectric.js"></script>
+            <script src="/dkaroma/static/js/jquery.visible.js" type="text/javascript"></script>
+            <script src="/dkaroma/static/js/scrolltoview.js" type="text/javascript"></script>
+            <script src="/dkaroma/static/js/product-details.js" type="text/javascript"></script>
+            <script data-main="/dkaroma/static/js/main" src="/dkaroma/static/js/ext/require.js"></script>
+            <script src="/dkaroma/static/js/script.js" type="text/javascript"></script>
+            <script src="/dkaroma/static/js/header.js" type="text/javascript"></script>
+
+
+        </body>
+
+
+        </template>
+
+        <record id="custom_product_details_page" model="website.page">
+            <field name="name">DK Aromatherapy</field>
+            <field name="website_published">True</field>
+            <field name="url">/product-details</field>
+            <field name="view_id" ref="dkaroma.product_details" />
+        </record>
+
+        <record id="custom_product_details_nav" model="website.menu">
+            <field name="name">product-details</field>
+            <field name="parent_id" ref="website.menu_home"/>
+            <field name="page_id" ref="custom_product_details_page"/>
+        </record>
+
+    </data>
+</odoo>
