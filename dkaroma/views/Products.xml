@@ -515,7 +515,7 @@
                             </div>
 
 
-                            <a class="header-logo" href="/home">
+                            <a class="header-logo" href="/">
                                 <span class="sr-only">DK logo</span>
 
                                 <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy"/>
@@ -2158,7 +2158,7 @@
                                                         </td>
 
                                                         <td>
-                                                            +852+2386 3588
+                                                            +852 2386 3588
                                                         </td>
                                                     </tr>
 
@@ -2367,6 +2367,7 @@
 
                 <script src="/dkaroma/static/js/jquery.js"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
                 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
                 <script src="/dkaroma/static/js/jquery.selectric.js"></script>
                 <script src="/dkaroma/static/js/jquery.visible.js" type="text/javascript"></script>
