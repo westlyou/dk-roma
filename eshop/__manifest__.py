@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "DKAroma",
+    'name': "DKAroma E-commerce",
 
     'summary': """
         E-commerce website""",
