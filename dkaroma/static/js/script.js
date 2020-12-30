@@ -25,7 +25,6 @@ $(document).ready(function() {
         return '.search-result-items.grid-wrap .item:nth-of-type(2)';
     }
 
-
     // $grid = $('.search-result-items').masonry({
     //     // set itemSelector so .grid-sizer is not used in layout
     //     itemSelector: '.search-result-items.grid-wrap .item',
