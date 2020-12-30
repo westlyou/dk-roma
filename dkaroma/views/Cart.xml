@@ -513,7 +513,8 @@
                             </div>
 
 
-                            <a class="header-logo" href="/home">
+                            <a class="header-logo" href="/">
+
                                 <span class="sr-only">DK logo</span>
 
                                 <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy"/>
@@ -1565,7 +1566,7 @@
                                                         </td>
 
                                                         <td>
-                                                            +852+2386 3588
+                                                            +852 2386 3588
                                                         </td>
                                                     </tr>
 

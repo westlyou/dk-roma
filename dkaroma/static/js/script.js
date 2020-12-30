@@ -25,21 +25,32 @@ $(document).ready(function() {
         return '.search-result-items.grid-wrap .item:nth-of-type(2)';
     }
 
+    // $grid = $('.search-result-items').masonry({
+    //     // set itemSelector so .grid-sizer is not used in layout
+    //     itemSelector: '.search-result-items.grid-wrap .item',
+    //     // use element for option
+    //     columnWidth: getColumnWidthSelector(),
+    //     percentPosition: true,
+    //     horizontalOrder: true,
+    //     gutter: gutterSize,
+    //     transitionDuration: '0.9s',
+    //     stagger: 30
+    // });
 
-    $grid = $('.search-result-items').masonry({
-        // set itemSelector so .grid-sizer is not used in layout
-        itemSelector: '.search-result-items.grid-wrap .item',
-        // use element for option
-        columnWidth: getColumnWidthSelector(),
-        percentPosition: true,
-        horizontalOrder: true,
-        gutter: gutterSize,
-        transitionDuration: '0.9s',
-        stagger: 30
+
+    $('.search-result-items').imagesLoaded(function() {
+        $grid = $('.search-result-items').masonry({
+            // set itemSelector so .grid-sizer is not used in layout
+            itemSelector: '.search-result-items.grid-wrap .item',
+            // use element for option
+            columnWidth: getColumnWidthSelector(),
+            percentPosition: true,
+            horizontalOrder: true,
+            gutter: gutterSize,
+            transitionDuration: '0.9s',
+            stagger: 30
+        });
     });
-
-
-
 
     $(window).resize(function() {
 
