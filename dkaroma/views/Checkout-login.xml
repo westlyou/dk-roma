@@ -25,7 +25,7 @@
 
                 <nav class="inner-wrapper">
 
-                    <a href="Home.html" class="header-logo">
+                    <a href="/" class="header-logo">
                         <span class="sr-only">DK logo</span>
                         <img src="/dkaroma/static/img/dk-logo-white.svg"/>
                     </a>
@@ -104,7 +104,7 @@
 
                                 <!-- Guest button container-->
 
-                                <form action="Checkout.html" method="" class="js-guest-checkout-form dk-form" onsubmit="return(validateForm());">
+                                <form action="/checkout" method="" class="js-guest-checkout-form dk-form" onsubmit="return(validateForm());">
                                     <fieldset>
                                         <div class="form-row form-row-button checkout-guest">
 

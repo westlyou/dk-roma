@@ -1281,7 +1281,7 @@
                     </div>
 
                     <div class="sticky-button-container">
-                        <form action="" method="" class="sticky-add-to-cart-form js-sticky-add-to-cart-form dk-form" novalidate="novalidate">
+                        <form action="" method="" class="sticky-add-to-cart-form js-sticky-add-to-cart-form dk-form" novalidate="novalidate" onsubmit="return addToCart();">
                             <fieldset>
                                 <div class="product-add-to-cart">
                                     <div class="btn-wrapper">
@@ -2280,6 +2280,7 @@
 
             <script src="/dkaroma/static/js/jquery.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
             <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
