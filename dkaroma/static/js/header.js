@@ -1,22 +1,9 @@
 $(document).ready(function() {
 
-    // if (window.matchMedia('(max-width: 768px)').matches) {
-
-    // } else {
-    //     $(function() {
-    //         $('select').selectric();
-    //     });
-    // }
+    getProducts();
 
     $('select').selectric({ disableOnMobile: false, nativeOnMobile: false });
 
-    // $('.selectric-wrapper').click(function(e) {
-    //     alert('I see click');
-    // });
-
-    // $('.selectic-custom-select').on('click touchstart', function() {
-    //     alert('I see');
-    // });
 
     $('.nav-item-link').click(function(e) {
         e.preventDefault();
@@ -57,14 +44,32 @@ $(document).ready(function() {
     $('.return-scroll').click(function(e) {
 
         e.preventDefault();
-        // if (e.target !== this) return;
-
         $('.body-class').removeClass('no-scroll');
 
     });
 
 
-    $('.close-desktop-nav').click(function(e) {
+    // Nav Links
+
+    $('.nav-desktop-layer .nav-inner-subnav').on('click mouseover', '.inner-nav-link', function(e) {
+
+        var parent = $(this).parent();
+        var overParent = $(parent).parent();
+        var firstLayerParent = $(overParent).parent().parent();
+
+        $(overParent).find('.visible').toggleClass('visible');
+        $(overParent).find('.opened').toggleClass('opened');
+        $(overParent).find('.active').toggleClass('active');
+
+        $(this).toggleClass('active');
+        $(parent).find('.nav-desktop-subnav-wrap').toggleClass('visible');
+        $(parent).find('.nav-desktop-subnav-wrap').toggleClass('opened');
+
+        $(firstLayerParent).children('button.close-desktop-nav').css('display', 'none');
+
+    });
+
+    $('.nav-desktop-layer').on('click', '.close-desktop-nav', function(e) {
         e.preventDefault();
 
         // if (e.target !== this) return;
@@ -85,29 +90,7 @@ $(document).ready(function() {
     });
 
 
-    $('.inner-nav-link').hover(function(e) {
-        e.preventDefault();
-
-        if (e.target !== this) return;
-        // if ($(this).hasClass('nav-first-layer')) return;
-        var parent = $(this).parent();
-        var overParent = $(parent).parent();
-        var firstLayerParent = $(overParent).parent().parent();
-
-        $(overParent).find('.visible').toggleClass('visible');
-        $(overParent).find('.opened').toggleClass('opened');
-        $(overParent).find('.active').toggleClass('active');
-
-        $(this).toggleClass('active');
-        $(parent).find('.nav-desktop-subnav-wrap').toggleClass('visible');
-        $(parent).find('.nav-desktop-subnav-wrap').toggleClass('opened');
-
-        $(firstLayerParent).children('button.close-desktop-nav').css('display', 'none');
-
-    });
-
-
-    $('.nav-item-link').click(function(e) {
+    $('.nav-item-link').on('click', function(e) {
         e.preventDefault();
 
         if (e.target !== this) return;
@@ -117,8 +100,7 @@ $(document).ready(function() {
 
     });
 
-    $('.nav-mobile-subnav-link').click(function(e) {
-        // e.preventDefault();
+    $('.nav-mobile-layer .js-nav-mobile-subnav').on('click', '.nav-mobile-subnav-link', function(e) {
 
         if (e.target !== this) return;
         var parent = $(this).parent();
@@ -127,7 +109,7 @@ $(document).ready(function() {
 
     });
 
-    $('.nav-back').click(function(e) {
+    $('.nav-mobile-layer').on('click', '.nav-back', function(e) {
         e.preventDefault();
 
         if (e.target !== this) return;
@@ -137,10 +119,11 @@ $(document).ready(function() {
 
     });
 
+
+
     $('.nav-toggle').click(function(e) {
         e.preventDefault();
 
-        // if (e.target !== this) return;
         var parent = $(this).parent();
         $(parent).find('.nav-mobile').toggleClass('visible');
 
@@ -169,40 +152,240 @@ $(document).ready(function() {
         $('#headerLogo').removeClass('fade-out');
     });
 
-    // $('.nav-item').click(function(e) {
-    //     e.preventDefault();
-
-    //     $(this).find('#productDiv').toggleClass('visible');
-    //     $(this).find('#productDiv').toggleClass('opened');
-
-    //     var con = $(this).find('#productDiv');
-    //     if (!con) return;
-
-    //     var firstLayer = $(con).find('.nav-first-layer');
-    //     if (!firstLayer) return;
-
-    //     if (con.hasClass('visible')) {
-    //         firstLayer.css('left', 0);
-    //     } else {
-    //         firstLayer.css('left', '-50%');
-    //     }
-
-    //     firstLayer.on("transitionEnd webkitTransitionEnd onTransitionEnd MSTransitionEnd", function() {
-    //         $(this).find('#productDiv').toggleClass('visible');
-    //         $(this).find('#productDiv').toggleClass('opened');
-    //     });
-
-    // });
-
-
 
 });
 
-function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
+
+
+
+// Requests
+
+function getProducts(category) {
+
+    var url = 'https://dk-aroma.odoo.com/dkaroma/shop/get-child-categories?parent=';
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                // unsuccesful request
+            }
+            return response.json();
+        })
+        .then(data => {
+
+            let categoryRequests = [];
+            let categoryResults = [];
+
+            data.forEach((category) => {
+
+                let param = encodeURIComponent(category.name);
+                var subCategoryUrl = url + param;
+                categoryRequests.push(getData(subCategoryUrl));
+            });
+
+            Promise.all(categoryRequests).then((allCategoryData) => {
+                data.forEach((category, index) => {
+                    categoryResults.push({
+                        category: category,
+                        subCategories: allCategoryData[index].sort((a, b) => (a.sequence > b.sequence) ? 1 : -1)
+                    });
+                });
+
+                categoryResults.sort((a, b) => (a.category.sequence > b.category.sequence) ? 1 : -1);
+                createProductMenu(categoryResults);
+            });
+
+
+
+        })
+        .catch(error => {
+            console.log(error);
+        });
+
 }
 
-/* Set the width of the sidebar to 0 (hide it) */
-function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
+
+function getData(url) {
+    return new Promise((resolve, reject) => {
+        fetch(url)
+            .then((resp) => resp.json())
+            .then((data) => {
+                resolve(data);
+            });
+    });
+}
+
+
+
+const urlPaths = {
+    products: '/products?category='
+};
+
+function createProductMenu(results) {
+
+    results.forEach((item) => {
+        $('.js-dekstop-product-nav .nav-desktop-layer .nav-inner-subnav').append(
+            renderList(item.category.name, item.subCategories.map((item) => item.name))
+        );
+
+        $('.js-mobile-product-nav .nav-mobile-layer .js-nav-mobile-subnav').append(
+            renderMobileList(item.category.name, item.subCategories.map((item) => item.name))
+        );
+    });
+}
+
+function renderList(category, subCategories) {
+
+    var navItem = function() {
+
+        var className = '';
+        var navLink = '';
+
+        if (subCategories.length > 0) {
+            className = 'inner-nav-link';
+        } else {
+            let param = encodeURIComponent(category);
+            navLink = 'href="' + urlPaths.products + param + '"';
+        }
+
+        return `
+        <a class="nav-link ${className} nav-mobile-subnav-link" ${navLink}>
+            <span>
+                    ${category}
+                </span>
+        </a>
+      `;
+    };
+
+
+    var innerDesktopList = subCategories.map(function(value) {
+        let param = encodeURIComponent(value);
+        var link = urlPaths.products + param;
+        return `
+                <li>
+                    <a class="nav-link nav-desktop-subnav-link" href="${link}">
+                        <span>${value}</span>
+                    </a>
+                </li>
+        `;
+    }).join('');
+
+
+    return `
+    
+            <li>
+                ${navItem()}
+                <div class="nav-desktop-subnav-wrap">
+
+                    <div class="nav-desktop-subnav-slide-in">
+
+                        <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                <span class="sr-only">Close navigation</span>
+                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy">
+                            </button>
+
+
+                        <div class="nav-desktop-subnav-inner">
+
+                            <ul class="nav-desktop-subnav">
+                                ${innerDesktopList}
+                            </ul>
+
+                        </div>
+
+                        <span class="bottom-gradient-el">
+                            </span>
+                    </div>
+
+                </div>
+            </li>
+
+    
+    `;
+}
+
+function renderMobileList(category, subCategories) {
+
+
+    var innerMobileList = subCategories.map(function(value) {
+        let param = encodeURIComponent(value);
+        var link = urlPaths.products + param;
+
+        return `
+        <li>
+            <a class="nav-mobile-subnav-link" href="${link}">
+                    ${value}
+                </a>
+        </li>
+        `;
+    }).join('');
+
+    var createChildrenLists = function() {
+
+        if (subCategories.length > 0) {
+            return `
+            <div class="nav-mobile-layer">
+
+                <button type="button" class="nav-back">
+                        <span class="sr-only"> 
+                            Back
+                        </span>
+                    </button>
+
+                <div class="nav-mobile-layer-inner">
+                    <ul class="nav-mobile-subnav">
+                        ${innerMobileList}
+                    </ul>
+                </div>
+
+                <span class="bottom-gradient-el">
+
+                    </span>
+
+            </div>
+            `;
+        } else {
+            return '';
+        }
+
+    };
+
+
+    var navItem = function() {
+
+        var navLink = '';
+        var itemHead = '';
+        var hasChildren = '';
+
+        if (subCategories.length > 0) {
+            hasChildren = 'has-children';
+            itemHead = `
+                <button type="button" class="nav-mobile-subnav-link">
+                    <span>${category}</span>
+                </button>
+            `;
+
+        } else {
+            let param = encodeURIComponent(category);
+            navLink = urlPaths.products + param;
+            itemHead = `
+                <a class="mobile-third-level" href="${navLink}">
+                    ${category}
+                </a>
+            `;
+
+        }
+
+        return `
+       
+        <li class="${hasChildren}">
+                ${itemHead}
+                ${createChildrenLists()}
+            </li>
+      `;
+    };
+
+
+    return navItem();
+
 }

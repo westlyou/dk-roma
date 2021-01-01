@@ -828,3 +828,75 @@ input {
         vertical-align: middle!important;
     }
 }
+
+.nav-desktop-subnav-wrap .nav-desktop-subnav-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-desktop-subnav-wrap .nav-desktop-subnav {
+    padding-bottom: 60px;
+}
+
+.nav-desktop-subnav-wrap .nav-desktop-subnav-slide-in::before {
+    background: linear-gradient(to top, rgba(34, 34, 34, 0) 0, #222 100%);
+    content: '';
+    display: inline-block;
+    height: 100px;
+    left: 0;
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 69px;
+    transition: opacity .3s cubic-bezier(.32, .24, .15, 1);
+    z-index: 2;
+}
+
+.nav-desktop-subnav-wrap .nav-desktop-shop-all span:not(.lowercase)::after,
+.nav-desktop-subnav-wrap .nav-desktop-subnav-link span:not(.lowercase)::after,
+.nav-desktop-subnav-wrap .nav-desktop-subtitle span:not(.lowercase)::after {
+    background-color: #fff;
+    bottom: -6px;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: width .3s cubic-bezier(.32, .24, .15, 1);
+    width: 0;
+}
+
+@media (min-width: 1025px) {
+    .nav-desktop-subnav-wrap .nav-desktop-shop-all:hover span::after,
+    .nav-desktop-subnav-wrap .nav-desktop-subnav-link:hover span::after {
+        width: 100%;
+    }
+}
+
+.nav-mobile-layer .nav-mobile-subnav {
+    padding-bottom: 70px;
+}
+
+.nav-mobile-layer a.mobile-third-level {
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+    color: #d8d8d8;
+    display: block;
+    font-family: "EB Garamond", "Times New Roman", serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    opacity: 1;
+    padding: 18px 0 19px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0px;
+    transition: text-indent .3s cubic-bezier(.32, .24, .15, 1), opacity .3s cubic-bezier(.32, .24, .15, 1), transform .3s cubic-bezier(.32, .24, .15, 1);
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+}
+
+.nav-mobile-layer .mobile-third-level a,
+.nav-mobile-layer .nav-mobile-subnav-link {
+    text-indent: 0px;
+}
