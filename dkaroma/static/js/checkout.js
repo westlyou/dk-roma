@@ -130,7 +130,7 @@ $(document).ready(function() {
     //     $('.js-checkout-sticky-button').html('Continue to payment');
     // }
 
-    var currentStep = 1;
+
 
     function moveToStep(step) {
 
@@ -159,48 +159,7 @@ $(document).ready(function() {
         }
     }
 
-    function moveBack() {
-        var value = currentStep;
-        if (value == 1) return;
-        var newStep = value - 1;
 
-        var prevStepName = `.js-step-${value}`;
-        var prevStepContent = `.js-step-${value}-content`;
-
-        var stepName = `.js-step-${newStep}`;
-        var stepContent = `.js-step-${newStep}-content`;
-
-        $(prevStepContent).addClass('hide');
-        $(prevStepName).removeClass('selected current');
-        $(prevStepName).addClass('disabled');
-
-        $(stepContent).removeClass('hide');
-        $(stepName).addClass('selected current');
-
-        switch (newStep) {
-            case 1:
-                $('.js-checkout-sticky-button').html('Continue to review');
-                break;
-            case 2:
-                $('.js-checkout-sticky-button').html('Continue to payment');
-                break;
-        }
-
-    }
-
-
-
-    // function moveBack() {
-    //     $('.js-step-2-content').addClass('hide');
-    //     $('.js-step-2').removeClass('selected current');
-    //     $('.js-step-2').addClass('disabled');
-
-    //     $('.js-step-1-content').removeClass('hide');
-    //     $('.js-step-1').addClass('selected current');
-
-    //     $('.js-checkout-sticky-button').html('Continue to review');
-
-    // }
 
 
     $('.js-checkout-back').click(function() {
@@ -232,3 +191,59 @@ $(document).ready(function() {
 
 
 });
+
+var currentStep = 1;
+
+function moveBack() {
+    var value = currentStep;
+    if (value == 1) return;
+    var newStep = value - 1;
+
+    var prevStepName = `.js-step-${value}`;
+    var prevStepContent = `.js-step-${value}-content`;
+
+    var stepName = `.js-step-${newStep}`;
+    var stepContent = `.js-step-${newStep}-content`;
+
+    $(prevStepContent).addClass('hide');
+    $(prevStepName).removeClass('selected current');
+    $(prevStepName).addClass('disabled');
+
+    $(stepContent).removeClass('hide');
+    $(stepName).addClass('selected current');
+
+    switch (newStep) {
+        case 1:
+            $('.js-checkout-sticky-button').html('Continue to review');
+            break;
+        case 2:
+            $('.js-checkout-sticky-button').html('Continue to payment');
+            break;
+    }
+
+}
+
+
+if (window.history && window.history.pushState) {
+
+    history.pushState("nohb", null, "");
+    $(window).on("popstate", function(event) {
+
+        if (currentStep == 1) {
+            window.history.back();
+        } else {
+
+            if (currentStep > 1) {
+                moveBack();
+                currentStep -= 1;
+            }
+
+            if (!event.originalEvent.state) {
+                history.pushState("nohb", null, "");
+                return;
+            }
+        }
+
+    });
+
+}

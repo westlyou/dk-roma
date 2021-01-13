@@ -29,3 +29,8 @@ $('.js-toggle-password-visibility').on('click', function() {
     $('.js-toggle-password-visibility').toggleClass('password-visible');
 
 });
+
+
+$('.back-button').on('click', function() {
+    window.history.back();
+});
