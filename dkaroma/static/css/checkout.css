@@ -4323,6 +4323,14 @@ input.error {
     transform: translate(-50%, -50%) scale(.5);
 }
 
+.dk-payment-options .stripe .icon-holder .ico {
+    height: 24px;
+}
+
+.dk-payment-options .bank .icon-holder .ico {
+    height: 60px;
+}
+
 .dk-payment-options .payment-method-name {
     color: #453f3f;
     font-size: 14px;
