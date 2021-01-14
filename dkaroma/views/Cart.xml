@@ -741,7 +741,7 @@
 
                             <div class="mobile-category-accordion">
 
-                                <ul class="accordion" data-accordion data-allow-all-closed="true" id="mobile-category-accordion">
+                                <ul class="accordion" data-accordion="1" data-allow-all-closed="true" id="mobile-category-accordion">
                                     <!-- categories-mobile -->
                                 </ul>
 
