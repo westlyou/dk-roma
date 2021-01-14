@@ -2318,3 +2318,8 @@ a.link--large {
         padding-left: 10px;
     }
 }
+
+.label {
+    background-color: transparent;
+    padding: 0;
+}
