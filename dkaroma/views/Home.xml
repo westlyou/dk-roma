@@ -81,7 +81,7 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';"
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
                                                     Discovery
                                                 </Button>
                                         </li>
