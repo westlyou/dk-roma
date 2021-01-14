@@ -1,9 +1,9 @@
 <odoo>
     <data>
-        <template id="article">
+        <template id="news">
 
             <head>
-                <title>Article</title>
+                <title>DK News</title>
                 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
@@ -231,192 +231,141 @@
 
                             <img class="m-detailpage__header" src="/dkaroma/static/img/magazine-header.png"/>
 
-                            <div class="wrapper__inner">
+                            <div class="wrapper__inner mag-landing news-header">
 
-                                <div class="m-detailpage">
+                                <div class="mag-landing__body">
 
-                                    <div class="m-detailpage__main">
+                                    <div class="heading-block">
 
-                                        <article class="m-article">
+                                        <h1 class="h--large">
+                                            News and Events
+                                        </h1>
 
-                                            <h1 class="m-article__title">
-                                                Your wonderful article title
-                                            </h1>
-
-                                            <ul class="m-article__meta">
-                                                <li>By Author</li>
-                                                <li>Septh 8th, 2010</li>
-                                            </ul>
-
-                                            <section class="m-article__body">
-
-                                                <div class="content-asset" style="padding-bottom: 30px;">
-
-                                                    <!-- Content -->
-
-                                                    <h2>Lorem random article header</h2>
-
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quae. Quia voluptatem quod assumenda exercitationem nemo aut est modi corporis alias vitae sapiente quasi veniam voluptatum vel, dolore reiciendis?
-                                                        Recusandae.
-                                                    </p>
-
-                                                    <p>
-                                                        ...
-                                                    </p>
-
-                                                    <img src="/dkaroma/static/img/magazine-header.png"/>
-
-                                                    <p>
-                                                        ...
-                                                    </p>
-
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quae. Quia voluptatem quod assumenda exercitationem nemo aut est modi corporis alias vitae sapiente quasi veniam voluptatum vel, dolore reiciendis?
-                                                        Recusandae.
-                                                    </p>
-
-                                                    <p>
-                                                        ...
-                                                    </p>
-
-                                                    <p>
-                                                        ...
-                                                    </p>
-
-                                                </div>
-
-                                            </section>
-
-                                            <ul class="m-article__taglist">
-
-                                                <li class="m-article__tag">
-                                                    tag item
-                                                </li>
-
-                                                <li class="m-article__tag">
-                                                    tag item
-                                                </li>
-
-                                                <li class="m-article__tag">
-                                                    tag item
-                                                </li>
-
-                                            </ul>
-
-
-                                            <ul class="m-social js-social-share">
-                                                <li class="m-social__label">Share:</li>
-
-                                                <li>
-                                                    <a href="" target="_blank">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a>
-                                                        <i class="fab fa-whatsapp "></i>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a>
-                                                        <i class="fab fa-linkedin "></i>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a>
-                                                        <i class="far fa-envelope "></i>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a class="wechat">
-                                                        <span class="icon icon-item">
-                                                            <img src="/dkaroma/static/img/icons/wechat-dark.svg" width="15" height="15" class="" alt="" loading="lazy"/>
-
-                                                        </span>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a>
-                                                        <i class="fab fa-twitter "></i>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a>
-                                                        <i class="fab fa-telegram "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-
-                                        </article>
+                                        <p class="title">
+                                            Updates and more information on dk aromatherapy
+                                        </p>
 
                                     </div>
 
-                                    <div class="m-detailpage__side">
+                                </div>
 
-                                        <section class="m-grid-item__articles">
+                            </div>
 
-                                            <article class="m-grid-item__article m-link-article">
-                                                <a>
-                                                    <img class="m-link-article__image" src="/dkaroma/static/img/article-img.png"/>
+
+
+                            <div class="wrapper__inner news-body">
+
+                                <div class="m-grid-contain">
+
+                                    <article class="m-grid-item">
+
+                                        <a>
+                                            <img class="m-grid-item__image" src="/dkaroma/static/img/article-img.png" alt="thumbnail image"/>
+                                        </a>
+
+                                        <div class="m-grid-item__content">
+
+                                            <header>
+
+
+                                                <h1 class="m-grid-item__title txt--black">
+                                                    <a>News header placeholder</a>
+                                                </h1>
+
+
+                                            </header>
+
+                                            <div class="news-item-description">
+                                                <p>
+                                                    Lorem short description and all essence short description and all essence short description and all essence short description and all essence ipsum with the use of aromatherapy to aid and assist in short description
+                                                </p>
+                                            </div>
+
+                                            <footer>
+
+                                                <a class="read-more last i-minTablet i-minDesktop">
+                                                    Read more
                                                 </a>
 
-                                                <div class="m-link-article__content">
-                                                    <h3 class="m-link-article__title">
-                                                        <a>
-                                                            Another wonderful article
-                                                        </a>
-                                                    </h3>
+                                            </footer>
 
-                                                    <p class="">
-                                                        By Author
-                                                    </p>
-                                                </div>
-                                            </article>
+                                        </div>
 
-                                            <article class="m-grid-item__article m-link-article">
-                                                <a>
-                                                    <img class="m-link-article__image" src="/dkaroma/static/img/article-img.png"/>
+                                    </article>
+
+                                    <article class="m-grid-item">
+
+                                        <a>
+                                            <img class="m-grid-item__image" src="/dkaroma/static/img/article-img.png" alt="thumbnail image"/>
+                                        </a>
+
+                                        <div class="m-grid-item__content">
+
+                                            <header>
+
+                                                <!-- <ul class="m-grid-item__category js-mag-links"></ul> -->
+
+                                                <h1 class="m-grid-item__title txt--black">
+                                                    <a>Events header placeholder</a>
+                                                </h1>
+
+
+                                            </header>
+
+                                            <div class="news-item-description">
+                                                <p>
+                                                    Lorem short description essence short description and all essence short description and all essence ipsum with the use of aromatherapy to aid and assist in short description
+                                                </p>
+                                            </div>
+
+                                            <footer>
+
+                                                <a class="read-more last i-minTablet i-minDesktop">
+                                                    Read more
                                                 </a>
 
-                                                <div class="m-link-article__content">
-                                                    <h3 class="m-link-article__title">
-                                                        <a>
-                                                            Another similar wonderful article
-                                                        </a>
-                                                    </h3>
+                                            </footer>
 
-                                                    <p class="">
-                                                        By Author
-                                                    </p>
-                                                </div>
-                                            </article>
+                                        </div>
 
-                                            <article class="m-grid-item__article m-link-article">
-                                                <a>
-                                                    <img class="m-link-article__image" src="/dkaroma/static/img/article-img.png" />
+                                    </article>
+
+                                    <article class="m-grid-item">
+
+                                        <a>
+                                            <img class="m-grid-item__image" src="/dkaroma/static/img/article-img.png" alt="thumbnail image"/>
+                                        </a>
+
+                                        <div class="m-grid-item__content">
+
+                                            <header>
+
+                                                <!-- <ul class="m-grid-item__category js-mag-links"></ul> -->
+
+                                                <h1 class="m-grid-item__title txt--black">
+                                                    <a>News header placeholder</a>
+                                                </h1>
+
+
+                                            </header>
+
+                                            <div class="news-item-description">
+                                                <p>
+                                                    Lorem short and all essence ipsum with the use of aromatherapy to aid and assist in short description
+                                                </p>
+                                            </div>
+
+                                            <footer>
+
+                                                <a class="read-more last i-minTablet i-minDesktop">
+                                                    Read more
                                                 </a>
 
-                                                <div class="m-link-article__content">
-                                                    <h3 class="m-link-article__title">
-                                                        <a>
-                                                            Another wonderful article
-                                                        </a>
-                                                    </h3>
+                                            </footer>
 
-                                                    <p class="">
-                                                        By Author
-                                                    </p>
-                                                </div>
-                                            </article>
+                                        </div>
 
-                                        </section>
-
-                                    </div>
+                                    </article>
 
                                 </div>
 
@@ -1153,17 +1102,17 @@
 
         </template>
 
-        <record id="custom_article_page" model="website.page">
+        <record id="custom_news_page" model="website.page">
             <field name="name">DK Aromatherapy</field>
             <field name="website_published">True</field>
-            <field name="url">/article</field>
-            <field name="view_id" ref="dkaroma.article" />
+            <field name="url">/news</field>
+            <field name="view_id" ref="dkaroma.news" />
         </record>
 
-        <record id="custom_article_nav" model="website.menu">
-            <field name="name">article</field>
+        <record id="custom_news_nav" model="website.menu">
+            <field name="name">news</field>
             <field name="parent_id" ref="website.menu_home" />
-            <field name="page_id" ref="custom_article_page" />
+            <field name="page_id" ref="custom_news_page" />
         </record>
 
     </data>
