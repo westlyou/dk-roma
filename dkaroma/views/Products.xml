@@ -79,19 +79,19 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
                                                     Gifts
                                                 </Button>
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
                                                     Discovery
                                                 </Button>
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/news';">
                                                     News
                                                 </Button>
                                         </li>
@@ -146,19 +146,19 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
                                                 Gifts
                                             </Button>
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
                                                 Discovery
                                             </Button>
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link" onclick="location.href='/news';">
                                                 News
                                             </Button>
                                     </li>
@@ -1630,7 +1630,7 @@
                                                 <li>
                                                     <a class="wechat">
                                                         <span class="icon icon-item">
-                                                            <img src="/dkroma/static/img/icons/wechat.svg" width="15" height="15" class="" alt="" loading="lazy"/>
+                                                            <img src="/dkaroma/static/img/icons/wechat.svg" width="15" height="15" class="" alt="" loading="lazy"/>
                                                         </span>
                                                     </a>
                                                 </li>
