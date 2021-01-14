@@ -33,6 +33,8 @@
         'views/ProductDetails.xml',
         'views/Products.xml',
         'views/Login.xml',
+        'views/Article.xml',
+        'views/Discovery.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
