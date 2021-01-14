@@ -35,6 +35,8 @@
         'views/Login.xml',
         'views/Article.xml',
         'views/Discovery.xml',
+        'views/Gifts.xml',
+        'views/News.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
