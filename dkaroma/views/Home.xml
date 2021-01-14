@@ -1771,31 +1771,31 @@
                                                         Delivery in 1-3 workdays.
                                                     </div>
                                                 </span>
-                                    </div>
-                                    </span>
+                                            </div>
+                                        </span>
 
-                                    <span class="total-value js-total-price">
+                                        <span class="total-value js-total-price">
                                             HK$800
                                         </span>
+                                    </div>
                                 </div>
+
+                                <form method="" action="/cart" class="dk-form" novalidate="novalidate">
+                                    <div class="minicart-continueshopping">
+                                        <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
+                                                Continue shopping
+                                            </button>
+                                    </div>
+
+                                    <button type="submit" class="btn btn--submit" tabindex="0">
+                                            Go to cart
+                                    </button>
+                                </form>
                             </div>
-
-                            <form method="" action="/cart" class="dk-form" novalidate="novalidate">
-                                <div class="minicart-continueshopping">
-                                    <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
-                                            Continue shopping
-                                        </button>
-                                </div>
-
-                                <button type="submit" class="btn btn--submit" tabindex="0">
-                                        Go to cart
-                                </button>
-                            </form>
                         </div>
+
+
                     </div>
-
-
-                </div>
 
 
                 <div class="js-modal-overlay modal-overlay">
