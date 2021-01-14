@@ -193,6 +193,7 @@ function getProducts(category) {
 
                 categoryResults.sort((a, b) => (a.category.sequence > b.category.sequence) ? 1 : -1);
                 createProductMenu(categoryResults);
+                $('#mobile-category-accordion').foundation();
             });
 
 
