@@ -75,19 +75,19 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
                                                     Gifts
                                                 </Button>
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" href="/discovery">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';"
                                                     Discovery
                                                 </Button>
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" href="/news">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/news';">
                                                     News
                                                 </Button>
                                         </li>
@@ -142,19 +142,19 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
                                                 Gifts
                                             </Button>
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
                                                 Discovery
                                             </Button>
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link" onclick="location.href='/news';">
                                                 News
                                             </Button>
                                     </li>

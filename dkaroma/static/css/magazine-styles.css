@@ -2938,3 +2938,27 @@ img.i-minMobile {
         display: none !important;
     }
 }
+
+.news-item-description {
+    margin-top: 8px;
+}
+
+@media(min-width:768px) {
+    .news-body {
+        padding-top: 100px;
+    }
+    .news-item-description {
+        margin-top: 12px;
+    }
+}
+
+@media(max-width:767px) {
+    .news-body .m-grid-contain:after,
+    .m-grid-contain:before {
+        background-color: #fff;
+    }
+    .news-item-description p {
+        font-size: 12px;
+        margin: 0;
+    }
+}

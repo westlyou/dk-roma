@@ -900,3 +900,12 @@ input {
 .nav-mobile-layer .nav-mobile-subnav-link {
     text-indent: 0px;
 }
+
+img {
+    height: initial;
+    max-width: initial;
+}
+
+.nav-mobile-layer ul.nav-mobile-subnav {
+    margin-left: 0;
+}
