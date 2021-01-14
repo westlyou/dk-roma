@@ -81,13 +81,13 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link">
+                                            <Button type="button" class="nav-item-link" href="/discovery">
                                                     Discovery
                                                 </Button>
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link">
+                                            <Button type="button" class="nav-item-link" href="/news">
                                                     News
                                                 </Button>
                                         </li>
