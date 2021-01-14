@@ -193,6 +193,7 @@ function getProducts(category) {
 
                 categoryResults.sort((a, b) => (a.category.sequence > b.category.sequence) ? 1 : -1);
                 createProductMenu(categoryResults);
+                $('#mobile-category-accordion').foundation();
             });
 
 
@@ -224,14 +225,107 @@ const urlPaths = {
 function createProductMenu(results) {
 
     results.forEach((item) => {
+
+        let category = item.category.name;
+        let subCategories = item.subCategories.map((item) => item.name);
+
         $('.js-dekstop-product-nav .nav-desktop-layer .nav-inner-subnav').append(
-            renderList(item.category.name, item.subCategories.map((item) => item.name))
+            renderList(category, subCategories)
         );
 
         $('.js-mobile-product-nav .nav-mobile-layer .js-nav-mobile-subnav').append(
-            renderMobileList(item.category.name, item.subCategories.map((item) => item.name))
+            renderMobileList(category, subCategories)
         );
+
+        $('.category-accordion .js-category-accordion-inner').append(
+            renderFooterList(category, subCategories)
+        );
+
+        $('.mobile-category-accordion .accordion').append(
+            renderMobileFooterList(category, subCategories)
+        );
+
     });
+}
+
+
+function renderMobileFooterList(category, subCategories) {
+
+    var createMobileSubCategories = subCategories.map(function(value) {
+
+        let param = encodeURIComponent(value);
+        var link = urlPaths.products + param;
+        return `
+
+        <li>
+            <a href="${link}"> 
+                ${value}
+            </a>
+        </li>
+        
+        `;
+    }).join('');
+
+    return `
+    
+        <li class="accordion-item" data-accordion-item>
+    
+            <a class="accordion-title">${category}</a>
+
+            <div class="accordion-content" data-tab-content>
+                <ul>
+                    ${createMobileSubCategories}
+                </ul>
+            </div>
+     </li>
+
+
+    `;
+
+}
+
+function renderFooterList(category, subCategories) {
+
+    var createSubCategories = subCategories.map(function(value) {
+
+        let param = encodeURIComponent(value);
+        var link = urlPaths.products + param;
+        return `
+
+        <li>
+            <a href="${link}" class="accordion-link-inner "> 
+                ${value}
+            </a>
+        </li>
+        
+        `;
+    }).join('');
+
+
+    return `
+
+    <div class="col-3 col-md-3 col-sm-12 item-holder">
+
+        <div class="accordion-inner ">
+
+            <a class="accordion-head-inner center-mobile">
+                ${category}
+            </a>
+
+            <div class="accordion-content-inner accordion-content ">
+
+                <ul>
+                    ${createSubCategories}
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    `;
+
 }
 
 function renderList(category, subCategories) {

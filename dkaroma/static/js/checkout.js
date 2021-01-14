@@ -118,17 +118,6 @@ $(document).ready(function() {
         $('.checkout-review-box-user-address .number').html($('#phoneNumber').val());
     }
 
-    // function moveToNext() {
-    //     $('.js-step-1-content').addClass('hide');
-    //     $('.js-step-1').removeClass('selected current');
-
-    //     $('.js-step-2').removeClass('disabled');
-    //     $('.js-step-2').addClass('selected current');
-
-    //     $('.js-step-2-content').removeClass('hide');
-
-    //     $('.js-checkout-sticky-button').html('Continue to payment');
-    // }
 
 
 
