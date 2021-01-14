@@ -1155,7 +1155,7 @@
         <record id="custom_article_page" model="website.page">
             <field name="name">DK Aromatherapy</field>
             <field name="website_published">True</field>
-            <field name="url">/article</field>
+            <field name="url">/news</field>
             <field name="view_id" ref="dkaroma.article" />
         </record>
 
