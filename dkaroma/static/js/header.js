@@ -98,6 +98,9 @@ $(document).ready(function() {
 
         $(parent).children('.nav-mobile-layer').toggleClass('visible');
 
+        $(parent).siblings().children('.nav-desktop-layer.visible.opened').find('.nav-desktop-overlay').click(); //
+        $('.body-class').addClass('no-scroll');
+
     });
 
     $('.nav-mobile-layer .js-nav-mobile-subnav').on('click', '.nav-mobile-subnav-link', function(e) {
