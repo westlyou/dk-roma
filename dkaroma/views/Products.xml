@@ -72,10 +72,93 @@
                                             </div>
                                         </li>
 
-                                        <li class="nav-item">
+                                        <li class="nav-item js-mobile-service-nav">
                                             <Button type="button" class="nav-item-link">
                                                     Services
-                                                </Button>
+                                            </Button>
+
+                                            <div class="nav-mobile-layer">
+
+                                                <button type="button" class="nav-back">
+                                                        <span class="sr-only"> 
+                                                            Back
+                                                        </span>
+                                                </button>
+
+                                                <div class="nav-mobile-layer-inner">
+                                                    <ul class="nav-mobile-collections">
+
+                                                        <li>
+
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                    </span>
+
+                                                                    <span class="sr-only">DK Cuppa</span>
+                                                                </span>
+
+                                                                <span class="nav-mobile-collection-title">
+                                                                    DK Cuppa
+                                                                </span>
+                                                            </a>
+
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                    </span>
+
+                                                                <span class="sr-only">Program and Workshop</span>
+                                                                </span>
+
+                                                                <span class="nav-mobile-collection-title">
+                                                                    Program and Workshop
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        
+
+                                                        <li>
+
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                    </span>
+
+                                                                <span class="sr-only">Treatment</span>
+                                                                </span>
+
+                                                                <span class="nav-mobile-collection-title">
+                                                                    Treatment
+                                                                </span>
+                                                            </a>
+
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                    </span>
+
+                                                                <span class="sr-only">Program and Workshop</span>
+                                                                </span>
+
+                                                                <span class="nav-mobile-collection-title">
+                                                                    Service
+                                                                </span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                        
+                                                    </span>
+                                            </div>
+
                                         </li>
 
                                         <li class="nav-item">
@@ -97,6 +180,29 @@
                                         </li>
                                     </ul>
 
+
+                                    <!-- additional list -->
+                                    <ul class="nav-mobile-additional-list js-nav-mobile-additional">
+
+                                        <li class="nav-item">
+                                            <a href="/about" class="nav-item-link">
+                                                About
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="/about" class="nav-item-link">
+                                                Customer Service
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="/login" class="nav-item-link">
+                                                Create a DK account
+                                            </a>
+                                        </li>
+
+                                    </ul>
 
                                 </div>
 
@@ -142,7 +248,192 @@
                                     <li class="nav-item">
                                         <Button type="button" class="nav-item-link">
                                                 Services
-                                            </Button>
+                                        </Button>
+
+                                        <div class="nav-desktop-layer" id="serviceDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                            <div class="nav-first-layer">
+
+                                                <div class="nav-desktop-layer-inner">
+
+                                                    <ul class="nav-inner-subnav nav-desktop-collections">
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>DK Cuppa</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                        DK Cuppa
+                                                                                    </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100"/>
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                        Explore this service
+                                                                                    </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>Program and Workshop</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                        Program and Workshop
+                                                                                    </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100"/>
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                        Explore this service
+                                                                                    </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>Treatment</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                        Treatment
+                                                                                    </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-1.jpeg" class="cover w-100"/>
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                        Explore this service
+                                                                                    </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                                                    </span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                        <span class="sr-only">Close navigation</span>
+                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                </button>
+                                            </div>
+                                        </div>
+
                                     </li>
 
                                     <li class="nav-item">
@@ -158,9 +449,45 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link" onclick="location.href='/news';">
-                                                News
+                                        <Button type="button" class="nav-item-link">
+                                                More
                                             </Button>
+
+
+                                            <div class="nav-desktop-layer" id="moreDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                            <div class="nav-first-layer">
+
+                                                <div class="nav-desktop-layer-inner">
+
+                                                    <ul class="nav-inner-subnav">
+
+                                                        <li>
+                                                            <a href="/news" class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>News</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="/about" class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>About DK Aromatherapy</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                                                    </span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                        <span class="sr-only">Close navigation</span>
+                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </li>
 
                                 </ul>
