@@ -513,3 +513,7 @@
     content: "—";
     font-size: 17px;
 }
+
+.filter-holder .price-filter-wrapper .price-holder input {
+    display: inline-block;
+}

@@ -909,3 +909,130 @@ img {
 .nav-mobile-layer ul.nav-mobile-subnav {
     margin-left: 0;
 }
+
+.btn-bg-light {
+    color: #fff !important;
+}
+
+.btn-bg-contrast {
+    background-image: url(../img/btn-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 25px 5px !important;
+    border: 0px !important;
+    outline: 0 !important;
+    transition: transform 0.5s;
+    background-color: transparent !important;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-details {
+    padding: 0 20px 70px;
+    width: 100%;
+}
+
+.nav-desktop-collections.nav-inner-subnav li {
+    margin-bottom: 2px;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-title,
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-ritual-title {
+    color: #fff;
+    font-family: "EB Garamond", "Times New Roman", serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-title {
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-title:last-child {
+    margin-bottom: 19px;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-collection-flyin-wrap.flyin .nav-desktop-collection-text,
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-text.flyin,
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-ranges .nav-collection-ranges-title.flyin,
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-ranges a.flyin {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.nav-desktop-collections.nav-inner-subnav .image-holder {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+@media (min-width: 1025px) {
+    .nav-desktop-collections.nav-inner-subnav .image-holder {
+        margin-bottom: 31px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-desktop-collections.nav-inner-subnav .image-holder {
+        margin-bottom: 22px;
+    }
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-discover {
+    color: #999;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 17px;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-discover span {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-discover span::after {
+    background-color: #fff;
+    bottom: -4px;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: width .3s cubic-bezier(.32, .24, .15, 1);
+    width: 0;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-discover::after {
+    font-family: iconfont;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+    vertical-align: middle;
+    content: "→";
+    display: inline-block;
+    font-size: 12px;
+    margin: -2px 0 0 10px;
+    /* transform: rotate(-180deg); */
+}
+
+.nav-desktop-collection-details {
+    margin-left: 0;
+    padding-bottom: 70px;
+}
+
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-collection-text,
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-ranges .nav-collection-ranges-title,
+.nav-desktop-collections.nav-inner-subnav .nav-desktop-ranges a {
+    display: block;
+    opacity: 1;
+    /* transform: translateX(-20px); */
+    transition: transform .4s cubic-bezier(.32, .24, .15, 1), opacity .4s cubic-bezier(.32, .24, .15, 1);
+}

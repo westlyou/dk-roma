@@ -184,7 +184,7 @@
         border-bottom: 1px solid rgba(255, 255, 255, .06);
         color: #d8d8d8;
         display: block;
-        font-family: "ClassGarmnd BT", "Times New Roman", serif;
+        font-family: "EB Garamond", "Times New Roman", serif;
         font-size: 20px;
         letter-spacing: 1px;
         line-height: 24px;
@@ -192,7 +192,6 @@
         padding: 18px 0 19px;
         text-align: left;
         text-decoration: none;
-        text-indent: 20px;
         transition: text-indent .3s cubic-bezier(.32, .24, .15, 1), opacity .3s cubic-bezier(.32, .24, .15, 1), transform .3s cubic-bezier(.32, .24, .15, 1);
         transform: translate3d(0, 0, 0);
         width: 100%;
@@ -226,4 +225,79 @@
     .nav-mobile-layer .bottom-gradient-el {
         background: linear-gradient(to bottom, rgba(26, 25, 25, 0) 0, #1a1919 100%);
         bottom: 0;
+    }
+    
+    .nav-mobile-collections {
+        list-style: none;
+        padding-right: 10px;
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 70px;
+    }
+    
+    .nav-mobile-collections li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .nav-mobile-collections .nav-mobile-collections-link {
+        color: #fff;
+        display: block;
+        font-family: "EB Garamond", "Times New Roman", serif;
+        opacity: 1;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        /* transform: translateX(20px); */
+        transition: transform 2s cubic-bezier(.32, .24, .15, 1), opacity 2s cubic-bezier(.32, .24, .15, 1);
+        width: calc(50% - 10px);
+    }
+    
+    .nav-mobile-collections li.flyin .nav-mobile-collections-link {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+    
+    .nav-mobile-collections .image-holder {
+        display: block;
+        margin-bottom: 12px;
+    }
+    
+    .nav-mobile-collections .nav-collection-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .nav-mobile-collections .nav-mobile-collection-title {
+        display: block;
+        font-size: 13px;
+        letter-spacing: 2.8px;
+        line-height: 16px;
+        margin-bottom: 7px;
+    }
+    
+    .nav-mobile .nav-mobile-additional-list {
+        list-style: none;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+    }
+    
+    .nav-mobile-additional-list {
+        margin-top: auto;
+        padding-bottom: 39px;
+    }
+    
+    .nav-mobile-additional-list .nav-item-link {
+        font-size: 18px;
+        letter-spacing: .7px;
+        line-height: 26px;
     }
