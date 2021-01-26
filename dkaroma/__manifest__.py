@@ -37,6 +37,8 @@
         'views/Discovery.xml',
         'views/Gifts.xml',
         'views/News.xml',
+        'views/Services.xml',
+        'views/About.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
