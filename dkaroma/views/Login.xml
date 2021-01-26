@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <template id="login">
+        <template id="web.login">
 
             <head>
                 <title>Login</title>
@@ -66,10 +66,10 @@
                                     Enter your email to log in or to create a new account
                                 </p>
 
-                                            <form action="" method="" class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form" onsubmit="return validateForm();">
+                                            <form class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form"  role="form" t-attf-action="/web/login" method="post" onsubmit="this.action = this.action + location.hash">
                                                 <fieldset>
-
-
+                                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                    <input type="hidden" name="db" t-att-value="request.db" id="db" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" readonly="readonly"/>
                                                     <div class="form-row full-width-row username required">
                                                         <div class="field-wrapper inputfield-row">
 
@@ -79,7 +79,7 @@
 
                                                             <div class="error-message"></div>
 
-                                                            <input id="email" type="text" class="inputfield-text email-input formal required valid" placeholder="Email" />
+                                                            <input id="email" name="login" type="text" class="inputfield-text email-input formal required valid" placeholder="Email" />
 
 
                                                         </div>
@@ -95,9 +95,10 @@
 
                                                             <div class="error-message"></div>
 
-                                                            <input id="password" class="inputfield-text formal required" type="password" placeholder="Password..." />
+                                                            <input id="password" name="password" class="inputfield-text formal required" type="password" placeholder="Password..." />
+                                                            <input type="hidden" name="redirect" t-att-value="redirect"/>
 
-                                                            <button type="button" class="password-reveal js-toggle-password-visibility label-disabled">
+                                                            <button type="submit" class="password-reveal js-toggle-password-visibility label-disabled">
 
                                                                 <span class="icon-password-not-visible password-not-visible password-reveal-icon">
                                                                     <img src="/dkaroma/static/img/icons/eye-off.svg" width="20" height="20" class="d-inline-block align-middle" alt="" loading="lazy" />
@@ -219,19 +220,6 @@
             </body>
 
         </template>
-
-        <record id="custom_login_page" model="website.page">
-            <field name="name">DK Aromatherapy</field>
-            <field name="website_published">True</field>
-            <field name="url">/login</field>
-            <field name="view_id" ref="dkaroma.login" />
-        </record>
-
-        <record id="custom_login_nav" model="website.menu">
-            <field name="name">login</field>
-            <field name="parent_id" ref="website.menu_home" />
-            <field name="page_id" ref="custom_login_page" />
-        </record>
 
     </data>
 </odoo>
