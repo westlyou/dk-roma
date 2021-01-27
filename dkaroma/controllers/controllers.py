@@ -40,7 +40,7 @@ class Dkaroma(http.Controller):
         return request.render("dkaroma.products", {"products": products})
 
     @http.route('/dkaroma/shop/get-product', type='http', auth="public", website=True)
-    def products(self, pid, **post):
+    def product(self, pid, **post):
         product = http.request.env["product.template"].sudo().search([('id', '=', int(pid))], limit=1)
         
         return request.render("dkaroma.product_details", {"product": product})
