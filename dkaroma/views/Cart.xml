@@ -22,6 +22,11 @@
             </head>
 
             <body>
+                <t t-foreach="line" t-as="order.order_line">
+                    <t t-esc="line.product_id.id" /> <!-- product id -->
+                    <t t-esc="line.product_id.name" /> <!-- product name -->
+                </t>
+
 
                 <div id="wrapper" class="pt_cart">
 
