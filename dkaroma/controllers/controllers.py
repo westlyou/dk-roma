@@ -333,8 +333,6 @@ class Dkaroma(http.Controller):
             # force no-cache so IE11 doesn't cache this XHR
             # return request.render("dkaroma.cart_popover", values, headers={'Cache-Control': 'no-cache'})
 
-        print(values)
-        print([line.product_id.name for line in order.order_line])
         return request.render("dkaroma.cart", values)
     
     @http.route('/dkaroma/shop/get-product', type='http', auth="public", website=True)
