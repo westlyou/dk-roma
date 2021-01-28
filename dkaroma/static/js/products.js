@@ -64,6 +64,8 @@ $(document).ready(function() {
 
 // product item add to cart form onsubmit
 function addToCart() {
-    // add to cart
+
+    var form = $(this).closest('form');
+
     return false;
 }

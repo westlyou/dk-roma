@@ -46,14 +46,12 @@ $(document).ready(function() {
         $('.js-open-minicart').click(function(e) {
             e.preventDefault();
             $('.js-minicart-flyout-container').addClass('open');
-            // $('.body-class').addClass('no-scroll');
             disableBodyScroll(targetElement);
             $('.js-modal-overlay').addClass('visible');
         });
 
         $('.js-modal-overlay').click(function(e) {
             $('.flyout-container').removeClass('open');
-            // $('.body-class').removeClass('no-scroll');
             enableBodyScroll(targetElement);
             $('.js-modal-overlay').removeClass('visible');
         });
