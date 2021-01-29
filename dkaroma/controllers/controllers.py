@@ -71,7 +71,7 @@ class TableCompute(object):
                     self.table[(pos // ppr) + y2][(pos % ppr) + x2] = False
             self.table[pos // ppr][pos % ppr] = {
                 'product': p, 'x': x, 'y': y,
-                'class': " ".join(x.html_class for x in p.website_style_ids if x.html_class)
+                # 'class': " ".join(x.html_class for x in p.website_style_ids if x.html_class)
             }
             if index <= ppg:
                 maxy = max(maxy, y + (pos // ppr))
