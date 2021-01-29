@@ -3,7 +3,7 @@
     'name': "DKAroma E-commerce",
 
     'summary': """
-        E-commerce website""",
+        E-commerce website.""",
 
     'description': """
         E-commerce website.
