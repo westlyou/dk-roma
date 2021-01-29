@@ -818,7 +818,7 @@
                                                                         <div class="product-add-to-cart">
 
                                                                             <!-- HIDDEN INPUT FIELDS -->
-                                                                            <input name="pid" type="hidden" t-attr-value="product.id"/>
+                                                                            <input name="pid" type="hidden" t-att-value="product.id"/>
 
                                                                             <div class="btn-wrapper">
                                                                                 <button type="submit" class="btn btn--secondary btn-add-to-cart js-open-minicart">
@@ -860,9 +860,9 @@
                                 <!-- Paginator -->
                                 <div id="paginator" class="paginator-container js-paginator">
 
-                                    <input type="hidden" id="currentPage" t-attr-value="pager['page']['num']" />
-                                    <input type="hidden" id="lastPage" t-attr-value="pager['page_last']['num']" />
-                                    <input type="hidden" id="pageCount" t-attr-value="pager['page_count']" />
+                                    <input type="hidden" id="currentPage" t-att-value="pager['page']['num']" />
+                                    <input type="hidden" id="lastPage" t-att-value="pager['page_last']['num']" />
+                                    <input type="hidden" id="pageCount" t-att-value="pager['page_count']" />
 
 
                                     <div class="paginator-mobile-container align-container-center">
@@ -870,7 +870,7 @@
                                             Page
                                         </label>
 
-                                        <input id="pageInput" type="text" maxlength="3" t-attr-value="pager['page']['num']" class="paginator-mobile-input js-paginator-mobile-input" />
+                                        <input id="pageInput" type="text" maxlength="3" t-att-value="pager['page']['num']" class="paginator-mobile-input js-paginator-mobile-input" />
 
                                         <span t-esc="'of ' + str(pager['page_count'])"/>
 
@@ -891,7 +891,7 @@
                                                 
                                                 <!-- paginator button -->
                                                 <li class="page-item">
-                                                    <a t-attr-href="page['url']" class="btn page-btn">
+                                                    <a t-att-href="page['url']" class="btn page-btn">
                                                         <t t-esc="page['num']" />
                                                     </a>
                                                 </li>
