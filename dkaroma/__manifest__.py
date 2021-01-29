@@ -6,7 +6,7 @@
         E-commerce website""",
 
     'description': """
-        E-commerce website
+        E-commerce website.
     """,
 
     'author': "Ehio Technologies",
