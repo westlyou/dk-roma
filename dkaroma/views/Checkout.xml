@@ -1,0 +1,730 @@
+<odoo>
+    <data>
+        <template id="checkout">
+        
+            <head>
+                <title>Checkout</title>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/modes.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/selectric-styles.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/styles.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/checkout.css"/>
+            </head>
+            
+
+            <body>
+
+    <div class="page-fullheight js-page-fullheight">
+
+        <div id="wrapper" class="pt_checkout">
+
+            <header class="header header--empty-checkout js-header" role="banner">
+
+                <nav class="inner-wrapper">
+
+                    <a href="/" class="header-logo">
+                        <span class="sr-only">DK logo</span>
+                        <img src="/dkaroma/static/img/dk-logo-white.svg"/>
+                    </a>
+
+                    <div class="cs-number--top">
+                        <a href="" target="_blank">
+                            <strong>Need help?</strong> Call +852 2386 3588
+                        </a>
+                    </div>
+
+                </nav>
+
+            </header>
+
+            <div id="main" role="main" class="main checkout-holder">
+
+                <div class="inner-wrapper">
+
+                    <div class="inner-wrapper-small">
+
+                        <div class="page-layout-left">
+
+                            <div class="back-button-wrapper">
+                                <button type="button" class="back-button js-checkout-back">
+                                    <span class="icon">
+                                        <img src="/dkaroma/static/img/icons/chevron-left.svg" width="16" height="16" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                    </span>
+
+                                    Back
+                                </button>
+                            </div>
+
+                            <div class="checkout-step-buttons-holder">
+
+                                <div class="checkout-steps-buttons-list">
+
+                                    <div class="checkout-step-btn">
+                                        <span class="background-line"></span>
+                                        <span class="sr-only">
+                                            Checkout step 1 - Shopping
+                                        </span>
+
+                                        <span class="circle">1</span>
+                                        <span class="text">Shopping</span>
+                                    </div>
+
+                                    <div class="checkout-step-btn selected current js-step-1">
+                                        <span class="background-line"></span>
+                                        <span class="sr-only">
+                                            Checkout step 2 - Delivery
+                                        </span>
+
+                                        <span class="circle">2</span>
+                                        <span class="text">Delivery</span>
+                                    </div>
+
+                                    <div class="checkout-step-btn disabled js-step-2">
+                                        <span class="background-line"></span>
+                                        <span class="sr-only">
+                                            Checkout step 3 - Review
+                                        </span>
+
+                                        <span class="circle">3</span>
+                                        <span class="text">Review</span>
+                                    </div>
+
+                                    <div class="checkout-step-btn disabled js-step-3">
+                                        <span class="background-line"></span>
+                                        <span class="sr-only">
+                                            Checkout step 4 - Payment
+                                        </span>
+
+                                        <span class="circle">4</span>
+                                        <span class="text">Payment</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- inputs -->
+
+                            <div class="checkout-inner">
+
+                                <div class="checkout-step-content checkout-step-1 js-step-1-content js-checkout-step-content">
+
+                                    <h2 class="checkout-step-title">
+                                        <span class="number">2</span>
+                                        <span class="text">
+                                            I'd like to receive my delivery...
+                                        </span>
+                                    </h2>
+
+                                    <form action="" method="" class="dk-form checkout-shipping-form js-checkout-form js-form" novalidate="novalidate">
+
+                                        <fieldset class="checkout-shipping-fieldset js-shipping_address_form">
+
+                                            <div class="checkout-shipping-fieldset-inner">
+                                                <span class="form-divider"></span>
+
+                                                <h3 class="form-subtitle">
+                                                    My order is going to...
+                                                </h3>
+
+                                                <div class="form-row full-width-row required">
+
+                                                    <div class="field-wrapper inputfield-row">
+
+                                                        <label class="">
+                                                            <span>Name</span>
+                                                        </label>
+
+                                                        <div class="error-message">
+                                                        </div>
+
+                                                        <input id="name" class="inputfield-text name formal required" maxlength="255" placeholder="Name"/>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="form-row full-width-row required">
+
+                                                    <div class="field-wrapper inputfield-row">
+
+                                                        <label class="">
+                                                            <span>Location</span>
+                                                        </label>
+
+
+                                                        <select id="location">
+                                                            <option>
+                                                                Hong Kong
+                                                            </option>
+
+                                                            <option>
+                                                                China
+                                                            </option>
+
+                                                            <option>
+                                                                Macau
+                                                            </option>
+
+                                                            <option>
+                                                                Taiwan
+                                                            </option>
+
+                                                            <option>
+                                                                United States
+                                                            </option>
+
+                                                            <option>
+                                                                Canada
+                                                            </option>
+
+                                                            <option>
+                                                                United Kingdom
+                                                            </option>
+
+                                                        </select>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="form-row full-width-row required js-district-input-row hide">
+
+                                                    <div class="field-wrapper inputfield-row">
+
+                                                        <label class="">
+                                                            <span>District</span>
+                                                        </label>
+
+                                                        <select id="district">
+                                                    
+                                                        </select>
+
+                                                    </div>
+
+                                                </div>
+
+
+
+                                                <div class="form-row full-width-row required">
+
+                                                    <div class="field-wrapper inputfield-row">
+
+                                                        <label class="">
+                                                            <span>Address</span>
+                                                        </label>
+
+                                                        <div class="error-message">
+
+                                                        </div>
+
+                                                        <input id="address" class="inputfield-text address formal required" spellcheck="true" name="address" maxlength="255" placeholder="Address"/>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="form-row full-width-row required">
+
+                                                    <div class="field-wrapper inputfield-row">
+
+                                                        <label class="">
+                                                            <span>Phone number</span>
+                                                            <span class="optional-indicator">
+                                                                <!-- Optional -->
+                                                            </span>
+                                                        </label>
+
+                                                        <div class="error-message">
+
+                                                        </div>
+
+                                                        <input id="phoneNumber" class="inputfield-text address formal required" name="phone" maxlength="" placeholder="Phone number"/>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </fieldset>
+
+                                        <span class="form-divider"></span>
+
+                                        <button type="button" class="btn btn-submit btn-loader last js-step-1-continue-btn">
+                                            Continue to review
+                                        </button>
+
+                                    </form>
+
+                                </div>
+
+                                <!-- End: step 1 -->
+
+
+                                <div class="checkout-step-content checkout-step-2 js-step-2-content js-checkout-step-content hide">
+
+                                    <h2 class="checkout-step-title">
+                                        <span class="number">3</span>
+
+                                        <span class="text">
+                                            I've checked the information below and it's good to go
+                                        </span>
+                                    </h2>
+
+                                    <div class="checkout-review-box review-delivery-box js-checkout-review-box">
+
+                                        <h3 class="checkout-review-box-title">
+                                            Delivery information
+                                        </h3>
+
+                                        <div class="checkout-review-box-user-address">
+                                            <div class="read-only-summary">
+
+                                                <span class="name"></span>
+
+                                                <span class="location"></span>
+
+                                                <span class="district"></span>
+
+                                                <span class="address"></span>
+
+                                                <span class="number"></span>
+                                            </div>
+
+                                            <div class="checkout-review-box-footer">
+                                                <button type="button" class="link js-review-edit-address">
+                                                    Edit delivery address
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="shipping-options-container js-shipping-options-container">
+
+                                            <div class="order-shipping cart-delivery-options">
+                                                <label class="cart-delivery-option-label js-checkout-radio js-shipping-option-radio-label">
+
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="terms-and-conditions-info">
+
+                                        <h3>Bank and QR Code Payment</h3>
+                                        <p>Enrollment and Payment Method</p>
+                                        <p>
+                                            Pay in to any branch of Bank of China or HSBC and fax us pay-in slip <strong>2367 2376</strong> or Whatsapp <strong>+852 9788 9378</strong> for confirmation Payable to: DK-Asia.com Ltd. Bank of China Account
+                                            No.: <strong>012-898-1-0162326</strong> , HSBC Account No.：<strong>652590456838</strong> All fees are non-refundable, non-transferable and no class transferring is allowed.
+                                        </p>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-submit js-step-2-continue-btn">
+                                        Continue to payment
+                                    </button>
+
+                                </div>
+
+                                <!-- End: step 2 -->
+
+
+
+                                <div class="checkout-step-content checkout-step-3 js-step-3-content js-checkout-step-content hide">
+
+                                    <h2 class="checkout-step-title">
+                                        <span class="number">4</span>
+
+                                        <span class="text">
+                                            I'd like to pay with...
+                                        </span>
+                                    </h2>
+
+
+                                    <form action="" method="">
+
+                                        <input id="selectedPaymentMethod" type="hidden" name="paymentMethod" value="paypal"/>
+
+                                        <fieldset>
+
+                                            <div class="dk-payment-options payment-method-expanded">
+
+                                                <div class="js-payment-error payment-error error"></div>
+
+                                                <ul class="hpp">
+
+                                                    <li class="js-paypal paypal">
+                                                        <label for="paypal" class="checkout-payment-radio">
+
+                                                            <input type="radio" checked="1" class="input-radio required paypal" name="paymentOption" value="paypal" id="paypal"/>
+
+                                                            <span class="icon-holder">
+                                                                <span class="ico">
+                                                                    <img src="/dkaroma/static/img/icons/paypal.svg" width="35" height="35" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                </span>
+                                                            </span>
+                                                            
+                                                            <span class="payment-method-name">
+                                                                Paypal
+                                                            </span>
+
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="js-stripe stripe">
+                                                        <label for="stripe" class="checkout-payment-radio">
+
+                                                            <input type="radio"  class="input-radio required stripe" name="paymentOption" value="stripe" id="stripe"/>
+
+                                                            <span class="icon-holder">
+                                                                <span class="ico">
+                                                                    <img src="/dkaroma/static/img/icons/stripe.svg" width="60" height="100%" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                </span>
+                                                            </span>
+                                                            
+                                                            <span class="payment-method-name">
+                                                                Stripe
+                                                            </span>
+
+                                                        </label>
+                                                        </li>
+
+                                                        <li class="js-bank bank">
+                                                            <label for="bank" class="checkout-payment-radio">
+    
+                                                                <input type="radio"  class="input-radio required bank" name="paymentOption" value="bank" id="bank"/>
+    
+                                                                <span class="icon-holder">
+                                                                    <span class="ico">
+                                                                        <img src="/dkaroma/static/img/icons/card.svg" width="60" height="100%" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                                    </span>
+                                                                </span>
+                                                                
+                                                                <span class="payment-method-name">
+                                                                    Bank and QR code
+                                                                </span>
+    
+                                                            </label>
+
+                                                            <div class="hpp-expandable-option js-method-extra">
+                                                                <p>Enrollment and Payment Method</p>
+                                                                <p>
+                                                                    Pay in to any branch of Bank of China or HSBC and fax us pay-in slip <strong>2367 2376</strong> or Whatsapp <strong>+852 9788 9378</strong> for confirmation Payable to: DK-Asia.com Ltd.
+                                                                    Bank of China Account No.: <strong>012-898-1-0162326</strong> , HSBC Account No.：<strong>652590456838</strong> All fees are non-refundable, non-transferable and no class transferring
+                                                                    is allowed.
+                                                                </p>
+                                                            </div>
+                                                        </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="form-row form-row-button checkout-payment-button">
+                                                <button type="submit" class="btn btn-submit js-step3-submit">
+                                                    Continue payment
+                                                </button>
+                                            </div>
+
+                                            <!-- Hidden Inputs -->
+                                        </fieldset>
+
+                                    </form>
+
+                                </div>
+
+                                <!-- End: step 3 -->
+
+
+                            </div>
+
+                        </div>
+
+                        <!-- Right layout -->
+                        <aside class="page-layout-right checkout-sidebar-summary js-summary">
+
+                            <div class="checkout-summary-inner white-bg-color">
+
+                                <h3 class="section-header">
+                                    My order summary
+
+                                    <a href="/cart" class="section-header-note button--edit btn--text js-edit-order-summary">
+                                        Edit
+                                    </a>
+                                </h3>
+
+                                <div class="checkout-summary-minicart">
+
+                                    <div class="mini-cart-product js-minicart-product">
+
+                                        <div class="mini-cart-image">
+                                            <a>
+                                                <img src="/dkaroma/static/img/product-sample-2.png"/>
+                                            </a>
+                                        </div>
+
+                                        <div class="mini-cart-info">
+
+                                            <div class="mini-cart-small-title js-mini-cart-small-title">
+
+                                            </div>
+
+                                            <div class="mini-cart-name mini-cart-product-name">
+                                                <a href="">Savage Garden (private collection)</a>
+                                            </div>
+
+                                            <div class="mini-cart-attributes">
+                                            </div>
+
+                                            <div class="mini-cart-details-bottom">
+
+                                                <div class="mini-cart-pricing">
+                                                    <span class="label">Quantity:</span>
+
+                                                    <span class="value">1</span>
+                                                </div>
+
+                                                <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper price-visible">
+                                                    <span class="mini-cart-price">HK$768</span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="mini-cart-product js-minicart-product">
+
+                                        <div class="mini-cart-image">
+                                            <a>
+                                                <img src="/dkaroma/static/img/product-sample.png"/>
+                                            </a>
+                                        </div>
+
+                                        <div class="mini-cart-info">
+
+                                            <div class="mini-cart-small-title js-mini-cart-small-title">
+
+                                            </div>
+
+                                            <div class="mini-cart-name mini-cart-product-name">
+                                                <a href="">Savage Garden</a>
+                                            </div>
+
+                                            <div class="mini-cart-attributes">
+                                            </div>
+
+                                            <div class="mini-cart-details-bottom">
+
+                                                <div class="mini-cart-pricing">
+                                                    <span class="label">Quantity:</span>
+
+                                                    <span class="value">1</span>
+                                                </div>
+
+                                                <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper price-visible">
+                                                    <span class="mini-cart-price">HK$768</span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="checkout-summary-order-totals js-checkout-summary-order-totals">
+
+                                    <div class="order-totals-table">
+
+                                        <div class="order-subtotal">
+                                            <div class="cart-footer__item--name">
+                                                Subtotal
+                                            </div>
+
+                                            <div class="cart-footer__item--val">
+                                                HK$768
+                                            </div>
+                                        </div>
+
+                                        <div class="js-order-summary">
+
+                                            <div class="checkout-summary-price-row order-shipping">
+
+                                                <div class="cart-footer__item--name">
+                                                    Shipping costs
+                                                </div>
+
+                                                <div class="cart-footer__item--val js-shipping-price">
+                                                    Free
+                                                </div>
+
+                                            </div>
+
+                                            <div class="shopping-cart-coupon-row" style="display:block;">
+
+                                                <div class="cart-coupon-code-trigger js-cart-coupon-code-trigger">
+                                                    <label class="cart-coupon-trigger-label">
+                                                        Coupon code
+                                                    </label>
+
+                                                    <button type="button" class="cart-coupon-trigger-btn js-cart-coupon-trigger-btn hide">
+                                                        Apply coupon
+                                                    </button>
+                                                </div>
+
+                                                <div class="cart-coupon-code js-cart-coupon-code" style="display:block;">
+                                                    <form action="" method="" class="js-coupon-form rituals-form">
+
+                                                        <fieldset>
+
+                                                            <div class="coupon-wrapper">
+                                                                <div class="coupon-input">
+                                                                    <div class="coupon-input-field js-coupon-input-field">
+                                                                        <input type="text" class="inputfield-text" maxlength="255"/>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="coupon-btn js-coupon-btn">
+                                                                    <button type="submit" class="btn btn--secondary">
+                                                                        Add code
+                                                                    </button>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </fieldset>
+
+                                                    </form>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="order-total">
+
+                                                <div class="cart-footer-total">
+
+                                                    <div class="cart-footer__item--name">
+                                                        Total
+
+                                                        <span class="taxes-included">(incl. taxes)</span>
+                                                    </div>
+
+                                                    <div class="cart-footer__item--val order-value js-order-value">
+                                                        HK$800
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </aside>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="sticky-bar checkout-sticky-bar js-checkout-sticky-bar">
+
+            <div class="sticky-order-container">
+                <div class="details-container">
+                    <span class="products-number">2</span>
+
+                    <span class="products-label">Products</span>
+
+                </div>
+                <div class="price-container small-price js-sticky-price-container">
+                    <div class="order-total">
+                        <span class="order-total-label">Total</span>
+                        <span class="order-total-amount">
+                            HK$1536
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sticky-button-container">
+                <button type="button" class="btn btn-submit js-checkout-sticky-button">
+                    Continue to review
+                </button>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="main-footer js-main-footer">
+        <div class="footer-bottom-elements ">
+            <div class="inner-wrapper ">
+
+                <p class="copyright ">
+                    All rights reserved © 2020 DK Aromatherapy
+                </p>
+
+                <ul class="bottom-links ">
+
+                    <li>
+                        <a href="# ">
+                            Privacy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="# ">
+                            General terms
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/dkaroma/static/js/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="/dkaroma/static/js/jquery.selectric.js"></script>
+    <script src="/dkaroma/static/js/scrolltoview.js" type="text/javascript"></script>
+    <script src="/dkaroma/static/js/utility.js" type="text/javascript"></script>
+    <script src="/dkaroma/static/js/checkout.js" type="text/javascript"></script>
+</body>
+
+
+        </template>
+
+        <record id="custom_checkout_page" model="website.page">
+            <field name="name">DK Aromatherapy</field>
+            <field name="website_published">True</field>
+            <field name="url">/checkout</field>
+            <field name="view_id" ref="dkaroma.checkout" />
+        </record>
+
+        <record id="custom_checkout_nav" model="website.menu">
+            <field name="name">checkout</field>
+            <field name="parent_id" ref="website.menu_home"/>
+            <field name="page_id" ref="custom_checkout_page"/>
+        </record>
+
+    </data>
+</odoo>
