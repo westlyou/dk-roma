@@ -22,10 +22,11 @@
             </head>
 
             <body>
-                <t t-foreach="line" t-as="order.order_line">
-                    <t t-esc="line.product_id.id" /> <!-- product id -->
-                    <t t-esc="line.product_id.name" /> <!-- product name -->
-                </t>
+                <!-- loop -->
+                <!-- <t t-foreach="line" t-as="order.order_line">
+                    <t t-esc="line.product_id.id" /> 
+                    <t t-esc="line.product_id.name" /> 
+                </t> -->
 
 
                 <div id="wrapper" class="pt_cart">
@@ -198,7 +199,7 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a href="/login" class="nav-item-link">
+                                                <a href="/web/login" class="nav-item-link">
                                                     Create a DK account
                                                 </a>
                                             </li>
@@ -534,7 +535,7 @@
                                     </li>
 
                                     <li class="header--user-account">
-                                        <a class="header--user-account-link" href="/login">
+                                        <a class="header--user-account-link" href="/web/login">
                                             <span class="sr-only">User account</span>
                                             <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
                                         </a>
@@ -588,7 +589,7 @@
                                                 </div>
                                             </div>
 
-                                            <form action="" method="" id="cart--items-form" class="js-cart-items-form cart-items-form dk-forms" novalidate="novalidate">
+                                            <form action="" method="" id="cart--items-form" class="js-cart-items-form cart-items-form dk-forms hide" novalidate="novalidate">
 
                                                 <fieldset>
                                                     <button class="visually-hidden js-cart-submit-btn" type="submit" name="" value="">
@@ -618,151 +619,87 @@
 
                                                             <div class="js-cart-items">
 
-                                                                <div class="shopping-cart-row shopping-cart-row-body js-cart-row">
+                                                                <!-- loop -->
+                                                                <t t-foreach="line" t-as="order.order_line">
+                                                                    <!-- <t t-esc="line.product_id.id" />
+                                                                    <t t-esc="line.product_id.name" />  -->
 
-                                                                    <div class="shopping-cart-cell-image">
-                                                                        <a href="" title="">
-                                                                            <img src="/dkaroma/static/img/product-sample-2.png"/>
-                                                                        </a>
-                                                                    </div>
+                                                                    <!-- cart item -->
+                                                                    <div class="shopping-cart-row shopping-cart-row-body js-cart-row">
 
-                                                                    <div class="shopping-cart-cell-desc js-cart-product-desc">
-
-                                                                        <div class="cart-product-title">
-                                                                            <div class="product-list-item">
-                                                                                <div class="name">
-                                                                                    <a href="">
-                                                                                        Savage Garden (private collection)
-                                                                                    </a>
-                                                                                </div>
-
-                                                                                <div class="description">
-                                                                                    Lorem ipsum desc
-                                                                                </div>
-                                                                            </div>
+                                                                        <div class="shopping-cart-cell-image">
+                                                                            <a href="" title="">
+                                                                                <div t-field="line.product_id.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                                                <!-- <img src="/dkaroma/static/img/product-sample-2.png"/> -->
+                                                                            </a>
                                                                         </div>
 
-                                                                        <div class="cart-product-quantity">
-                                                                            <div class="item-user-buttons js-item-user-buttons">
-                                                                                <!-- hidden input holding product name as value -->
+                                                                        <div class="shopping-cart-cell-desc js-cart-product-desc">
 
-                                                                                <div class="quantity-block">
-                                                                                    <button type="button" class="quantity-button icon-minus2 js-decrement">
-                                                                                        <span class="sr-only">
-                                                                                            Decrease the quantity of products by one.
-                                                                                        </span>
-                                                                                    </button>
+                                                                            <div class="cart-product-title">
+                                                                                <div class="product-list-item">
+                                                                                    <div class="name">
+                                                                                        <a href="">
+                                                                                            <t t-esc="line.product_id.name" />
+                                                                                        </a>
+                                                                                    </div>
 
-                                                                                    <input type="text" size="" maxlength="3" value="1" class="quantity-input js-quantity"/>
-
-                                                                                    <button type="button" class="quantity-button icon-plus2 js-increment">
-                                                                                        <span class="sr-only">
-                                                                                            Increase the quantity of products by one.
-                                                                                        </span>
-                                                                                    </button>
+                                                                                    <div class="description">
+                                                                                        Lorem ipsum desc
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
 
-                                                                        <div class="cart-product-user-controls js-cart-product-user-controls">
-                                                                            <div class="cart-product-controls-inner">
-                                                                                <div class="item-user-actions">
-                                                                                    <button class="link link--large" type="submit" value="Remove" name="">
-                                                                                        <span>Remove</span>
-                                                                                    </button>
+                                                                            <div class="cart-product-quantity">
+                                                                                <div class="item-user-buttons js-item-user-buttons">
+                                                                                    <!-- hidden input holding product name as value -->
+                                                                                    <input name="pid" type="hidden" t-att-value="line.product_id.id"/>
+
+                                                                                    <div class="quantity-block">
+                                                                                        <button type="button" class="quantity-button icon-minus2 js-decrement">
+                                                                                            <span class="sr-only">
+                                                                                                Decrease the quantity of products by one.
+                                                                                            </span>
+                                                                                        </button>
+
+                                                                                        <input type="text" size="" maxlength="3" value="1" class="quantity-input js-quantity"/>
+
+                                                                                        <button type="button" class="quantity-button icon-plus2 js-increment">
+                                                                                            <span class="sr-only">
+                                                                                                Increase the quantity of products by one.
+                                                                                            </span>
+                                                                                        </button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
 
-                                                                        <div class="dangerous-goods-error js-dangerous-goods">
-                                                                            <p class="error"></p>
-                                                                        </div>
-
-                                                                    </div>
-
-                                                                    <div class="shopping-cart-cell-quantity">
-                                                                    </div>
-
-                                                                    <div class="shopping-cart-cell-price js-cart-product-price">
-                                                                        <span class="price-total">
-                                                                            HK$800
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
-
-                                                                <div class="shopping-cart-row shopping-cart-row-body js-cart-row">
-
-                                                                    <div class="shopping-cart-cell-image">
-                                                                        <a href="" title="">
-                                                                            <img src="/dkaroma/static/img/product-sample.png"/>
-                                                                        </a>
-                                                                    </div>
-
-                                                                    <div class="shopping-cart-cell-desc js-cart-product-desc">
-
-                                                                        <div class="cart-product-title">
-                                                                            <div class="product-list-item">
-                                                                                <div class="name">
-                                                                                    <a href="">
-                                                                                        Savage Garden (private collection)
-                                                                                    </a>
-                                                                                </div>
-
-                                                                                <div class="description">
-                                                                                    Lorem ipsum desc
+                                                                            <div class="cart-product-user-controls js-cart-product-user-controls">
+                                                                                <div class="cart-product-controls-inner">
+                                                                                    <div class="item-user-actions">
+                                                                                        <button class="link link--large" type="submit" value="Remove" name="">
+                                                                                            <span>Remove</span>
+                                                                                        </button>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
 
-                                                                        <div class="cart-product-quantity">
-                                                                            <div class="item-user-buttons js-item-user-buttons">
-                                                                                <!-- hidden input holding product name as value -->
-
-                                                                                <div class="quantity-block">
-                                                                                    <button type="button" class="quantity-button icon-minus2 js-decrement">
-                                                                                        <span class="sr-only">
-                                                                                            Decrease the quantity of products by one.
-                                                                                        </span>
-                                                                                    </button>
-
-                                                                                    <input type="text" size="" maxlength="3" value="1" class="quantity-input js-quantity"/>
-
-                                                                                    <button type="button" class="quantity-button icon-plus2 js-increment">
-                                                                                        <span class="sr-only">
-                                                                                            Increase the quantity of products by one.
-                                                                                        </span>
-                                                                                    </button>
-                                                                                </div>
+                                                                            <div class="dangerous-goods-error js-dangerous-goods">
+                                                                                <p class="error"></p>
                                                                             </div>
+
                                                                         </div>
 
-                                                                        <div class="cart-product-user-controls js-cart-product-user-controls">
-                                                                            <div class="cart-product-controls-inner">
-                                                                                <div class="item-user-actions">
-                                                                                    <button class="link link--large" type="submit" value="Remove" name="">
-                                                                                        <span>Remove</span>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
+                                                                        <div class="shopping-cart-cell-quantity">
                                                                         </div>
 
-                                                                        <div class="dangerous-goods-error js-dangerous-goods">
-                                                                            <p class="error"></p>
+                                                                        <div class="shopping-cart-cell-price js-cart-product-price">
+                                                                            <span class="price-total">
+                                                                                <t t-esc="'$' + str(line.product_id.list_price)" />
+                                                                            </span>
                                                                         </div>
 
                                                                     </div>
-
-                                                                    <div class="shopping-cart-cell-quantity">
-                                                                    </div>
-
-                                                                    <div class="shopping-cart-cell-price js-cart-product-price">
-                                                                        <span class="price-total">
-                                                                            HK$800
-                                                                        </span>
-                                                                    </div>
-
-                                                                </div>
+                                                                </t>
 
                                                             </div>
 
@@ -783,7 +720,7 @@
                                         </div>
 
 
-                                        <div class="page-layout-right ">
+                                        <div class="page-layout-right hide">
 
                                             <div class="service-block">
                                             </div>

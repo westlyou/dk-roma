@@ -2429,3 +2429,8 @@ a.link--large {
         display: flex;
     }
 }
+
+.paginator-nav-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
