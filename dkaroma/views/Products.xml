@@ -567,7 +567,8 @@
                                     <div class="inner-indented">
 
                                         <h1 class="heading-h1 txt--white">
-                                            Essential Oils
+                                            <!-- Essential Oils -->
+                                            <t t-esc="product.public.category()" />
                                         </h1>
 
                                     </div>
@@ -777,123 +778,7 @@
                                             </li>
 
 
-                                            <li class="item">
-                                                <div class="product-tile product-detail-tile linked-block">
-
-                                                    <div class="product-image">
-                                                        <a class="thumb-link" href="/product-details">
-                                                            <img src="/dkaroma/static/img/product-sample.png" class="cover" />
-                                                        </a>
-                                                    </div>
-
-                                                    <section class="product-details-content">
-
-                                                        <div class="product-title">
-                                                            <a class="product-name-link">
-                                                                <span>Savage Garden (private collection)</span>
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="short-description">
-                                                            Just the right scent.
-                                                        </div>
-
-                                                        <div class="product-user-actions">
-                                                            <div class="product-price">
-                                                                <span class="product-standard-price">
-                                                                    HK$768
-                                                                </span>
-                                                            </div>
-
-                                                            <form novalidate="novalidate" class="dk-form" onsubmit="return addToCart();">
-                                                                <fieldset>
-                                                                    <div class="product-add-to-cart">
-
-                                                                        <!-- HIDDEN INPUT FIELDS -->
-
-                                                                        <div class="btn-wrapper">
-                                                                            <button type="submit" class="btn btn--secondary btn-add-to-cart js-open-minicart">
-
-                                                                                <span class="icon icon-item icon-item-light">
-                                                                                    <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-                                                                                </span>
-                                                                                Add to cart
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-                                                                </fieldset>
-                                                            </form>
-
-                                                        </div>
-
-                                                        <a href="#" class="link--large view-full-details-link">
-                                                            View full details
-                                                        </a>
-
-                                                    </section>
-
-                                                </div>
-                                            </li>
-
-                                            <!-- item -->
-                                            <li class="item">
-                                                <div class="product-tile product-detail-tile linked-block">
-
-                                                    <div class="product-image">
-                                                        <a class="thumb-link" href="/product-details">
-                                                            <img src="/dkaroma/static/img/product-sample-1.gif" class="cover" />
-                                                        </a>
-                                                    </div>
-
-                                                    <section class="product-details-content">
-
-                                                        <div class="product-title">
-                                                            <a class="product-name-link">
-                                                                <span>Five Element Essential Oil Set (3 pieces)</span>
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="short-description">
-                                                            Essential oils help you balance your body, mind and soul!
-                                                        </div>
-
-                                                        <div class="product-user-actions">
-                                                            <div class="product-price">
-                                                                <span class="product-standard-price">
-                                                                    HK$768
-                                                                </span>
-                                                            </div>
-
-                                                            <form novalidate="novalidate" class="dk-form" onsubmit="return addToCart();">
-                                                                <fieldset>
-                                                                    <div class="product-add-to-cart">
-
-                                                                        <!-- HIDDEN INPUT FIELDS -->
-
-                                                                        <div class="btn-wrapper">
-                                                                            <button type="submit" class="btn btn--secondary btn-add-to-cart js-open-minicart">
-
-                                                                                <span class="icon icon-item icon-item-light">
-                                                                                    <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-                                                                                </span>
-                                                                                Add to cart
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-                                                                </fieldset>
-                                                            </form>
-
-                                                        </div>
-
-                                                        <a href="#" class="link--large view-full-details-link">
-                                                            View full details
-                                                        </a>
-
-                                                    </section>
-
-                                                </div>
-                                            </li>
-
+                                            <!-- render loop -->
                                             <t t-foreach="products" t-as="product">
                                                 
                                                 <!-- item -->
@@ -970,6 +855,58 @@
                                     </div>
 
                                 </div>
+
+
+                                <!-- Paginator -->
+                                <div id="paginator" class="paginator-container js-paginator">
+
+                                    <input type="hidden" id="currentPage" t-attr-value="pager.page.num" />
+                                    <input type="hidden" id="lastPage" t-attr-value="pager.page_last.num" />
+                                    <input type="hidden" id="pageCount" t-attr-value="pager.page_count" />
+
+
+                                    <div class="paginator-mobile-container align-container-center">
+                                        <label>
+                                            Page
+                                        </label>
+
+                                        <input id="pageInput" type="text" maxlength="3" t-attr-value="pager.page.num" class="paginator-mobile-input js-paginator-mobile-input" />
+
+                                        <span t-esc="'of' + ' ' + str(pager.page_count)"/>
+
+                                        <button type="button" class="btn js-mobile-page-btn">
+                                            Go
+                                        </button>
+                                    </div>
+
+                                    <div class="align-container-center">
+
+                                        <a class="paginator-nav-btn js-prev-btn">
+                                            Prev
+                                        </a>
+
+                                        <ul class="paginator-list align-container-center js-paginator-list">
+
+                                            <t t-foreach="pager.pages" t-as="page">
+                                                
+                                                <!-- paginator button -->
+                                                <li class="page-item">
+                                                    <a href="page.url" class="btn page-btn">
+                                                        <t t-esc="page.num" />
+                                                    </a>
+                                                </li>
+                                            </t>
+
+                                        </ul>
+
+                                        <a class="paginator-nav-btn js-next-btn">
+                                            Next
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
                             </div>
 
                         </div>
@@ -1902,6 +1839,7 @@
                 <script src="/dkaroma/static/js/jquery.visible.js" type="text/javascript"></script>
                 <script src="/dkaroma/static/js/scrolltoview.js" type="text/javascript"></script>
                 <script data-main="/dkaroma/static/js/main" src="/dkaroma/static/js/ext/require.js"></script>
+                <script src="/dkaroma/static/js/utility.js" type="text/javascript"></script>
                 <script src="/dkaroma/static/js/products.js" type="text/javascript"></script>
                 <script src="/dkaroma/static/js/script.js" type="text/javascript"></script>
                 <script src="/dkaroma/static/js/header.js" type="text/javascript"></script>

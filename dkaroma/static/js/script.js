@@ -53,11 +53,6 @@ $grid.imagesLoaded().progress(function() {
 });
 
 
-// $(window).on('load', function() {
-//     // $(window).trigger('scroll');
-
-// });
-
 $(document).ready(function() {
 
 

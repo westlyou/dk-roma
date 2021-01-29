@@ -2323,3 +2323,109 @@ a.link--large {
     background-color: transparent;
     padding: 0;
 }
+
+.paginator-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    display: none;
+}
+
+.align-container-center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paginator-list {
+    list-style: none;
+}
+
+.paginator-list .page-item {
+    display: inline-block;
+}
+
+.paginator-list li {
+    margin: 2px 2px;
+}
+
+.paginator-container .btn {
+    border-radius: 0 !important;
+}
+
+.page-btn {
+    min-width: 50px !important;
+    max-width: 50px !important;
+}
+
+.paginator-nav-btn {
+    /* display: inline-block; */
+    background-color: transparent;
+    border: 1px solid #b4b4b4;
+    color: #1a1919;
+    font-family: PT Sans, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    min-width: 150px;
+    max-width: 280px;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    display: none;
+    margin: 2px 2px;
+    border-radius: 0 !important;
+}
+
+.paginator-list li.active-page .btn {
+    background-color: transparent;
+    color: #1a1919f5;
+}
+
+.paginator-list li.active-page .btn:hover {
+    color: #1a1919f5;
+}
+
+.paginator-mobile-container {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.paginator-mobile-container * {
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: .25px;
+    line-height: 35px;
+    margin-right: 5px;
+}
+
+.paginator-mobile-container .btn {
+    min-width: 60px !important;
+    max-width: 60px !important;
+    margin-left: 10px;
+}
+
+.paginator-mobile-input {
+    max-width: 60px;
+    min-width: 60px;
+    color: #1a1919;
+    line-height: 20px;
+    margin: 0 5px;
+    outline: 0;
+    padding: 5px 10px 6px;
+    width: 50px;
+    font-size: 1rem;
+}
+
+@media(max-width: 767px) {
+    .paginator-list {
+        display: none;
+    }
+    .paginator-mobile-container {
+        display: flex;
+    }
+}
