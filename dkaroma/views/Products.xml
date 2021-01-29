@@ -568,7 +568,7 @@
 
                                         <h1 class="heading-h1 txt--white">
                                             <!-- Essential Oils -->
-                                            <t t-esc="product.public.category()" />
+                                            <t t-esc="category.name or 'Collection'" />
                                         </h1>
 
                                     </div>
@@ -860,9 +860,9 @@
                                 <!-- Paginator -->
                                 <div id="paginator" class="paginator-container js-paginator">
 
-                                    <input type="hidden" id="currentPage" t-attr-value="pager.page.num" />
-                                    <input type="hidden" id="lastPage" t-attr-value="pager.page_last.num" />
-                                    <input type="hidden" id="pageCount" t-attr-value="pager.page_count" />
+                                    <input type="hidden" id="currentPage" t-attr-value="pager['page']['num']" />
+                                    <input type="hidden" id="lastPage" t-attr-value="pager['page_last']['num']" />
+                                    <input type="hidden" id="pageCount" t-attr-value="pager['page_count']" />
 
 
                                     <div class="paginator-mobile-container align-container-center">
@@ -870,9 +870,9 @@
                                             Page
                                         </label>
 
-                                        <input id="pageInput" type="text" maxlength="3" t-attr-value="pager.page.num" class="paginator-mobile-input js-paginator-mobile-input" />
+                                        <input id="pageInput" type="text" maxlength="3" t-attr-value="pager['page']['num']" class="paginator-mobile-input js-paginator-mobile-input" />
 
-                                        <span t-esc="'of' + ' ' + str(pager.page_count)"/>
+                                        <span t-esc="'of ' + str(pager['page_count'])"/>
 
                                         <button type="button" class="btn js-mobile-page-btn">
                                             Go
@@ -887,12 +887,12 @@
 
                                         <ul class="paginator-list align-container-center js-paginator-list">
 
-                                            <t t-foreach="pager.pages" t-as="page">
+                                            <t t-foreach="pager['pages']" t-as="page">
                                                 
                                                 <!-- paginator button -->
                                                 <li class="page-item">
-                                                    <a href="page.url" class="btn page-btn">
-                                                        <t t-esc="page.num" />
+                                                    <a href="page['url']" class="btn page-btn">
+                                                        <t t-esc="page['num']" />
                                                     </a>
                                                 </li>
                                             </t>
