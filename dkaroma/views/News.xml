@@ -1,0 +1,1446 @@
+<odoo>
+    <data>
+        <template id="news">
+
+            <head>
+                <title>DK News</title>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/styles.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/mobile-header.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/header.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/magazine-styles.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/main.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/modes.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/selectric-styles.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/filter.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/minicart.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/footer.css"/>
+            </head>
+
+            
+            <body class="zoomed-in body-class">
+
+                <nav class="navbar navbar-expand-lg navbar-dark header bg-header navigation-wrapper fixed-top navbar-fixed-top" id="mainNav">
+                
+
+                    <button class="nav-toggle" type="button" id="navToggleButton">
+                            <span class=""></span>
+                            <img src="/dkaroma/static/img/icons/menu.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                        </button>
+
+                    <nav class="navigation-inner">
+
+                        <div class="inner-wrapper nav-inner-wrapper">
+
+                            <div class="nav-mobile">
+
+                                <div class="nav-mobile-inner">
+
+                                    <ul class="nav-mobile-main-list">
+                                        <li class="nav-item js-mobile-product-nav">
+                                            <button type="button" class="nav-item-link">
+                                                    Products
+                                                </button>
+
+                                            <div class="nav-mobile-layer ">
+
+                                                <button type="button" class="nav-back">
+                                                        <span class="sr-only"> 
+                                                            Back
+                                                        </span>
+                                                </button>
+
+                                                <div class="nav-mobile-layer-inner">
+                                                    <ul class="nav-mobile-subnav js-nav-mobile-subnav">
+                                                        
+                                                    </ul>
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                        
+                                                    </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item js-mobile-service-nav">
+                                            <Button type="button" class="nav-item-link">
+                                                    Services
+                                            </Button>
+
+                                            <div class="nav-mobile-layer">
+
+                                                <button type="button" class="nav-back">
+                                                        <span class="sr-only"> 
+                                                            Back
+                                                        </span>
+                                                </button>
+
+                                                <div class="nav-mobile-layer-inner">
+                                                    <ul class="nav-mobile-collections">
+
+                                                        <li>
+
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                    </span>
+
+                                                                    <span class="sr-only">DK Cuppa</span>
+                                                                </span>
+
+                                                                <span class="nav-mobile-collection-title">
+                                                                    DK Cuppa
+                                                                </span>
+                                                            </a>
+
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                    </span>
+
+                                                                <span class="sr-only">Program and Workshop</span>
+                                                                </span>
+
+                                                                <span class="nav-mobile-collection-title">
+                                                                    Program and Workshop
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        
+
+                                                        <li>
+
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                    </span>
+
+                                                                <span class="sr-only">Treatment</span>
+                                                                </span>
+
+                                                                <span class="nav-mobile-collection-title">
+                                                                    Treatment
+                                                                </span>
+                                                            </a>
+
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                    </span>
+
+                                                                <span class="sr-only">Program and Workshop</span>
+                                                                </span>
+
+                                                                <span class="nav-mobile-collection-title">
+                                                                    Service
+                                                                </span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                        
+                                                    </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
+                                                    Gifts
+                                                </Button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
+                                                    Discovery
+                                                </Button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/news';">
+                                                    News
+                                                </Button>
+                                        </li>
+                                    </ul>
+
+
+                                    <!-- additional list -->
+                                    <ul class="nav-mobile-additional-list js-nav-mobile-additional">
+
+                                        <li class="nav-item">
+                                            <a href="/about" class="nav-item-link">
+                                                About
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="/about" class="nav-item-link">
+                                                Customer Service
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="/login" class="nav-item-link">
+                                                Create a DK account
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="nav-desktop" id="navbarNavDropdown">
+                                <ul class="navbar-nav-fix nav-dektop-main-list">
+                                    <li class="nav-item active js-dekstop-product-nav" id="productNav">
+
+                                        <Button type="button" class="nav-item-link">
+                                                Products
+                                            </Button>
+
+                                        <div class="nav-desktop-layer" id="productDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                            <div class="nav-first-layer">
+
+                                                <div class="nav-desktop-layer-inner">
+
+                                                    <ul class="nav-inner-subnav">
+
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                                                    </span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                        <span class="sr-only">Close navigation</span>
+                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+
+
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link">
+                                                Services
+                                        </Button>
+
+                                        <div class="nav-desktop-layer" id="serviceDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                            <div class="nav-first-layer">
+
+                                                <div class="nav-desktop-layer-inner">
+
+                                                    <ul class="nav-inner-subnav nav-desktop-collections">
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>DK Cuppa</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                        DK Cuppa
+                                                                                    </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100"/>
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                        Explore this service
+                                                                                    </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>Program and Workshop</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                        Program and Workshop
+                                                                                    </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100"/>
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                        Explore this service
+                                                                                    </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>Treatment</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                        Treatment
+                                                                                    </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-1.jpeg" class="cover w-100"/>
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                        Explore this service
+                                                                                    </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                                                    </span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                        <span class="sr-only">Close navigation</span>
+                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
+                                                Gifts
+                                            </Button>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
+                                                Discovery
+                                            </Button>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link">
+                                                More
+                                            </Button>
+
+
+                                            <div class="nav-desktop-layer" id="moreDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                            <div class="nav-first-layer">
+
+                                                <div class="nav-desktop-layer-inner">
+
+                                                    <ul class="nav-inner-subnav">
+
+                                                        <li>
+                                                            <a href="/news" class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>News</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="/about" class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>About DK Aromatherapy</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <span class="bottom-gradient-el">
+                                                    </span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                        <span class="sr-only">Close navigation</span>
+                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <a class="header-logo" href="/">
+                                <span class="sr-only">DK logo</span>
+
+                                <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy"/>
+                            </a>
+
+
+                            <ul class="header-action-links" id="headerActionLinks">
+                                <li class="header--search">
+
+                                    <form class="search-input-wrapper" role="search" action="" method="" name="searchForm" autocomplete="off">
+
+                                        <button type="submit" class="btn-stripped icon-search-magnifier" id="searchInputToggle">
+                                                <span class="sr-only">
+                                                    I'm looking for...
+                                                </span>
+                                                <img src="/dkaroma/static/img/icons/search.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                            </button>
+
+                                        <label class="sr-only" for="headerSearch">
+                                        </label>
+
+                                        <input id="headerSearch" class="search-input" type="text" name="query" placeholder="I'm looking for..." autocomplete="off"/>
+
+                                        <button type="button" class="icon-close search-icon-close" id="closeSearchButton">
+                                                <span class="sr-only">Close search</span>
+                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                            </button>
+
+                                        <button type="button" class="icon-close search-clear">
+                                                <span class="sr-only">Clear text from input</span>
+                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                        </button>
+
+        
+                                    </form>
+                                </li>
+
+                                <li class="header--user-account">
+                                    <a class="header--user-account-link" href="/login">
+                                        <span class="sr-only">User account</span>
+                                        <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                    </a>
+                                </li>
+
+                                <li class="header--cart">
+                                    <a class="header--cart-link js-open-minicart" href="#">
+                                        <span class="sr-only">View Cart</span>
+                                        <img src="/dkaroma/static/img/icons/shopping-bag.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+
+                                        <span class="cart-number">
+                                            2
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </nav>
+
+                <div id="wrapper" class="pt_magazine pt_magazine_article_detail body-container">
+
+                    <div id="main" role="main" class="full-width clearfix">
+
+                        <div id="primary" class="primary-content">
+
+                            <img class="m-detailpage__header" src="/dkaroma/static/img/magazine-header.png"/>
+
+                            <div class="wrapper__inner mag-landing news-header">
+
+                                <div class="mag-landing__body">
+
+                                    <div class="heading-block">
+
+                                        <h1 class="h--large">
+                                            News and Events
+                                        </h1>
+
+                                        <p class="title">
+                                            Updates and more information on dk aromatherapy
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="wrapper__inner news-body">
+
+                                <div class="m-grid-contain">
+
+                                    <article class="m-grid-item">
+
+                                        <a>
+                                            <img class="m-grid-item__image" src="/dkaroma/static/img/article-img.png" alt="thumbnail image"/>
+                                        </a>
+
+                                        <div class="m-grid-item__content">
+
+                                            <header>
+
+
+                                                <h1 class="m-grid-item__title txt--black">
+                                                    <a>News header placeholder</a>
+                                                </h1>
+
+
+                                            </header>
+
+                                            <div class="news-item-description">
+                                                <p>
+                                                    Lorem short description and all essence short description and all essence short description and all essence short description and all essence ipsum with the use of aromatherapy to aid and assist in short description
+                                                </p>
+                                            </div>
+
+                                            <footer>
+
+                                                <a class="read-more last i-minTablet i-minDesktop">
+                                                    Read more
+                                                </a>
+
+                                            </footer>
+
+                                        </div>
+
+                                    </article>
+
+                                    <article class="m-grid-item">
+
+                                        <a>
+                                            <img class="m-grid-item__image" src="/dkaroma/static/img/article-img.png" alt="thumbnail image"/>
+                                        </a>
+
+                                        <div class="m-grid-item__content">
+
+                                            <header>
+
+                                                <!-- <ul class="m-grid-item__category js-mag-links"></ul> -->
+
+                                                <h1 class="m-grid-item__title txt--black">
+                                                    <a>Events header placeholder</a>
+                                                </h1>
+
+
+                                            </header>
+
+                                            <div class="news-item-description">
+                                                <p>
+                                                    Lorem short description essence short description and all essence short description and all essence ipsum with the use of aromatherapy to aid and assist in short description
+                                                </p>
+                                            </div>
+
+                                            <footer>
+
+                                                <a class="read-more last i-minTablet i-minDesktop">
+                                                    Read more
+                                                </a>
+
+                                            </footer>
+
+                                        </div>
+
+                                    </article>
+
+                                    <article class="m-grid-item">
+
+                                        <a>
+                                            <img class="m-grid-item__image" src="/dkaroma/static/img/article-img.png" alt="thumbnail image"/>
+                                        </a>
+
+                                        <div class="m-grid-item__content">
+
+                                            <header>
+
+                                                <!-- <ul class="m-grid-item__category js-mag-links"></ul> -->
+
+                                                <h1 class="m-grid-item__title txt--black">
+                                                    <a>News header placeholder</a>
+                                                </h1>
+
+
+                                            </header>
+
+                                            <div class="news-item-description">
+                                                <p>
+                                                    Lorem short and all essence ipsum with the use of aromatherapy to aid and assist in short description
+                                                </p>
+                                            </div>
+
+                                            <footer>
+
+                                                <a class="read-more last i-minTablet i-minDesktop">
+                                                    Read more
+                                                </a>
+
+                                            </footer>
+
+                                        </div>
+
+                                    </article>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="minicart-flyout-container flyout-content flyout-container js-minicart-flyout-container">
+
+                            <div class="checkout-flyout-inner-content" style="padding-bottom:200px;">
+
+
+                                <section class="flyout-section">
+                                    <div class="js-minicart-not-empty">
+                                        <div class="minicart-flyout-wrapper">
+                                            <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true">
+                                            </span>
+
+                                            <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
+                                                <span class="sr-only">Close flyout</span>
+                                                <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                            </button>
+
+
+                                            <div class="minicart-flyout-header flyout-header">
+                                                <input type="hidden" value="" class="js-cart-quantity" tabindex="-1" />
+
+                                                <div class="centered">
+                                                    <h3 class="flyout-title">
+                                                        My shopping cart
+                                                    </h3>
+
+                                                    <span class="flyout-title-overview js-selected-products">
+                                                        2 products
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="minicart-flyout-body flyout-body">
+
+                                                <div class="top-fade">
+                                                </div>
+
+                                                <div class="wrapper--minicart__list">
+                                                    <!-- Cart Products START -->
+
+                                                    <div class="mini-cart-product">
+                                                        <div class="mini-cart-image">
+                                                            <a href="#">
+                                                                <img src="/dkaroma/static/img/product-sample-1.gif" alt="" class="cover"/>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="mini-cart-info">
+                                                            <div class="mini-cart-small-title">
+                                                                <!-- Five Element Essential Oils -->
+                                                            </div>
+
+                                                            <div class="mini-cart-name mini-cart-product-name">
+                                                                <a href="#" class="">
+                                                                    Five Element Essential Oils
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="mini-cart-attributes">
+                                                            </div>
+
+                                                            <div class="mini-cart-details-bottom">
+                                                                <div class="mini-cart-pricing">
+                                                                    <span class="label">
+                                                                        Quantity:
+                                                                    </span>
+
+                                                                    <span class="value">
+                                                                        1
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
+                                                                    <span class="mini-cart-price">
+                                                                        HK$800
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mini-cart-product">
+                                                        <div class="mini-cart-image">
+                                                            <a href="#">
+                                                                <img src="/dkaroma/static/img/product-sample.png" alt="" class="cover"/>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="mini-cart-info">
+                                                            <div class="mini-cart-small-title">
+                                                                <!-- Five Element Essential Oils -->
+                                                            </div>
+
+                                                            <div class="mini-cart-name mini-cart-product-name">
+                                                                <a href="#" class="">
+                                                                    Savage Garden (private collection)
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="mini-cart-attributes">
+                                                            </div>
+
+                                                            <div class="mini-cart-details-bottom">
+                                                                <div class="mini-cart-pricing">
+                                                                    <span class="label">
+                                                                        Quantity:
+                                                                    </span>
+
+                                                                    <span class="value">
+                                                                        1
+                                                                    </span>
+                                                                </div>
+
+                                                                <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
+                                                                    <span class="mini-cart-price">
+                                                                        HK$768
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="gwp-minicart-wrapper">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="js-minicart-empty hide">
+                                        <div class="minicart-flyout-wrapper js-minicart-flyout-wrapper">
+                                            <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true">
+                                            </span>
+
+                                            <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
+                                                <span class="sr-only">Close flyout</span>
+                                                <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                            </button>
+
+                                            <div class="minicart-flyout-header flyout-header js-flyout-header">
+                                                <input type="hidden" value="" class="js-cart-quantity" tabindex="-1" />
+
+                                                <div class="centered">
+                                                    <h3 class="flyout-title">
+                                                        My shopping cart
+                                                    </h3>
+
+                                                    <span class="flyout-title-overview js-selected-products">
+                                                        2 products
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="mini-cart-empty">
+                                                <div class="mini-cart-empty-text">
+                                                    Oh, it's empty! Let's fill it up with joy
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <div class="minicart-flyout-checkout js-minicart-flyout-checkout has-shadow">
+                                    <div class="total">
+                                        <div class="total-line">
+                                            <span class="total-label">
+                                                Order subtotal
+
+                                                <div class="content-asset">
+                                                    <span class="free-delivery-message">
+                                                        <div class="content-asset">
+                                                            Delivery in 1-3 workdays.
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </span>
+
+                                            <span class="total-value js-total-price">
+                                                HK$800
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <form method="" action="/cart" class="dk-form" novalidate="novalidate">
+                                        <div class="minicart-continueshopping">
+                                            <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
+                                                    Continue shopping
+                                                </button>
+                                        </div>
+
+                                        <button type="submit" class="btn btn--submit" tabindex="0">
+                                                Go to cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="js-modal-overlay modal-overlay">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="stay-informed ">
+
+                    <div class="newsletter-wrapper inner-wrapper ">
+
+                        <div>
+                            <h3>Stay up to date</h3>
+                        </div>
+
+                        <div class="text-form-container ">
+
+                            <p>Sign up for the latest news and offers from DK Aromatherapy. Your personal data will be used as described in our privacy policy. You can unsubscribe at any time</p>
+
+                            <div class="input-container emailform ">
+
+                                <form>
+
+                                    <div class="form-row ">
+
+                                        <div class="form-row full-width-row required ">
+
+                                            <div class="field-wrapper inputfield-row ">
+
+                                                <label for="newsletterEmail ">
+
+                                                    <span>YOUR EMAIL ADDRESS</span>
+
+                                                </label>
+
+                                                <div class="error-message "> </div>
+
+                                                <input class="inputfield-text formal email required " type="email " id="newsletterEmail " name="newsletterEmail " data-required-text="This field is required "/>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="button-wrapper ">
+
+                                            <button class="btn--white btn-bg-contrast btn-bg-light btn last " type="submit " name="newsletterSubmit " tabindex="0 ">
+                                                Subscribe
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="main-footer ">
+
+                    <div class="footer-top-elements ">
+
+                        <div class="inner-wrapper ">
+
+                            <h3 class="footer-title center-mobile">Or shop by category</h3>
+
+
+                            <div class="category-accordion accordion-wrapper footer-accordion">
+
+                                <div class="row item-grid js-category-accordion-inner">
+                                    <!-- categories -->
+                                </div>
+
+                            </div>
+
+
+                            <div class="mobile-category-accordion">
+
+                                <ul class="accordion" data-accordion="1" data-allow-all-closed="true" id="mobile-category-accordion">
+                                    <!-- categories-mobile -->
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-middle-elements ">
+
+                        <div class="inner-wrapper ">
+
+                            <div class="accordion-wrapper footer-accordion ">
+
+                                <div class="row item-grid ">
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Customer Service
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Shipping and returns
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            FAQ
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Contact
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Cookie policy
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Cookie setting
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Discovery
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible center-mobile">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Podcast
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Blog
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Video
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Book
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Our Brand
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK Aromatherapy
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK Cuppa Tea
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            KAT LAI
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                About Us
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            About DK
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Store location
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Department stores
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Brand story   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Mission   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            CSR and ESG   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK equilibrum people/plant   
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row item-grid ">
+
+                                    <div class="col-3 col-lg-9 col-md-8 col-ms-12 item-holder footer-column ">
+
+                                        <div class="footer-contact ">
+
+                                            <h3 class="center-mobile">Need help?</h3>
+
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Telephone
+                                                        </td>
+
+                                                        <td>
+                                                            +852 2386 3588
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Whatsapp
+                                                        </td>
+
+                                                        <td>
+                                                            +852 9788 9378
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Email
+                                                        </td>
+
+                                                        <td>
+                                                            dk@aroma.com.hk
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                        <div class="icons-section footer-column social--icons table">
+
+                                            <ul class="social__icons">
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-facebook-f "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-instagram "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-youtube "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-whatsapp "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-linkedin "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="far fa-envelope "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a class="wechat">
+                                                        <span class="icon icon-item">
+                                                            <img src="/dkaroma/static/img/icons/wechat.svg" width="15" height="15" class="" alt="" loading="lazy"/>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-twitter "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-telegram "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-google-plus "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+
+                                                </li>
+
+                                            </ul>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-lg-3 col-md-4 col-sm-12 item-holder ">
+
+                                        <div class="footer-right-side ">
+
+                                            <div class="footer-column ">
+
+                                                <h3 class="h3 ">
+                                                    Choose your country and language
+                                                </h3>
+
+                                                <div class="wrapper__country-selector ">
+
+                                                    <label for="countrySelector ">
+                                                        Country
+                                                    </label>
+
+                                                    <div class="country-selector select-box__container ">
+
+                                                        <select id="countrySelector" class="custom-select select--custom country select-box js-custom-select js-country_select" style="background-image: url('https://www.rituals.com/on/demandware.static/Sites-Global-Site/-/en_NL/v1607668413458/images/flags/nl.svg?select=true');">
+                                                            <option>
+                                                                English (English)
+                                                            </option>
+
+                                                            <option>
+                                                                Netherlands (English)
+                                                            </option>
+                                                        </select>
+
+                                                        <em class="arrow-down ">
+                                                            <i></i>
+                                                        </em>
+
+                                                    </div>
+
+                                                    <label for="languageSelector ">
+                                                        Language
+                                                    </label>
+
+                                                    <div class="country-selector select-box__container ">
+                                                        <select id="languageSelector" class="custom-select select--custom language select-box js-custom-select js-language_select" style="background-image: url('https://www.rituals.com/on/demandware.static/Sites-Global-Site/-/en_NL/v1607668413458/images/flags/gb.svg?select=true');">
+                                                            <option>
+                                                                English
+                                                            </option>
+
+                                                            <option>
+                                                                Netherlands
+                                                            </option>
+                                                        </select>
+
+                                                        <em class="arrow-down ">
+                                                            <i></i>
+                                                        </em>
+
+                                                    </div>
+
+                                                    <a href="# " class="btn--text fright ">
+                                                        Continue
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-bottom-elements ">
+                        <div class="inner-wrapper ">
+
+                            <p class="copyright ">
+                                All rights reserved © 2020 DK Aromatherapy
+                            </p>
+
+                            <ul class="bottom-links ">
+
+                                <li>
+                                    <a href="# ">
+                                        Privacy
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="# ">
+                                        General terms
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </footer>
+
+
+                <script src="/dkaroma/static/js/jquery.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.2.0/what-input.min.js" integrity="sha256-7wGy9IEPmo9Jk/I86siWbZFPeclfjFitAAfmvxBUc7k=" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+                <script src="/dkaroma/static/js/jquery.selectric.js"></script>
+                <script data-main="/dkaroma/static/js/main" src="/dkaroma/static/js/ext/require.js"></script>
+                <script src="/dkaroma/static/js/header.js" type="text/javascript"></script>
+            </body>
+
+        </template>
+
+        <record id="custom_news_page" model="website.page">
+            <field name="name">DK Aromatherapy</field>
+            <field name="website_published">True</field>
+            <field name="url">/news</field>
+            <field name="view_id" ref="dkaroma.news" />
+        </record>
+
+        <record id="custom_news_nav" model="website.menu">
+            <field name="name">news</field>
+            <field name="parent_id" ref="website.menu_home" />
+            <field name="page_id" ref="custom_news_page" />
+        </record>
+
+    </data>
+</odoo>

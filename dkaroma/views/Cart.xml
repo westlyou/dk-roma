@@ -1,0 +1,1535 @@
+<odoo>
+    <data>
+        <template id="cart">
+        
+            <head>
+                <title>Cart</title>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/styles.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/mobile-header.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/header.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/cart.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/footer.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/modes.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/selectric-styles.css"/>
+                <link rel="stylesheet" href="/dkaroma/static/css/sticky-bar.css"/>
+            </head>
+
+            <body>
+                <t t-foreach="line" t-as="order.order_line">
+                    <t t-esc="line.product_id.id" /> <!-- product id -->
+                    <t t-esc="line.product_id.name" /> <!-- product name -->
+                </t>
+
+
+                <div id="wrapper" class="pt_cart">
+
+                    <!-- nav -->
+                    <nav class="navbar navbar-expand-lg navbar-dark header bg-header navigation-wrapper fixed-top navbar-fixed-top" id="mainNav">
+                    
+
+                        <button class="nav-toggle" type="button" id="navToggleButton">
+                                <span class=""></span>
+                                <img src="/dkaroma/static/img/icons/menu.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                            </button>
+
+                        <nav class="navigation-inner">
+
+                            <div class="inner-wrapper nav-inner-wrapper">
+
+                                <div class="nav-mobile">
+
+                                    <div class="nav-mobile-inner">
+
+                                        <ul class="nav-mobile-main-list">
+                                            <li class="nav-item js-mobile-product-nav">
+                                                <button type="button" class="nav-item-link">
+                                                        Products
+                                                    </button>
+
+                                                <div class="nav-mobile-layer ">
+
+                                                    <button type="button" class="nav-back">
+                                                            <span class="sr-only"> 
+                                                                Back
+                                                            </span>
+                                                    </button>
+
+                                                    <div class="nav-mobile-layer-inner">
+                                                        <ul class="nav-mobile-subnav js-nav-mobile-subnav">
+                                                            
+                                                        </ul>
+                                                    </div>
+
+                                                    <span class="bottom-gradient-el">
+                            
+                                                        </span>
+                                                </div>
+                                            </li>
+
+                                            <li class="nav-item js-mobile-service-nav">
+                                                <Button type="button" class="nav-item-link">
+                                                        Services
+                                                </Button>
+
+                                                <div class="nav-mobile-layer">
+
+                                                    <button type="button" class="nav-back">
+                                                            <span class="sr-only"> 
+                                                                Back
+                                                            </span>
+                                                    </button>
+
+                                                    <div class="nav-mobile-layer-inner">
+                                                        <ul class="nav-mobile-collections">
+
+                                                            <li>
+
+                                                                <a href="/services" class="nav-mobile-collections-link">
+                                                                    <span class="image-holder">
+                                                                        <span class="cover-wrapper nav-collection-image">
+                                                                            <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                        </span>
+
+                                                                        <span class="sr-only">DK Cuppa</span>
+                                                                    </span>
+
+                                                                    <span class="nav-mobile-collection-title">
+                                                                        DK Cuppa
+                                                                    </span>
+                                                                </a>
+
+                                                                <a href="/services" class="nav-mobile-collections-link">
+                                                                    <span class="image-holder">
+                                                                        <span class="cover-wrapper nav-collection-image">
+                                                                            <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                        </span>
+
+                                                                    <span class="sr-only">Program and Workshop</span>
+                                                                    </span>
+
+                                                                    <span class="nav-mobile-collection-title">
+                                                                        Program and Workshop
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            
+
+                                                            <li>
+
+                                                                <a href="/services" class="nav-mobile-collections-link">
+                                                                    <span class="image-holder">
+                                                                        <span class="cover-wrapper nav-collection-image">
+                                                                            <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                        </span>
+
+                                                                    <span class="sr-only">Treatment</span>
+                                                                    </span>
+
+                                                                    <span class="nav-mobile-collection-title">
+                                                                        Treatment
+                                                                    </span>
+                                                                </a>
+
+                                                                <a href="/services" class="nav-mobile-collections-link">
+                                                                    <span class="image-holder">
+                                                                        <span class="cover-wrapper nav-collection-image">
+                                                                            <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                        </span>
+
+                                                                    <span class="sr-only">Program and Workshop</span>
+                                                                    </span>
+
+                                                                    <span class="nav-mobile-collection-title">
+                                                                        Service
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+
+                                                    <span class="bottom-gradient-el">
+                            
+                                                        </span>
+                                                </div>
+
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
+                                                        Gifts
+                                                    </Button>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
+                                                        Discovery
+                                                    </Button>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <Button type="button" class="nav-item-link" onclick="location.href='/news';">
+                                                        News
+                                                    </Button>
+                                            </li>
+                                        </ul>
+
+
+                                        <!-- additional list -->
+                                        <ul class="nav-mobile-additional-list js-nav-mobile-additional">
+
+                                            <li class="nav-item">
+                                                <a href="/about" class="nav-item-link">
+                                                    About
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/about" class="nav-item-link">
+                                                    Customer Service
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="/login" class="nav-item-link">
+                                                    Create a DK account
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="nav-desktop" id="navbarNavDropdown">
+                                    <ul class="navbar-nav-fix nav-dektop-main-list">
+                                        <li class="nav-item active js-dekstop-product-nav" id="productNav">
+
+                                            <Button type="button" class="nav-item-link">
+                                                    Products
+                                                </Button>
+
+                                            <div class="nav-desktop-layer" id="productDiv">
+                                                <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                                <div class="nav-first-layer">
+
+                                                    <div class="nav-desktop-layer-inner">
+
+                                                        <ul class="nav-inner-subnav">
+
+
+                                                        </ul>
+
+                                                    </div>
+
+                                                    <span class="bottom-gradient-el">
+                                                        </span>
+
+                                                    <button type="button" class="close-desktop-nav return-scroll">
+                                                            <span class="sr-only">Close navigation</span>
+                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+
+
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link">
+                                                    Services
+                                            </Button>
+
+                                            <div class="nav-desktop-layer" id="serviceDiv">
+                                                <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                                <div class="nav-first-layer">
+
+                                                    <div class="nav-desktop-layer-inner">
+
+                                                        <ul class="nav-inner-subnav nav-desktop-collections">
+
+                                                            <li>
+
+                                                                <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                    <span>DK Cuppa</span>
+                                                                </a>
+
+                                                                <div class="nav-desktop-subnav-wrap">
+
+                                                                    <div class="nav-desktop-subnav-slide-in">
+
+                                                                        <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                        </button>
+
+                                                                        <div class="nav-desktop-subnav-inner">
+
+                                                                            <ul class="nav-desktop-collection-details">
+
+                                                                                <li>
+
+                                                                                    <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                        <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                            DK Cuppa
+                                                                                        </span>
+                                                                                    </div>
+
+                                                                                    <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                        <span class="cover-wrapper nav-collection-image">
+                                                                                            <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100"/>
+                                                                                        </span>
+
+                                                                                        <span class="sr-only">Service</span>
+                                                                                    </a>
+
+                                                                                    <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                        <span>
+                                                                                            Explore this service
+                                                                                        </span>
+                                                                                    </a>
+
+                                                                                </li>
+
+                                                                            </ul>
+
+                                                                        </div>
+
+                                                                        <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+
+                                                            <li>
+
+                                                                <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                    <span>Program and Workshop</span>
+                                                                </a>
+
+                                                                <div class="nav-desktop-subnav-wrap">
+
+                                                                    <div class="nav-desktop-subnav-slide-in">
+
+                                                                        <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                        </button>
+
+                                                                        <div class="nav-desktop-subnav-inner">
+
+                                                                            <ul class="nav-desktop-collection-details">
+
+                                                                                <li>
+
+                                                                                    <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                        <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                            Program and Workshop
+                                                                                        </span>
+                                                                                    </div>
+
+                                                                                    <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                        <span class="cover-wrapper nav-collection-image">
+                                                                                            <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100"/>
+                                                                                        </span>
+
+                                                                                        <span class="sr-only">Service</span>
+                                                                                    </a>
+
+                                                                                    <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                        <span>
+                                                                                            Explore this service
+                                                                                        </span>
+                                                                                    </a>
+
+                                                                                </li>
+
+                                                                            </ul>
+
+                                                                        </div>
+
+                                                                        <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+
+                                                            <li>
+
+                                                                <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                    <span>Treatment</span>
+                                                                </a>
+
+                                                                <div class="nav-desktop-subnav-wrap">
+
+                                                                    <div class="nav-desktop-subnav-slide-in">
+
+                                                                        <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                            <span class="sr-only">Close navigation</span>
+                                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                        </button>
+
+                                                                        <div class="nav-desktop-subnav-inner">
+
+                                                                            <ul class="nav-desktop-collection-details">
+
+                                                                                <li>
+
+                                                                                    <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                        <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                            Treatment
+                                                                                        </span>
+                                                                                    </div>
+
+                                                                                    <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                        <span class="cover-wrapper nav-collection-image">
+                                                                                            <img src="/dkaroma/static/img/car-1.jpeg" class="cover w-100"/>
+                                                                                        </span>
+
+                                                                                        <span class="sr-only">Service</span>
+                                                                                    </a>
+
+                                                                                    <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                        <span>
+                                                                                            Explore this service
+                                                                                        </span>
+                                                                                    </a>
+
+                                                                                </li>
+
+                                                                            </ul>
+
+                                                                        </div>
+
+                                                                        <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+
+                                                    <span class="bottom-gradient-el">
+                                                        </span>
+
+                                                    <button type="button" class="close-desktop-nav return-scroll">
+                                                            <span class="sr-only">Close navigation</span>
+                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
+                                                    Gifts
+                                                </Button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
+                                                    Discovery
+                                                </Button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link">
+                                                    More
+                                                </Button>
+
+
+                                                <div class="nav-desktop-layer" id="moreDiv">
+                                                <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                                <div class="nav-first-layer">
+
+                                                    <div class="nav-desktop-layer-inner">
+
+                                                        <ul class="nav-inner-subnav">
+
+                                                            <li>
+                                                                <a href="/news" class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                    <span>News</span>
+                                                                </a>
+                                                            </li>
+
+                                                            <li>
+                                                                <a href="/about" class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                    <span>About DK Aromatherapy</span>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+
+                                                    </div>
+
+                                                    <span class="bottom-gradient-el">
+                                                        </span>
+
+                                                    <button type="button" class="close-desktop-nav return-scroll">
+                                                            <span class="sr-only">Close navigation</span>
+                                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+
+                                <a class="header-logo" href="/">
+                                    <span class="sr-only">DK logo</span>
+
+                                    <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy"/>
+                                </a>
+
+
+                                <ul class="header-action-links" id="headerActionLinks">
+                                    <li class="header--search">
+
+                                        <form class="search-input-wrapper" role="search" action="" method="" name="searchForm" autocomplete="off">
+
+                                            <button type="submit" class="btn-stripped icon-search-magnifier" id="searchInputToggle">
+                                                    <span class="sr-only">
+                                                        I'm looking for...
+                                                    </span>
+                                                    <img src="/dkaroma/static/img/icons/search.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                </button>
+
+                                            <label class="sr-only" for="headerSearch">
+                                            </label>
+
+                                            <input id="headerSearch" class="search-input" type="text" name="query" placeholder="I'm looking for..." autocomplete="off"/>
+
+                                            <button type="button" class="icon-close search-icon-close" id="closeSearchButton">
+                                                    <span class="sr-only">Close search</span>
+                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                                </button>
+
+                                            <button type="button" class="icon-close search-clear">
+                                                    <span class="sr-only">Clear text from input</span>
+                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                            </button>
+
+            
+                                        </form>
+                                    </li>
+
+                                    <li class="header--user-account">
+                                        <a class="header--user-account-link" href="/login">
+                                            <span class="sr-only">User account</span>
+                                            <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                        </a>
+                                    </li>
+
+                                    <li class="header--cart">
+                                        <a class="header--cart-link js-open-minicart" href="#">
+                                            <span class="sr-only">View Cart</span>
+                                            <img src="/dkaroma/static/img/icons/shopping-bag.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+
+                                            <span class="cart-number">
+                                                2
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </nav>
+
+
+
+                    <div id="main" role="main" class="page-content body-container">
+
+                        <div id="primary" class="primary-content">
+
+                            <div class="cart-page-wrapper">
+
+                                <div class="cart-inner-wrapper">
+
+                                    <div class="inner-wrapper-small cart-inner-wrapper-small">
+
+                                        <div class="page-layout-left">
+
+                                            <div class="shopping-cart-header">
+                                                <h1 class="shopping-cart-title">
+                                                    My shopping cart
+                                                </h1>
+
+                                                <div class="shopping-cart-empty hide">
+                                                    <div class="empty-cart-text">
+                                                        Oh, it's empty! Let's fill it with joy
+                                                    </div>
+
+                                                    <hr/>
+                                                </div>
+
+                                                <div class="shopping-cart-product-number ">
+                                                    <span class="js-cart-product-number">2 products</span>
+                                                </div>
+                                            </div>
+
+                                            <form action="" method="" id="cart--items-form" class="js-cart-items-form cart-items-form dk-forms" novalidate="novalidate">
+
+                                                <fieldset>
+                                                    <button class="visually-hidden js-cart-submit-btn" type="submit" name="" value="">
+                                                    </button>
+
+
+                                                    <div class="shopping-cart-block">
+
+
+                                                        <div class="shopping-cart js-shopping-cart">
+                                                            <div class="shopping-cart-row shopping-cart-row-head">
+                                                                <span class="shopping-cart-cell shopping-cart-cell-image">
+                                                                    <strong>Products</strong>
+                                                                </span>
+
+                                                                <span class="shopping-cart-cell shopping-cart-cell-quantity">
+                                                                    <span>Qty</span>
+                                                                </span>
+
+                                                                <span class="shopping-cart-cell shopping-cart-cell-price">
+                                                                    Price
+                                                                </span>
+                                                            </div>
+
+
+                                                            <!-- start cart item -->
+
+                                                            <div class="js-cart-items">
+
+                                                                <div class="shopping-cart-row shopping-cart-row-body js-cart-row">
+
+                                                                    <div class="shopping-cart-cell-image">
+                                                                        <a href="" title="">
+                                                                            <img src="/dkaroma/static/img/product-sample-2.png"/>
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div class="shopping-cart-cell-desc js-cart-product-desc">
+
+                                                                        <div class="cart-product-title">
+                                                                            <div class="product-list-item">
+                                                                                <div class="name">
+                                                                                    <a href="">
+                                                                                        Savage Garden (private collection)
+                                                                                    </a>
+                                                                                </div>
+
+                                                                                <div class="description">
+                                                                                    Lorem ipsum desc
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="cart-product-quantity">
+                                                                            <div class="item-user-buttons js-item-user-buttons">
+                                                                                <!-- hidden input holding product name as value -->
+
+                                                                                <div class="quantity-block">
+                                                                                    <button type="button" class="quantity-button icon-minus2 js-decrement">
+                                                                                        <span class="sr-only">
+                                                                                            Decrease the quantity of products by one.
+                                                                                        </span>
+                                                                                    </button>
+
+                                                                                    <input type="text" size="" maxlength="3" value="1" class="quantity-input js-quantity"/>
+
+                                                                                    <button type="button" class="quantity-button icon-plus2 js-increment">
+                                                                                        <span class="sr-only">
+                                                                                            Increase the quantity of products by one.
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="cart-product-user-controls js-cart-product-user-controls">
+                                                                            <div class="cart-product-controls-inner">
+                                                                                <div class="item-user-actions">
+                                                                                    <button class="link link--large" type="submit" value="Remove" name="">
+                                                                                        <span>Remove</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="dangerous-goods-error js-dangerous-goods">
+                                                                            <p class="error"></p>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="shopping-cart-cell-quantity">
+                                                                    </div>
+
+                                                                    <div class="shopping-cart-cell-price js-cart-product-price">
+                                                                        <span class="price-total">
+                                                                            HK$800
+                                                                        </span>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="shopping-cart-row shopping-cart-row-body js-cart-row">
+
+                                                                    <div class="shopping-cart-cell-image">
+                                                                        <a href="" title="">
+                                                                            <img src="/dkaroma/static/img/product-sample.png"/>
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div class="shopping-cart-cell-desc js-cart-product-desc">
+
+                                                                        <div class="cart-product-title">
+                                                                            <div class="product-list-item">
+                                                                                <div class="name">
+                                                                                    <a href="">
+                                                                                        Savage Garden (private collection)
+                                                                                    </a>
+                                                                                </div>
+
+                                                                                <div class="description">
+                                                                                    Lorem ipsum desc
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="cart-product-quantity">
+                                                                            <div class="item-user-buttons js-item-user-buttons">
+                                                                                <!-- hidden input holding product name as value -->
+
+                                                                                <div class="quantity-block">
+                                                                                    <button type="button" class="quantity-button icon-minus2 js-decrement">
+                                                                                        <span class="sr-only">
+                                                                                            Decrease the quantity of products by one.
+                                                                                        </span>
+                                                                                    </button>
+
+                                                                                    <input type="text" size="" maxlength="3" value="1" class="quantity-input js-quantity"/>
+
+                                                                                    <button type="button" class="quantity-button icon-plus2 js-increment">
+                                                                                        <span class="sr-only">
+                                                                                            Increase the quantity of products by one.
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="cart-product-user-controls js-cart-product-user-controls">
+                                                                            <div class="cart-product-controls-inner">
+                                                                                <div class="item-user-actions">
+                                                                                    <button class="link link--large" type="submit" value="Remove" name="">
+                                                                                        <span>Remove</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="dangerous-goods-error js-dangerous-goods">
+                                                                            <p class="error"></p>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="shopping-cart-cell-quantity">
+                                                                    </div>
+
+                                                                    <div class="shopping-cart-cell-price js-cart-product-price">
+                                                                        <span class="price-total">
+                                                                            HK$800
+                                                                        </span>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <!-- end cart item -->
+
+                                                        </div>
+
+
+                                                        <!-- giftwrapp section -->
+
+
+                                                    </div>
+
+                                                </fieldset>
+
+                                            </form>
+
+                                        </div>
+
+
+                                        <div class="page-layout-right ">
+
+                                            <div class="service-block">
+                                            </div>
+
+                                            <div class="shopping-cart-bottom white-bg-color">
+
+                                                <div class="shopping-cart-footer">
+
+                                                    <div class="cart-side-summary js-order-totals">
+
+                                                        <div class="order-totals-table">
+
+                                                            <div class="order-subtotal">
+                                                                <div class="cart-footer__item--name">
+                                                                    Subtotal
+                                                                </div>
+
+                                                                <!-- Subtotal -->
+                                                                <div class="cart-footer__item--val">
+                                                                    HK$800
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="content-asset">
+                                                                <span class="order-shipping-message">
+                                                                    Delivery in 3-4 working days.
+                                                                
+                                                                </span>
+                                                            </div>
+
+                                                            <!-- Shipping options -->
+                                                            <div class="shipping-options-container js-shipping-options-container">
+
+                                                                <div class="js-shipping-options-area">
+
+                                                                    
+                                                                    <div class="order-shipping cart-delivery-options">
+                                                                        <label class="cart-delivery-option-label js-checkout-radio js-shipping-option-radio-label">
+
+                                                                            <input type="radio" name="shipping-options" checked="1"/>
+
+                                                                            <div class="option-title">
+                                                                                Express
+                                                                            </div>
+
+                                                                            <div class="option-price">
+                                                                                HK$311
+                                                                            </div>
+
+                                                                        </label>
+                                                                    </div>
+
+                                                                    <div class="order-shipping cart-delivery-options">
+                                                                        <label class="cart-delivery-option-label js-checkout-radio js-shipping-option-radio-label">
+
+                                                                            <input type="radio" name="shipping-options"/>
+
+                                                                            <div class="option-title">
+                                                                                Air Mail
+                                                                            </div>
+
+                                                                            <div class="option-price">
+                                                                                HK$209
+                                                                            </div>
+
+                                                                        </label>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <span id="shippingOptionsError" class="error error-text hide"></span>
+
+                                                                <div class="delivery-postal-code js-delivery-postal-code">
+
+                                                                    <div class="delivery-postal-code-head js-postal-code-edit-wrapper hide">
+                                                                        <span>
+                                                                            <strong>Delivery based on XXXXXX</strong>
+                                                                        </span>
+
+                                                                        <button type="button" class="delivery-postal-code-edit js-delivery-postal-code-edit">
+                                                                            Change location
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <p class="delivery-usp-heading js-delivery-usp-heading hide">
+                                                                        Would you like to see more delivery options near you?
+                                                                    </p>
+
+                                                                    <form action="" method="" class="hide delivery-postal-code-form js-delivery-postal-code-form dk-form">
+
+                                                                        <fieldset>
+
+                                                                            <div class="delivery-postal-code-formrow">
+                                                                                <div class="form-row full-width-row  required">
+
+                                                                                    <div class="field-wrapper inputfield-row">
+                                                                                        <label>
+                                                                                            <span>Postal code</span>
+                                                                                        </label>
+
+                                                                                        <div class="error-message">
+
+                                                                                        </div>
+
+
+                                                                                        <input class="inputfield-text postal formal required masked error js-validator-error error-text"/>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="delivery-postal-code-formrow">
+
+                                                                                <button type="submit" class="btn btn--secondary js-search-by-postalcode">
+                                                                                    <span class="js-search-by-postalcode-title">
+                                                                                        Show my options
+                                                                                    </span>
+
+                                                                                    <div class="spinner js-spinner-general black-spinner js-postal-code-spinner">
+                                                                                        <span></span>
+                                                                                        <span></span>
+                                                                                        <span></span>
+                                                                                    </div>
+                                                                                </button>
+
+                                                                            </div>
+
+                                                                        </fieldset>
+
+                                                                    </form>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <!-- Order summary start -->
+                                                            <div class="js-order-summary">
+
+                                                    
+                                                                <div class="order-total">
+                                                                    <div class="cart-shipping-option-wrapper">
+
+                                                                        <span class="shipping-option js-totals-selected-shipping-option">
+                                                                            Shipping option
+                                                                        </span>
+
+                                                                        <span class="shipping-price js-shipping-price">
+                                                                            Free
+                                                                        </span>
+
+                                                                    </div>
+
+                                                                    <div class="cart-footer-total">
+
+                                                                        <div class="cart-footer__item--name">
+                                                                            Total
+
+                                                                            <span class="taxes-included">
+                                                                                (incl. taxes)
+                                                                            </span>
+                                                                        </div>
+
+                                                                        <div class="cart-footer__item--val order-value js-order-value">
+                                                                            HK$800
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="shopping-cart-actions white-bg-color">
+
+                                                <form action="/checkout-login" method="" class="js-cart-action-checkout dk-form">
+
+                                                    <fieldset>
+                                                        <button type="submit" class="btn btn--submit js-cart-submit-btn label-disabled">
+                                                            Continue to checkout
+
+                                                            <div class="spinner js-spinner-general white-spinner">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </div>
+                                                        </button>
+                                                    </fieldset>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- footer -->
+
+                    <div class="stay-informed ">
+
+                    <div class="newsletter-wrapper inner-wrapper ">
+
+                        <div>
+                            <h3>Stay up to date</h3>
+                        </div>
+
+                        <div class="text-form-container ">
+
+                            <p>Sign up for the latest news and offers from DK Aromatherapy. Your personal data will be used as described in our privacy policy. You can unsubscribe at any time</p>
+
+                            <div class="input-container emailform ">
+
+                                <form>
+
+                                    <div class="form-row ">
+
+                                        <div class="form-row full-width-row required ">
+
+                                            <div class="field-wrapper inputfield-row ">
+
+                                                <label for="newsletterEmail ">
+
+                                                    <span>YOUR EMAIL ADDRESS</span>
+
+                                                </label>
+
+                                                <div class="error-message "> </div>
+
+                                                <input class="inputfield-text formal email required " type="email " id="newsletterEmail " name="newsletterEmail " value="" data-required-text="This field is required "/>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="button-wrapper ">
+
+                                            <button class="btn--white btn-bg-contrast btn-bg-light btn last " type="submit " value="" name="newsletterSubmit " tabindex="0 ">
+                                                Subscribe
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="main-footer ">
+
+                    <div class="footer-top-elements ">
+
+                        <div class="inner-wrapper ">
+
+                            <h3 class="footer-title center-mobile">Or shop by category</h3>
+
+
+                            <div class="category-accordion accordion-wrapper footer-accordion">
+
+                                <div class="row item-grid js-category-accordion-inner">
+                                    <!-- categories -->
+                                </div>
+
+                            </div>
+
+
+                            <div class="mobile-category-accordion">
+
+                                <ul class="accordion" data-accordion="1" data-allow-all-closed="true" id="mobile-category-accordion">
+                                    <!-- categories-mobile -->
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-middle-elements ">
+
+                        <div class="inner-wrapper ">
+
+                            <div class="accordion-wrapper footer-accordion ">
+
+                                <div class="row item-grid ">
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Customer Service
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Shipping and returns
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            FAQ
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Contact
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Cookie policy
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Cookie setting
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Discovery
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible center-mobile">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Podcast
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Blog
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Video
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Book
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                Our Brand
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible ">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK Aromatherapy
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK Cuppa Tea
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            KAT LAI
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                        <div class="accordion-inner ">
+
+                                            <a class="accordion-head-inner center-mobile">
+                                                About Us
+                                            </a>
+
+                                            <div class="accordion-content-inner accordion-content persist-visible">
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            About DK
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Store location
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Department stores
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Brand story   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            Mission   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            CSR and ESG   
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="# " class="accordion-link-inner center-mobile"> 
+                                                            DK equilibrum people/plant   
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row item-grid ">
+
+                                    <div class="col-3 col-lg-9 col-md-8 col-ms-12 item-holder footer-column ">
+
+                                        <div class="footer-contact ">
+
+                                            <h3 class="center-mobile">Need help?</h3>
+
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Telephone
+                                                        </td>
+
+                                                        <td>
+                                                            +852 2386 3588
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Whatsapp
+                                                        </td>
+
+                                                        <td>
+                                                            +852 9788 9378
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="secondary ">
+                                                            Email
+                                                        </td>
+
+                                                        <td>
+                                                            dk@aroma.com.hk
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                        <div class="icons-section footer-column social--icons table">
+
+                                            <ul class="social__icons">
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-facebook-f "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-instagram "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-youtube "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-whatsapp "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-linkedin "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="far fa-envelope "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a class="wechat">
+                                                        <span class="icon icon-item">
+                                                            <img src="/dkaroma/static/img/icons/wechat.svg" width="15" height="15" class="" alt="" loading="lazy"/>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-twitter "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-telegram "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="fab fa-google-plus "></i>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+
+                                                </li>
+
+                                            </ul>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-3 col-lg-3 col-md-4 col-sm-12 item-holder ">
+
+                                        <div class="footer-right-side ">
+
+                                            <div class="footer-column ">
+
+                                                <h3 class="h3 ">
+                                                    Choose your country and language
+                                                </h3>
+
+                                                <div class="wrapper__country-selector ">
+
+                                                    <label for="countrySelector ">
+                                                        Country
+                                                    </label>
+
+                                                    <div class="country-selector select-box__container ">
+
+                                                        <select id="countrySelector" class="custom-select select--custom country select-box js-custom-select js-country_select" style="background-image: url('https://www.rituals.com/on/demandware.static/Sites-Global-Site/-/en_NL/v1607668413458/images/flags/nl.svg?select=true');">
+                                                            <option>
+                                                                English (English)
+                                                            </option>
+
+                                                            <option>
+                                                                Netherlands (English)
+                                                            </option>
+                                                        </select>
+
+                                                        <em class="arrow-down ">
+                                                            <i></i>
+                                                        </em>
+
+                                                    </div>
+
+                                                    <label for="languageSelector ">
+                                                        Language
+                                                    </label>
+
+                                                    <div class="country-selector select-box__container ">
+                                                        <select id="languageSelector" class="custom-select select--custom language select-box js-custom-select js-language_select" style="background-image: url('https://www.rituals.com/on/demandware.static/Sites-Global-Site/-/en_NL/v1607668413458/images/flags/gb.svg?select=true');">
+                                                            <option>
+                                                                English
+                                                            </option>
+
+                                                            <option>
+                                                                Netherlands
+                                                            </option>
+                                                        </select>
+
+                                                        <em class="arrow-down ">
+                                                            <i></i>
+                                                        </em>
+
+                                                    </div>
+
+                                                    <a href="# " class="btn--text fright ">
+                                                        Continue
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-bottom-elements ">
+                        <div class="inner-wrapper ">
+
+                            <p class="copyright ">
+                                All rights reserved © 2020 DK Aromatherapy
+                            </p>
+
+                            <ul class="bottom-links ">
+
+                                <li>
+                                    <a href="# ">
+                                        Privacy
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="# ">
+                                        General terms
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </footer>
+                
+                </div>
+
+                 <script src="/dkaroma/static/js/jquery.js"></script>
+                <script src="/dkaroma/static/js/header.js " type="text/javascript "></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.2.0/what-input.min.js" integrity="sha256-7wGy9IEPmo9Jk/I86siWbZFPeclfjFitAAfmvxBUc7k=" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+                <script src="/dkaroma/static/js/jquery.selectric.js "></script>
+                <script src="/dkaroma/static/js/utility.js" type="text/javascript"></script>
+                <script src="/dkaroma/static/js/cart.js" type="text/javascript"></script>
+
+            </body>
+
+        </template>
+
+        <record id="custom_cart_page" model="website.page">
+            <field name="name">DK Aromatherapy</field>
+            <field name="website_published">True</field>
+            <field name="url">/cart</field>
+            <field name="view_id" ref="dkaroma.cart" />
+        </record>
+
+        <record id="custom_cart_nav" model="website.menu">
+            <field name="name">cart</field>
+            <field name="parent_id" ref="website.menu_home"/>
+            <field name="page_id" ref="custom_cart_page"/>
+        </record>
+
+    </data>
+</odoo>
