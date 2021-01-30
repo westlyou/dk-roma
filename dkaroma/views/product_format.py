@@ -72,4 +72,4 @@ MINI CART
 
 URL: /dkaroma/shop/get-cart
 APPLICATION-TYPE: HTTP
-RESPONSE FORMAT: [{"product_id": 4, "product_name": "1X-JST-XH-255", "quantity": 2.0}]
+RESPONSE FORMAT: [{"product_id": 4, "product_name": "1X-JST-XH-255", "quantity": 1.0, "price": 10.0, "sub_total": 10.0, "total": 50.0}, {"product_id": 7, "product_name": "BMG-MDD-HW", "quantity": 4.0, "price": 10.0, "sub_total": 40.0, "total": 50.0}]

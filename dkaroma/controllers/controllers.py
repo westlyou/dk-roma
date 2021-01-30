@@ -137,7 +137,10 @@ class Dkaroma(http.Controller):
             products.append({
                 "product_id": line.product_id.id,
                 "product_name": line.product_id.name,
-                "quantity": line.product_uom_qty
+                "quantity": line.product_uom_qty,
+                "price": line.price_unit,
+                "sub_total": line.price_subtotal,
+                "total": order.amount_total
             })
 
         return json.dumps(products)
@@ -149,7 +152,7 @@ class Dkaroma(http.Controller):
             pricelist = request.website.get_current_pricelist()
             pricelist_context['pricelist'] = pricelist.id
         else:
-            pricelist = request.env['product.pricelist'].browse(pricelist_context['pricelist'])
+            pricelist = request.env['product.pricelist'].sudo().browse(pricelist_context['pricelist'])
 
         return pricelist_context, pricelist
 
@@ -199,9 +202,9 @@ class Dkaroma(http.Controller):
             yield {'loc': '/shop'}
 
         Category = env['product.public.category']
-        dom = sitemap_qs2dom(qs, '/shop/category', Category._rec_name)
+        dom = sitemap_qs2dom(qs, '/shop/category', Category.sudo()._rec_name)
         dom += env['website'].get_current_website().website_domain()
-        for cat in Category.search(dom):
+        for cat in Category.sudo().search(dom):
             loc = '/shop/category/%s' % slug(cat)
             if not qs or qs.lower() in loc:
                 yield {'loc': loc}
@@ -216,7 +219,7 @@ class Dkaroma(http.Controller):
         add_qty = int(post.get('add_qty', 1))
         Category = request.env['product.public.category']
         if category:
-            category = Category.search([('id', '=', int(category))], limit=1)
+            category = Category.sudo().search([('id', '=', int(category))], limit=1)
             if not category or not category.can_access_from_current_website():
                 raise NotFound()
         else:
@@ -229,9 +232,9 @@ class Dkaroma(http.Controller):
             except ValueError:
                 ppg = False
         if not ppg:
-            ppg = request.env['website'].get_current_website().shop_ppg or 20
+            ppg = request.env['website'].sudo().get_current_website().shop_ppg or 20
 
-        ppr = request.env['website'].get_current_website().shop_ppr or 4
+        ppr = request.env['website'].sudo().get_current_website().shop_ppr or 4
 
         attrib_list = request.httprequest.args.getlist('attrib')
         attrib_values = [[int(x) for x in v.split("-")]
@@ -255,18 +258,18 @@ class Dkaroma(http.Controller):
         if attrib_list:
             post['attrib'] = attrib_list
 
-        Product = request.env['product.template'].with_context(bin_size=True)
+        Product = request.env['product.template'].sudo().with_context(bin_size=True)
 
-        search_product = Product.search(domain)
+        search_product = Product.sudo().search(domain)
         website_domain = request.website.website_domain()
         categs_domain = [('parent_id', '=', False)] + website_domain
         if search:
-            search_categories = Category.search(
+            search_categories = Category.sudo().search(
                 [('product_tmpl_ids', 'in', search_product.ids)] + website_domain).parents_and_self
             categs_domain.append(('id', 'in', search_categories.ids))
         else:
             search_categories = Category
-        categs = Category.search(categs_domain)
+        categs = Category.sudo().search(categs_domain)
 
         if category:
             url = "/shop/category/%s" % slug(category)
@@ -274,16 +277,16 @@ class Dkaroma(http.Controller):
         product_count = len(search_product)
         pager = request.website.pager(
             url=url, total=product_count, page=page, step=ppg, scope=7, url_args=post)
-        products = Product.search(
+        products = Product.sudo().search(
             domain, limit=ppg, offset=pager['offset'], order=self._get_search_order(post))
 
         ProductAttribute = request.env['product.attribute']
         if products:
             # get all products without limit
-            attributes = ProductAttribute.search(
+            attributes = ProductAttribute.sudo().search(
                 [('product_tmpl_ids', 'in', search_product.ids)])
         else:
-            attributes = ProductAttribute.browse(attributes_ids)
+            attributes = ProductAttribute.sudo().browse(attributes_ids)
 
         layout_mode = request.session.get('website_sale_shop_layout_mode')
         if not layout_mode:
@@ -361,9 +364,52 @@ class Dkaroma(http.Controller):
 
         return request.render("dkaroma.cart", values)
     
-    @http.route('/dkaroma/shop/get-product', type='http', auth="public", website=True)
-    def product(self, pid, **post):
-        product = http.request.env["product.template"].sudo().search(
-            [('id', '=', int(pid))], limit=1)
+    @http.route(['/shop/product/<model("product.template"):product>'], type='http', auth="public", website=True)
+    def product(self, product, category='', search='', **kwargs):
+        if not product.can_access_from_current_website():
+            raise NotFound()
 
-        return request.render("dkaroma.product_details", {"product": product})
+        product_details = self._prepare_product_values(product, category, search, **kwargs)
+        return request.render("dkaroma.product_details", product_details)
+
+    def _prepare_product_values(self, product, category, search, **kwargs):
+        add_qty = int(kwargs.get('add_qty', 1))
+
+        product_context = dict(request.env.context, quantity=add_qty,
+                               active_id=product.id,
+                               partner=request.env.user.partner_id)
+        ProductCategory = request.env['product.public.category']
+
+        if category:
+            category = ProductCategory.sudo().browse(int(category)).exists()
+
+        attrib_list = request.httprequest.args.getlist('attrib')
+        attrib_values = [[int(x) for x in v.split("-")] for v in attrib_list if v]
+        attrib_set = {v[1] for v in attrib_values}
+
+        keep = QueryURL('/shop', category=category and category.id, search=search, attrib=attrib_list)
+
+        categs = ProductCategory.sudo().search([('parent_id', '=', False)])
+
+        pricelist = request.website.get_current_pricelist()
+
+        if not product_context.get('pricelist'):
+            product_context['pricelist'] = pricelist.id
+            product = product.with_context(product_context)
+
+        # Needed to trigger the recently viewed product rpc
+        view_track = request.website.viewref("website_sale.product").track
+
+        return {
+            'search': search,
+            'category': category,
+            'pricelist': pricelist,
+            'attrib_values': attrib_values,
+            'attrib_set': attrib_set,
+            'keep': keep,
+            'categories': categs,
+            'main_object': product,
+            'product': product,
+            'add_qty': add_qty,
+            'view_track': view_track,
+        }
