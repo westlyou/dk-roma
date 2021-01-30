@@ -60,7 +60,8 @@ $(document).ready(function() {
     });
 
     const URL_VALUES = {
-        base_url: 'https://dk-aroma.odoo.com/dkaroma'
+        base_url: 'https://dk-aroma.odoo.com/dkaroma',
+        api_url: 'https://dk-aroma.odoo.com/dkaroma'
     };
 
     var currentPage = parseInt($('#currentPage').val());
@@ -120,13 +121,37 @@ $(document).ready(function() {
 
         $('.js-paginator-list li').each(function() {
             if (parseInt(jQuery.trim($(this).children('a').text())) == selectedPageInput) {
-                console.log($(this).children('a').attr('href'));
                 pageLink = $(this).children('a').attr('href');
             }
         });
 
-        location.href = URL_VALUES.base_url + pageLink;
+        location.href = pageLink;
 
+    });
+
+
+    $('.search-result-items').on('click', '.btn-add-to-cart', function(e) {
+        var pid = $(this).closest('form').find('[name=pid]').val();
+
+        var cartUrl = URL_VALUES.api_url + "/shop/cart/update";
+
+        $.ajax({
+                method: "POST",
+                url: cartUrl,
+                dataType: "json",
+                data: { product_id: pid, add_qty: 1, set_qty: 0 },
+
+                success: function(data) {
+                    console.log("Success: " + JSON.stringify(data));
+                },
+
+                error: function(data) {
+                    console.log("Error: " + JSON.stringify(data));
+                }
+            })
+            .done(function(msg) {
+                alert("Data Saved: " + msg);
+            });
     });
 
 
@@ -135,8 +160,6 @@ $(document).ready(function() {
 
 // product item add to cart form onsubmit
 function addToCart() {
-
-    var form = $(this).closest('form');
 
     return false;
 }

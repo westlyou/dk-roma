@@ -43,4 +43,19 @@ $(document).ready(function() {
     });
 
 
+    $(function() {
+        var cartItems = $('#cart--items-form .js-cart-items').find('.js-cart-row').length;
+
+        if (cartItems == 0) {
+
+            $('.shopping-cart-product-number ').addClass('hide');
+            $('.shopping-cart-empty').removeClass('hide');
+        } else {
+            $('.page-layout-right').removeClass('hide');
+            $('#cart--items-form').removeClass('hide');
+        }
+
+    });
+
+
 });

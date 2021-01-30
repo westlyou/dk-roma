@@ -103,6 +103,7 @@ class Dkaroma(http.Controller):
             [('name', '=', parent)], limit=1)
         if not parent:
             children = [{
+                "id": child.id,
                 "name": child.name,
                 "sequence": child.sequence
             } for child in http.request.env["product.public.category"].sudo().search([('parent_id', '=', False)])]
@@ -110,12 +111,37 @@ class Dkaroma(http.Controller):
             return "Error: No Such Category"
         else:
             children = [{
+                "id": child.id,
                 "name": child.name,
                 "sequence": child.sequence
             } for child in parent_obj.child_id]
 
         return json.dumps(children)
 
+    @http.route('/dkaroma/shop/get-cart', auth='public', type='http', website=True)
+    def get_mini_cart(self, access_token=None, revive='merge', **post):
+        order = request.website.sale_get_order()
+        if order and order.state != 'draft':
+            request.session['sale_order_id'] = None
+            order = request.website.sale_get_order()
+        values = {}
+        
+        values.update({
+            'website_sale_order': order,
+            'date': fields.Date.today(),
+            'suggested_products': [],
+        })
+
+        products = []
+        for line in order.order_line:
+            products.append({
+                "product_id": line.product_id.id,
+                "product_name": line.product_id.name,
+                "quantity": line.product_uom_qty
+            })
+
+        return json.dumps(products)
+    
     def _get_pricelist_context(self):
         pricelist_context = dict(request.env.context)
         pricelist = False
