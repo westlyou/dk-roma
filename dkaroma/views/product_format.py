@@ -65,3 +65,11 @@ CART
 URL: /shop/cart/update
 Fields: product_id, add_qty=1 (default), set_qty=0 (default)
 Method: GET/POST
+
+==========================================
+MINI CART
+==========================================
+
+URL: /dkaroma/shop/get-cart
+APPLICATION-TYPE: HTTP
+RESPONSE FORMAT: [{"product_id": 4, "product_name": "1X-JST-XH-255", "quantity": 2.0}]
