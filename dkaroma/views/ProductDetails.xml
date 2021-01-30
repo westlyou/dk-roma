@@ -30,6 +30,12 @@
         
             <!-- nav -->
 
+            <t t-esc="product.id" /> 
+            <t t-esc="product.name" /> 
+            <t t-esc="product.description" /> 
+            <t t-esc="product.list_price" /> 
+            etc...
+
             <nav class="navbar navbar-expand-lg navbar-dark header bg-header navigation-wrapper fixed-top navbar-fixed-top" id="mainNav">
                 
 
