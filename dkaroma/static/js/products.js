@@ -60,8 +60,7 @@ $(document).ready(function() {
     });
 
     const URL_VALUES = {
-        base_url: 'https://dk-aroma.odoo.com/dkaroma',
-        api_url: 'https://dk-aroma.odoo.com/dkaroma'
+        api_url: 'https://dk-aroma.odoo.com'
     };
 
     var currentPage = parseInt($('#currentPage').val());
@@ -136,22 +135,20 @@ $(document).ready(function() {
         var cartUrl = URL_VALUES.api_url + "/shop/cart/update";
 
         $.ajax({
-                method: "POST",
-                url: cartUrl,
-                dataType: "json",
-                data: { product_id: pid, add_qty: 1, set_qty: 0 },
+            method: "POST",
+            url: cartUrl,
+            dataType: "json",
+            data: { product_id: pid, add_qty: 1, set_qty: 0 },
 
-                success: function(data) {
-                    console.log("Success: " + JSON.stringify(data));
-                },
+            success: function(data) {
+                getCartProducts();
+            },
 
-                error: function(data) {
-                    console.log("Error: " + JSON.stringify(data));
-                }
-            })
-            .done(function(msg) {
-                alert("Data Saved: " + msg);
-            });
+            error: function(data) {
+
+            }
+        });
+
     });
 
 

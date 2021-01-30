@@ -32,9 +32,8 @@
                     <t t-esc="product.name" />
                     <t t-esc="'$' + str(product.list_price)" />
                 </t> -->
+
                 <!-- Nav -->
-
-
                 <nav class="navbar navbar-expand-lg navbar-dark header bg-header navigation-wrapper fixed-top navbar-fixed-top" id="mainNav">
 
 
@@ -495,7 +494,7 @@
                             <ul class="header-action-links" id="headerActionLinks">
                                 <li class="header--search">
 
-                                    <form class="search-input-wrapper" role="search" action="" method="" name="searchForm" autocomplete="off">
+                                    <form class="search-input-wrapper" role="search" action="/shop" method="POST" name="searchForm" autocomplete="off">
 
                                         <button type="submit" class="btn-stripped icon-search-magnifier" id="searchInputToggle">
                                             <span class="sr-only">
@@ -506,7 +505,7 @@
 
                                         <label class="sr-only" for="headerSearch"></label>
 
-                                        <input id="headerSearch" class="search-input" type="text" name="query" placeholder="I'm looking for..." autocomplete="off" />
+                                        <input id="headerSearch" class="search-input" type="text" name="search" placeholder="I'm looking for..." autocomplete="off" />
 
                                         <button type="button" class="icon-close search-icon-close" id="closeSearchButton">
                                             <span class="sr-only">Close search</span>
@@ -523,7 +522,7 @@
                                 </li>
 
                                 <li class="header--user-account">
-                                    <a class="header--user-account-link" href="/web/login">
+                                    <a class="header--user-account-link" href="/web">
                                         <span class="sr-only">User account</span>
                                         <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
                                     </a>
@@ -535,7 +534,7 @@
                                         <img src="/dkaroma/static/img/icons/shopping-bag.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
 
                                         <span class="cart-number">
-                                            2
+                                            <!-- cart number  -->
                                         </span>
                                     </a>
                                 </li>
@@ -802,7 +801,8 @@
                                                             </div>
 
                                                             <div class="short-description">
-                                                                Essential oils help you balance your body, mind and soul!
+                                                                <t t-esc="product.description" />
+                                                                <!-- Essential oils help you balance your body, mind and soul! -->
                                                             </div>
 
                                                             <div class="product-user-actions">
@@ -881,7 +881,7 @@
 
                                     <div class="align-container-center">
 
-                                        <a href="pager['page_previous']['url']" class="paginator-nav-btn js-prev-btn">
+                                        <a t-att-href="pager['page_previous']['url']" class="paginator-nav-btn js-prev-btn">
                                             Prev
                                         </a>
 
@@ -899,7 +899,7 @@
 
                                         </ul>
 
-                                        <a href="pager['page_next']['url']" class="paginator-nav-btn js-next-btn">
+                                        <a t-att-href="pager['page_next']['url']" class="paginator-nav-btn js-next-btn">
                                             Next
                                         </a>
 
@@ -1143,7 +1143,7 @@
                                                 </h3>
 
                                                 <span class="flyout-title-overview js-selected-products">
-                                                    2 products
+                                                    <!-- products count: 2 products -->
                                                 </span>
                                             </div>
                                         </div>
@@ -1156,85 +1156,7 @@
                                             <div class="wrapper--minicart__list">
                                                 <!-- Cart Products START -->
 
-                                                <div class="mini-cart-product">
-                                                    <div class="mini-cart-image">
-                                                        <a href="#">
-                                                            <img src="/dkaroma/static/img/product-sample-1.gif" alt="" class="cover" />
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="mini-cart-info">
-                                                        <div class="mini-cart-small-title">
-                                                            <!-- Five Element Essential Oils -->
-                                                        </div>
-
-                                                        <div class="mini-cart-name mini-cart-product-name">
-                                                            <a href="#" class="">
-                                                                Five Element Essential Oils
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="mini-cart-attributes"></div>
-
-                                                        <div class="mini-cart-details-bottom">
-                                                            <div class="mini-cart-pricing">
-                                                                <span class="label">
-                                                                    Quantity:
-                                                                </span>
-
-                                                                <span class="value">
-                                                                    1
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
-                                                                <span class="mini-cart-price">
-                                                                    HK$800
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="mini-cart-product">
-                                                    <div class="mini-cart-image">
-                                                        <a href="#">
-                                                            <img src="/dkaroma/static/img/product-sample.png" alt="" class="cover" />
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="mini-cart-info">
-                                                        <div class="mini-cart-small-title">
-                                                            <!-- Five Element Essential Oils -->
-                                                        </div>
-
-                                                        <div class="mini-cart-name mini-cart-product-name">
-                                                            <a href="#" class="">
-                                                                Savage Garden (private collection)
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="mini-cart-attributes"></div>
-
-                                                        <div class="mini-cart-details-bottom">
-                                                            <div class="mini-cart-pricing">
-                                                                <span class="label">
-                                                                    Quantity:
-                                                                </span>
-
-                                                                <span class="value">
-                                                                    1
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
-                                                                <span class="mini-cart-price">
-                                                                    HK$768
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
 
                                                 <div class="gwp-minicart-wrapper"></div>
                                             </div>
@@ -1261,9 +1183,7 @@
                                                     My shopping cart
                                                 </h3>
 
-                                                <span class="flyout-title-overview js-selected-products">
-                                                    2 products
-                                                </span>
+
                                             </div>
                                         </div>
 
@@ -1276,7 +1196,7 @@
                                 </div>
                             </section>
 
-                            <div class="minicart-flyout-checkout js-minicart-flyout-checkout has-shadow">
+                            <div class="minicart-flyout-checkout js-minicart-flyout-checkout has-shadow hide">
                                 <div class="total">
                                     <div class="total-line">
                                         <span class="total-label">
@@ -1291,7 +1211,7 @@
                                         </span>
 
                                         <span class="total-value js-total-price">
-                                            HK$800
+                                            
                                         </span>
                                     </div>
                                 </div>

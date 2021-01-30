@@ -25,14 +25,14 @@
             
             <body class="zoomed-in body-class">
 
-                <!-- nav -->
+                <!-- Nav -->
                 <nav class="navbar navbar-expand-lg navbar-dark header bg-header navigation-wrapper fixed-top navbar-fixed-top" id="mainNav">
-                
+
 
                     <button class="nav-toggle" type="button" id="navToggleButton">
-                            <span class=""></span>
-                            <img src="/dkaroma/static/img/icons/menu.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                        </button>
+                        <span class=""></span>
+                        <img src="/dkaroma/static/img/icons/menu.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                    </button>
 
                     <nav class="navigation-inner">
 
@@ -51,20 +51,16 @@
                                             <div class="nav-mobile-layer ">
 
                                                 <button type="button" class="nav-back">
-                                                        <span class="sr-only"> 
+                                                    <span class="sr-only"> 
                                                             Back
                                                         </span>
                                                 </button>
 
                                                 <div class="nav-mobile-layer-inner">
-                                                    <ul class="nav-mobile-subnav js-nav-mobile-subnav">
-                                                        
-                                                    </ul>
+                                                    <ul class="nav-mobile-subnav js-nav-mobile-subnav"></ul>
                                                 </div>
 
-                                                <span class="bottom-gradient-el">
-                        
-                                                    </span>
+                                                <span class="bottom-gradient-el"></span>
                                             </div>
                                         </li>
 
@@ -76,7 +72,7 @@
                                             <div class="nav-mobile-layer">
 
                                                 <button type="button" class="nav-back">
-                                                        <span class="sr-only"> 
+                                                    <span class="sr-only"> 
                                                             Back
                                                         </span>
                                                 </button>
@@ -89,7 +85,7 @@
                                                             <a href="/services" class="nav-mobile-collections-link">
                                                                 <span class="image-holder">
                                                                     <span class="cover-wrapper nav-collection-image">
-                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
                                                                     </span>
 
                                                                     <span class="sr-only">DK Cuppa</span>
@@ -103,10 +99,10 @@
                                                             <a href="/services" class="nav-mobile-collections-link">
                                                                 <span class="image-holder">
                                                                     <span class="cover-wrapper nav-collection-image">
-                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
                                                                     </span>
 
-                                                                <span class="sr-only">Program and Workshop</span>
+                                                                    <span class="sr-only">Program and Workshop</span>
                                                                 </span>
 
                                                                 <span class="nav-mobile-collection-title">
@@ -114,17 +110,17 @@
                                                                 </span>
                                                             </a>
                                                         </li>
-                                                        
+
 
                                                         <li>
 
                                                             <a href="/services" class="nav-mobile-collections-link">
                                                                 <span class="image-holder">
                                                                     <span class="cover-wrapper nav-collection-image">
-                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
                                                                     </span>
 
-                                                                <span class="sr-only">Treatment</span>
+                                                                    <span class="sr-only">Treatment</span>
                                                                 </span>
 
                                                                 <span class="nav-mobile-collection-title">
@@ -135,10 +131,10 @@
                                                             <a href="/services" class="nav-mobile-collections-link">
                                                                 <span class="image-holder">
                                                                     <span class="cover-wrapper nav-collection-image">
-                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100"/>
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
                                                                     </span>
 
-                                                                <span class="sr-only">Program and Workshop</span>
+                                                                    <span class="sr-only">Program and Workshop</span>
                                                                 </span>
 
                                                                 <span class="nav-mobile-collection-title">
@@ -150,9 +146,7 @@
                                                     </ul>
                                                 </div>
 
-                                                <span class="bottom-gradient-el">
-                        
-                                                    </span>
+                                                <span class="bottom-gradient-el"></span>
                                             </div>
 
                                         </li>
@@ -219,26 +213,20 @@
 
                                                 <div class="nav-desktop-layer-inner">
 
-                                                    <ul class="nav-inner-subnav">
-
-
-                                                    </ul>
+                                                    <ul class="nav-inner-subnav"></ul>
 
                                                 </div>
 
-                                                <span class="bottom-gradient-el">
-                                                    </span>
+                                                <span class="bottom-gradient-el"></span>
 
                                                 <button type="button" class="close-desktop-nav return-scroll">
-                                                        <span class="sr-only">Close navigation</span>
-                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                    <span class="sr-only">Close navigation</span>
+                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
                                                 </button>
                                             </div>
                                         </div>
 
                                     </li>
-
-
 
 
                                     <li class="nav-item">
@@ -267,7 +255,7 @@
 
                                                                     <button type="button" class="close-desktop-nav" style="display:inline-block;">
                                                                         <span class="sr-only">Close navigation</span>
-                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
                                                                     </button>
 
                                                                     <div class="nav-desktop-subnav-inner">
@@ -284,7 +272,7 @@
 
                                                                                 <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
                                                                                     <span class="cover-wrapper nav-collection-image">
-                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100"/>
+                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100" />
                                                                                     </span>
 
                                                                                     <span class="sr-only">Service</span>
@@ -321,7 +309,7 @@
 
                                                                     <button type="button" class="close-desktop-nav" style="display:inline-block;">
                                                                         <span class="sr-only">Close navigation</span>
-                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
                                                                     </button>
 
                                                                     <div class="nav-desktop-subnav-inner">
@@ -338,7 +326,7 @@
 
                                                                                 <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
                                                                                     <span class="cover-wrapper nav-collection-image">
-                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100"/>
+                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100" />
                                                                                     </span>
 
                                                                                     <span class="sr-only">Service</span>
@@ -375,7 +363,7 @@
 
                                                                     <button type="button" class="close-desktop-nav" style="display:inline-block;">
                                                                         <span class="sr-only">Close navigation</span>
-                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
                                                                     </button>
 
                                                                     <div class="nav-desktop-subnav-inner">
@@ -392,7 +380,7 @@
 
                                                                                 <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
                                                                                     <span class="cover-wrapper nav-collection-image">
-                                                                                        <img src="/dkaroma/static/img/car-1.jpeg" class="cover w-100"/>
+                                                                                        <img src="/dkaroma/static/img/car-1.jpeg" class="cover w-100" />
                                                                                     </span>
 
                                                                                     <span class="sr-only">Service</span>
@@ -420,12 +408,11 @@
 
                                                 </div>
 
-                                                <span class="bottom-gradient-el">
-                                                    </span>
+                                                <span class="bottom-gradient-el"></span>
 
                                                 <button type="button" class="close-desktop-nav return-scroll">
-                                                        <span class="sr-only">Close navigation</span>
-                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                    <span class="sr-only">Close navigation</span>
+                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
                                                 </button>
                                             </div>
                                         </div>
@@ -450,7 +437,7 @@
                                             </Button>
 
 
-                                            <div class="nav-desktop-layer" id="moreDiv">
+                                        <div class="nav-desktop-layer" id="moreDiv">
                                             <span class="nav-desktop-overlay" style="display: inline;"></span>
 
                                             <div class="nav-first-layer">
@@ -475,12 +462,11 @@
 
                                                 </div>
 
-                                                <span class="bottom-gradient-el">
-                                                    </span>
+                                                <span class="bottom-gradient-el"></span>
 
                                                 <button type="button" class="close-desktop-nav return-scroll">
-                                                        <span class="sr-only">Close navigation</span>
-                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                    <span class="sr-only">Close navigation</span>
+                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
                                                 </button>
                                             </div>
                                         </div>
@@ -493,55 +479,54 @@
                             <a class="header-logo" href="/">
                                 <span class="sr-only">DK logo</span>
 
-                                <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy"/>
+                                <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy" />
                             </a>
 
 
                             <ul class="header-action-links" id="headerActionLinks">
                                 <li class="header--search">
 
-                                    <form class="search-input-wrapper" role="search" action="" method="" name="searchForm" autocomplete="off">
+                                    <form class="search-input-wrapper" role="search" action="/shop" method="POST" name="searchForm" autocomplete="off">
 
                                         <button type="submit" class="btn-stripped icon-search-magnifier" id="searchInputToggle">
-                                                <span class="sr-only">
+                                            <span class="sr-only">
                                                     I'm looking for...
                                                 </span>
-                                                <img src="/dkaroma/static/img/icons/search.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                            </button>
-
-                                        <label class="sr-only" for="headerSearch">
-                                        </label>
-
-                                        <input id="headerSearch" class="search-input" type="text" name="query" placeholder="I'm looking for..." autocomplete="off"/>
-
-                                        <button type="button" class="icon-close search-icon-close" id="closeSearchButton">
-                                                <span class="sr-only">Close search</span>
-                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                            </button>
-
-                                        <button type="button" class="icon-close search-clear">
-                                                <span class="sr-only">Clear text from input</span>
-                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                            <img src="/dkaroma/static/img/icons/search.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
                                         </button>
 
-        
+                                        <label class="sr-only" for="headerSearch"></label>
+
+                                        <input id="headerSearch" class="search-input" type="text" name="search" placeholder="I'm looking for..." autocomplete="off" />
+
+                                        <button type="button" class="icon-close search-icon-close" id="closeSearchButton">
+                                            <span class="sr-only">Close search</span>
+                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                        </button>
+
+                                        <button type="button" class="icon-close search-clear">
+                                            <span class="sr-only">Clear text from input</span>
+                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                        </button>
+
+
                                     </form>
                                 </li>
 
                                 <li class="header--user-account">
-                                    <a class="header--user-account-link" href="/web/login">
+                                    <a class="header--user-account-link" href="/web">
                                         <span class="sr-only">User account</span>
-                                        <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                        <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
                                     </a>
                                 </li>
 
                                 <li class="header--cart">
                                     <a class="header--cart-link js-open-minicart" href="#">
                                         <span class="sr-only">View Cart</span>
-                                        <img src="/dkaroma/static/img/icons/shopping-bag.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
+                                        <img src="/dkaroma/static/img/icons/shopping-bag.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
 
                                         <span class="cart-number">
-                                            2
+                                            <!-- cart number  -->
                                         </span>
                                     </a>
                                 </li>
@@ -752,6 +737,7 @@
 
                         </div>
 
+                        <!-- Minicart -->
                         <div class="minicart-flyout-container flyout-content flyout-container js-minicart-flyout-container">
 
                             <div class="checkout-flyout-inner-content" style="padding-bottom:200px;">
@@ -760,12 +746,11 @@
                                 <section class="flyout-section">
                                     <div class="js-minicart-not-empty">
                                         <div class="minicart-flyout-wrapper">
-                                            <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true">
-                                            </span>
+                                            <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true"></span>
 
                                             <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
                                                 <span class="sr-only">Close flyout</span>
-                                                <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
                                             </button>
 
 
@@ -778,7 +763,7 @@
                                                     </h3>
 
                                                     <span class="flyout-title-overview js-selected-products">
-                                                        2 products
+                                                        <!-- products count: 2 products -->
                                                     </span>
                                                 </div>
                                             </div>
@@ -786,97 +771,14 @@
 
                                             <div class="minicart-flyout-body flyout-body">
 
-                                                <div class="top-fade">
-                                                </div>
+                                                <div class="top-fade"></div>
 
                                                 <div class="wrapper--minicart__list">
                                                     <!-- Cart Products START -->
 
-                                                    <div class="mini-cart-product">
-                                                        <div class="mini-cart-image">
-                                                            <a href="#">
-                                                                <img src="/dkaroma/static/img/product-sample-1.gif" alt="" class="cover"/>
-                                                            </a>
-                                                        </div>
+                                                    
 
-                                                        <div class="mini-cart-info">
-                                                            <div class="mini-cart-small-title">
-                                                                <!-- Five Element Essential Oils -->
-                                                            </div>
-
-                                                            <div class="mini-cart-name mini-cart-product-name">
-                                                                <a href="#" class="">
-                                                                    Five Element Essential Oils
-                                                                </a>
-                                                            </div>
-
-                                                            <div class="mini-cart-attributes">
-                                                            </div>
-
-                                                            <div class="mini-cart-details-bottom">
-                                                                <div class="mini-cart-pricing">
-                                                                    <span class="label">
-                                                                        Quantity:
-                                                                    </span>
-
-                                                                    <span class="value">
-                                                                        1
-                                                                    </span>
-                                                                </div>
-
-                                                                <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
-                                                                    <span class="mini-cart-price">
-                                                                        HK$800
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mini-cart-product">
-                                                        <div class="mini-cart-image">
-                                                            <a href="#">
-                                                                <img src="/dkaroma/static/img/product-sample.png" alt="" class="cover"/>
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="mini-cart-info">
-                                                            <div class="mini-cart-small-title">
-                                                                <!-- Five Element Essential Oils -->
-                                                            </div>
-
-                                                            <div class="mini-cart-name mini-cart-product-name">
-                                                                <a href="#" class="">
-                                                                    Savage Garden (private collection)
-                                                                </a>
-                                                            </div>
-
-                                                            <div class="mini-cart-attributes">
-                                                            </div>
-
-                                                            <div class="mini-cart-details-bottom">
-                                                                <div class="mini-cart-pricing">
-                                                                    <span class="label">
-                                                                        Quantity:
-                                                                    </span>
-
-                                                                    <span class="value">
-                                                                        1
-                                                                    </span>
-                                                                </div>
-
-                                                                <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
-                                                                    <span class="mini-cart-price">
-                                                                        HK$768
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="gwp-minicart-wrapper">
-
-                                                    </div>
+                                                    <div class="gwp-minicart-wrapper"></div>
                                                 </div>
                                             </div>
 
@@ -886,12 +788,11 @@
 
                                     <div class="js-minicart-empty hide">
                                         <div class="minicart-flyout-wrapper js-minicart-flyout-wrapper">
-                                            <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true">
-                                            </span>
+                                            <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true"></span>
 
                                             <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
                                                 <span class="sr-only">Close flyout</span>
-                                                <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy"/>
+                                                <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
                                             </button>
 
                                             <div class="minicart-flyout-header flyout-header js-flyout-header">
@@ -902,9 +803,7 @@
                                                         My shopping cart
                                                     </h3>
 
-                                                    <span class="flyout-title-overview js-selected-products">
-                                                        2 products
-                                                    </span>
+
                                                 </div>
                                             </div>
 
@@ -917,12 +816,11 @@
                                     </div>
                                 </section>
 
-                                <div class="minicart-flyout-checkout js-minicart-flyout-checkout has-shadow">
+                                <div class="minicart-flyout-checkout js-minicart-flyout-checkout has-shadow hide">
                                     <div class="total">
                                         <div class="total-line">
                                             <span class="total-label">
                                                 Order subtotal
-
                                                 <div class="content-asset">
                                                     <span class="free-delivery-message">
                                                         <div class="content-asset">
@@ -933,7 +831,7 @@
                                             </span>
 
                                             <span class="total-value js-total-price">
-                                                HK$800
+                                                
                                             </span>
                                         </div>
                                     </div>
@@ -941,16 +839,22 @@
                                     <form method="" action="/cart" class="dk-form" novalidate="novalidate">
                                         <div class="minicart-continueshopping">
                                             <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
-                                                    Continue shopping
-                                                </button>
+                                                Continue shopping
+                                            </button>
                                         </div>
 
                                         <button type="submit" class="btn btn--submit" tabindex="0">
-                                                Go to cart
+                                            Go to cart
+                                            <div class="spinner js-spinner-general white-spinner">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
                                         </button>
                                     </form>
                                 </div>
                             </div>
+
 
                         </div>
 

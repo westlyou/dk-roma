@@ -133,27 +133,54 @@ $(document).ready(function() {
         $('.body-class').toggleClass('no-scroll');
     });
 
-    $('#searchInputToggle').click(function(e) {
-
-        e.preventDefault();
+    function activateSearch() {
 
         $('#headerActionLinks').addClass('search-expand');
         $('#headerSearch').addClass('focus-visible');
         $('#closeSearchButton').css('display', 'inline-block');
         $('#navToggleButton').addClass('fade-out');
         $('#headerLogo').addClass('fade-out');
-    });
+    }
 
-    $('#closeSearchButton').click(function(e) {
-
-        e.preventDefault();
+    function deactivateSearch() {
 
         $('#headerActionLinks').removeClass('search-expand');
         $('#headerSearch').removeClass('focus-visible');
         $('#closeSearchButton').css('display', 'none');
         $('#navToggleButton').removeClass('fade-out');
         $('#headerLogo').removeClass('fade-out');
+    }
+
+    $('#searchInputToggle').click(function(e) {
+        var searchInput = $('#headerSearch');
+        if (!searchInput.hasClass('focus-visible') || searchInput.val().length == 0) {
+            e.preventDefault();
+            activateSearch();
+            searchInput.focus();
+        }
+
     });
+
+    $('#closeSearchButton').click(function(e) {
+
+        e.preventDefault();
+        deactivateSearch();
+    });
+
+    $('#headerSearch').on('focus', function() {
+
+        activateSearch();
+
+    });
+
+    $('#headerSearch').on('focusout', function() {
+
+        if ($('#headerSearch').val().length == 0) {
+            deactivateSearch();
+        }
+
+    });
+
 
 
 });
@@ -222,7 +249,7 @@ function getData(url) {
 
 
 const urlPaths = {
-    products: '/products?category='
+    products: '/shop/category/'
 };
 
 function createProductMenu(results) {
@@ -230,7 +257,8 @@ function createProductMenu(results) {
     results.forEach((item) => {
 
         let category = item.category.name;
-        let subCategories = item.subCategories.map((item) => item.name);
+        // let subCategories = item.subCategories.map((item) => item.name);
+        let subCategories = item.subCategories;
 
         $('.js-dekstop-product-nav .nav-desktop-layer .nav-inner-subnav').append(
             renderList(category, subCategories)
@@ -256,13 +284,13 @@ function renderMobileFooterList(category, subCategories) {
 
     var createMobileSubCategories = subCategories.map(function(value) {
 
-        let param = encodeURIComponent(value);
-        var link = urlPaths.products + param;
+        // let param = encodeURIComponent(value);
+        var link = urlPaths.products + value.id;
         return `
 
         <li>
             <a href="${link}"> 
-                ${value}
+                ${value.name}
             </a>
         </li>
         
@@ -291,13 +319,13 @@ function renderFooterList(category, subCategories) {
 
     var createSubCategories = subCategories.map(function(value) {
 
-        let param = encodeURIComponent(value);
-        var link = urlPaths.products + param;
+        // let param = encodeURIComponent(value);
+        var link = urlPaths.products + value.id;
         return `
 
         <li>
             <a href="${link}" class="accordion-link-inner "> 
-                ${value}
+                ${value.name}
             </a>
         </li>
         
@@ -341,8 +369,8 @@ function renderList(category, subCategories) {
         if (subCategories.length > 0) {
             className = 'inner-nav-link';
         } else {
-            let param = encodeURIComponent(category);
-            navLink = 'href="' + urlPaths.products + param + '"';
+            // let param = encodeURIComponent(category);
+            // navLink = 'href="' + urlPaths.products + param + '"';
         }
 
         return `
@@ -356,12 +384,12 @@ function renderList(category, subCategories) {
 
 
     var innerDesktopList = subCategories.map(function(value) {
-        let param = encodeURIComponent(value);
-        var link = urlPaths.products + param;
+        // let param = encodeURIComponent(value);
+        var link = urlPaths.products + value.id;
         return `
                 <li>
                     <a class="nav-link nav-desktop-subnav-link" href="${link}">
-                        <span>${value}</span>
+                        <span>${value.name}</span>
                     </a>
                 </li>
         `;
@@ -405,13 +433,13 @@ function renderMobileList(category, subCategories) {
 
 
     var innerMobileList = subCategories.map(function(value) {
-        let param = encodeURIComponent(value);
-        var link = urlPaths.products + param;
+        // let param = encodeURIComponent(value);
+        var link = urlPaths.products + value.id;
 
         return `
         <li>
             <a class="nav-mobile-subnav-link" href="${link}">
-                    ${value}
+                    ${value.name}
                 </a>
         </li>
         `;
@@ -463,8 +491,8 @@ function renderMobileList(category, subCategories) {
             `;
 
         } else {
-            let param = encodeURIComponent(category);
-            navLink = urlPaths.products + param;
+            // let param = encodeURIComponent(category);
+            // navLink = urlPaths.products + param;
             itemHead = `
                 <a class="mobile-third-level" href="${navLink}">
                     ${category}
