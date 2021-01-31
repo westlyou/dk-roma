@@ -77,6 +77,27 @@ const API_VALUES = {
     base_url: 'https://dk-aroma.odoo.com',
 };
 
+
+function addProductToCart(pid) {
+
+    var cartUrl = URL_VALUES.base_url + "/shop/cart/update";
+
+    $.ajax({
+        method: "POST",
+        url: cartUrl,
+        dataType: "json",
+        data: { product_id: pid, add_qty: 1 },
+
+        success: function(data) {
+            getCartProducts();
+        },
+
+        error: function(data) {
+
+        }
+    });
+}
+
 function getCartProducts() {
 
     var cartUrl = API_VALUES.base_url + "/dkaroma/shop/get-cart";

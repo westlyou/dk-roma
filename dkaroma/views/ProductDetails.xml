@@ -3,7 +3,9 @@
         <template id="product_details">
         
         <head class="no-js">
-            <title>Product Detail</title>
+            <title>
+                <t t-esc="product.name"/>
+            </title>
             <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
             <meta charset="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
@@ -602,7 +604,8 @@
 
                                                     <div class="js-slider images-slider js-pdp-images-slider slick-initialized slick-slider">
                                                         <div>
-                                                            <img src="/dkaroma/static/img/product-sample-2.png" class="cover productthumbnail js-product-thumbnail product-main-image js-product-main-image"/>
+                                                            <!-- <img src="/dkaroma/static/img/product-sample-2.png" class="cover productthumbnail js-product-thumbnail product-main-image js-product-main-image"/> -->
+                                                            <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
                                                         </div>
                                                     </div>
 
@@ -622,11 +625,23 @@
                                     <div class="product-details-column column-details js-product-details-block">
                                         <section class="product-details-content">
 
+                                            <!-- <t t-esc="product.id" /> 
+                                                <t t-esc="product.name" /> 
+                                                <t t-esc="product.description" /> 
+                                                <t t-esc="product.list_price" /> 
+                                                etc... -->
+
                                             <div class="product-title">
                                                 <h1 class="product-name">
                                                     <span class="category-title">
-                                                        Essential Oil
-                                                    </span> Savage Garden (private collection)
+                                                        <!-- Essential Oil -->
+                                                        <t t-foreach="category" t-as="product.public_categ_ids">
+                                                            <t t-esc="category.name" />
+                                                        </t>
+
+                                                    </span>
+                                                     <!-- Savage Garden (private collection) -->
+                                                     <t t-esc="product.name" />
                                                 </h1>
                                             </div>
 
@@ -634,24 +649,27 @@
 
                                                 <div class="product-short-info">
                                                     <div class="short-description">
-                                                        Anti-aging day cream, 50 ml
+                                                        <!-- Anti-aging day cream, 50 ml -->
+                                                        <t t-esc="product.description" />
                                                     </div>
                                                 </div>
 
                                                 <div class="long-description">
-                                                    Get your glow on every day thanks to this anti-aging day cream from the Ritual of Namaste. This light cream revitalises the skin
+                                                    <!-- Get your glow on every day thanks to this anti-aging day cream from the Ritual of Namaste. This light cream revitalises the skin -->
+                                                    
 
-                                                    <span class="ellipsis js-ellipsis">...</span>
+                                                    <!-- <span class="ellipsis js-ellipsis">...</span> -->
 
-                                                    <a class="read-more-link js-read-more-link">
+                                                    <!-- <a class="read-more-link js-read-more-link">
                                                         Show more
-                                                    </a>
+                                                    </a> -->
                                                 </div>
 
                                                 <div class="product-price">
                                                     <div class="prices-container">
                                                         <span class="price-sales">
-                                                            HK$768
+                                                            <!-- HK$768 -->
+                                                            <t t-esc="'$' + str(product.list_price)" /> 
                                                         </span>
                                                     </div>
                                                 </div>
@@ -660,6 +678,7 @@
                                                     <fieldset>
                                                         <div class="product-add-to-cart">
                                                             <!-- Add necessary hidden inputs -->
+                                                            <input name="pid" type="hidden" t-att-value="product.id"/>
 
                                                             <div class="btn-wrapper">
                                                                 <button type="submit" value="" class="btn btn-add-to-cart js-add-to-cart js-open-minicart">
@@ -712,127 +731,17 @@
 
 
                         <!-- Ingredients section -->
-                        <div class="product-ingredients-container js-product-ingredients-block js-bottom-animation-block dk-bg-full-color essentialoil-bg-full-color">
-
-                            <div class="product-ingredients-column column-image js-extend-image-pin">
-                            </div>
-
-                            <div class="product-ingredients-column column-details js-product-ingredients-details">
-
-                                <div class="product-ingredients-content js-ingredient-scene-element show">
-
-                                    <div class="ingredient-item">
-                                        <h3>Safron Flower</h3>
-
-                                        <p>Saffron flower, also known as "the red gold of the East", contains antioxidants and anti-wrinkle properties.</p>
-                                    </div>
-
-                                    <div class="ingredient-item">
-                                        <h3>Holly Lotus</h3>
-
-                                        <p>Holy lotus is a symbol of purity, beauty and wisdom and is known for its soothing and caring properties.</p>
-                                    </div>
-
-                                    <a class="btn btn--white btn-show-more js-scroll-ingredients">View all ingredients</a>
-
-                                    <button type="button" class="btn btn--white js-expand-ingredients">
-                                        <span class="more">Read more</span>
-                                        <span class="less">Show less</span>
-                                    </button>
-
-                                </div>
-
-                            </div>
-
-                        </div>
+                        
 
 
                         <!-- How to use section -->
-                        <div class="product-hero-container dk-bg-color how-to-use-block js-how-to-use-block dk-bg-color">
-                            <div class="product-hero-media js-responsive-bg">
-                                <div class="cover-wrapper">
-                                    <img src="/dkaroma/static/img/car-2.jpeg" class="w-100 h-100  cover" alt="..."/>
-                                </div>
-                            </div>
-
-                            <div class="product-hero-content">
-                                <div class="product-hero-box">
-                                    <h3>How to Use</h3>
-
-                                    <p>Apply each morning onto a clean face. Sweep upwards in circular motions until fully absorbed.</p>
-                                </div>
-                            </div>
-                        </div>
+                        
 
 
                         <!-- Tabs section -->
-                        <div class="js-product-tabs product-tabs-container">
+                        
 
-                            <div class="inner-wrapper">
-
-                                <div class="tabs-holder js-tabs-holder">
-
-                                    <ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs large-tabs" id="product-details-tabs" role="tablist">
-                                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true" id="information">Information</a></li>
-                                        <li class="tabs-title"><a href="#panel2" id="about">About</a></li>
-                                        <li class="tabs-title"><a href="#panel3" id="function">Function</a></li>
-                                        <li class="tabs-title" id="ingredients"><a href="#panel4">Ingredients</a></li>
-                                        <li class="tabs-title"><a href="#panel5" id="more">More</a></li>
-                                    </ul>
-
-                                    <div class="tabs-content" data-tabs-content="product-details-tabs">
-                                        <div class="tabs-panel is-active" id="panel1">
-                                            <h3>Product Information</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                                est laborum.
-                                            </p>
-                                            <br/>
-                                            <h3>Product Information</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                                est laborum.
-                                            </p>
-
-                                        </div>
-                                        <div class="tabs-panel" id="panel2">
-                                            <h3>About Product</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                                est laborum.
-                                            </p>
-                                        </div>
-                                        <div class="tabs-panel" id="panel3">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                                est laborum.
-                                            </p>
-                                        </div>
-                                        <div class="tabs-panel" id="panel4">
-                                            <strong>Botanical Name</strong>
-                                            <p>5407X</p>
-
-
-                                            <strong>Plant Part</strong>
-                                            <p> Skincare, Eyecare</p>
-
-
-                                            <strong>Extraction</strong>
-                                            <p> Hong Kong</p>
-                                        </div>
-                                        <div class="tabs-panel" id="panel5">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
+                        <!-- Products section -->
                         <section class="product-grid-block js-product-grid-block dk-bg-color">
 
                             <div class="inner-wrapper">
@@ -854,359 +763,79 @@
 
                                             <ul class="justify-content-around search-result-items grid-wrap hide-compare grid-initialized">
 
-                                                <li class="item">
-                                                    <div class="product-tile product-detail-tile linked-block">
+                                                <!-- render loop -->
+                                                <t t-foreach="products" t-as="product.alternative_product_ids">
+                                                    
+                                                    <!-- item -->
+                                                    <li class="item">
+                                                        <div class="product-tile product-detail-tile linked-block">
 
-                                                        <div class="product-image">
-                                                            <a class="thumb-link" href="#">
-                                                                <img src="/dkaroma/static/img/product-sample.png" class="cover"/>
-                                                            </a>
-                                                        </div>
-
-                                                        <section class="product-details-content">
-
-                                                            <div class="product-title">
-                                                                <a class="product-name-link">
-                                                                    <span>Savage Garden (private collection)</span>
+                                                            <div class="product-image">
+                                                                <a class="thumb-link" href="/product-details">
+                                                                    <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                                    <!-- <img src="/dkaroma/static/img/product-sample-1.gif" class="cover" /> -->
                                                                 </a>
                                                             </div>
 
-                                                            <div class="short-description">
-                                                                Just the right scent.
-                                                            </div>
+                                                            <section class="product-details-content">
 
-                                                            <div class="product-user-actions">
-                                                                <div class="product-price">
-                                                                    <span class="product-standard-price">
-                                                                        HK$768
-                                                                    </span>
+                                                                <div class="product-title">
+                                                                    <a class="product-name-link">
+                                                                        <t t-esc="product.name" />
+                                                                        <!-- <span>Five Element Essential Oil Set (3 pieces)</span> -->
+                                                                    </a>
                                                                 </div>
 
-                                                                <form novalidate="novalidate" class="dk-form">
-                                                                    <fieldset>
-                                                                        <div class="product-add-to-cart">
+                                                                <div class="short-description">
+                                                                    <t t-esc="product.description" />
+                                                                    <!-- Essential oils help you balance your body, mind and soul! -->
+                                                                </div>
 
-                                                                            <!-- HIDDEN INPUT FIELDS -->
+                                                                <div class="product-user-actions">
+                                                                    <div class="product-price">
+                                                                        <span class="product-standard-price">
+                                                                            <t t-esc="'$' + str(product.list_price)" />
+                                                                            <!-- HK$768 -->
+                                                                        </span>
+                                                                    </div>
 
-                                                                            <div class="btn-wrapper">
-                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
-                
-                                                                                    <span class="icon icon-item icon-item-light">
-                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                                                                    </span>
-                
-                                                                                    Add to cart
-                                                                                </button>
+                                                                    <form novalidate="novalidate" class="dk-form" onsubmit="return addToCart();">
+                                                                        <fieldset>
+                                                                            <div class="product-add-to-cart">
+
+                                                                                <!-- HIDDEN INPUT FIELDS -->
+                                                                                <input name="pid" type="hidden" t-att-value="product.id"/>
+
+                                                                                <div class="btn-wrapper">
+                                                                                    <button type="submit" class="btn btn--secondary btn-add-to-cart js-open-minicart">
+
+                                                                                        <span class="icon icon-item icon-item-light">
+                                                                                            <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                                                                        </span>
+                                                                                        Add to cart
+                                                                                    </button>
+                                                                                </div>
                                                                             </div>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </form>
+                                                                        </fieldset>
+                                                                    </form>
 
-                                                            </div>
+                                                                </div>
 
-                                                            <a href="#" class="link--large view-full-details-link">
-                                                                View full details
-                                                            </a>
-
-                                                        </section>
-
-                                                    </div>
-                                                </li>
-
-                                                <li class="item">
-                                                    <div class="product-tile product-detail-tile linked-block">
-
-                                                        <div class="product-image">
-                                                            <a class="thumb-link" href="#">
-                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
-                                                            </a>
-                                                        </div>
-
-                                                        <section class="product-details-content">
-
-                                                            <div class="product-title">
-                                                                <a class="product-name-link">
-                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
+                                                                <a href="#" class="link--large view-full-details-link">
+                                                                    View full details
                                                                 </a>
-                                                            </div>
 
-                                                            <div class="short-description">
-                                                                Essential oils help you balance your body, mind and soul!
-                                                            </div>
+                                                            </section>
 
-                                                            <div class="product-user-actions">
-                                                                <div class="product-price">
-                                                                    <span class="product-standard-price">
-                                                                        HK$768
-                                                                    </span>
-                                                                </div>
-
-                                                                <form novalidate="novalidate" class="dk-form">
-                                                                    <fieldset>
-                                                                        <div class="product-add-to-cart">
-
-                                                                            <!-- HIDDEN INPUT FIELDS -->
-
-                                                                            <div class="btn-wrapper">
-                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
-                
-                                                                                    <span class="icon icon-item icon-item-light">
-                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                                                                    </span>
-                
-                                                                                    Add to cart
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </form>
-
-                                                            </div>
-
-                                                            <a href="#" class="link--large view-full-details-link">
-                                                                View full details
-                                                            </a>
-
-                                                        </section>
-
-                                                    </div>
-                                                </li>
-
-                                                <li class="item">
-                                                    <div class="product-tile product-detail-tile linked-block">
-
-                                                        <div class="product-image">
-                                                            <a class="thumb-link" href="#">
-                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
-                                                            </a>
                                                         </div>
+                                                    </li>
 
-                                                        <section class="product-details-content">
+                                                    <!-- <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "product_detail_img mh-100", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                    <span t-esc="product.id" />
+                                                    <t t-esc="product.name" />
+                                                    <t t-esc="'$' + str(product.list_price)" /> -->
+                                                </t>
 
-                                                            <div class="product-title">
-                                                                <a class="product-name-link">
-                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
-                                                                </a>
-                                                            </div>
-
-                                                            <div class="short-description">
-                                                                Essential oils help you balance your body, mind and soul!
-                                                            </div>
-
-                                                            <div class="product-user-actions">
-                                                                <div class="product-price">
-                                                                    <span class="product-standard-price">
-                                                                        HK$768
-                                                                    </span>
-                                                                </div>
-
-                                                                <form novalidate="novalidate" class="dk-form">
-                                                                    <fieldset>
-                                                                        <div class="product-add-to-cart">
-
-                                                                            <!-- HIDDEN INPUT FIELDS -->
-
-                                                                            <div class="btn-wrapper">
-                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
-                
-                                                                                    <span class="icon icon-item icon-item-light">
-                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                                                                    </span>
-                
-                                                                                    Add to cart
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </form>
-
-                                                            </div>
-
-                                                            <a href="#" class="link--large view-full-details-link">
-                                                                View full details
-                                                            </a>
-
-                                                        </section>
-
-                                                    </div>
-                                                </li>
-
-                                                <li class="item">
-                                                    <div class="product-tile product-detail-tile linked-block">
-
-                                                        <div class="product-image">
-                                                            <a class="thumb-link" href="#">
-                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
-                                                            </a>
-                                                        </div>
-
-                                                        <section class="product-details-content">
-
-                                                            <div class="product-title">
-                                                                <a class="product-name-link">
-                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
-                                                                </a>
-                                                            </div>
-
-                                                            <div class="short-description">
-                                                                Essential oils help you balance your body, mind and soul!
-                                                            </div>
-
-                                                            <div class="product-user-actions">
-                                                                <div class="product-price">
-                                                                    <span class="product-standard-price">
-                                                                        HK$768
-                                                                    </span>
-                                                                </div>
-
-                                                                <form novalidate="novalidate" class="dk-form">
-                                                                    <fieldset>
-                                                                        <div class="product-add-to-cart">
-
-                                                                            <!-- HIDDEN INPUT FIELDS -->
-
-                                                                            <div class="btn-wrapper">
-                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
-                
-                                                                                    <span class="icon icon-item icon-item-light">
-                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                                                                    </span>
-                
-                                                                                    Add to cart
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </form>
-
-                                                            </div>
-
-                                                            <a href="#" class="link--large view-full-details-link">
-                                                                View full details
-                                                            </a>
-
-                                                        </section>
-
-                                                    </div>
-                                                </li>
-
-                                                <li class="item">
-                                                    <div class="product-tile product-detail-tile linked-block">
-
-                                                        <div class="product-image">
-                                                            <a class="thumb-link" href="#">
-                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
-                                                            </a>
-                                                        </div>
-
-                                                        <section class="product-details-content">
-
-                                                            <div class="product-title">
-                                                                <a class="product-name-link">
-                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
-                                                                </a>
-                                                            </div>
-
-                                                            <div class="short-description">
-                                                                Essential oils help you balance your body, mind and soul!
-                                                            </div>
-
-                                                            <div class="product-user-actions">
-                                                                <div class="product-price">
-                                                                    <span class="product-standard-price">
-                                                                        HK$768
-                                                                    </span>
-                                                                </div>
-
-                                                                <form novalidate="novalidate" class="dk-form">
-                                                                    <fieldset>
-                                                                        <div class="product-add-to-cart">
-
-                                                                            <!-- HIDDEN INPUT FIELDS -->
-
-                                                                            <div class="btn-wrapper">
-                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
-                
-                                                                                    <span class="icon icon-item icon-item-light">
-                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                                                                    </span>
-                
-                                                                                    Add to cart
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </form>
-
-                                                            </div>
-
-                                                            <a href="#" class="link--large view-full-details-link">
-                                                                View full details
-                                                            </a>
-
-                                                        </section>
-
-                                                    </div>
-                                                </li>
-
-                                                <li class="item">
-                                                    <div class="product-tile product-detail-tile linked-block">
-
-                                                        <div class="product-image">
-                                                            <a class="thumb-link" href="#">
-                                                                <img src="/dkaroma/static/img/product-sample-1.gif" class="cover"/>
-                                                            </a>
-                                                        </div>
-
-                                                        <section class="product-details-content">
-
-                                                            <div class="product-title">
-                                                                <a class="product-name-link">
-                                                                    <span>Five Element Essential Oil Set (3 pieces)</span>
-                                                                </a>
-                                                            </div>
-
-                                                            <div class="short-description">
-                                                                Essential oils help you balance your body, mind and soul!
-                                                            </div>
-
-                                                            <div class="product-user-actions">
-                                                                <div class="product-price">
-                                                                    <span class="product-standard-price">
-                                                                        HK$768
-                                                                    </span>
-                                                                </div>
-
-                                                                <form novalidate="novalidate" class="dk-form">
-                                                                    <fieldset>
-                                                                        <div class="product-add-to-cart">
-
-                                                                            <!-- HIDDEN INPUT FIELDS -->
-
-                                                                            <div class="btn-wrapper">
-                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart">
-                
-                                                                                    <span class="icon icon-item icon-item-light">
-                                                                                        <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                                                                    </span>
-                
-                                                                                    Add to cart
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </form>
-
-                                                            </div>
-
-                                                            <a href="#" class="link--large view-full-details-link">
-                                                                View full details
-                                                            </a>
-
-                                                        </section>
-
-                                                    </div>
-                                                </li>
                                             </ul>
 
                                         </div>
@@ -1229,14 +858,20 @@
 
                     <div class="sticky-product-container">
                         <div class="image-container">
-                            <img class="image" src="/dkaroma/static/img/product-sample-2.png" alt=""/>
+                            <!-- <img class="image" src="/dkaroma/static/img/product-sample-2.png" alt=""/> -->
+                            <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
                         </div>
 
                         <div class="details-container">
                             <span class="product-name small">
                                 <span class="the-ritual-of-title small category-title">
-                                    Essential Oil
-                                </span> Savage Garden (private collection)
+                                    <!-- Essential Oil -->
+                                    <t t-foreach="category" t-as="product.public_categ_ids">
+                                        <t t-esc="category.name" />
+                                    </t>
+
+                                </span> 
+                                <t t-esc="product.name" />
                             </span>
                         </div>
 
@@ -1244,7 +879,7 @@
                             <div class="product-price">
                                 <div class="prices-container">
                                     <span class="price-sales">
-                                        HK$768
+                                        <t t-esc="'$' + str(product.list_price)" />
                                     </span>
                                 </div>
                             </div>
@@ -1255,6 +890,9 @@
                         <form action="" method="" class="sticky-add-to-cart-form js-sticky-add-to-cart-form dk-form" novalidate="novalidate" onsubmit="return addToCart();">
                             <fieldset>
                                 <div class="product-add-to-cart">
+
+                                    <input name="pid" type="hidden" t-att-value="product.id"/>
+
                                     <div class="btn-wrapper">
                                         <button type="submit" class="btn btn-add-to-cart js-add-to-cart js-open-minicart">
 
@@ -1921,8 +1559,8 @@
             <script src="/dkaroma/static/js/jquery.selectric.js"></script>
             <script src="/dkaroma/static/js/jquery.visible.js" type="text/javascript"></script>
             <script src="/dkaroma/static/js/scrolltoview.js" type="text/javascript"></script>
-            <script src="/dkaroma/static/js/product-details.js" type="text/javascript"></script>
             <script data-main="/dkaroma/static/js/main" src="/dkaroma/static/js/ext/require.js"></script>
+            <script src="/dkaroma/static/js/product-details.js" type="text/javascript"></script>
             <script src="/dkaroma/static/js/script.js" type="text/javascript"></script>
             <script src="/dkaroma/static/js/header.js" type="text/javascript"></script>
 
