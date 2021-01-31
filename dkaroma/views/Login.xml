@@ -114,9 +114,13 @@
 
                                                     </div>
 
-                                                    <!-- <a class="password-reset js-password-reset-link js-slidedown">
+                                                    <a class=" new-account password-reset js-password-reset-link js-slidedown">
+                                                        No account? Create one
+                                                    </a>
+
+                                                    <a class="password-reset js-password-reset-link js-slidedown">
                                                         Forgot password?
-                                                    </a> -->
+                                                    </a>
 
 
                                                     <div class="form-row form-row-button">

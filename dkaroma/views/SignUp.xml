@@ -60,8 +60,8 @@
 
 
                                             <h3 class="page-layout-left-title">
-                                    DK Aromatherapy member signup
-                                </h3>
+                                                DK Aromatherapy member signup
+                                            </h3>
 
                                             <p class="page-layout-left-subtitle">
                                                 Create a new DK Aromatherapy member account
@@ -133,8 +133,8 @@
 
                                                     
 
-                                                    <a class="password-reset js-password-reset-link js-slidedown">
-                                                        Already own an account?
+                                                    <a href="" class="password-reset js-password-reset-link js-slidedown">
+                                                        Already registered? Login
                                                     </a>
 
 
