@@ -1508,7 +1508,7 @@ a.link--large {
 .shopping-cart-footer .order-total {
     padding-top: 18px;
     margin-top: 12px;
-    border-top: 1px solid #453f3f;
+    /* border-top: 1px solid #453f3f; */
 }
 
 .shopping-cart-footer .cart-shipping-option-wrapper {

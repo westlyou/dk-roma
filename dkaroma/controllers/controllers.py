@@ -97,6 +97,29 @@ class Dkaroma(http.Controller):
     def home(self, **kw):
         return http.request.render('dkaroma.home')
 
+    @http.route('/dkaroma/signup', type="http", auth='public', csrf=False, website=True)
+    def signup(self, **kw):
+        if not kw.get("login"):
+            return http.request.render('dkaroma.signup')
+        else:
+            try:
+                partner_id = http.request.env['res.partner'].sudo().create({
+                    "email": kw.get("login") or "",
+                    "name": kw.get("name") or "Customer"
+                })
+
+                user_id = http.request.env['res.users'].sudo().create({
+                    "login": kw.get("login") or "",
+                    "name": kw.get("name") or "Customer",
+                    "new_password": kw.get("password") or "",
+                    "sel_groups_1_8_9": "1"
+                })
+                user_id._set_password()
+            except Exception as e:
+                return http.request.render('dkaroma.signup')
+
+            return request.redirect("/web/login")
+
     @http.route('/dkaroma/shop/get-child-categories', auth='public')
     def get_categories(self, parent, **kw):
         parent_obj = http.request.env["product.public.category"].sudo().search(

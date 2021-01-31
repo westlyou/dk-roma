@@ -85,7 +85,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="form-row full-width-row password js-slidedown required">
+                                                    <div class="form-row full-width-row password js-slidedown required login-password">
 
                                                         <div class="field-wrapper inputfield-row">
 
@@ -113,6 +113,10 @@
                                                         </div>
 
                                                     </div>
+
+                                                    <a class=" new-account password-reset js-password-reset-link js-slidedown">
+                                                        No account? Create one
+                                                    </a>
 
                                                     <a class="password-reset js-password-reset-link js-slidedown">
                                                         Forgot password?

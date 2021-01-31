@@ -635,9 +635,10 @@
                                                 <h1 class="product-name">
                                                     <span class="category-title">
                                                         <!-- Essential Oil -->
-                                                        <t t-foreach="category" t-as="product.public_categ_ids">
+                                                        <!-- <t t-foreach="category" t-as="product.public_categ_ids">
                                                             <t t-esc="category.name" />
-                                                        </t>
+                                                        </t> -->
+                                                        <t t-esc="','.(product.public_categ_ids)"/>
 
                                                     </span>
                                                      <!-- Savage Garden (private collection) -->
@@ -866,10 +867,12 @@
                             <span class="product-name small">
                                 <span class="the-ritual-of-title small category-title">
                                     <!-- Essential Oil -->
-                                    <t t-foreach="category" t-as="product.public_categ_ids">
+                                    <!-- <t t-foreach="category" t-as="product.public_categ_ids">
                                         <t t-esc="category.name" />
-                                    </t>
-
+                                    </t> -->
+                                    
+                                    <t t-esc="','.(product.public_categ_ids)"/>
+                                    
                                 </span> 
                                 <t t-esc="product.name" />
                             </span>

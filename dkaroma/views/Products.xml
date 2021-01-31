@@ -664,8 +664,8 @@
                                             <div class="filter-product-number">
                                                 <!-- 12 products -->
 
-                                                <span t-esc="str(search_count) + ' product'" t-if="len(search_count) == 1"/>
-                                                <span t-esc="str(search_count) + ' products'" t-if="len(search_count) > 1"/>
+                                                <span t-esc="str(search_count) + ' product'" t-if="search_count == 1"/>
+                                                <span t-esc="str(search_count) + ' products'" t-if="search_count > 1"/>
                                             </div>
 
                                             <div class="sorting-options">

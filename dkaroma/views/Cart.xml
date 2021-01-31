@@ -570,7 +570,9 @@
                                                 </div>
 
                                                 <div class="shopping-cart-product-number ">
-                                                    <span class="js-cart-product-number">2 products</span>
+                                                    <span class="js-cart-product-number">
+                                                        <!-- 2 products -->
+                                                    </span>
                                                 </div>
                                             </div>
 
@@ -630,7 +632,8 @@
                                                                                     </div>
 
                                                                                     <div class="description">
-                                                                                        Lorem ipsum desc
+                                                                                        <!-- Lorem ipsum desc -->
+                                                                                        <t t-esc="line.product_id.desription"/>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -639,6 +642,7 @@
                                                                                 <div class="item-user-buttons js-item-user-buttons">
                                                                                     <!-- hidden input holding product name as value -->
                                                                                     <input name="pid" type="hidden" t-att-value="line.product_id.id"/>
+                                                                                    <input name="qty" type="hidden" t-att-value="line.product_id.qty_available"/>
 
                                                                                     <div class="quantity-block">
                                                                                         <button type="button" class="quantity-button icon-minus2 js-decrement">
@@ -661,7 +665,7 @@
                                                                             <div class="cart-product-user-controls js-cart-product-user-controls">
                                                                                 <div class="cart-product-controls-inner">
                                                                                     <div class="item-user-actions">
-                                                                                        <button class="link link--large" type="submit" value="Remove" name="">
+                                                                                        <button class="link link--large js-remove-product-btn" type="button" value="Remove" name="">
                                                                                             <span>Remove</span>
                                                                                         </button>
                                                                                     </div>
@@ -679,7 +683,7 @@
 
                                                                         <div class="shopping-cart-cell-price js-cart-product-price">
                                                                             <span class="price-total">
-                                                                                <t t-esc="'$' + str(line.product_id.list_price)" />
+                                                                                <t t-esc="'$' + str(line.product_id.amount_subtotal)" />
                                                                             </span>
                                                                         </div>
 
@@ -720,13 +724,10 @@
 
                                                             <div class="order-subtotal">
                                                                 <div class="cart-footer__item--name">
-                                                                    Subtotal
+                                                                    Cart summary
                                                                 </div>
 
-                                                                <!-- Subtotal -->
-                                                                <div class="cart-footer__item--val">
-                                                                    HK$800
-                                                                </div>
+                                                                
                                                             </div>
 
                                                             <div class="content-asset">
@@ -736,126 +737,12 @@
                                                                 </span>
                                                             </div>
 
-                                                            <!-- Shipping options -->
-                                                            <div class="shipping-options-container js-shipping-options-container">
-
-                                                                <div class="js-shipping-options-area">
-
-                                                                    
-                                                                    <div class="order-shipping cart-delivery-options">
-                                                                        <label class="cart-delivery-option-label js-checkout-radio js-shipping-option-radio-label">
-
-                                                                            <input type="radio" name="shipping-options" checked="1"/>
-
-                                                                            <div class="option-title">
-                                                                                Express
-                                                                            </div>
-
-                                                                            <div class="option-price">
-                                                                                HK$311
-                                                                            </div>
-
-                                                                        </label>
-                                                                    </div>
-
-                                                                    <div class="order-shipping cart-delivery-options">
-                                                                        <label class="cart-delivery-option-label js-checkout-radio js-shipping-option-radio-label">
-
-                                                                            <input type="radio" name="shipping-options"/>
-
-                                                                            <div class="option-title">
-                                                                                Air Mail
-                                                                            </div>
-
-                                                                            <div class="option-price">
-                                                                                HK$209
-                                                                            </div>
-
-                                                                        </label>
-                                                                    </div>
-
-                                                                </div>
-
-                                                                <span id="shippingOptionsError" class="error error-text hide"></span>
-
-                                                                <div class="delivery-postal-code js-delivery-postal-code">
-
-                                                                    <div class="delivery-postal-code-head js-postal-code-edit-wrapper hide">
-                                                                        <span>
-                                                                            <strong>Delivery based on XXXXXX</strong>
-                                                                        </span>
-
-                                                                        <button type="button" class="delivery-postal-code-edit js-delivery-postal-code-edit">
-                                                                            Change location
-                                                                        </button>
-                                                                    </div>
-
-                                                                    <p class="delivery-usp-heading js-delivery-usp-heading hide">
-                                                                        Would you like to see more delivery options near you?
-                                                                    </p>
-
-                                                                    <form action="" method="" class="hide delivery-postal-code-form js-delivery-postal-code-form dk-form">
-
-                                                                        <fieldset>
-
-                                                                            <div class="delivery-postal-code-formrow">
-                                                                                <div class="form-row full-width-row  required">
-
-                                                                                    <div class="field-wrapper inputfield-row">
-                                                                                        <label>
-                                                                                            <span>Postal code</span>
-                                                                                        </label>
-
-                                                                                        <div class="error-message">
-
-                                                                                        </div>
-
-
-                                                                                        <input class="inputfield-text postal formal required masked error js-validator-error error-text"/>
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="delivery-postal-code-formrow">
-
-                                                                                <button type="submit" class="btn btn--secondary js-search-by-postalcode">
-                                                                                    <span class="js-search-by-postalcode-title">
-                                                                                        Show my options
-                                                                                    </span>
-
-                                                                                    <div class="spinner js-spinner-general black-spinner js-postal-code-spinner">
-                                                                                        <span></span>
-                                                                                        <span></span>
-                                                                                        <span></span>
-                                                                                    </div>
-                                                                                </button>
-
-                                                                            </div>
-
-                                                                        </fieldset>
-
-                                                                    </form>
-                                                                </div>
-
-                                                            </div>
-
                                                             <!-- Order summary start -->
                                                             <div class="js-order-summary">
 
                                                     
                                                                 <div class="order-total">
-                                                                    <div class="cart-shipping-option-wrapper">
-
-                                                                        <span class="shipping-option js-totals-selected-shipping-option">
-                                                                            Shipping option
-                                                                        </span>
-
-                                                                        <span class="shipping-price js-shipping-price">
-                                                                            Free
-                                                                        </span>
-
-                                                                    </div>
+                                                                    
 
                                                                     <div class="cart-footer-total">
 
@@ -867,8 +754,11 @@
                                                                             </span>
                                                                         </div>
 
-                                                                        <div class="cart-footer__item--val order-value js-order-value">
-                                                                            HK$800
+                                                                        <div class="cart-footer__item--val order-value">
+                                                                            <h3 class="js-order-value">
+                                                                                <!-- HK$800 -->
+                                                                                <t t-esc="order.amount_total"/>
+                                                                            </h3>
                                                                         </div>
 
                                                                     </div>
