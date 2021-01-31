@@ -60,11 +60,11 @@
 
 
                                             <h3 class="page-layout-left-title">
-                                    Login to DK Aromatherapy
-                                </h3>
+                                                DK Aromatherapy member signup
+                                            </h3>
 
                                             <p class="page-layout-left-subtitle">
-                                                Enter your email to log in or to create a new account
+                                                Create a new DK Aromatherapy member account
                                             </p>
 
                                             <form class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form"  role="form" action="/dkaroma/signup" method="post">
@@ -82,6 +82,21 @@
                                                             <div class="error-message"></div>
 
                                                             <input id="email" name="login" type="text" class="inputfield-text email-input formal required valid" placeholder="Email" />
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-row full-width-row username required">
+                                                        <div class="field-wrapper inputfield-row">
+
+                                                            <label for="username">
+                                                                <span>Username</span>
+                                                            </label>
+
+                                                            <div class="error-message"></div>
+
+                                                            <input id="username" name="username" type="text" class="inputfield-text email-input formal required valid" placeholder="Username" />
 
 
                                                         </div>
@@ -116,90 +131,10 @@
 
                                                     </div>
 
-                                                    <!-- location field -->
-                                                    <div class="form-row full-width-row required">
+                                                    
 
-                                                        <div class="field-wrapper inputfield-row">
-
-                                                            <label class="">
-                                                                <span>Location</span>
-                                                            </label>
-
-
-                                                            <select id="location">
-                                                                <option>
-                                                                    Hong Kong
-                                                                </option>
-
-                                                                <option>
-                                                                    China
-                                                                </option>
-
-                                                                <option>
-                                                                    Macau
-                                                                </option>
-
-                                                                <option>
-                                                                    Taiwan
-                                                                </option>
-
-                                                                <option>
-                                                                    United States
-                                                                </option>
-
-                                                                <option>
-                                                                    Canada
-                                                                </option>
-
-                                                                <option>
-                                                                    United Kingdom
-                                                                </option>
-
-                                                            </select>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <!-- district field -->
-                                                    <div class="form-row full-width-row required js-district-input-row ">
-
-                                                        <div class="field-wrapper inputfield-row">
-
-                                                            <label class="">
-                                                                <span>District</span>
-                                                            </label>
-
-                                                            <select id="district">
-
-                                                                <option>
-                                                                    Hong Kong
-                                                                </option>
-
-                                                                <option>
-                                                                    China
-                                                                </option>
-
-                                                                <option>
-                                                                    Macau
-                                                                </option>
-
-                                                                <option>
-                                                                    Taiwan
-                                                                </option>
-
-                                                                <option>
-                                                                    United States
-                                                                </option>
-                                                        
-                                                            </select>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <a class="password-reset js-password-reset-link js-slidedown">
-                                                        Already own an account?
+                                                    <a href="" class="password-reset js-password-reset-link js-slidedown">
+                                                        Already registered? Login
                                                     </a>
 
 

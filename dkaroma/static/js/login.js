@@ -5,9 +5,9 @@ function validateForm() {
         return false;
     }
 
-    if (!validateEmail($('#email'))) {
-        return false;
-    }
+    // if (!validateEmail($('#email'))) {
+    //     return false;
+    // }
 
     if (!validateEmptyPassword($('#password'))) {
         return false;
