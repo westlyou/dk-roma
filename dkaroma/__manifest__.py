@@ -39,6 +39,7 @@
         'views/News.xml',
         'views/Services.xml',
         'views/About.xml',
+        'views/SignUp.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

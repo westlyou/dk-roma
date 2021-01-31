@@ -1,9 +1,9 @@
 <odoo>
     <data>
-        <template id="web.login">
+        <template id="signup">
 
             <head>
-                <title>Sign up for DK Aromatherapy Membershipp</title>
+                <title>Sign up for DK Aromatherapy Membership</title>
                 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
@@ -67,7 +67,7 @@
                                                 Enter your email to log in or to create a new account
                                             </p>
 
-                                            <form class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form"  role="form" t-attf-action="" method="post" onsubmit="this.action = this.action + location.hash">
+                                            <form class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form"  role="form" action="/dkaroma/signup" method="post">
                                                 <fieldset>
                                                     <!-- <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                                     <input type="hidden" name="db" t-att-value="request.db" id="db" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" readonly="readonly"/> -->
