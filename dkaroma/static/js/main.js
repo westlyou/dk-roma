@@ -66,5 +66,129 @@ requirejs(["ext/body-scroll-lock"], function(bodyScrollLock) {
     }
 
 
+    $(function() {
+        getCartProducts();
+    });
+
 
 });
+
+const API_VALUES = {
+    base_url: 'https://dk-aroma.odoo.com',
+};
+
+
+function addProductToCart(pid) {
+
+    var cartUrl = URL_VALUES.base_url + "/shop/cart/update";
+
+    $.ajax({
+        method: "POST",
+        url: cartUrl,
+        dataType: "json",
+        data: { product_id: pid, add_qty: 1 },
+
+        success: function(data) {
+            getCartProducts();
+        },
+
+        error: function(data) {
+
+        }
+    });
+}
+
+function getCartProducts() {
+
+    var cartUrl = API_VALUES.base_url + "/dkaroma/shop/get-cart";
+
+    $.ajax({
+        method: "GET",
+        url: cartUrl,
+        dataType: "json",
+
+        success: function(data) {
+
+            $('.js-minicart-flyout-container .wrapper--minicart__list').append(
+                addMiniCartItems(data)
+            );
+
+            if (data.length == 0) {
+                $('.js-minicart-empty').removeClass('hide');
+                $('.js-minicart-not-empty').addClass('hide');
+
+            } else {
+                var productString = data.length > 1 ? 'products' : 'product';
+                $('.cart-number').html(data.length > 0 ? data.length : '');
+                $('.js-selected-products').html(data.length + ' ' + productString);
+
+                $('.js-total-price').html('$' + data[0].total);
+                $('.js-minicart-flyout-checkout').removeClass('hide');
+            }
+
+        },
+
+        error: function(data) {
+
+        }
+    });
+
+
+}
+
+function addMiniCartItems(data) {
+
+    $('.js-minicart-flyout-container .wrapper--minicart__list').find('.mini-cart-product').remove();
+
+    var items = data.map(function(value) {
+
+        var quantity = value.quantity;
+        var productUrl = '/shop/product/' + value.product_id;
+        var subtotal = '$' + value.sub_total;
+
+        return `
+
+        
+        <div class="mini-cart-product">
+            
+            <div class="mini-cart-info">
+                <div class="mini-cart-small-title">
+                    <!-- Five Element Essential Oils -->
+                </div>
+
+                <div class="mini-cart-name mini-cart-product-name">
+                    <a href="${productUrl}" class="">
+                        ${value.product_name}
+                    </a>
+                </div>
+
+                <div class="mini-cart-attributes">
+                </div>
+
+                <div class="mini-cart-details-bottom">
+                    <div class="mini-cart-pricing">
+                        <span class="label">
+                            Quantity:
+                        </span>
+
+                        <span class="value">
+                            ${quantity}
+                        </span>
+                    </div>
+
+                    <div class="mini-cart-price-wrapper js-mini-cart-price-wrapper">
+                        <span class="mini-cart-price">
+                           ${subtotal}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        `;
+    }).join('');
+
+
+    return items;
+
+}

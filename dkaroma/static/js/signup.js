@@ -1,3 +1,7 @@
+$(document).ready(function() {
+
+});
+
 function validateForm() {
 
 
@@ -35,7 +39,7 @@ $('.back-button').on('click', function() {
     window.history.back();
 });
 
-$('.js-login-submit').on('click', function(e) {
+$('.js-signup-submit').on('click', function(e) {
 
     if (!validateForm()) {
         e.preventDefault();

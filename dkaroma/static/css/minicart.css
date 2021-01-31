@@ -458,3 +458,7 @@
     background: transparent;
     color: inherit;
 }
+
+.mini-cart-empty-text {
+    text-align: center;
+}
