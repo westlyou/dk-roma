@@ -60,7 +60,7 @@
                     <field name="scroll_products_1" widget="section_and_note_one2many" mode="tree">
                       <tree>
                         <field name="name" />
-                        <field name="image_1920" widget="image" />
+                        <!-- <field name="image_1920" widget="image" /> -->
                         <field name="list_price" widget="currency" />
                       </tree>
                     </field>
@@ -107,7 +107,7 @@
                     <field name="scroll_products_2" widget="section_and_note_one2many" mode="tree">
                       <tree>
                         <field name="name" />
-                        <field name="image_1920" widget="image" />
+                        <!-- <field name="image_1920" widget="image" /> -->
                         <field name="list_price" widget="currency" />
                       </tree>
                     </field>
