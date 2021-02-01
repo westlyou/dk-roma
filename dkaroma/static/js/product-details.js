@@ -23,9 +23,9 @@ $(document).ready(function() {
 
 
     $('.dk-form').on('click', '.btn-add-to-cart', function(e) {
-        var pid = $(this).closest('form').find('[name=pid]').val();
-
-        addProductToCart(pid);
+        // var pid = $(this).closest('form').find('[name=pid]').val();
+        // addProductToCart(pid);
+        getCartProducts();
 
     });
 
