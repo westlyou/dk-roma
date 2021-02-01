@@ -80,7 +80,7 @@ const API_VALUES = {
 
 function addProductToCart(pid) {
 
-    var cartUrl = API_VALUES.base_url + "/shop/cart/update";
+    var cartUrl = API_VALUES.base_url + "/shop/cart/update_json";
 
     $.ajax({
         method: "POST",
