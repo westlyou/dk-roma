@@ -852,7 +852,7 @@
 
                             <div class="">
 
-                                <ul id="topSlider">
+                                <ul id="topSlider" class="hide">
 
                                     <li>
                                         <div class="product-list-slider-item text-item slider-header-item" id="slide-1 ">
@@ -1117,7 +1117,7 @@
 
                             <div class="">
 
-                                <ul id="promotionSlider">
+                                <ul id="promotionSlider" class="hide">
 
                                     <li>
                                         <div class="product-list-slider-item text-item slider-header-item" id="slide-1 ">
