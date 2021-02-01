@@ -93,9 +93,10 @@ class Dkaroma(http.Controller):
     # def index(self, **kw):
     #     return "Hello, world"
 
-    @http.route('/', auth='public')
+    @http.route('/', auth='public', type="http", website=True)
     def home(self, **kw):
-        return http.request.render('dkaroma.home')
+        home_page = http.request.env["dkaroma.home"].sudo().search([], limit=1)
+        return http.request.render('dkaroma.home', {"home_page": home_page})
 
     @http.route('/dkaroma/signup', type="http", auth='public', csrf=False, website=True)
     def signup(self, **kw):

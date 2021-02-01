@@ -73,3 +73,51 @@ MINI CART
 URL: /dkaroma/shop/get-cart
 APPLICATION-TYPE: HTTP
 RESPONSE FORMAT: [{"product_id": 4, "product_name": "1X-JST-XH-255", "quantity": 1.0, "price": 10.0, "sub_total": 10.0, "total": 50.0}, {"product_id": 7, "product_name": "BMG-MDD-HW", "quantity": 4.0, "price": 10.0, "sub_total": 40.0, "total": 50.0}]
+
+
+=============================================
+HOME PAGE
+=============================================
+
+Odoo object name: home_page
+Fields available:
+    name = fields.Char("Name")
+    banner_text_small_1 = fields.Char()
+    banner_text_small_2 = fields.Char()
+    banner_image_1 = fields.Binary()
+    banner_image_2 = fields.Binary()
+    
+    header_text_big = fields.Char()
+    header_text_small = fields.Char()
+    
+    card_1_text_big = fields.Char()
+    card_1_text_small = fields.Char()
+    card_1_image = fields.Binary()
+
+    card_2_text_big = fields.Char()
+    card_2_text_small = fields.Char()
+    card_2_image = fields.Binary()
+
+    scroll_products_1_text_big = fields.Char()
+    scroll_products_1_text_small = fields.Char()
+    scroll_products_1 = fields.Many2many("product.template", "scroll_products_1_rel")
+
+    card_3_text_big = fields.Char()
+    card_3_text_small = fields.Char()
+    card_3_image = fields.Binary()
+
+    card_4_text_big = fields.Char()
+    card_4_text_small = fields.Char()
+    card_4_image = fields.Binary()
+
+    card_5_text_big = fields.Char()
+    card_5_text_small = fields.Char()
+    card_5_image = fields.Binary()
+
+    card_6_text_big = fields.Char()
+    card_6_text_small = fields.Char()
+    card_6_image = fields.Binary()
+
+    scroll_products_2_text_big = fields.Char()
+    scroll_products_2_text_small = fields.Char()
+    scroll_products_2 = fields.Many2many("product.template", "scroll_products_2_rel")
