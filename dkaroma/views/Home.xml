@@ -789,7 +789,7 @@
 
                                                 <!-- <img class="cover " src="/dkaroma/static/img/left-card-img.png " alt="product "/> -->
                                                 <!-- <div t-field="home_page.card_1_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_1_image }}" class="w-100 h-100 cover" />
+                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_1_image }}" class="cover" />
 
                                             </a>
 
@@ -822,7 +822,7 @@
                                             <a class="image-holder ">
 
                                                 <!-- <div t-field="home_page.card_2_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_2_image }}" class="w-100 h-100 cover" />
+                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_2_image }}" class="cover" />
 
                                             </a>
 
@@ -882,53 +882,7 @@
                                     <t t-foreach="product" t-as="home_page.scroll_products_1">
                                     
                                         <!-- item -->
-                                        <li>
-                                            <div class="product-list-slider-item ">
-
-
-                                                <div class="product-tile product-detail-tile linked-block ">
-
-                                                    <div class="product-item ">
-
-                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
-                                                            <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
-                                                            <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
-                                                            <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="w-100 h-100 cover" />
-                                                        </a>
-
-                                                    </div>
-
-                                                    <section class="product-details-content ">
-
-                                                        <div class="product-title ">
-                                                            <a t-att-href="'/shop/product/' + str(product.name.id)" class="product-name-link ">
-
-                                                                <span class="product-name ">
-                                                                    <!-- product name -->
-                                                                    <t t-esc="product.name.name" />
-                                                                </span>
-
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="product-user-actions ">
-                                                            <div class="product-price ">
-                                                                <span class="product-standard-price ">
-                                                                    <!-- product price -->
-                                                                    <t t-esc="'$' + str(product.name.list_price)" />
-                                                                </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                            Shop Now
-                                                        </a>
-
-                                                    </section>
-
-                                                </div>
-                                            </div>
-                                        </li>
+                                        <t t-esc="product.name.name"/>
 
                                     </t>
 
@@ -989,7 +943,7 @@
                                             <a class="image-holder ">
 
                                                 <!-- <div t-field="home_page.card_3_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_3_image }}" class="w-100 h-100 cover" />
+                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_3_image }}" class="cover" />
 
                                             </a>
 
@@ -1021,7 +975,7 @@
                                             <a class="image-holder">
 
                                                 <!-- <div t-field="home_page.card_4_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_4_image }}" class="w-100 h-100 cover" />
+                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_4_image }}" class="cover" />
 
                                             </a>
 
@@ -1054,7 +1008,7 @@
 
                                                 <!-- <img class="cover pos-up" src="/dkaroma/static/img/right-card-img-2.png" alt="product "/> -->
                                                 <!-- <div t-field="home_page.card_5_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_5_image }}" class="w-100 h-100 cover" />
+                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_5_image }}" class="cover" />
 
                                             </a>
 
@@ -1086,7 +1040,7 @@
                                             <a class="image-holder">
 
                                                 <!-- <div t-field="home_page.card_6_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_6_image }}" class="w-100 h-100 cover" />
+                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_6_image }}" class="cover" />
 
                                             </a>
 
@@ -1155,7 +1109,7 @@
                                                         <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
                                                             <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
                                                             <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
-                                                            <img t-attf-src="data:image/jpg;base64,{{ product.name }}" class="w-100 h-100 cover" />
+                                                            <img t-attf-src="data:image/jpg;base64,{{ product.name }}" class="cover" />
                                                         </a>
 
                                                     </div>
