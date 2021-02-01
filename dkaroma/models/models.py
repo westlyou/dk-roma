@@ -26,7 +26,7 @@ class ECommerce(models.Model):
 
     scroll_products_1_text_big = fields.Char()
     scroll_products_1_text_small = fields.Char()
-    scroll_products_1 = fields.Many2many("product.template", "scroll_products_1_rel")
+    scroll_products_1 = fields.Many2many("dkaroma.home.products", "scroll_products_1_tbl")
 
     card_3_text_big = fields.Char()
     card_3_text_small = fields.Char()
@@ -46,5 +46,13 @@ class ECommerce(models.Model):
 
     scroll_products_2_text_big = fields.Char()
     scroll_products_2_text_small = fields.Char()
-    scroll_products_2 = fields.Many2many("product.template", "scroll_products_2_rel")
+    scroll_products_2 = fields.Many2many("dkaroma.home.products", "scroll_products_2_tbl")
 
+
+class ScrollProducts(models.Model):
+    _name = 'dkaroma.home.products'
+    _description = 'Scroll Products'
+
+    name = fields.Many2one("product.template", string="Product")
+    image_1920 = fields.Binary(string="Image", related="name.image_1920")
+    list_price = fields.Float(string="Price", related="name.list_price")
