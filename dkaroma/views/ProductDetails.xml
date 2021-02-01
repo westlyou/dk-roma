@@ -1,615 +1,609 @@
 <odoo>
     <data>
         <template id="product_details">
-        
-        <head class="no-js">
-            <title>
-                <t t-esc="product.name"/>
-            </title>
-            <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-            <meta charset="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/styles.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/mobile-header.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/header.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/slider.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/hero.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/main.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/modes.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/selectric-styles.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/product-details.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/minicart.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/footer.css"/>
-            <link rel="stylesheet" href="/dkaroma/static/css/sticky-bar.css"/>
-        </head>
-            
 
-        <body class="zoomed-in body-class">
-        
+            <head class="no-js">
+                <title>
+                    <t t-esc="product.name" />
+                </title>
+                <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous" />
+                <link rel="stylesheet" href="/dkaroma/static/css/styles.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/mobile-header.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/header.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/slider.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/hero.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/main.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/modes.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/selectric-styles.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/product-details.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/minicart.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/footer.css" />
+                <link rel="stylesheet" href="/dkaroma/static/css/sticky-bar.css" />
+            </head>
 
-            <!-- <t t-esc="product.id" /> 
+
+            <body class="zoomed-in body-class">
+
+
+                <!-- <t t-esc="product.id" /> 
             <t t-esc="product.name" /> 
             <t t-esc="product.description" /> 
             <t t-esc="product.list_price" /> 
             etc... -->
 
 
-            <!-- Nav -->
-            <nav class="navbar navbar-expand-lg navbar-dark header bg-header navigation-wrapper fixed-top navbar-fixed-top" id="mainNav">
+                <!-- Nav -->
+                <nav class="navbar navbar-expand-lg navbar-dark header bg-header navigation-wrapper fixed-top navbar-fixed-top" id="mainNav">
 
 
-                <button class="nav-toggle" type="button" id="navToggleButton">
-                    <span class=""></span>
-                    <img src="/dkaroma/static/img/icons/menu.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-                </button>
+                    <button class="nav-toggle" type="button" id="navToggleButton">
+                        <span class=""></span>
+                        <img src="/dkaroma/static/img/icons/menu.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                    </button>
 
-                <nav class="navigation-inner">
+                    <nav class="navigation-inner">
 
-                    <div class="inner-wrapper nav-inner-wrapper">
+                        <div class="inner-wrapper nav-inner-wrapper">
 
-                        <div class="nav-mobile">
+                            <div class="nav-mobile">
 
-                            <div class="nav-mobile-inner">
+                                <div class="nav-mobile-inner">
 
-                                <ul class="nav-mobile-main-list">
-                                    <li class="nav-item js-mobile-product-nav">
-                                        <button type="button" class="nav-item-link">
+                                    <ul class="nav-mobile-main-list">
+                                        <li class="nav-item js-mobile-product-nav">
+                                            <button type="button" class="nav-item-link">
                                                 Products
                                             </button>
 
-                                        <div class="nav-mobile-layer ">
+                                            <div class="nav-mobile-layer ">
 
-                                            <button type="button" class="nav-back">
-                                                <span class="sr-only"> 
+                                                <button type="button" class="nav-back">
+                                                    <span class="sr-only"> 
                                                         Back
                                                     </span>
-                                            </button>
+                                                </button>
 
-                                            <div class="nav-mobile-layer-inner">
-                                                <ul class="nav-mobile-subnav js-nav-mobile-subnav"></ul>
+                                                <div class="nav-mobile-layer-inner">
+                                                    <ul class="nav-mobile-subnav js-nav-mobile-subnav"></ul>
+                                                </div>
+
+                                                <span class="bottom-gradient-el"></span>
                                             </div>
+                                        </li>
 
-                                            <span class="bottom-gradient-el"></span>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item js-mobile-service-nav">
-                                        <Button type="button" class="nav-item-link">
+                                        <li class="nav-item js-mobile-service-nav">
+                                            <Button type="button" class="nav-item-link">
                                                 Services
                                         </Button>
 
-                                        <div class="nav-mobile-layer">
+                                            <div class="nav-mobile-layer">
 
-                                            <button type="button" class="nav-back">
-                                                <span class="sr-only"> 
+                                                <button type="button" class="nav-back">
+                                                    <span class="sr-only"> 
                                                         Back
                                                     </span>
-                                            </button>
+                                                </button>
 
-                                            <div class="nav-mobile-layer-inner">
-                                                <ul class="nav-mobile-collections">
+                                                <div class="nav-mobile-layer-inner">
+                                                    <ul class="nav-mobile-collections">
 
-                                                    <li>
+                                                        <li>
 
-                                                        <a href="/services" class="nav-mobile-collections-link">
-                                                            <span class="image-holder">
-                                                                <span class="cover-wrapper nav-collection-image">
-                                                                    <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
+                                                                    </span>
+
+                                                                    <span class="sr-only">DK Cuppa</span>
                                                                 </span>
 
-                                                                <span class="sr-only">DK Cuppa</span>
-                                                            </span>
-
-                                                            <span class="nav-mobile-collection-title">
+                                                                <span class="nav-mobile-collection-title">
                                                                 DK Cuppa
                                                             </span>
-                                                        </a>
+                                                            </a>
 
-                                                        <a href="/services" class="nav-mobile-collections-link">
-                                                            <span class="image-holder">
-                                                                <span class="cover-wrapper nav-collection-image">
-                                                                    <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
+                                                                    </span>
+
+                                                                    <span class="sr-only">Program and Workshop</span>
                                                                 </span>
 
-                                                                <span class="sr-only">Program and Workshop</span>
-                                                            </span>
-
-                                                            <span class="nav-mobile-collection-title">
+                                                                <span class="nav-mobile-collection-title">
                                                                 Program and Workshop
                                                             </span>
-                                                        </a>
-                                                    </li>
+                                                            </a>
+                                                        </li>
 
 
-                                                    <li>
+                                                        <li>
 
-                                                        <a href="/services" class="nav-mobile-collections-link">
-                                                            <span class="image-holder">
-                                                                <span class="cover-wrapper nav-collection-image">
-                                                                    <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
+                                                                    </span>
+
+                                                                    <span class="sr-only">Treatment</span>
                                                                 </span>
 
-                                                                <span class="sr-only">Treatment</span>
-                                                            </span>
-
-                                                            <span class="nav-mobile-collection-title">
+                                                                <span class="nav-mobile-collection-title">
                                                                 Treatment
                                                             </span>
-                                                        </a>
+                                                            </a>
 
-                                                        <a href="/services" class="nav-mobile-collections-link">
-                                                            <span class="image-holder">
-                                                                <span class="cover-wrapper nav-collection-image">
-                                                                    <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
+                                                            <a href="/services" class="nav-mobile-collections-link">
+                                                                <span class="image-holder">
+                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                        <img src="/dkaroma/static/img/product-sample-1.gif" class="cover w-100" />
+                                                                    </span>
+
+                                                                    <span class="sr-only">Program and Workshop</span>
                                                                 </span>
 
-                                                                <span class="sr-only">Program and Workshop</span>
-                                                            </span>
-
-                                                            <span class="nav-mobile-collection-title">
+                                                                <span class="nav-mobile-collection-title">
                                                                 Service
                                                             </span>
-                                                        </a>
-                                                    </li>
+                                                            </a>
+                                                        </li>
 
-                                                </ul>
+                                                    </ul>
+                                                </div>
+
+                                                <span class="bottom-gradient-el"></span>
                                             </div>
 
-                                            <span class="bottom-gradient-el"></span>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
+                                                Gifts
+                                            </Button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
+                                                Discovery
+                                            </Button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="nav-item-link" onclick="location.href='/news';">
+                                                News
+                                            </Button>
+                                        </li>
+                                    </ul>
+
+
+                                    <!-- additional list -->
+                                    <ul class="nav-mobile-additional-list js-nav-mobile-additional">
+
+                                        <li class="nav-item">
+                                            <a href="/about" class="nav-item-link">
+                                            About
+                                        </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="/about" class="nav-item-link">
+                                            Customer Service
+                                        </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="/web/login" class="nav-item-link">
+                                            Create a DK account
+                                        </a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="nav-desktop" id="navbarNavDropdown">
+                                <ul class="navbar-nav-fix nav-dektop-main-list">
+                                    <li class="nav-item active js-dekstop-product-nav" id="productNav">
+
+                                        <Button type="button" class="nav-item-link">
+                                            Products
+                                        </Button>
+
+                                        <div class="nav-desktop-layer" id="productDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                            <div class="nav-first-layer">
+
+                                                <div class="nav-desktop-layer-inner">
+
+                                                    <ul class="nav-inner-subnav"></ul>
+
+                                                </div>
+
+                                                <span class="bottom-gradient-el"></span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                    <span class="sr-only">Close navigation</span>
+                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link">
+                                            Services
+                                    </Button>
+
+                                        <div class="nav-desktop-layer" id="serviceDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
+
+                                            <div class="nav-first-layer">
+
+                                                <div class="nav-desktop-layer-inner">
+
+                                                    <ul class="nav-inner-subnav nav-desktop-collections">
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>DK Cuppa</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                    DK Cuppa
+                                                                                </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100" />
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                    Explore this service
+                                                                                </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>Program and Workshop</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                    Program and Workshop
+                                                                                </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100" />
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                    Explore this service
+                                                                                </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+
+                                                            <a class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>Treatment</span>
+                                                            </a>
+
+                                                            <div class="nav-desktop-subnav-wrap">
+
+                                                                <div class="nav-desktop-subnav-slide-in">
+
+                                                                    <button type="button" class="close-desktop-nav" style="display:inline-block;">
+                                                                        <span class="sr-only">Close navigation</span>
+                                                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
+                                                                    </button>
+
+                                                                    <div class="nav-desktop-subnav-inner">
+
+                                                                        <ul class="nav-desktop-collection-details">
+
+                                                                            <li>
+
+                                                                                <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
+                                                                                    <span class="nav-desktop-collection-title nav-desktop-collection-text">
+                                                                                    Treatment
+                                                                                </span>
+                                                                                </div>
+
+                                                                                <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
+                                                                                    <span class="cover-wrapper nav-collection-image">
+                                                                                        <img src="/dkaroma/static/img/car-1.jpeg" class="cover w-100" />
+                                                                                    </span>
+
+                                                                                    <span class="sr-only">Service</span>
+                                                                                </a>
+
+                                                                                <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
+                                                                                    <span>
+                                                                                    Explore this service
+                                                                                </span>
+                                                                                </a>
+
+                                                                            </li>
+
+                                                                        </ul>
+
+                                                                    </div>
+
+                                                                    <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <span class="bottom-gradient-el"></span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                    <span class="sr-only">Close navigation</span>
+                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
+                                                </button>
+                                            </div>
                                         </div>
 
                                     </li>
 
                                     <li class="nav-item">
                                         <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
-                                                Gifts
-                                            </Button>
+                                            Gifts
+                                        </Button>
                                     </li>
 
                                     <li class="nav-item">
                                         <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
-                                                Discovery
-                                            </Button>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <Button type="button" class="nav-item-link" onclick="location.href='/news';">
-                                                News
-                                            </Button>
-                                    </li>
-                                </ul>
-
-
-                                <!-- additional list -->
-                                <ul class="nav-mobile-additional-list js-nav-mobile-additional">
-
-                                    <li class="nav-item">
-                                        <a href="/about" class="nav-item-link">
-                                            About
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="/about" class="nav-item-link">
-                                            Customer Service
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="/web/login" class="nav-item-link">
-                                            Create a DK account
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                        <div class="nav-desktop" id="navbarNavDropdown">
-                            <ul class="navbar-nav-fix nav-dektop-main-list">
-                                <li class="nav-item active js-dekstop-product-nav" id="productNav">
-
-                                    <Button type="button" class="nav-item-link">
-                                            Products
-                                        </Button>
-
-                                    <div class="nav-desktop-layer" id="productDiv">
-                                        <span class="nav-desktop-overlay" style="display: inline;"></span>
-
-                                        <div class="nav-first-layer">
-
-                                            <div class="nav-desktop-layer-inner">
-
-                                                <ul class="nav-inner-subnav"></ul>
-
-                                            </div>
-
-                                            <span class="bottom-gradient-el"></span>
-
-                                            <button type="button" class="close-desktop-nav return-scroll">
-                                                <span class="sr-only">Close navigation</span>
-                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </li>
-
-
-                                <li class="nav-item">
-                                    <Button type="button" class="nav-item-link">
-                                            Services
-                                    </Button>
-
-                                    <div class="nav-desktop-layer" id="serviceDiv">
-                                        <span class="nav-desktop-overlay" style="display: inline;"></span>
-
-                                        <div class="nav-first-layer">
-
-                                            <div class="nav-desktop-layer-inner">
-
-                                                <ul class="nav-inner-subnav nav-desktop-collections">
-
-                                                    <li>
-
-                                                        <a class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                            <span>DK Cuppa</span>
-                                                        </a>
-
-                                                        <div class="nav-desktop-subnav-wrap">
-
-                                                            <div class="nav-desktop-subnav-slide-in">
-
-                                                                <button type="button" class="close-desktop-nav" style="display:inline-block;">
-                                                                    <span class="sr-only">Close navigation</span>
-                                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
-                                                                </button>
-
-                                                                <div class="nav-desktop-subnav-inner">
-
-                                                                    <ul class="nav-desktop-collection-details">
-
-                                                                        <li>
-
-                                                                            <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
-                                                                                <span class="nav-desktop-collection-title nav-desktop-collection-text">
-                                                                                    DK Cuppa
-                                                                                </span>
-                                                                            </div>
-
-                                                                            <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
-                                                                                <span class="cover-wrapper nav-collection-image">
-                                                                                    <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100" />
-                                                                                </span>
-
-                                                                                <span class="sr-only">Service</span>
-                                                                            </a>
-
-                                                                            <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
-                                                                                <span>
-                                                                                    Explore this service
-                                                                                </span>
-                                                                            </a>
-
-                                                                        </li>
-
-                                                                    </ul>
-
-                                                                </div>
-
-                                                                <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-
-                                                        <a class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                            <span>Program and Workshop</span>
-                                                        </a>
-
-                                                        <div class="nav-desktop-subnav-wrap">
-
-                                                            <div class="nav-desktop-subnav-slide-in">
-
-                                                                <button type="button" class="close-desktop-nav" style="display:inline-block;">
-                                                                    <span class="sr-only">Close navigation</span>
-                                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
-                                                                </button>
-
-                                                                <div class="nav-desktop-subnav-inner">
-
-                                                                    <ul class="nav-desktop-collection-details">
-
-                                                                        <li>
-
-                                                                            <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
-                                                                                <span class="nav-desktop-collection-title nav-desktop-collection-text">
-                                                                                    Program and Workshop
-                                                                                </span>
-                                                                            </div>
-
-                                                                            <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
-                                                                                <span class="cover-wrapper nav-collection-image">
-                                                                                    <img src="/dkaroma/static/img/car-3.jpeg" class="cover w-100" />
-                                                                                </span>
-
-                                                                                <span class="sr-only">Service</span>
-                                                                            </a>
-
-                                                                            <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
-                                                                                <span>
-                                                                                    Explore this service
-                                                                                </span>
-                                                                            </a>
-
-                                                                        </li>
-
-                                                                    </ul>
-
-                                                                </div>
-
-                                                                <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-
-                                                        <a class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                            <span>Treatment</span>
-                                                        </a>
-
-                                                        <div class="nav-desktop-subnav-wrap">
-
-                                                            <div class="nav-desktop-subnav-slide-in">
-
-                                                                <button type="button" class="close-desktop-nav" style="display:inline-block;">
-                                                                    <span class="sr-only">Close navigation</span>
-                                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
-                                                                </button>
-
-                                                                <div class="nav-desktop-subnav-inner">
-
-                                                                    <ul class="nav-desktop-collection-details">
-
-                                                                        <li>
-
-                                                                            <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
-                                                                                <span class="nav-desktop-collection-title nav-desktop-collection-text">
-                                                                                    Treatment
-                                                                                </span>
-                                                                            </div>
-
-                                                                            <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
-                                                                                <span class="cover-wrapper nav-collection-image">
-                                                                                    <img src="/dkaroma/static/img/car-1.jpeg" class="cover w-100" />
-                                                                                </span>
-
-                                                                                <span class="sr-only">Service</span>
-                                                                            </a>
-
-                                                                            <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
-                                                                                <span>
-                                                                                    Explore this service
-                                                                                </span>
-                                                                            </a>
-
-                                                                        </li>
-
-                                                                    </ul>
-
-                                                                </div>
-
-                                                                <span class="bottom-gradient-el js-desktop-bottom-gradient"></span>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-
-                                            <span class="bottom-gradient-el"></span>
-
-                                            <button type="button" class="close-desktop-nav return-scroll">
-                                                <span class="sr-only">Close navigation</span>
-                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </li>
-
-                                <li class="nav-item">
-                                    <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
-                                            Gifts
-                                        </Button>
-                                </li>
-
-                                <li class="nav-item">
-                                    <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
                                             Discovery
                                         </Button>
-                                </li>
+                                    </li>
 
-                                <li class="nav-item">
-                                    <Button type="button" class="nav-item-link">
+                                    <li class="nav-item">
+                                        <Button type="button" class="nav-item-link">
                                             More
                                         </Button>
 
 
-                                    <div class="nav-desktop-layer" id="moreDiv">
-                                        <span class="nav-desktop-overlay" style="display: inline;"></span>
+                                        <div class="nav-desktop-layer" id="moreDiv">
+                                            <span class="nav-desktop-overlay" style="display: inline;"></span>
 
-                                        <div class="nav-first-layer">
+                                            <div class="nav-first-layer">
 
-                                            <div class="nav-desktop-layer-inner">
+                                                <div class="nav-desktop-layer-inner">
 
-                                                <ul class="nav-inner-subnav">
+                                                    <ul class="nav-inner-subnav">
 
-                                                    <li>
-                                                        <a href="/news" class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                            <span>News</span>
-                                                        </a>
-                                                    </li>
+                                                        <li>
+                                                            <a href="/news" class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>News</span>
+                                                            </a>
+                                                        </li>
 
-                                                    <li>
-                                                        <a href="/about" class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                            <span>About DK Aromatherapy</span>
-                                                        </a>
-                                                    </li>
+                                                        <li>
+                                                            <a href="/about" class="nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                <span>About DK Aromatherapy</span>
+                                                            </a>
+                                                        </li>
 
-                                                </ul>
+                                                    </ul>
 
+                                                </div>
+
+                                                <span class="bottom-gradient-el"></span>
+
+                                                <button type="button" class="close-desktop-nav return-scroll">
+                                                    <span class="sr-only">Close navigation</span>
+                                                    <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
+                                                </button>
                                             </div>
-
-                                            <span class="bottom-gradient-el"></span>
-
-                                            <button type="button" class="close-desktop-nav return-scroll">
-                                                <span class="sr-only">Close navigation</span>
-                                                <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
-                                            </button>
                                         </div>
-                                    </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <a class="header-logo" href="/">
+                                <span class="sr-only">DK logo</span>
+
+                                <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy" />
+                            </a>
+
+
+                            <ul class="header-action-links" id="headerActionLinks">
+                                <li class="header--search">
+
+                                    <form class="search-input-wrapper" role="search" action="/shop" method="POST" name="searchForm" autocomplete="off">
+
+                                        <button type="submit" class="btn-stripped icon-search-magnifier" id="searchInputToggle">
+                                            <span class="sr-only">
+                                                I'm looking for...
+                                            </span>
+                                            <img src="/dkaroma/static/img/icons/search.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                        </button>
+
+                                        <label class="sr-only" for="headerSearch"></label>
+
+                                        <input id="headerSearch" class="search-input" type="text" name="search" placeholder="I'm looking for..." autocomplete="off" />
+
+                                        <button type="button" class="icon-close search-icon-close" id="closeSearchButton">
+                                            <span class="sr-only">Close search</span>
+                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                        </button>
+
+                                        <button type="button" class="icon-close search-clear">
+                                            <span class="sr-only">Clear text from input</span>
+                                            <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                        </button>
+
+
+                                    </form>
+                                </li>
+
+                                <li class="header--user-account">
+                                    <a class="header--user-account-link" href="/web">
+                                        <span class="sr-only">User account</span>
+                                        <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                    </a>
+                                </li>
+
+                                <li class="header--cart">
+                                    <a class="header--cart-link js-open-minicart" href="#">
+                                        <span class="sr-only">View Cart</span>
+                                        <img src="/dkaroma/static/img/icons/shopping-bag.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+
+                                        <span class="cart-number">
+                                            <!-- cart number  -->
+                                        </span>
+                                    </a>
                                 </li>
 
                             </ul>
                         </div>
-
-
-                        <a class="header-logo" href="/">
-                            <span class="sr-only">DK logo</span>
-
-                            <img src="/dkaroma/static/img/dk-logo-white.svg" id="headerLogo" alt="" loading="lazy" />
-                        </a>
-
-
-                        <ul class="header-action-links" id="headerActionLinks">
-                            <li class="header--search">
-
-                                <form class="search-input-wrapper" role="search" action="/shop" method="POST" name="searchForm" autocomplete="off">
-
-                                    <button type="submit" class="btn-stripped icon-search-magnifier" id="searchInputToggle">
-                                        <span class="sr-only">
-                                                I'm looking for...
-                                            </span>
-                                        <img src="/dkaroma/static/img/icons/search.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-                                    </button>
-
-                                    <label class="sr-only" for="headerSearch"></label>
-
-                                    <input id="headerSearch" class="search-input" type="text" name="search" placeholder="I'm looking for..." autocomplete="off" />
-
-                                    <button type="button" class="icon-close search-icon-close" id="closeSearchButton">
-                                        <span class="sr-only">Close search</span>
-                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-                                    </button>
-
-                                    <button type="button" class="icon-close search-clear">
-                                        <span class="sr-only">Clear text from input</span>
-                                        <img src="/dkaroma/static/img/icons/x.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-                                    </button>
-
-
-                                </form>
-                            </li>
-
-                            <li class="header--user-account">
-                                <a class="header--user-account-link" href="/web">
-                                    <span class="sr-only">User account</span>
-                                    <img src="/dkaroma/static/img/icons/user-circle.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-                                </a>
-                            </li>
-
-                            <li class="header--cart">
-                                <a class="header--cart-link js-open-minicart" href="#">
-                                    <span class="sr-only">View Cart</span>
-                                    <img src="/dkaroma/static/img/icons/shopping-bag.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-
-                                    <span class="cart-number">
-                                        <!-- cart number  -->
-                                    </span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
+                    </nav>
                 </nav>
-            </nav>
 
 
-            <div class="js-scroll-magic-trigger"></div>
+                <div class="js-scroll-magic-trigger"></div>
 
-            <div id="wrapper" class="pt_product-details js-pt-product-details animate-scroll">
+                <div id="wrapper" class="pt_product-details js-pt-product-details animate-scroll">
 
-                <div id="main" role="main" class="main body-container">
+                    <div id="main" role="main" class="main body-container">
 
-                    <div id="primary" class="primary-content">
+                        <div id="primary" class="primary-content">
 
-                        <div id="pdpMain" class="pdp-main-container js-pdp-main dk-bg-color">
+                            <div id="pdpMain" class="pdp-main-container js-pdp-main dk-bg-color">
 
-                            <div class="product-background-video background-video js-background-video">
-                            </div>
+                                <div class="product-background-video background-video js-background-video"></div>
 
-                            <div class="product-details-container js-product-details-container">
+                                <div class="product-details-container js-product-details-container">
 
-                                <div class="pdp-breadcrumbs-wrapper">
-                                    <div class="inner-wrapper">
-                                        <div class="breadcrumb">
+                                    <div class="pdp-breadcrumbs-wrapper">
+                                        <div class="inner-wrapper">
+                                            <div class="breadcrumb"></div>
 
-                                        </div>
-
-                                        <div class="pdp-back-button-wrapper">
-                                            <button type="button" class="back-button js-pdp-back">
-                                                <span class="icon icon-close">
-                                                    <img src="/dkaroma/static/img/icons/chevron-left.svg" width="16" height="16" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                                </span>
-            
-                                                Back
-                                            </button>
+                                            <div class="pdp-back-button-wrapper">
+                                                <button type="button" class="back-button js-pdp-back">
+                                                    <span class="icon icon-close">
+                                                        <img src="/dkaroma/static/img/icons/chevron-left.svg" width="16" height="16" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                                    </span>
+                                                    Back
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="opaque-overlay js-pdp-opaque-overlay">
-                                </div>
+                                    <div class="opaque-overlay js-pdp-opaque-overlay"></div>
 
-                                <div class="inner-wrapper pdp-inner-wrapper">
+                                    <div class="inner-wrapper pdp-inner-wrapper">
 
-                                    <div class="">
-                                    </div>
+                                        <div class=""></div>
 
-                                    <div class="product-details-column column-images js-product-images show-image-only">
+                                        <div class="product-details-column column-images js-product-images show-image-only">
 
-                                        <div class="pdp-images-holder js-image-wrapper">
+                                            <div class="pdp-images-holder js-image-wrapper">
 
-                                            <div class="images-wrapper">
+                                                <div class="images-wrapper">
 
-                                                <div class="product-images">
+                                                    <div class="product-images">
 
-                                                    <p class="visually-hidden">Images</p>
+                                                        <p class="visually-hidden">Images</p>
 
 
-                                                    <div class="js-slider images-slider js-pdp-images-slider slick-initialized slick-slider">
-                                                        <div>
-                                                            <!-- <img src="/dkaroma/static/img/product-sample-2.png" class="cover productthumbnail js-product-thumbnail product-main-image js-product-main-image"/> -->
-                                                            <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                        <div class="js-slider images-slider js-pdp-images-slider slick-initialized slick-slider">
+                                                            <div>
+                                                                <!-- <img src="/dkaroma/static/img/product-sample-2.png" class="cover productthumbnail js-product-thumbnail product-main-image js-product-main-image"/> -->
+                                                                <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="promotional-label js-promotional-label">
+                                                        <div class="promotional-label js-promotional-label"></div>
 
                                                     </div>
 
@@ -619,67 +613,70 @@
 
                                         </div>
 
-                                    </div>
+                                        <!-- Details section -->
+                                        <div class="product-details-column column-details js-product-details-block">
+                                            <section class="product-details-content">
 
-                                    <!-- Details section -->
-                                    <div class="product-details-column column-details js-product-details-block">
-                                        <section class="product-details-content">
-
-                                            <!-- <t t-esc="product.id" /> 
+                                                <!-- <t t-esc="product.id" /> 
                                                 <t t-esc="product.name" /> 
                                                 <t t-esc="product.description" /> 
                                                 <t t-esc="product.list_price" /> 
                                                 etc... -->
 
-                                            <div class="product-title">
-                                                <h1 class="product-name">
-                                                    <span class="category-title">
-                                                        <!-- Essential Oil -->
-                                                        <!-- <t t-foreach="category" t-as="product.public_categ_ids">
+                                                <div class="product-title">
+                                                    <h1 class="product-name">
+                                                        <span class="category-title">
+                                                            <!-- Essential Oil -->
+                                                            <!-- <t t-foreach="category" t-as="product.public_categ_ids">
                                                             <t t-esc="category.name" />
                                                         </t> -->
-                                                        <t t-esc="','.join(product.public_categ_ids)"/>
+                                                            <t t-foreach="product.public_categ_ids" t-as="categ_id">
+                                                                <t t-esc="categ_id.name + ', '" />
+                                                            </t>
 
-                                                    </span>
-                                                     <!-- Savage Garden (private collection) -->
-                                                     <t t-esc="product.name" />
-                                                </h1>
-                                            </div>
-
-                                            <div class="product-content js-product-details-content">
-
-                                                <div class="product-short-info">
-                                                    <div class="short-description">
-                                                        <!-- Anti-aging day cream, 50 ml -->
-                                                        <t t-esc="product.description" />
-                                                    </div>
+                                                        </span>
+                                                        <!-- Savage Garden (private collection) -->
+                                                        <t t-esc="product.name" />
+                                                    </h1>
                                                 </div>
 
-                                                <div class="long-description">
-                                                    <!-- Get your glow on every day thanks to this anti-aging day cream from the Ritual of Namaste. This light cream revitalises the skin -->
-                                                    
+                                                <div class="product-content js-product-details-content">
 
-                                                    <!-- <span class="ellipsis js-ellipsis">...</span> -->
+                                                    <div class="product-short-info">
+                                                        <div class="short-description">
+                                                            <!-- Anti-aging day cream, 50 ml -->
+                                                            <t t-esc="product.description" />
+                                                        </div>
+                                                    </div>
 
-                                                    <!-- <a class="read-more-link js-read-more-link">
+                                                    <div class="long-description">
+                                                        <!-- Get your glow on every day thanks to this anti-aging day cream from the Ritual of Namaste. This light cream revitalises the skin -->
+
+
+                                                        <!-- <span class="ellipsis js-ellipsis">...</span> -->
+
+                                                        <!-- <a class="read-more-link js-read-more-link">
                                                         Show more
                                                     </a> -->
-                                                </div>
-
-                                                <div class="product-price">
-                                                    <div class="prices-container">
-                                                        <span class="price-sales">
-                                                            <!-- HK$768 -->
-                                                            <t t-esc="'$' + str(product.list_price)" /> 
-                                                        </span>
                                                     </div>
-                                                </div>
 
-                                                <form action="" method="" class="pdpForm js-add-to-cart-form dk-form" onsubmit="return addToCart();">
+                                                    <div class="product-price">
+                                                        <div class="prices-container">
+                                                            <span class="price-sales">
+                                                                <!-- HK$768 -->
+                                                                <t t-esc="'$' + str(product.list_price)" />
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST" class="pdpForm js-add-to-cart-form dk-form">
                                                     <fieldset>
                                                         <div class="product-add-to-cart">
-                                                            <!-- Add necessary hidden inputs -->
+                                                            Add necessary hidden inputs
                                                             <input name="pid" type="hidden" t-att-value="product.id"/>
+                                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                                            <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
+                                                            <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
 
                                                             <div class="btn-wrapper">
                                                                 <button type="submit" value="" class="btn btn-add-to-cart js-add-to-cart js-open-minicart">
@@ -688,156 +685,180 @@
                                                             </div>
                                                         </div>
                                                     </fieldset>
-                                                </form>
+                                                </form> -->
+                                                    <t t-set="combination" t-value="product._get_first_possible_combination()" />
+                                                    <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)" />
+                                                    <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])" />
+                                                    <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
+                                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                                        <div class="js_product js_main_product">
+                                                            <t t-placeholder="select">
+                                                                <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
+                                                                <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
+                                                                <t t-if="combination" t-call="sale.variants">
+                                                                    <t t-set="ul_class" t-value="'flex-column'" />
+                                                                    <t t-set="parent_combination" t-value="None" />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <ul class="d-none js_add_cart_variants" t-att-data-attribute_exclusions="{'exclusions: []'}" />
+                                                                </t>
+                                                            </t>
+                                                            <!-- <t t-call="website_sale.product_price" /> -->
+                                                            <!-- <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p> -->
+                                                            <button role="button" type="submit" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block">
+                                                                <i class="fa fa-shopping-cart" />
+                                                                Add to Cart
+                                                            </button>
+                                                            <div id="product_option_block" />
+                                                        </div>
+                                                    </form>
 
-                                                <div class="shipping-info">
-                                                    <div class="content-asset">
-                                                        <ul>
-                                                            <li class="shipping-info-point">
-                                                                <span>
+                                                    <div class="shipping-info">
+                                                        <div class="content-asset">
+                                                            <ul>
+                                                                <li class="shipping-info-point">
+                                                                    <span>
                                                                     Free delivery with orders above HK800.
                                                                 </span>
-                                                            </li>
+                                                                </li>
 
-                                                            <li class="shipping-info-point">
-                                                                <span>
-                                                                    <strong>Not sure about this product?</strong>
-                                                                    Ask our experts via
-                                                                    <a href="">
+                                                                <li class="shipping-info-point">
+                                                                    <span>
+                                                                        <strong>Not sure about this product?</strong>
+                                                                        Ask our experts via
+                                                                        <a href="">
                                                                         Whatsapp
                                                                     </a>
-                                                                    or
-                                                                    <a href="">
+                                                                        or
+                                                                        <a href="">
                                                                         Messenger
                                                                     </a>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <br />
                                                     </div>
 
-                                                    <br/>
                                                 </div>
 
-                                            </div>
+                                            </section>
 
-                                        </section>
-                            
+                                        </div>
+
                                     </div>
 
                                 </div>
 
                             </div>
 
-                        </div>
+
+                            <!-- Ingredients section -->
 
 
-                        <!-- Ingredients section -->
-                        
+                            <!-- How to use section -->
 
 
-                        <!-- How to use section -->
-                        
+                            <!-- Tabs section -->
 
 
-                        <!-- Tabs section -->
-                        
+                            <!-- Products section -->
+                            <section class="product-grid-block js-product-grid-block dk-bg-color">
 
-                        <!-- Products section -->
-                        <section class="product-grid-block js-product-grid-block dk-bg-color">
+                                <div class="inner-wrapper">
 
-                            <div class="inner-wrapper">
-
-                                <div>
-                                    <h3 class="grid-heading heading-h3">
+                                    <div>
+                                        <h3 class="grid-heading heading-h3">
                                         Other customers also viewed
                                     </h3>
 
-                                    <div class="search-result-content">
+                                        <div class="search-result-content">
 
-                                        <div class="">
+                                            <div class="">
 
-                                            <div class="spinner">
+                                                <div class="spinner"></div>
 
-                                            </div>
+                                                <!-- START: results container -->
 
-                                            <!-- START: results container -->
+                                                <ul class="justify-content-around search-result-items grid-wrap hide-compare grid-initialized">
 
-                                            <ul class="justify-content-around search-result-items grid-wrap hide-compare grid-initialized">
+                                                    <!-- render loop -->
+                                                    <t t-foreach="products" t-as="product.alternative_product_ids">
 
-                                                <!-- render loop -->
-                                                <t t-foreach="products" t-as="product.alternative_product_ids">
-                                                    
-                                                    <!-- item -->
-                                                    <li class="item">
-                                                        <div class="product-tile product-detail-tile linked-block">
+                                                        <!-- item -->
+                                                        <li class="item">
+                                                            <div class="product-tile product-detail-tile linked-block">
 
-                                                            <div class="product-image">
-                                                                <a class="thumb-link" href="/product-details">
-                                                                    <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
-                                                                    <!-- <img src="/dkaroma/static/img/product-sample-1.gif" class="cover" /> -->
-                                                                </a>
-                                                            </div>
-
-                                                            <section class="product-details-content">
-
-                                                                <div class="product-title">
-                                                                    <a class="product-name-link">
-                                                                        <t t-esc="product.name" />
-                                                                        <!-- <span>Five Element Essential Oil Set (3 pieces)</span> -->
+                                                                <div class="product-image">
+                                                                    <a class="thumb-link" href="/product-details">
+                                                                        <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                                        <!-- <img src="/dkaroma/static/img/product-sample-1.gif" class="cover" /> -->
                                                                     </a>
                                                                 </div>
 
-                                                                <div class="short-description">
-                                                                    <t t-esc="product.description" />
-                                                                    <!-- Essential oils help you balance your body, mind and soul! -->
-                                                                </div>
+                                                                <section class="product-details-content">
 
-                                                                <div class="product-user-actions">
-                                                                    <div class="product-price">
-                                                                        <span class="product-standard-price">
-                                                                            <t t-esc="'$' + str(product.list_price)" />
-                                                                            <!-- HK$768 -->
-                                                                        </span>
+                                                                    <div class="product-title">
+                                                                        <a class="product-name-link">
+                                                                            <t t-esc="product.name" />
+                                                                            <!-- <span>Five Element Essential Oil Set (3 pieces)</span> -->
+                                                                        </a>
                                                                     </div>
 
-                                                                    <form novalidate="novalidate" class="dk-form" onsubmit="return addToCart();">
-                                                                        <fieldset>
-                                                                            <div class="product-add-to-cart">
+                                                                    <div class="short-description">
+                                                                        <t t-esc="product.description" />
+                                                                        <!-- Essential oils help you balance your body, mind and soul! -->
+                                                                    </div>
 
-                                                                                <!-- HIDDEN INPUT FIELDS -->
-                                                                                <input name="pid" type="hidden" t-att-value="product.id"/>
+                                                                    <div class="product-user-actions">
+                                                                        <div class="product-price">
+                                                                            <span class="product-standard-price">
+                                                                                <t t-esc="'$' + str(product.list_price)" />
+                                                                                <!-- HK$768 -->
+                                                                            </span>
+                                                                        </div>
 
-                                                                                <div class="btn-wrapper">
-                                                                                    <button type="submit" class="btn btn--secondary btn-add-to-cart js-open-minicart">
+                                                                        <form novalidate="novalidate" class="dk-form" onsubmit="return addToCart();">
+                                                                            <fieldset>
+                                                                                <div class="product-add-to-cart">
 
-                                                                                        <span class="icon icon-item icon-item-light">
-                                                                                            <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
-                                                                                        </span>
-                                                                                        Add to cart
-                                                                                    </button>
+                                                                                    <!-- HIDDEN INPUT FIELDS -->
+                                                                                    <input name="pid" type="hidden" t-att-value="product.id" />
+
+                                                                                    <div class="btn-wrapper">
+                                                                                        <button type="submit" class="btn btn--secondary btn-add-to-cart js-open-minicart">
+
+                                                                                            <span class="icon icon-item icon-item-light">
+                                                                                                <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                                                                            </span>
+                                                                                            Add to cart
+                                                                                        </button>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                        </fieldset>
-                                                                    </form>
+                                                                            </fieldset>
+                                                                        </form>
 
-                                                                </div>
+                                                                    </div>
 
-                                                                <a href="#" class="link--large view-full-details-link">
+                                                                    <a href="#" class="link--large view-full-details-link">
                                                                     View full details
                                                                 </a>
 
-                                                            </section>
+                                                                </section>
 
-                                                        </div>
-                                                    </li>
+                                                            </div>
+                                                        </li>
 
-                                                    <!-- <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "product_detail_img mh-100", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                        <!-- <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "product_detail_img mh-100", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
                                                     <span t-esc="product.id" />
                                                     <t t-esc="product.name" />
                                                     <t t-esc="'$' + str(product.list_price)" /> -->
-                                                </t>
+                                                    </t>
 
-                                            </ul>
+                                                </ul>
+
+                                            </div>
 
                                         </div>
 
@@ -845,205 +866,199 @@
 
                                 </div>
 
-                            </div>
+                            </section>
 
-                        </section>
-            
-                    </div>
-
-                </div>
-
-
-
-                <section class="sticky-bar sticky-add-to-cart js-sticky-add-to-cart">
-
-                    <div class="sticky-product-container">
-                        <div class="image-container">
-                            <!-- <img class="image" src="/dkaroma/static/img/product-sample-2.png" alt=""/> -->
-                            <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "image cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
                         </div>
 
-                        <div class="details-container">
-                            <span class="product-name small">
-                                <span class="the-ritual-of-title small category-title">
-                                    <!-- Essential Oil -->
-                                    <!-- <t t-foreach="category" t-as="product.public_categ_ids">
+                    </div>
+
+
+                    <section class="sticky-bar sticky-add-to-cart js-sticky-add-to-cart">
+
+                        <div class="sticky-product-container">
+                            <div class="image-container">
+                                <!-- <img class="image" src="/dkaroma/static/img/product-sample-2.png" alt=""/> -->
+                                <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "image cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                            </div>
+
+                            <div class="details-container">
+                                <span class="product-name small">
+                                    <span class="the-ritual-of-title small category-title">
+                                        <!-- Essential Oil -->
+                                        <!-- <t t-foreach="category" t-as="product.public_categ_ids">
                                         <t t-esc="category.name" />
                                     </t> -->
-                                    
-                                    <t t-esc="','.join(product.public_categ_ids)"/>
-                                    
-                                </span> 
-                                <t t-esc="product.name" />
-                            </span>
+
+                                        <t t-foreach="product.public_categ_ids" t-as="categ_id">
+                                            <t t-esc="categ_id.name + ', '" />
+                                        </t>
+
+                                    </span>
+                                    <t t-esc="product.name" />
+                                </span>
+                            </div>
+
+                            <div class="price-container small-price js-sticky-price-container">
+                                <div class="product-price">
+                                    <div class="prices-container">
+                                        <span class="price-sales">
+                                            <t t-esc="'$' + str(product.list_price)" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="price-container small-price js-sticky-price-container">
-                            <div class="product-price">
-                                <div class="prices-container">
-                                    <span class="price-sales">
-                                        <t t-esc="'$' + str(product.list_price)" />
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="sticky-button-container">
+                            <form action="" method="" class="sticky-add-to-cart-form js-sticky-add-to-cart-form dk-form" novalidate="novalidate" onsubmit="return addToCart();">
+                                <fieldset>
+                                    <div class="product-add-to-cart">
 
-                    <div class="sticky-button-container">
-                        <form action="" method="" class="sticky-add-to-cart-form js-sticky-add-to-cart-form dk-form" novalidate="novalidate" onsubmit="return addToCart();">
-                            <fieldset>
-                                <div class="product-add-to-cart">
+                                        <input name="pid" type="hidden" t-att-value="product.id" />
 
-                                    <input name="pid" type="hidden" t-att-value="product.id"/>
+                                        <div class="btn-wrapper">
+                                            <button type="submit" class="btn btn-add-to-cart js-add-to-cart js-open-minicart">
 
-                                    <div class="btn-wrapper">
-                                        <button type="submit" class="btn btn-add-to-cart js-add-to-cart js-open-minicart">
-
-                                            <span class="icon">
-                                                <img src="/dkaroma/static/img/icons/add-to-cart-light.svg" width="32" height="32" class="d-inline-block align-middle" alt="" loading="lazy"/>
-                                            </span>
-
-                                            Add to cart
-                                        </button>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-
-                </section>
-
-                <!-- Minicart -->
-                <div class="minicart-flyout-container flyout-content flyout-container js-minicart-flyout-container">
-
-                    <div class="checkout-flyout-inner-content" style="padding-bottom:200px;">
-
-
-                        <section class="flyout-section">
-                            <div class="js-minicart-not-empty">
-                                <div class="minicart-flyout-wrapper">
-                                    <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true"></span>
-
-                                    <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
-                                        <span class="sr-only">Close flyout</span>
-                                        <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
-                                    </button>
-
-
-                                    <div class="minicart-flyout-header flyout-header">
-                                        <input type="hidden" value="" class="js-cart-quantity" tabindex="-1" />
-
-                                        <div class="centered">
-                                            <h3 class="flyout-title">
-                                                My shopping cart
-                                            </h3>
-
-                                            <span class="flyout-title-overview js-selected-products">
-                                                <!-- products count: 2 products -->
-                                            </span>
+                                                <span class="icon">
+                                                    <img src="/dkaroma/static/img/icons/add-to-cart-light.svg" width="32" height="32" class="d-inline-block align-middle" alt="" loading="lazy" />
+                                                </span>
+                                                Add to cart
+                                            </button>
                                         </div>
                                     </div>
-
-
-                                    <div class="minicart-flyout-body flyout-body">
-
-                                        <div class="top-fade"></div>
-
-                                        <div class="wrapper--minicart__list">
-                                            <!-- Cart Products START -->
-
-                                            
-
-                                            <div class="gwp-minicart-wrapper"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                            <div class="js-minicart-empty hide">
-                                <div class="minicart-flyout-wrapper js-minicart-flyout-wrapper">
-                                    <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true"></span>
-
-                                    <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
-                                        <span class="sr-only">Close flyout</span>
-                                        <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
-                                    </button>
-
-                                    <div class="minicart-flyout-header flyout-header js-flyout-header">
-                                        <input type="hidden" value="" class="js-cart-quantity" tabindex="-1" />
-
-                                        <div class="centered">
-                                            <h3 class="flyout-title">
-                                                My shopping cart
-                                            </h3>
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="mini-cart-empty">
-                                        <div class="mini-cart-empty-text">
-                                            Oh, it's empty! Let's fill it up with joy
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <div class="minicart-flyout-checkout js-minicart-flyout-checkout has-shadow hide">
-                            <div class="total">
-                                <div class="total-line">
-                                    <span class="total-label">
-                                        Order subtotal
-                                        <div class="content-asset">
-                                            <span class="free-delivery-message">
-                                                <div class="content-asset">
-                                                    Delivery in 1-3 workdays.
-                                                </div>
-                                            </span>
-                                        </div>
-                                    </span>
-
-                                    <span class="total-value js-total-price">
-                                        
-                                    </span>
-                                </div>
-                            </div>
-
-                            <form method="" action="/cart" class="dk-form" novalidate="novalidate">
-                                <div class="minicart-continueshopping">
-                                    <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
-                                        Continue shopping
-                                    </button>
-                                </div>
-
-                                <button type="submit" class="btn btn--submit" tabindex="0">
-                                    Go to cart
-                                    <div class="spinner js-spinner-general white-spinner">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </button>
+                                </fieldset>
                             </form>
                         </div>
+
+                    </section>
+
+                    <!-- Minicart -->
+                    <div class="minicart-flyout-container flyout-content flyout-container js-minicart-flyout-container">
+
+                        <div class="checkout-flyout-inner-content" style="padding-bottom:200px;">
+
+
+                            <section class="flyout-section">
+                                <div class="js-minicart-not-empty">
+                                    <div class="minicart-flyout-wrapper">
+                                        <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true"></span>
+
+                                        <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
+                                            <span class="sr-only">Close flyout</span>
+                                            <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
+                                        </button>
+
+
+                                        <div class="minicart-flyout-header flyout-header">
+                                            <input type="hidden" value="" class="js-cart-quantity" tabindex="-1" />
+
+                                            <div class="centered">
+                                                <h3 class="flyout-title">
+                                                My shopping cart
+                                            </h3>
+
+                                                <span class="flyout-title-overview js-selected-products">
+                                                    <!-- products count: 2 products -->
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="minicart-flyout-body flyout-body">
+
+                                            <div class="top-fade"></div>
+
+                                            <div class="wrapper--minicart__list">
+                                                <!-- Cart Products START -->
+
+
+                                                <div class="gwp-minicart-wrapper"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="js-minicart-empty hide">
+                                    <div class="minicart-flyout-wrapper js-minicart-flyout-wrapper">
+                                        <span class="sr-only flyout-sr-only" tabindex="0" aria-hidden="true"></span>
+
+                                        <button type="button" class="side--close js-close-flyout icon-close" tabindex="0">
+                                            <span class="sr-only">Close flyout</span>
+                                            <img src="/dkaroma/static/img/icons/x-dark.svg" width="24" height="24" class="d-inline-block align-baseline" alt="" loading="lazy" />
+                                        </button>
+
+                                        <div class="minicart-flyout-header flyout-header js-flyout-header">
+                                            <input type="hidden" value="" class="js-cart-quantity" tabindex="-1" />
+
+                                            <div class="centered">
+                                                <h3 class="flyout-title">
+                                                My shopping cart
+                                            </h3>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mini-cart-empty">
+                                            <div class="mini-cart-empty-text">
+                                            Oh, it's empty! Let's fill it up with joy
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="minicart-flyout-checkout js-minicart-flyout-checkout has-shadow hide">
+                                <div class="total">
+                                    <div class="total-line">
+                                        <span class="total-label">
+                                            Order subtotal
+                                            <div class="content-asset">
+                                                <span class="free-delivery-message">
+                                                    <div class="content-asset">
+                                                    Delivery in 1-3 workdays.
+                                                </div>
+                                                </span>
+                                            </div>
+                                        </span>
+
+                                        <span class="total-value js-total-price"></span>
+                                    </div>
+                                </div>
+
+                                <form method="" action="/cart" class="dk-form" novalidate="novalidate">
+                                    <div class="minicart-continueshopping">
+                                        <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
+                                        Continue shopping
+                                    </button>
+                                    </div>
+
+                                    <button type="submit" class="btn btn--submit" tabindex="0">
+                                        Go to cart
+                                        <div class="spinner js-spinner-general white-spinner">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+
                     </div>
 
 
-                </div>      
+                    <div class="js-modal-overlay modal-overlay"></div>
 
-
-                <div class="js-modal-overlay modal-overlay">
                 </div>
 
-            </div>
 
+                <!-- footer -->
 
-            <!-- footer -->
-
-             <div class="stay-informed ">
+                <div class="stay-informed ">
 
                     <div class="newsletter-wrapper inner-wrapper ">
 
@@ -1071,9 +1086,9 @@
 
                                                 </label>
 
-                                                <div class="error-message "> </div>
+                                                <div class="error-message "></div>
 
-                                                <input class="inputfield-text formal email required " type="email " id="newsletterEmail " name="newsletterEmail " value="" data-required-text="This field is required "/>
+                                                <input class="inputfield-text formal email required " type="email " id="newsletterEmail " name="newsletterEmail " value="" data-required-text="This field is required " />
 
                                             </div>
                                         </div>
@@ -1415,7 +1430,7 @@
                                                 <li>
                                                     <a class="wechat">
                                                         <span class="icon icon-item">
-                                                            <img src="/dkaroma/static/img/icons/wechat.svg" width="15" height="15" class="" alt="" loading="lazy"/>
+                                                            <img src="/dkaroma/static/img/icons/wechat.svg" width="15" height="15" class="" alt="" loading="lazy" />
                                                         </span>
                                                     </a>
                                                 </li>
@@ -1438,9 +1453,7 @@
                                                     </a>
                                                 </li>
 
-                                                <li>
-
-                                                </li>
+                                                <li></li>
 
                                             </ul>
 
@@ -1549,26 +1562,26 @@
                     </div>
                 </footer>
 
-            <script src="/dkaroma/static/js/jquery.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-            <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>   
-            <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.2.0/what-input.min.js" integrity="sha256-7wGy9IEPmo9Jk/I86siWbZFPeclfjFitAAfmvxBUc7k=" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-            <script src="/dkaroma/static/js/jquery.selectric.js"></script>
-            <script src="/dkaroma/static/js/jquery.visible.js" type="text/javascript"></script>
-            <script src="/dkaroma/static/js/scrolltoview.js" type="text/javascript"></script>
-            <script data-main="/dkaroma/static/js/main" src="/dkaroma/static/js/ext/require.js"></script>
-            <script src="/dkaroma/static/js/product-details.js" type="text/javascript"></script>
-            <script src="/dkaroma/static/js/script.js" type="text/javascript"></script>
-            <script src="/dkaroma/static/js/header.js" type="text/javascript"></script>
+                <script src="/dkaroma/static/js/jquery.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+                <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.2.0/what-input.min.js" integrity="sha256-7wGy9IEPmo9Jk/I86siWbZFPeclfjFitAAfmvxBUc7k=" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+                <script src="/dkaroma/static/js/jquery.selectric.js"></script>
+                <script src="/dkaroma/static/js/jquery.visible.js" type="text/javascript"></script>
+                <script src="/dkaroma/static/js/scrolltoview.js" type="text/javascript"></script>
+                <script data-main="/dkaroma/static/js/main" src="/dkaroma/static/js/ext/require.js"></script>
+                <script src="/dkaroma/static/js/product-details.js" type="text/javascript"></script>
+                <script src="/dkaroma/static/js/script.js" type="text/javascript"></script>
+                <script src="/dkaroma/static/js/header.js" type="text/javascript"></script>
 
 
-        </body>
+            </body>
 
 
         </template>
@@ -1582,8 +1595,8 @@
 
         <record id="custom_product_details_nav" model="website.menu">
             <field name="name">product-details</field>
-            <field name="parent_id" ref="website.menu_home"/>
-            <field name="page_id" ref="custom_product_details_page"/>
+            <field name="parent_id" ref="website.menu_home" />
+            <field name="page_id" ref="custom_product_details_page" />
         </record>
 
     </data>
