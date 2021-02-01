@@ -118,7 +118,7 @@ $(document).ready(function() {
 
     function updateCart(pid) {
 
-        var cartUrl = API_VALUES.base_url + "/dkaroma/shop/get-cart";
+        var cartUrl = URL_VALUES.base_url + "/dkaroma/shop/get-cart";
 
         $.ajax({
             method: "GET",

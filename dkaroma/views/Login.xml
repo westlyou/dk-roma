@@ -59,17 +59,34 @@
 
 
                                             <h3 class="page-layout-left-title">
-                                    Login to DK Aromatherapy
-                                </h3>
+                                                Login to DK Aromatherapy
+                                            </h3>
 
                                             <p class="page-layout-left-subtitle">
-                                    Enter your email to log in or to create a new account
-                                </p>
+                                                Enter your email to log in or to create a new account
+                                            </p>
 
                                             <form class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form"  role="form" t-attf-action="/web/login" method="post" onsubmit="this.action = this.action + location.hash">
                                                 <fieldset>
                                                     <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                                     <input type="hidden" name="db" t-att-value="request.db" id="db" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" readonly="readonly"/>
+
+                                                    <!-- server error field -->
+                                                    <div class="form-row full-width-row password js-slidedown required server-error">
+
+                                                        <div class="field-wrapper inputfield-row server-error-container">
+
+                                                            <div class="error-message">
+                                                                <span class="error js-validator-error error-text">
+                                                                    <t t-esc="error"/>
+                                                                </span>
+                                                            </div>
+
+
+                                                        </div>
+
+                                                    </div>
+
                                                     <div class="form-row full-width-row username required">
                                                         <div class="field-wrapper inputfield-row">
 
@@ -79,7 +96,7 @@
 
                                                             <div class="error-message"></div>
 
-                                                            <input id="email" name="login" type="text" class="inputfield-text email-input formal required valid" placeholder="Email" />
+                                                            <input id="email" name="login" type="text" class="inputfield-text email-input formal required valid" required="true" placeholder="Email" />
 
 
                                                         </div>
@@ -95,7 +112,7 @@
 
                                                             <div class="error-message"></div>
 
-                                                            <input id="password" name="password" class="inputfield-text formal required" type="password" placeholder="Password..." />
+                                                            <input id="password" name="password" class="inputfield-text formal required js-password" type="password" required="true" placeholder="Password..." />
                                                             <input type="hidden" name="redirect" t-att-value="redirect"/>
 
                                                             <button type="submit" class="password-reveal js-toggle-password-visibility label-disabled">
