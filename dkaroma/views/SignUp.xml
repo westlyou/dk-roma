@@ -69,8 +69,8 @@
 
                                             <form class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form"  role="form" action="/web/signup" method="post">
                                                 <fieldset>
-                                                    <!-- <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                                                    <input type="hidden" name="db" t-att-value="request.db" id="db" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" readonly="readonly"/> -->
+                                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                    <t t-set="only_passwords" t-value="bool(token and not invalid_token)"/>
                                                     
                                                     <div class="form-row full-width-row username required">
                                                         <div class="field-wrapper inputfield-row">
