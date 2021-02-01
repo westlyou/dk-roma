@@ -574,7 +574,7 @@
                                                     <div class="inner-indented">
 
                                                         <p class="heading-h1 txt--white">
-                                                            Let Aromatherapy Lift You Up </p>
+                                                            <t t-esc="home_page.name" /> </p>
 
                                                         <p class="txt--white">
                                                             “Five Elements” essential oils help you balance your body, mind and soul! Which included “Metal, Wood, Water, Fire, Earth”. Each essential oil has different effects, which can help you relax your body and mind, balance your emotions! 🧘‍♀️

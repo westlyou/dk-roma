@@ -1,31 +1,136 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="dkaroma.list">
-      <field name="name">DKAroma list</field>
-      <field name="model">dkaroma.dkaroma</field>
+
+    <record model="ir.ui.view" id="dkaroma.view_tree_home">
+      <field name="name">DK Aromatherapy</field>
+      <field name="model">dkaroma.home</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="name" />
         </tree>
       </field>
     </record>
--->
+
+    <record model="ir.ui.view" id="dkaroma.view_form_home">
+      <field name="name">DK Aromatherapy</field>
+      <field name="model">dkaroma.home</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="name" />
+                <field name="banner_text_small_1" />
+                <field name="banner_image_1" widget="image" />
+              </group>
+              <group>
+                <field name="banner_text_small_2" />
+                <field name="banner_image_2" widget="image" />
+              </group>
+            </group>
+            <group>
+
+              <field name="header_text_big" />
+              <field name="header_text_small" />
+            </group>
+            <group>
+              <group>
+                <field name="card_1_text_big" />
+                <field name="card_1_text_small" />
+                <field name="card_1_image" widget="image" />
+              </group>
+              <group>
+
+                <field name="card_2_text_big" />
+                <field name="card_2_text_small" />
+                <field name="card_2_image" widget="image" />
+              </group>
+            </group>
+
+            <group>
+              <field name="scroll_products_1_text_big" />
+              <field name="scroll_products_1_text_small" />
+            </group>
+            
+            <group>
+              <notebook position="inside">
+                <page string="Scroll Products 1" name="scroll_products_1">
+                  <group>
+                    <field name="scroll_products_1" widget="section_and_note_one2many" mode="tree">
+                      <tree>
+                        <field name="name" />
+                        <field name="image_1920" widget="image" />
+                        <field name="list_price" widget="currency" />
+                      </tree>
+                    </field>
+                  </group>
+                </page>
+              </notebook>
+            </group>
+
+            <group>
+              <group>
+                <field name="card_3_text_big" />
+                <field name="card_3_text_small" />
+                <field name="card_3_image" widget="image" />
+              </group>
+              <group>
+                <field name="card_4_text_big" />
+                <field name="card_4_text_small" />
+                <field name="card_4_image" widget="image" />
+              </group>
+            </group>
+
+            <group>
+              <group>
+                <field name="card_5_text_big" />
+                <field name="card_5_text_small" />
+                <field name="card_5_image" widget="image" />
+              </group>
+              <group>
+                <field name="card_6_text_big" />
+                <field name="card_6_text_small" />
+                <field name="card_6_image" widget="image" />
+              </group>
+            </group>
+
+            <group>
+              <field name="scroll_products_2_text_big" />
+              <field name="scroll_products_2_text_small" />
+            </group>
+            
+            <group>
+              <notebook position="inside">
+                <page string="Scroll Products 2" name="scroll_products_2">
+                  <group>
+                    <field name="scroll_products_2" widget="section_and_note_one2many" mode="tree">
+                      <tree>
+                        <field name="name" />
+                        <field name="image_1920" widget="image" />
+                        <field name="list_price" widget="currency" />
+                      </tree>
+                    </field>
+                  </group>
+                </page>
+              </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
 
     <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="dkaroma.action_window">
-      <field name="name">DKAroma window</field>
-      <field name="res_model">dkaroma.dkaroma</field>
+
+    <record model="ir.actions.act_window" id="dkaroma.action_home">
+      <field name="name">DK Aromatherapy Home</field>
+      <field name="res_model">dkaroma.home</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
-<!--
+    <!--
     <record model="ir.actions.server" id="dkaroma.action_server">
       <field name="name">DKAroma server</field>
       <field name="model_id" ref="model_dkaroma_dkaroma"/>
@@ -41,20 +146,18 @@
 -->
 
     <!-- Top menu item -->
-<!--
+    <!--
     <menuitem name="DKAroma" id="dkaroma.menu_root"/>
 -->
     <!-- menu categories -->
-<!--
+    <!--
     <menuitem name="Menu 1" id="dkaroma.menu_1" parent="dkaroma.menu_root"/>
     <menuitem name="Menu 2" id="dkaroma.menu_2" parent="dkaroma.menu_root"/>
 -->
     <!-- actions -->
-<!--
-    <menuitem name="List" id="dkaroma.menu_1_list" parent="dkaroma.menu_1"
-              action="dkaroma.action_window"/>
-    <menuitem name="Server to list" id="dkaroma" parent="dkaroma.menu_2"
-              action="dkaroma.action_server"/>
--->
+
+    <menuitem name="Pages" id="website.menu_pages" parent="website.menu_website_configuration" />
+    <menuitem name="Home Page" id="website.menu_home_page" parent="website.menu_pages" action="dkaroma.action_home" />
+
   </data>
 </odoo>
