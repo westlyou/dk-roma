@@ -960,7 +960,7 @@ input:disabled::placeholder {
     font-size: 14px;
     letter-spacing: .5px;
     float: right;
-    padding: 16px 4px 33px 0;
+    margin: 16px 4px 33px 0;
 }
 
 .login-overlay {
@@ -3370,10 +3370,18 @@ input.read-only {
 }
 
 .new-account {
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .login-password .inputfield-row div.justify-content-between {
     display: none'
 
+}
+
+.server-error-container {
+    background-color: rgb(255 0 0 / 10%);
+}
+
+.server-error-container .error-message {
+    margin: 0px 10px;
 }

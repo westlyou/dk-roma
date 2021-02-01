@@ -31,10 +31,10 @@ function setPasswordIncorrect() {
 
 $('.js-toggle-password-visibility').on('click', function() {
 
-    var passwordFieldType = $('#password').attr('type') === 'password' ? 'text' : 'password';
-    $('#password').attr('type', passwordFieldType);
+    var passwordFieldType = $(this).parent().find('.js-password').attr('type') === 'password' ? 'text' : 'password';
+    $(this).parent().find('.js-password').attr('type', passwordFieldType);
 
-    $('.js-toggle-password-visibility').toggleClass('password-visible');
+    $(this).toggleClass('password-visible');
 
 });
 
