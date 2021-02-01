@@ -879,10 +879,57 @@
                                     </li>
 
                                     <!-- slider product loop -->
-                                    <t t-foreach="product" t-as="home_page.scroll_products_1">
+                                    <t t-foreach="home_page.scroll_products_1" t-as="product">
                                     
                                         <!-- item -->
-                                        <t t-esc="product.name.name"/>
+                                        
+                                        <li>
+                                            <div class="product-list-slider-item ">
+
+
+                                                <div class="product-tile product-detail-tile linked-block ">
+
+                                                    <div class="product-item ">
+
+                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
+                                                            <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
+                                                            <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
+                                                            <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" />
+                                                        </a>
+
+                                                    </div>
+
+                                                    <section class="product-details-content ">
+
+                                                        <div class="product-title ">
+                                                            <a t-att-href="'/shop/product/' + str(product.name.id)" class="product-name-link ">
+
+                                                                <span class="product-name ">
+                                                                    <!-- product name -->
+                                                                    <t t-esc="product.name.name" />
+                                                                </span>
+
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="product-user-actions ">
+                                                            <div class="product-price ">
+                                                                <span class="product-standard-price ">
+                                                                    <!-- product price -->
+                                                                    <t t-esc="'$' + str(product.name.list_price)" />
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
+                                                            Shop Now
+                                                        </a>
+
+                                                    </section>
+
+                                                </div>
+                                            </div>
+                                        </li>
 
                                     </t>
 
@@ -1095,7 +1142,7 @@
                                     </li>
                                     
                                     <!-- slider product loop -->
-                                    <t t-foreach="product" t-as="home_page.scroll_products_2">
+                                    <t t-foreach="home_page.scroll_products_2" t-as="product">
                                     
                                         <!-- item -->
                                         <li>
@@ -1277,7 +1324,7 @@
                                     </div>
                                 </div>
 
-                                <form method="" action="/cart" class="dk-form" novalidate="novalidate">
+                                <form method="" action="/shop/cart" class="dk-form" novalidate="novalidate">
                                     <div class="minicart-continueshopping">
                                         <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
                                             Continue shopping

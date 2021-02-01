@@ -59,6 +59,12 @@ requirejs(["ext/body-scroll-lock"], function(bodyScrollLock) {
         $('.js-modal-overlay').removeClass('visible');
     });
 
+    $('.js-side--close').click(function(e) {
+        $('.js-minicart-flyout-container').removeClass('open');
+        enableBodyScroll(targetElement);
+        $('.js-modal-overlay').removeClass('visible');
+    });
+
     function openMiniCart() {
         $('.js-minicart-flyout-container').addClass('open');
         disableBodyScroll(targetElement);
