@@ -888,6 +888,9 @@
                                             Prev
                                         </a>
 
+                                        <a t-att-href="pager['page_first']['url']" class="paginator-nav-btn page-btn nav-first-btn js-first-btn">
+                                        </a>
+
                                         <ul class="paginator-list align-container-center js-paginator-list">
 
                                             <t t-foreach="pager['pages']" t-as="page">
@@ -901,6 +904,9 @@
                                             </t>
 
                                         </ul>
+
+                                        <a t-att-href="pager['page_last']['url']" class="paginator-nav-btn page-btn nav-last-btn js-last-btn">
+                                        </a>
 
                                         <a t-att-href="pager['page_next']['url']" class="paginator-nav-btn js-next-btn">
                                             Next

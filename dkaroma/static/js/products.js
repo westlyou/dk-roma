@@ -84,11 +84,19 @@ $(document).ready(function() {
         if (currentPage > 1) {
             // show prev
             $('.js-prev-btn').css('display', 'inline-block');
+
+            if (pageCount > 7) {
+                $('.js-first-btn').css('display', 'inline-block');
+            }
         }
 
         if (currentPage < lastPage) {
             //show next
             $('.js-next-btn').css('display', 'inline-block');
+
+            if (pageCount > 7) {
+                $('.js-last-btn').css('display', 'inline-block');
+            }
         }
 
     });
@@ -117,11 +125,16 @@ $(document).ready(function() {
 
         var pageLink = '';
 
-        $('.js-paginator-list li').each(function() {
-            if (parseInt(jQuery.trim($(this).children('a').text())) == selectedPageInput) {
-                pageLink = $(this).children('a').attr('href');
-            }
-        });
+        var lastLink = $('.js-last-btn').attr('href');
+        if (lastLink == '' || lastLink == null) {
+            return;
+        }
+
+        var index = lastLink.lastIndexOf("page");
+        if (index == -1) {
+            return;
+        }
+        pageLink = lastLink.substring(0, index) + 'page/' + selectedPageInput;
 
         location.href = pageLink;
 
