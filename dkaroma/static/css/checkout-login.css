@@ -3372,3 +3372,8 @@ input.read-only {
 .new-account {
     margin-left: 10px;
 }
+
+.login-password .inputfield-row div.justify-content-between {
+    display: none'
+
+}

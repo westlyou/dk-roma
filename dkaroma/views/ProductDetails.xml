@@ -638,7 +638,7 @@
                                                         <!-- <t t-foreach="category" t-as="product.public_categ_ids">
                                                             <t t-esc="category.name" />
                                                         </t> -->
-                                                        <t t-esc="','.(product.public_categ_ids)"/>
+                                                        <t t-esc="','.join(product.public_categ_ids)"/>
 
                                                     </span>
                                                      <!-- Savage Garden (private collection) -->
@@ -871,7 +871,7 @@
                                         <t t-esc="category.name" />
                                     </t> -->
                                     
-                                    <t t-esc="','.(product.public_categ_ids)"/>
+                                    <t t-esc="','.join(product.public_categ_ids)"/>
                                     
                                 </span> 
                                 <t t-esc="product.name" />
