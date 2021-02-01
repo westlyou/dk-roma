@@ -343,7 +343,7 @@ class Dkaroma(http.Controller):
         
         return request.render("dkaroma.products", values)
 
-    @http.route(['/shop/cart'], type='http', auth="public", website=True, sitemap=False)
+    # @http.route(['/shop/cart'], type='http', auth="public", website=True, sitemap=False)
     def cart(self, access_token=None, revive='merge', **post):
         """
         Main cart management + abandoned cart revival
