@@ -804,7 +804,7 @@
                                                             </div>
 
                                                             <div class="short-description">
-                                                                <t t-esc="product.description" />
+                                                                <t t-esc="product.description_sale" />
                                                                 <!-- Essential oils help you balance your body, mind and soul! -->
                                                             </div>
 
