@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <template id="signup">
+        <template id="auth_signup.signup">
 
             <head>
                 <title>Sign up for DK Aromatherapy Membership</title>
@@ -67,7 +67,7 @@
                                                 Create a new DK Aromatherapy member account
                                             </p>
 
-                                            <form class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form"  role="form" action="/dkaroma/signup" method="post">
+                                            <form class="check-email-form login-panel__form top-labels js-loginajax-form dk-form" id="form"  role="form" action="/web/signup" method="post">
                                                 <fieldset>
                                                     <!-- <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                                     <input type="hidden" name="db" t-att-value="request.db" id="db" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" readonly="readonly"/> -->
@@ -81,7 +81,7 @@
 
                                                             <div class="error-message"></div>
 
-                                                            <input id="email" name="login" type="text" class="inputfield-text email-input formal required valid" placeholder="Email" />
+                                                            <input id="email" t-att-value="login" name="login" type="text" class="inputfield-text email-input formal required valid" placeholder="Email" autocapitalize="off" />
 
 
                                                         </div>
@@ -91,12 +91,12 @@
                                                         <div class="field-wrapper inputfield-row">
 
                                                             <label for="username">
-                                                                <span>Username</span>
+                                                                <span>Name</span>
                                                             </label>
 
                                                             <div class="error-message"></div>
 
-                                                            <input id="username" name="username" type="text" class="inputfield-text email-input formal required valid" placeholder="Username" />
+                                                            <input id="username" name="name" t-att-value="name" type="text" class="inputfield-text email-input formal required valid" placeholder="Username" />
 
 
                                                         </div>
@@ -112,9 +112,10 @@
 
                                                             <div class="error-message"></div>
 
-                                                            <input id="password" name="password" class="inputfield-text formal required" type="password" placeholder="Password..." />
-                                                            <!-- <input type="hidden" name="redirect" t-att-value="redirect"/> -->
-
+                                                            <input id="password" name="password" t-att-autofocus="'autofocus' if only_passwords else None" class="inputfield-text formal required" type="password" placeholder="Password..." />
+                                                            <input type="hidden" name="redirect" t-att-value="redirect"/>
+                                                            <input type="hidden" name="token" t-att-value="token"/>
+                                                            
                                                             <button type="submit" class="password-reveal js-toggle-password-visibility label-disabled">
 
                                                                 <span class="icon-password-not-visible password-not-visible password-reveal-icon">
@@ -133,7 +134,7 @@
 
                                                     
 
-                                                    <a href="" class="password-reset js-password-reset-link js-slidedown">
+                                                    <a href="/web/login" class="password-reset js-password-reset-link js-slidedown" t-if="not token" t-attf-href="/web/login?{{ keep_query() }}">
                                                         Already registered? Login
                                                     </a>
 
