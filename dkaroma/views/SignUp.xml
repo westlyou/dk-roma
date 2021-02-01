@@ -115,6 +115,7 @@
                                                             <input id="password" name="password" t-att-autofocus="'autofocus' if only_passwords else None" class="inputfield-text formal required" type="password" placeholder="Password..." />
                                                             <input type="hidden" name="redirect" t-att-value="redirect"/>
                                                             <input type="hidden" name="token" t-att-value="token"/>
+                                                            <t t-esc="error" />
                                                             
                                                             <button type="submit" class="password-reveal js-toggle-password-visibility label-disabled">
 
