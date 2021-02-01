@@ -1074,7 +1074,7 @@
                                     </div>
                                 </div>
 
-                                <form method="" action="/cart" class="dk-form" novalidate="novalidate">
+                                <form method="" action="/shop/cart" class="dk-form" novalidate="novalidate">
                                     <div class="minicart-continueshopping">
                                         <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
                                         Continue shopping
