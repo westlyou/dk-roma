@@ -114,11 +114,11 @@
 
                                                     </div>
 
-                                                    <a class=" new-account password-reset js-password-reset-link js-slidedown">
+                                                    <a href="/web/signup" class=" new-account password-reset js-password-reset-link js-slidedown">
                                                         No account? Create one
                                                     </a>
 
-                                                    <a class="password-reset js-password-reset-link js-slidedown">
+                                                    <a href="/web/reset-password" class="password-reset js-password-reset-link js-slidedown">
                                                         Forgot password?
                                                     </a>
 
