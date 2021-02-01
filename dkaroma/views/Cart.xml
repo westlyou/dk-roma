@@ -633,7 +633,7 @@
 
                                                                                     <div class="description">
                                                                                         <!-- Lorem ipsum desc -->
-                                                                                        <t t-esc="line.product_id.desription"/>
+                                                                                        <t t-esc="line.product_id.desription_sale"/>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>

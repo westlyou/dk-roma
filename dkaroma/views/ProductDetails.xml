@@ -651,7 +651,7 @@
                                                 <div class="product-short-info">
                                                     <div class="short-description">
                                                         <!-- Anti-aging day cream, 50 ml -->
-                                                        <t t-esc="product.description" />
+                                                        <t t-esc="product.description_sale" />
                                                     </div>
                                                 </div>
 
@@ -788,7 +788,7 @@
                                                                 </div>
 
                                                                 <div class="short-description">
-                                                                    <t t-esc="product.description" />
+                                                                    <t t-esc="product.description_sale" />
                                                                     <!-- Essential oils help you balance your body, mind and soul! -->
                                                                 </div>
 
