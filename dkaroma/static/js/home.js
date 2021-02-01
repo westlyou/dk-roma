@@ -80,6 +80,14 @@ $("#topSlider").imagesLoaded(function() {
     });
 
 
+    $(function() {
+        refreshSliderButtons($('#topSlider'));
+    });
+
+    $(window).resize(function() {
+        refreshSliderButtons($('#topSlider'));
+    });
+
 });
 
 
@@ -168,9 +176,47 @@ $("#promotionSlider").imagesLoaded(function() {
 
     });
 
+    $(function() {
+        refreshSliderButtons($('#promotionSlider'));
+    });
+
+    $(window).resize(function() {
+        refreshSliderButtons($('#promotionSlider'));
+    });
+
 });
 
+function refreshSliderButtons(sliderObject) {
 
+
+    var productsCount = sliderObject.find('li').length;
+
+    var buttons = sliderObject.closest('.product-list-slider').find('.drag-list-controls').find('button');
+
+    buttons.removeClass('hide');
+
+    if (productsCount <= 8 && window.matchMedia('(min-width: 1440px)').matches) {
+        buttons.addClass('hide');
+    }
+
+    if (productsCount <= 5 && window.matchMedia('(min-width: 1280px)').matches && window.matchMedia('(max-width: 1440px)').matches) {
+        buttons.addClass('hide');
+    }
+
+    if (productsCount <= 3 && window.matchMedia('(min-width: 1024px)').matches && window.matchMedia('(max-width: 1280px)').matches) {
+        buttons.addClass('hide');
+    }
+
+    if (productsCount <= 3 && window.matchMedia('(min-width: 768px)').matches && window.matchMedia('(max-width: 1023px)').matches) {
+        buttons.addClass('hide');
+    }
+
+    if (productsCount <= 2 && window.matchMedia('(max-width: 767px)').matches) {
+        buttons.addClass('hide');
+    }
+
+
+}
 
 (function($) {
 

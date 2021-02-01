@@ -91,7 +91,6 @@ $(document).ready(function() {
             $('.js-next-btn').css('display', 'inline-block');
         }
 
-        console.log('here 2');
     });
 
     $('#pageInput').inputFilter(function(value) {

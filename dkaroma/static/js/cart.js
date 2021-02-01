@@ -94,7 +94,7 @@ $(document).ready(function() {
 
     function addProductToCart(pid, qty) {
 
-        var cartUrl = URL_VALUES.base_url + "/shop/cart/update";
+        var cartUrl = URL_VALUES.base_url + "/shop/cart/update_json";
 
         $.ajax({
             method: "POST",

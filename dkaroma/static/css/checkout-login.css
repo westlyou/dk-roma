@@ -3374,8 +3374,7 @@ input.read-only {
 }
 
 .login-password .inputfield-row div.justify-content-between {
-    display: none'
-
+    display: none;
 }
 
 .server-error-container {

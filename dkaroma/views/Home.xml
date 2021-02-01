@@ -559,7 +559,8 @@
                                             <div class="image-holder animate__animated animate__pulse">
 
                                                 <div class="cover-wrapper">
-                                                    <img src="/dkaroma/static/img/car-1.jpeg" class="w-100 h-100  cover" alt="..."/>
+                                                    <!-- <img src="/dkaroma/static/img/car-1.jpeg" class="w-100 h-100  cover" alt="..."/> -->
+                                                    <div t-field="home_page.banner_image_1" t-options='{"widget": "image", "preview_image": "image_1024", "class": "w-100 h-100 cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
                                                 </div>
 
                                                 <div class="layer">
@@ -574,10 +575,12 @@
                                                     <div class="inner-indented">
 
                                                         <p class="heading-h1 txt--white">
-                                                            <t t-esc="home_page.name" /> </p>
+                                                            <t t-esc="home_page.name" />
+                                                        </p>
 
                                                         <p class="txt--white">
-                                                            “Five Elements” essential oils help you balance your body, mind and soul! Which included “Metal, Wood, Water, Fire, Earth”. Each essential oil has different effects, which can help you relax your body and mind, balance your emotions! 🧘‍♀️
+                                                            <!-- “Five Elements” essential oils help you balance your body, mind and soul! Which included “Metal, Wood, Water, Fire, Earth”. Each essential oil has different effects, which can help you relax your body and mind, balance your emotions! 🧘‍♀️ -->
+                                                            <t t-esc="home_page.banner_text_small_1"/>
                                                         </p>
 
                                                         <a href="/shop" class="btn bring-to-top">
@@ -597,7 +600,8 @@
                                             <div class="image-holder animate__animated animate__pulse ">
 
                                                 <div class="cover-wrapper">
-                                                    <img src="/dkaroma/static/img/car-1.jpeg " class="w-100 h-100 cover " alt="... "/>
+                                                    <!-- <img src="/dkaroma/static/img/car-1.jpeg " class="w-100 h-100 cover " alt="... "/> -->
+                                                    <div t-field="home_page.banner_image_1" t-options='{"widget": "image", "preview_image": "image_1024", "class": "w-100 h-100 cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
                                                 </div>
 
                                                 <div class="layer ">
@@ -612,11 +616,13 @@
                                                     <div class="inner-indented ">
 
                                                         <p class="heading-h1 txt--white ">
-                                                            Let Aromatherapy Lift You Up
+                                                            <!-- Let Aromatherapy Lift You Up -->
+                                                            <t t-esc="home_page.name" />
                                                         </p>
 
                                                         <p class="txt--white ">
-                                                            “Five Elements” essential oils help you balance your body, mind and soul! Which included “Metal, Wood, Water, Fire, Earth”. Each essential oil has different effects, which can help you relax your body and mind, balance your emotions! 🧘‍♀️
+                                                            <!-- “Five Elements” essential oils help you balance your body, mind and soul! Which included “Metal, Wood, Water, Fire, Earth”. Each essential oil has different effects, which can help you relax your body and mind, balance your emotions! 🧘‍♀️ -->
+                                                            <t t-esc="home_page.banner_text_small_1"/>
                                                         </p>
 
                                                         <a href="/shop" class="btn bring-to-top ">
@@ -641,7 +647,8 @@
 
                                             <div class="image-holder animate__animated animate__pulse ">
                                                 <class class="cover-wrapper">
-                                                    <img src="/dkaroma/static/img/car-2.jpeg " class="w-100 h-100 cover " alt="... "/>
+                                                    <!-- <img src="/dkaroma/static/img/car-2.jpeg " class="w-100 h-100 cover " alt="... "/> -->
+                                                    <div t-field="home_page.banner_image_2" t-options='{"widget": "image", "preview_image": "image_1024", "class": "w-100 h-100 cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
                                                 </class>
 
                                                 <div class="layer ">
@@ -656,11 +663,13 @@
                                                     <div class="inner-indented ">
 
                                                         <p class="heading-h1 txt--white ">
-                                                            Let Aromatherapy Lift You Up
+                                                            <!-- Let Aromatherapy Lift You Up -->
+                                                            <t t-esc="home_page.name" />
                                                         </p>
 
                                                         <p class="txt--white ">
-                                                            Relax your body, mind and soul
+                                                            <!-- Relax your body, mind and soul -->
+                                                            <t t-esc="home_page.banner_text_small_2"/>
                                                         </p>
 
                                                     </div>
@@ -676,7 +685,8 @@
                                             <div class="image-holder animate__animated animate__pulse ">
 
                                                 <div class="cover-wrapper">
-                                                    <img src="/dkaroma/static/img/car-2.jpeg " class="w-100 h-100 cover " alt="... "/>
+                                                    <!-- <img src="/dkaroma/static/img/car-2.jpeg " class="w-100 h-100 cover " alt="... "/> -->
+                                                    <div t-field="home_page.banner_image_2" t-options='{"widget": "image", "preview_image": "image_1024", "class": "w-100 h-100 cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
                                                 </div>
 
                                                 <div class="layer ">
@@ -691,11 +701,13 @@
                                                     <div class="inner-indented ">
 
                                                         <p class="heading-h1 txt--white ">
-                                                            Let Aromatherapy Lift You Up
+                                                            <!-- Let Aromatherapy Lift You Up -->
+                                                            <t t-esc="home_page.name" />
                                                         </p>
 
                                                         <p class="txt--white ">
-                                                            Relax your body, mind and soul
+                                                            <!-- Relax your body, mind and soul -->
+                                                            <t t-esc="home_page.banner_text_small_2"/>
                                                         </p>
 
                                                     </div>
@@ -722,11 +734,13 @@
                                 <div class="pos-down">
 
                                     <h2 class="">
-                                        At your service
+                                        <!-- At your service -->
+                                        <t t-esc="home_page.header_text_big"/>
                                     </h2>
 
                                     <p class="body-copy-medium ">
-                                        Free delivery for orders over HK$800
+                                        <!-- Free delivery for orders over HK$800 -->
+                                        <t t-esc="home_page.header_text_small"/>
                                     </p>
 
                                 </div>
@@ -742,7 +756,8 @@
                             <div class="inner-wrapper ">
 
                                 <div class="grid-wrap grid-cards grid-initialized row justify-content-around ">
-
+                                    
+                                    <!-- card 1 -->
                                     <div class="item hover-scale col-md-auto col-sm-12 module ">
 
                                         <div class="grid-item-inner ">
@@ -751,12 +766,13 @@
 
 
                                                 <h3>
-                                                    Your Gift
+                                                    <!-- Your Gift -->
+                                                    <t t-esc="home_page.card_1_text_big"/>
                                                 </h3>
 
                                                 <p class="bring-to-top ">
-                                                    Free delivery for orders over HK$800 Free delivery for orders over HK$800 Free delivery for orders over HK$800
-
+                                                    <!-- Free delivery for orders over HK$800 Free delivery for orders over HK$800 Free delivery for orders over HK$800 -->
+                                                    <t t-esc="home_page.card_1_text_small"/>
                                                 </p>
 
                                                 <a href="/shop" class="btn btn--secondary btn-bg bring-to-top ">
@@ -767,7 +783,8 @@
 
                                             <a class="image-holder ">
 
-                                                <img class="cover " src="/dkaroma/static/img/left-card-img.png " alt="product "/>
+                                                <!-- <img class="cover " src="/dkaroma/static/img/left-card-img.png " alt="product "/> -->
+                                                <div t-field="home_page.card_1_image" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
 
                                             </a>
 
@@ -776,7 +793,7 @@
                                     </div>
 
 
-
+                                    <!-- card 2 -->
                                     <div class="item hover-scale col-md-auto col-sm-12 module ">
 
                                         <div class="grid-item-inner ">
@@ -784,11 +801,11 @@
                                             <div class="text-holder flower-2 ">
 
                                                 <h3>
-                                                    Your Gift
+                                                    <t t-esc="home_page.card_2_text_big"/>
                                                 </h3>
 
                                                 <p class="bring-to-top ">
-                                                    Free delivery for orders over HK$800 Free delivery for orders over HK$800 Free delivery for orders over HK$800
+                                                    <t t-esc="home_page.card_2_text_small"/>
                                                 </p>
 
                                                 <a href="/shop" class="btn btn--secondary btn-bg bring-to-top ">
@@ -799,7 +816,7 @@
 
                                             <a class="image-holder ">
 
-                                                <img class="cover " src="/dkaroma/static/img/right-card-img.png " alt="product "/>
+                                                <div t-field="home_page.card_2_image" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
 
                                             </a>
 
@@ -820,7 +837,9 @@
                             <div class="product-list-slider-intro ">
 
                                 <h2></h2>
-                                <h3>The Art of Aromatherapy</h3>
+                                <h3>
+                                    <t t-esc="home_page.scroll_products_1_text_big"/>
+                                </h3>
 
                             </div>
 
@@ -833,9 +852,15 @@
                                         <div class="product-list-slider-item text-item slider-header-item" id="slide-1 ">
                                             <h2></h2>
 
-                                            <h3>The Art of Aromatherapy</h3>
+                                            <h3>
+                                                <!-- The Art of Aromatherapy -->
+                                                <t t-esc="home_page.scroll_products_1_text_big"/>
+                                            </h3>
 
-                                            <p>Free delivery for orders over HK$800</p>
+                                            <p>
+                                                <!-- Free delivery for orders over HK$800 -->
+                                                <t t-esc="home_page.scroll_products_1_text_small"/>
+                                            </p>
 
                                             <!-- <a href="# " class="btn ">
                                                 Shop Now
@@ -847,425 +872,60 @@
                                         </div>
                                     </li>
 
-                                    <li>
-                                        <div class="product-list-slider-item ">
+                                    <!-- slider product loop -->
+                                    <t t-foreach="product" t-as="home_page.scroll_products_1">
+                                    
+                                        <!-- item -->
+                                        <li>
+                                            <div class="product-list-slider-item ">
 
 
-                                            <div class="product-tile product-detail-tile linked-block ">
+                                                <div class="product-tile product-detail-tile linked-block ">
 
-                                                <div class="product-item ">
+                                                    <div class="product-item ">
 
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
+                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
+                                                            <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
+                                                            <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                        </a>
+
+                                                    </div>
+
+                                                    <section class="product-details-content ">
+
+                                                        <div class="product-title ">
+                                                            <a t-att-href="'/shop/product/' + str(product.name.id)" class="product-name-link ">
+
+                                                                <span class="product-name ">
+                                                                    <!-- product name -->
+                                                                    <t t-esc="product.name.name" />
+                                                                </span>
+
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="product-user-actions ">
+                                                            <div class="product-price ">
+                                                                <span class="product-standard-price ">
+                                                                    <!-- product price -->
+                                                                    <t t-esc="'$' + str(product.name.list_price)" />
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
+                                                            Shop Now
+                                                        </a>
+
+                                                    </section>
 
                                                 </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
                                             </div>
-                                        </div>
-                                    </li>
+                                        </li>
 
-                                    <li>
-                                        <div class="product-list-slider-item ">
+                                    </t>
 
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
+                                    <!-- loop end -->
 
                                 </ul>
 
@@ -1298,6 +958,7 @@
 
                                 <div class="grid-wrap grid-cards grid-initialized row justify-content-around ">
 
+                                    <!-- card 3 -->
                                     <div class="item hover-scale col-md-auto col-sm-12 module ">
 
                                         <div class="grid-item-inner ">
@@ -1305,11 +966,11 @@
                                             <div class="text-holder flower-1 ">
 
                                                 <h3>
-                                                    Your Gift
+                                                    <t t-esc="home_page.card_3_text_big"/>
                                                 </h3>
 
                                                 <p>
-                                                    Free delivery for orders over HK$800 Free delivery for orders over HK$800 Free delivery for orders over HK$800
+                                                    <t t-esc="home_page.card_3_text_small"/>
                                                 </p>
 
                                                 <a href="/shop" class="btn btn-bg btn--secondary ">
@@ -1320,7 +981,7 @@
 
                                             <a class="image-holder ">
 
-                                                <img class="cover " src="/dkaroma/static/img/left-card-img-2.png" alt="product "/>
+                                                <div t-field="home_page.card_3_image" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
 
                                             </a>
 
@@ -1328,6 +989,7 @@
 
                                     </div>
 
+                                    <!-- card 4 -->
                                     <div class="item hover-scale col-md-auto col-sm-12 module ">
 
                                         <div class="grid-item-inner ">
@@ -1335,11 +997,11 @@
                                             <div class="text-holder flower-3 ">
 
                                                 <h3>
-                                                    The Art of Aromatherapy
+                                                    <t t-esc="home_page.card_4_text_big"/>
                                                 </h3>
 
                                                 <p>
-                                                    Free delivery for orders over HK$800 Free delivery for orders over HK$800 Free delivery for orders over HK$800
+                                                    <t t-esc="home_page.card_4_text_small"/>
                                                 </p>
 
                                                 <a href="/shop" class="btn btn-bg btn--secondary ">
@@ -1350,7 +1012,7 @@
 
                                             <a class="image-holder">
 
-                                                <img class="cover" src="/dkaroma/static/img/right-card-img-2.png" alt="product "/>
+                                                <div t-field="home_page.card_4_image" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
 
                                             </a>
 
@@ -1358,6 +1020,7 @@
 
                                     </div>
 
+                                    <!-- card 5 -->
                                     <div class="item hover-scale col-md-auto col-sm-12 module ">
 
                                         <div class="grid-item-inner ">
@@ -1365,11 +1028,11 @@
                                             <div class="text-holder flower-2 ">
 
                                                 <h3>
-                                                    The Art of Aromatherapy
+                                                    <t t-esc="home_page.card_5_text_big"/>
                                                 </h3>
 
                                                 <p>
-                                                    Free delivery for orders over HK$800 Free delivery for orders over HK$800 Free delivery for orders over HK$800
+                                                    <t t-esc="home_page.card_5_text_small"/>
                                                 </p>
 
                                                 <a href="/shop" class="btn btn-bg btn--secondary ">
@@ -1380,7 +1043,8 @@
 
                                             <a class="image-holder">
 
-                                                <img class="cover pos-up" src="/dkaroma/static/img/right-card-img-2.png" alt="product "/>
+                                                <!-- <img class="cover pos-up" src="/dkaroma/static/img/right-card-img-2.png" alt="product "/> -->
+                                                <div t-field="home_page.card_5_image" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
 
                                             </a>
 
@@ -1388,6 +1052,7 @@
 
                                     </div>
 
+                                    <!-- card 6 -->
                                     <div class="item hover-scale col-md-auto col-sm-12 module ">
 
                                         <div class="grid-item-inner ">
@@ -1395,11 +1060,11 @@
                                             <div class="text-holder flower-3 ">
 
                                                 <h3>
-                                                    The Art of Aromatherapy
+                                                    <t t-esc="home_page.card_6_text_big"/>
                                                 </h3>
 
                                                 <p>
-                                                    Free delivery for orders over HK$800 Free delivery for orders over HK$800 Free delivery for orders over HK$800
+                                                    <t t-esc="home_page.card_6_text_small"/>
                                                 </p>
 
                                                 <a href="/shop" class="btn btn-bg btn--secondary ">
@@ -1410,7 +1075,7 @@
 
                                             <a class="image-holder">
 
-                                                <img class="cover" src="/dkaroma/static/img/right-card-img-2.png" alt="product "/>
+                                                <div t-field="home_page.card_6_image" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
 
                                             </a>
 
@@ -1431,7 +1096,9 @@
                             <div class="product-list-slider-intro ">
 
                                 <h2></h2>
-                                <h3>Promotions</h3>
+                                <h3>
+                                    <t t-esc="home_page.scroll_products_2_text_big"/>
+                                </h3>
 
                             </div>
 
@@ -1444,9 +1111,13 @@
                                         <div class="product-list-slider-item text-item slider-header-item" id="slide-1 ">
                                             <h2></h2>
 
-                                            <h3>Promotions</h3>
+                                            <h3>
+                                                <t t-esc="home_page.scroll_products_2_text_big"/>
+                                            </h3>
 
-                                            <p>Free delivery for orders over HK$800</p>
+                                            <p>
+                                                <t t-esc="home_page.scroll_products_2_text_small"/>
+                                            </p>
 
                                             <!-- <a href="# " class="btn ">
                                                 Shop Now
@@ -1457,426 +1128,61 @@
                                             </a>
                                         </div>
                                     </li>
+                                    
+                                    <!-- slider product loop -->
+                                    <t t-foreach="product" t-as="home_page.scroll_products_2">
+                                    
+                                        <!-- item -->
+                                        <li>
+                                            <div class="product-list-slider-item ">
 
-                                    <li>
-                                        <div class="product-list-slider-item ">
 
+                                                <div class="product-tile product-detail-tile linked-block ">
 
-                                            <div class="product-tile product-detail-tile linked-block ">
+                                                    <div class="product-item ">
 
-                                                <div class="product-item ">
+                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
+                                                            <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
+                                                            <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                        </a>
 
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
+                                                    </div>
+
+                                                    <section class="product-details-content ">
+
+                                                        <div class="product-title ">
+                                                            <a t-att-href="'/shop/product/' + str(product.name.id)" class="product-name-link ">
+
+                                                                <span class="product-name ">
+                                                                    <!-- product name -->
+                                                                    <t t-esc="product.name.name" />
+                                                                </span>
+
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="product-user-actions ">
+                                                            <div class="product-price ">
+                                                                <span class="product-standard-price ">
+                                                                    <!-- product price -->
+                                                                    <t t-esc="'$' + str(product.name.list_price)" />
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
+                                                            Shop Now
+                                                        </a>
+
+                                                    </section>
 
                                                 </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
                                             </div>
-                                        </div>
-                                    </li>
+                                        </li>
 
-                                    <li>
-                                        <div class="product-list-slider-item ">
+                                    </t>
 
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="product-list-slider-item ">
-
-
-                                            <div class="product-tile product-detail-tile linked-block ">
-
-                                                <div class="product-item ">
-
-                                                    <a href="/product-details" class="thumb-link ">
-                                                        <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/>
-                                                    </a>
-
-                                                </div>
-
-                                                <section class="product-details-content ">
-
-                                                    <div class="product-title ">
-                                                        <a href="# " class="product-name-link ">
-
-                                                            <span class="product-name ">Savage Garden (private collection)</span>
-
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="product-user-actions ">
-                                                        <div class="product-price ">
-                                                            <span class="product-standard-price ">
-                                                                HK$768
-                                                            </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <a href="/product-details" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                        Shop Now
-                                                    </a>
-
-                                                </section>
-
-                                            </div>
-                                        </div>
-                                    </li>
+                                    <!-- loop end -->
 
                                 </ul>
 
