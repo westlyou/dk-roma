@@ -841,7 +841,7 @@
                                                 Shop Now
                                             </a> -->
 
-                                            <a href="/products " class="btn btn--secondary btn-bg bring-to-top">
+                                            <a href="/shop " class="btn btn--secondary btn-bg bring-to-top">
                                                 Shop Now
                                             </a>
                                         </div>
@@ -1452,7 +1452,7 @@
                                                 Shop Now
                                             </a> -->
 
-                                            <a href="/products " class="btn btn--secondary btn-bg bring-to-top">
+                                            <a href="/shop" class="btn btn--secondary btn-bg bring-to-top">
                                                 Shop Now
                                             </a>
                                         </div>
