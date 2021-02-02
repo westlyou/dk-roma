@@ -1,7 +1,6 @@
 $("#topSlider").imagesLoaded(function() {
 
-    // $('.js-top-slider').insertAfter($('.js-top-skeleton'));
-    $('.js-top-slider').insertAfter($('.js-promotion-skeleton'));
+    $('.js-top-slider').insertAfter($('.js-top-skeleton'));
     $('.js-top-skeleton').remove();
     $('.js-top-slider').removeClass('hide');
 
@@ -98,8 +97,7 @@ $("#topSlider").imagesLoaded(function() {
 
 $("#promotionSlider").imagesLoaded(function() {
 
-    // $('.js-promotion-slider').insertAfter($('.js-promotion-skeleton'));
-    $('.js-promotion-slider').insertAfter($('.js-top-skeleton'));
+    $('.js-promotion-slider').insertAfter($('.js-promotion-skeleton'));
     $('.js-promotion-skeleton').remove();
     $('.js-promotion-slider').removeClass('hide');
 
