@@ -891,21 +891,6 @@
                                     <div class="skeleton-bg skeleton-name skeleton-price"></div>
                                 </div>
 
-                                <div class="skeleton-item">
-                                    <div class="skeleton-bg skeleton-img"></div>
-
-                                    <div class="skeleton-bg skeleton-name"></div>
-
-                                    <div class="skeleton-bg skeleton-name skeleton-price"></div>
-                                </div>
-
-                                <div class="skeleton-item">
-                                    <div class="skeleton-bg skeleton-img"></div>
-
-                                    <div class="skeleton-bg skeleton-name"></div>
-
-                                    <div class="skeleton-bg skeleton-name skeleton-price"></div>
-                                </div>
                             </div>
 
                             <div class="skeleton-overlay"></div>
@@ -1107,21 +1092,6 @@
                                     <div class="skeleton-bg skeleton-name skeleton-price"></div>
                                 </div>
 
-                                <div class="skeleton-item">
-                                    <div class="skeleton-bg skeleton-img"></div>
-
-                                    <div class="skeleton-bg skeleton-name"></div>
-
-                                    <div class="skeleton-bg skeleton-name skeleton-price"></div>
-                                </div>
-
-                                <div class="skeleton-item">
-                                    <div class="skeleton-bg skeleton-img"></div>
-
-                                    <div class="skeleton-bg skeleton-name"></div>
-
-                                    <div class="skeleton-bg skeleton-name skeleton-price"></div>
-                                </div>
                             </div>
 
                             <div class="skeleton-overlay"></div>
