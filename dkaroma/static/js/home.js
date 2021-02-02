@@ -2,7 +2,8 @@ $("#topSlider").imagesLoaded(function() {
 
     // $('.js-top-slider').insertAfter($('.js-top-skeleton'));
     $('.js-top-slider').insertAfter($('.js-promotion-skeleton'));
-    $('.js-top-skeleton').remove();
+    // $('.js-top-skeleton').remove();
+    $('.js-promotion-skeleton').remove();
     $('.js-top-slider').removeClass('hide');
 
     var topSlider = $("#topSlider").lightSlider({
@@ -100,7 +101,9 @@ $("#promotionSlider").imagesLoaded(function() {
 
     // $('.js-promotion-slider').insertAfter($('.js-promotion-skeleton'));
     $('.js-promotion-slider').insertAfter($('.js-top-skeleton'));
-    $('.js-promotion-skeleton').remove();
+    // $('.js-promotion-skeleton').remove();
+
+    $('.js-top-skeleton').remove();
     $('.js-promotion-slider').removeClass('hide');
 
     var promotionSlider = $("#promotionSlider").lightSlider({
