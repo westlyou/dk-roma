@@ -15,7 +15,7 @@
            <field name="product_size"/>
         </xpath>
 
-       <xpath expr="//page[@name='more_information']" position="after">
+       <xpath expr="//page[@name='general_information']" position="after">
 
           <page string="English" name="product_information_english">
              <group>
