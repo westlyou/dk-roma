@@ -710,9 +710,7 @@
                                                             <!-- <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p> -->
                                                             <div class="btn-wrapper">
                                                                 <button role="button" type="submit" id="add_to_cart" class="btn btn-add-to-cart js_check_product js-add-to-cart js-open-minicart">
-                                                                    <span class="icon">
-                                                                        <img src="/dkaroma/static/img/icons/add-to-cart-light.svg" width="32" height="32" class="d-inline-block align-middle" alt="" loading="lazy" />
-                                                                    </span>
+                                                                    
                                                                     Add to Cart
                                                                 </button>
                                                             </div>

@@ -2428,9 +2428,23 @@ a.link--large {
     .paginator-mobile-container {
         display: flex;
     }
+    .nav-first-btn {
+        display: none !important;
+    }
+    .nav-last-btn {
+        display: none !important;
+    }
 }
 
 .paginator-nav-btn:hover {
     color: #212529;
     text-decoration: none;
+}
+
+.nav-first-btn::after {
+    content: "<<";
+}
+
+.nav-last-btn::after {
+    content: ">>";
 }

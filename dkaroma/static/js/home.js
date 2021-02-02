@@ -1,5 +1,7 @@
 $("#topSlider").imagesLoaded(function() {
 
+    $('#topSlider').removeClass('hide');
+
     var topSlider = $("#topSlider").lightSlider({
         autoWidth: false,
 
@@ -92,6 +94,8 @@ $("#topSlider").imagesLoaded(function() {
 
 
 $("#promotionSlider").imagesLoaded(function() {
+
+    $('#promotionSlider').removeClass('hide');
 
     var promotionSlider = $("#promotionSlider").lightSlider({
         autoWidth: false,
