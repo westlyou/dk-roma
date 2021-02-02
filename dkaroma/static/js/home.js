@@ -1,6 +1,8 @@
 $("#topSlider").imagesLoaded(function() {
 
-    $('#topSlider').removeClass('hide');
+    $('.js-top-slider').insertAfter($('.js-top-skeleton'));
+    $('.js-top-skeleton').remove();
+    $('.js-top-slider').removeClass('hide');
 
     var topSlider = $("#topSlider").lightSlider({
         autoWidth: false,
@@ -95,7 +97,9 @@ $("#topSlider").imagesLoaded(function() {
 
 $("#promotionSlider").imagesLoaded(function() {
 
-    $('#promotionSlider').removeClass('hide');
+    $('.js-promotion-slider').insertAfter($('.js-promotion-skeleton'));
+    $('.js-promotion-skeleton').remove();
+    $('.js-promotion-slider').removeClass('hide');
 
     var promotionSlider = $("#promotionSlider").lightSlider({
         autoWidth: false,

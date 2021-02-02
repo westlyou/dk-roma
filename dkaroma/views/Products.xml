@@ -889,6 +889,7 @@
                                         </a>
 
                                         <a t-att-href="pager['page_first']['url']" class="paginator-nav-btn page-btn nav-first-btn js-first-btn">
+                                            <!-- <t t-esc="'<<'"/> -->
                                         </a>
 
                                         <ul class="paginator-list align-container-center js-paginator-list">
@@ -906,6 +907,7 @@
                                         </ul>
 
                                         <a t-att-href="pager['page_last']['url']" class="paginator-nav-btn page-btn nav-last-btn js-last-btn">
+                                            <!-- <t t-esc="'>>'"/> -->
                                         </a>
 
                                         <a t-att-href="pager['page_next']['url']" class="paginator-nav-btn js-next-btn">

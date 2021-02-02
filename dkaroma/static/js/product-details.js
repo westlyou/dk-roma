@@ -21,6 +21,12 @@ $(document).ready(function() {
 
     });
 
+    $('.js-product-grid-block').imagesLoaded(function() {
+        if ($('.js-product-grid-block').find('.item').length == 0) {
+            $('.js-product-grid-block').addClass('hide');
+        }
+    });
+
 
     $('.dk-form').on('click', '.btn-add-to-cart', function(e) {
         // var pid = $(this).closest('form').find('[name=pid]').val();

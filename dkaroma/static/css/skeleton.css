@@ -1,0 +1,116 @@
+@keyframes shine-bg {
+    0% {
+        background-position: -100px
+    }
+    40%,
+    100% {
+        background-position: 300px
+    }
+}
+
+.skeleton-screen {
+    height: auto;
+    position: relative;
+}
+
+.skeleton-container {
+    padding: 10px 15px;
+}
+
+.skeleton-item {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+.skeleton-bg {
+    background-color: #c8c8c8;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #e1e1e1 0px, #e8e8e8 40px, #e1e1e1 80px);
+    background-size: 600px;
+    animation: shine-bg 1.6s infinite linear;
+}
+
+.skeleton-img {
+    height: 250px;
+}
+
+.skeleton-name {
+    width: 80%;
+    margin: 15px auto;
+    height: 25px;
+}
+
+.skeleton-price {
+    width: 60%;
+}
+
+.skeleton-btn {
+    height: 60px;
+    display: none;
+    width: 60%;
+    margin: 20px auto 15px;
+}
+
+@media(max-width: 767px) {
+    .skeleton-container .skeleton-item {
+        display: none;
+    }
+    .skeleton-container .skeleton-item:first-child,
+    .skeleton-btn {
+        display: block;
+    }
+}
+
+@media(min-width: 768px) {
+    .skeleton-item {
+        width: 300px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1249px) {
+    .skeleton-item {
+        width: calc(33.3333% - 5px);
+    }
+    .skeleton-container .skeleton-item {
+        display: none;
+    }
+    .skeleton-container .skeleton-item:first-child,
+    .skeleton-container .skeleton-item:nth-child(2),
+    .skeleton-container .skeleton-item:nth-child(3) {
+        display: inline-block;
+    }
+}
+
+@media (min-width:1250px) and (max-width:1440px) {
+    .skeleton-item {
+        width: calc(20% - 5px);
+    }
+    .skeleton-container .skeleton-item {
+        display: none;
+    }
+    .skeleton-container .skeleton-item:first-child,
+    .skeleton-container .skeleton-item:nth-child(2),
+    .skeleton-container .skeleton-item:nth-child(3),
+    .skeleton-container .skeleton-item:nth-child(4),
+    .skeleton-container .skeleton-item:nth-child(5) {
+        display: inline-block;
+    }
+}
+
+@media (min-width:1441px) {
+    .skeleton-item {
+        width: calc(12.5% - 5px);
+    }
+}
+
+.skeleton-overlay {
+    /* background-color: rgb(246, 244, 242); */
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(246, 244, 242, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 9;
+}
