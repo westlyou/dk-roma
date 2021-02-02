@@ -7,40 +7,31 @@
       <field name="model">product.template</field>
       <field name="inherit_id" ref="product.product_template_only_form_view"/>
       <field name="arch" type="xml">
-        <xpath expr="//page[@name='general_information']" position="after">
-          <page string="More Information" name="more_information">
-            <group>
-              <group>
-                  <field name="name_simplified_chinese"/>
-                  <field name="name_traditional_chinese" />
-                  <field name="name_german"/>
-                  <field name="botanical_name"/>
-                  <field name="gtin"/>
-                  <field name="batch_number"/>
+        <xpath expr="//field[@name='barcode']" position="after">
+           <field name="product_code"/>
+        </xpath>
 
-              </group>
-              <group>
-                <field name="plant_part"/>
-                <field name="extraction"/>
-                <field name="origin"/>
-                <field name="location"/>
-              </group>
-            </group>
-          </page>
+        <xpath expr="//field[@name='weight']" position="after">
+           <field name="product_size"/>
         </xpath>
 
        <xpath expr="//page[@name='more_information']" position="after">
 
-          <page string="Product Information English" name="product_information_english">
+          <page string="English" name="product_information_english">
              <group>
                   <group>
-                        <field name="english_tags"/>
+                      <field name="english_tags"/>
+                      <field name="botanical_name"/>
+                      <field name="plant_part"/>
                   </group>
                   <group>
                         <field name="english_key_words"/>
+                        <field name="extraction"/>
+                        <field name="origin"/>
                   </group>
               </group>
             <group>
+                <field name="product_category"/>
                 <field name="product_info_english_1"/>
                 <field name="product_info_english_2"/>
                 <field name="product_info_english_3"/>
@@ -50,20 +41,51 @@
         </xpath>
 
        <xpath expr="//page[@name='product_information_english']" position="after">
-          <page string="Product Information Chinese" name="product_information_chinese">
+          <page string="Chinese" name="product_information_chinese">
              <group>
                   <group>
                         <field name="chinese_tags"/>
+                        <field name="name_traditional_chinese" />
+                        <field name="botanical_name_chinese"/>
+                        <field name="plant_part_chinese"/>
                   </group>
                   <group>
                         <field name="chinese_key_words"/>
+                        <field name="extraction_chinese"/>
+                        <field name="origin_chinese"/>
                   </group>
               </group>
             <group>
+                <field name="product_category_chinese"/>
                 <field name="product_info_chinese_1"/>
                 <field name="product_info_chinese_2"/>
                 <field name="product_info_chinese_3"/>
                 <field name="product_info_chinese_4"/>
+            </group>
+          </page>
+        </xpath>
+
+        <xpath expr="//page[@name='product_information_english']" position="after">
+          <page string="Simplified Chinese" name="product_information_simplified_chinese">
+             <group>
+                  <group>
+                        <field name="simplified_chinese_tags"/>
+                        <field name="name_simplified_chinese"/>
+                        <field name="botanical_name_simplified_chinese"/>
+                        <field name="plant_part_simplified_chinese"/>
+                  </group>
+                  <group>
+                        <field name="simplified_chinese_key_words"/>
+                        <field name="extraction_simplified_chinese"/>
+                        <field name="origin_simplified_chinese"/>
+                  </group>
+              </group>
+            <group>
+                <field name="product_category_simplified_chinese"/>
+                <field name="product_info_simplified_chinese_1"/>
+                <field name="product_info_simplified_chinese_2"/>
+                <field name="product_info_simplified_chinese_3"/>
+                <field name="product_info_simplified_chinese_4"/>
             </group>
           </page>
         </xpath>
