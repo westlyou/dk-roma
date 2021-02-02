@@ -27,7 +27,7 @@ $("#topSlider").imagesLoaded(function() {
         responsive: [{
                 breakpoint: 2561,
                 settings: {
-                    item: 8,
+                    item: 6,
                     slideMargin: 10,
                     slideMove: 1
                 }
@@ -36,7 +36,7 @@ $("#topSlider").imagesLoaded(function() {
             {
                 breakpoint: 1441,
                 settings: {
-                    item: 5,
+                    item: 4,
                     slideMargin: 10,
                     slideMove: 1
                 }
@@ -45,7 +45,7 @@ $("#topSlider").imagesLoaded(function() {
             {
                 breakpoint: 1281,
                 settings: {
-                    item: 5,
+                    item: 4,
                     slideMargin: 10,
                     slideMove: 1
                 }
@@ -124,7 +124,7 @@ $("#promotionSlider").imagesLoaded(function() {
         responsive: [{
                 breakpoint: 2561,
                 settings: {
-                    item: 8,
+                    item: 6,
                     slideMargin: 10,
                     slideMove: 1
                 }
@@ -133,7 +133,7 @@ $("#promotionSlider").imagesLoaded(function() {
             {
                 breakpoint: 1441,
                 settings: {
-                    item: 5,
+                    item: 4,
                     slideMargin: 10,
                     slideMove: 1
                 }
@@ -142,7 +142,7 @@ $("#promotionSlider").imagesLoaded(function() {
             {
                 breakpoint: 1281,
                 settings: {
-                    item: 5,
+                    item: 4,
                     slideMargin: 10,
                     slideMove: 1
                 }
@@ -203,11 +203,11 @@ function refreshSliderButtons(sliderObject) {
 
     buttons.removeClass('hide');
 
-    if (productsCount <= 8 && window.matchMedia('(min-width: 1440px)').matches) {
+    if (productsCount <= 6 && window.matchMedia('(min-width: 1441px)').matches) {
         buttons.addClass('hide');
     }
 
-    if (productsCount <= 5 && window.matchMedia('(min-width: 1280px)').matches && window.matchMedia('(max-width: 1440px)').matches) {
+    if (productsCount <= 4 && window.matchMedia('(min-width: 1280px)').matches && window.matchMedia('(max-width: 1440px)').matches) {
         buttons.addClass('hide');
     }
 
