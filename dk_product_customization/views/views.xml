@@ -1,0 +1,75 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+   <record model="ir.ui.view" id="product_extend_view">
+      <field name="name">sale_extend form</field>
+      <field name="model">product.template</field>
+      <field name="inherit_id" ref="product.product_template_only_form_view"/>
+      <field name="arch" type="xml">
+        <xpath expr="//page[@name='general_information']" position="after">
+          <page string="More Information" name="more_information">
+            <group>
+              <group>
+                  <field name="name_simplified_chinese"/>
+                  <field name="name_traditional_chinese" />
+                  <field name="name_german"/>
+                  <field name="botanical_name"/>
+                  <field name="gtin"/>
+                  <field name="batch_number"/>
+
+              </group>
+              <group>
+                <field name="plant_part"/>
+                <field name="extraction"/>
+                <field name="origin"/>
+                <field name="location"/>
+              </group>
+            </group>
+          </page>
+        </xpath>
+
+       <xpath expr="//page[@name='more_information']" position="after">
+
+          <page string="Product Information English" name="product_information_english">
+             <group>
+                  <group>
+                        <field name="english_tags"/>
+                  </group>
+                  <group>
+                        <field name="english_key_words"/>
+                  </group>
+              </group>
+            <group>
+                <field name="product_info_english_1"/>
+                <field name="product_info_english_2"/>
+                <field name="product_info_english_3"/>
+                <field name="product_info_english_4"/>
+            </group>
+          </page>
+        </xpath>
+
+       <xpath expr="//page[@name='product_information_english']" position="after">
+          <page string="Product Information Chinese" name="product_information_chinese">
+             <group>
+                  <group>
+                        <field name="chinese_tags"/>
+                  </group>
+                  <group>
+                        <field name="chinese_key_words"/>
+                  </group>
+              </group>
+            <group>
+                <field name="product_info_chinese_1"/>
+                <field name="product_info_chinese_2"/>
+                <field name="product_info_chinese_3"/>
+                <field name="product_info_chinese_4"/>
+            </group>
+          </page>
+        </xpath>
+
+      </field>
+    </record>
+
+  </data>
+</odoo>
