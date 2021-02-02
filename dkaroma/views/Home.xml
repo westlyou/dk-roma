@@ -1129,247 +1129,7 @@
 
                         </section>
 
-                        <!-- top slider -->
-                        <section class="product-list-slider-block product-list-slider js-top-slider hide">
-
-                            <div class="product-list-slider-intro ">
-
-                                <h2></h2>
-                                <h3>
-                                    <t t-esc="home_page.scroll_products_1_text_big"/>
-                                </h3>
-
-                            </div>
-
-
-                            <div class="">
-
-                                <ul id="topSlider" class="">
-
-                                    <li>
-                                        <div class="product-list-slider-item text-item slider-header-item" id="slide-1 ">
-                                            <h2></h2>
-
-                                            <h3>
-                                                <!-- The Art of Aromatherapy -->
-                                                <t t-esc="home_page.scroll_products_1_text_big"/>
-                                            </h3>
-
-                                            <p>
-                                                <!-- Free delivery for orders over HK$800 -->
-                                                <t t-esc="home_page.scroll_products_1_text_small"/>
-                                            </p>
-
-                                            <!-- <a href="# " class="btn ">
-                                                Shop Now
-                                            </a> -->
-
-                                            <a href="/shop " class="btn btn--secondary btn-bg bring-to-top">
-                                                Shop Now
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <!-- slider product loop -->
-                                    <t t-foreach="home_page.scroll_products_1" t-as="product">
-                                    
-                                        <!-- item -->
-                                        
-                                        <li>
-                                            <div class="product-list-slider-item ">
-
-
-                                                <div class="product-tile product-detail-tile linked-block ">
-
-                                                    <div class="product-item ">
-
-                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
-                                                            <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
-                                                            <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
-                                                            <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" />
-                                                        </a>
-
-                                                    </div>
-
-                                                    <section class="product-details-content ">
-
-                                                        <div class="product-title ">
-                                                            <a t-att-href="'/shop/product/' + str(product.name.id)" class="product-name-link ">
-
-                                                                <span class="product-name ">
-                                                                    <!-- product name -->
-                                                                    <t t-esc="product.name.name" />
-                                                                </span>
-
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="product-user-actions ">
-                                                            <div class="product-price ">
-                                                                <span class="product-standard-price ">
-                                                                    <!-- product price -->
-                                                                    <t t-esc="'$' + str(product.name.list_price)" />
-                                                                </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                            Shop Now
-                                                        </a>
-
-                                                    </section>
-
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </t>
-
-                                    <!-- loop end -->
-
-                                </ul>
-
-                                <div class="drag-list-controls">
-                                    <button type="button" class="slider-button" id="leftTopSliderBtn">
-                                        <span class="icon icon-item">
-                                            <img src="/dkaroma/static/img/icons/chevron-left.svg" width="28" height="28" class="" alt="" loading="lazy"/>
-                                        </span>
-
-                                        <span class="sr-only">Move to left</span>
-                                    </button>
-
-                                    <button type="button" class="slider-button" id="rightTopSliderBtn">
-                                        <span class="icon icon-item">
-                                            <img src="/dkaroma/static/img/icons/chevron-right.svg" width="28" height="28" class="" alt="" loading="lazy"/>
-                                        </span>
-
-                                        <span class="sr-only">Move to right</span>
-                                    </button>
-                                </div>
-
-                            </div>
-
-                        </section>
-
-
-                        <!-- promotion slider -->
-                        <section class="product-list-slider-block product-list-slider js-promotion-slider hide">
-
-                            <div class="product-list-slider-intro ">
-
-                                <h2></h2>
-                                <h3>
-                                    <t t-esc="home_page.scroll_products_2_text_big"/>
-                                </h3>
-
-                            </div>
-
-
-                            <div class="">
-
-                                <ul id="promotionSlider" class="hide">
-
-                                    <li>
-                                        <div class="product-list-slider-item text-item slider-header-item" id="slide-1 ">
-                                            <h2></h2>
-
-                                            <h3>
-                                                <t t-esc="home_page.scroll_products_2_text_big"/>
-                                            </h3>
-
-                                            <p>
-                                                <t t-esc="home_page.scroll_products_2_text_small"/>
-                                            </p>
-
-                                            <!-- <a href="# " class="btn ">
-                                                Shop Now
-                                            </a> -->
-
-                                            <a href="/shop" class="btn btn--secondary btn-bg bring-to-top">
-                                                Shop Now
-                                            </a>
-                                        </div>
-                                    </li>
-                                    
-                                    <!-- slider product loop -->
-                                    <t t-foreach="home_page.scroll_products_2" t-as="product">
-                                    
-                                        <!-- item -->
-                                        <li>
-                                            <div class="product-list-slider-item ">
-
-
-                                                <div class="product-tile product-detail-tile linked-block ">
-
-                                                    <div class="product-item ">
-
-                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
-                                                            <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
-                                                            <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
-                                                            <img t-attf-src="data:image/jpg;base64,{{ product.name }}" class="cover" />
-                                                        </a>
-
-                                                    </div>
-
-                                                    <section class="product-details-content ">
-
-                                                        <div class="product-title ">
-                                                            <a t-att-href="'/shop/product/' + str(product.name.id)" class="product-name-link ">
-
-                                                                <span class="product-name ">
-                                                                    <!-- product name -->
-                                                                    <t t-esc="product.name.name" />
-                                                                </span>
-
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="product-user-actions ">
-                                                            <div class="product-price ">
-                                                                <span class="product-standard-price ">
-                                                                    <!-- product price -->
-                                                                    <t t-esc="'$' + str(product.name.list_price)" />
-                                                                </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                            Shop Now
-                                                        </a>
-
-                                                    </section>
-
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </t>
-
-                                    <!-- loop end -->
-
-                                </ul>
-
-                                <div class="drag-list-controls">
-                                    <button type="button" class="slider-button" id="leftPromotionSliderBtn">
-                                        <span class="icon icon-item">
-                                            <img src="/dkaroma/static/img/icons/chevron-left.svg" width="28" height="28" class="" alt="" loading="lazy"/>
-                                        </span>
-
-                                        <span class="sr-only">Move to left</span>
-                                    </button>
-
-                                    <button type="button" class="slider-button" id="rightPromotionSliderBtn">
-                                        <span class="icon icon-item">
-                                            <img src="/dkaroma/static/img/icons/chevron-right.svg" width="28" height="28" class="" alt="" loading="lazy"/>
-                                        </span>
-
-                                        <span class="sr-only">Move to right</span>
-                                    </button>
-                                </div>
-
-                            </div>
-
-                        </section>
+                        
 
 
 
@@ -2009,6 +1769,246 @@
                     </div>
                 </footer>
 
+                <!-- top slider -->
+                <section class="product-list-slider-block product-list-slider js-top-slider hide">
+
+                    <div class="product-list-slider-intro ">
+
+                        <h2></h2>
+                        <h3>
+                            <t t-esc="home_page.scroll_products_1_text_big"/>
+                        </h3>
+
+                    </div>
+
+
+                    <div class="">
+
+                        <ul id="topSlider" class="">
+
+                            <li>
+                                <div class="product-list-slider-item text-item slider-header-item" id="slide-1 ">
+                                    <h2></h2>
+
+                                    <h3>
+                                        <!-- The Art of Aromatherapy -->
+                                        <t t-esc="home_page.scroll_products_1_text_big"/>
+                                    </h3>
+
+                                    <p>
+                                        <!-- Free delivery for orders over HK$800 -->
+                                        <t t-esc="home_page.scroll_products_1_text_small"/>
+                                    </p>
+
+                                    <!-- <a href="# " class="btn ">
+                                        Shop Now
+                                    </a> -->
+
+                                    <a href="/shop " class="btn btn--secondary btn-bg bring-to-top">
+                                        Shop Now
+                                    </a>
+                                </div>
+                            </li>
+
+                            <!-- slider product loop -->
+                            <t t-foreach="home_page.scroll_products_1" t-as="product">
+                            
+                                <!-- item -->
+                                
+                                <li>
+                                    <div class="product-list-slider-item ">
+
+
+                                        <div class="product-tile product-detail-tile linked-block ">
+
+                                            <div class="product-item ">
+
+                                                <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
+                                                    <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
+                                                    <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
+                                                    <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" />
+                                                </a>
+
+                                            </div>
+
+                                            <section class="product-details-content ">
+
+                                                <div class="product-title ">
+                                                    <a t-att-href="'/shop/product/' + str(product.name.id)" class="product-name-link ">
+
+                                                        <span class="product-name ">
+                                                            <!-- product name -->
+                                                            <t t-esc="product.name.name" />
+                                                        </span>
+
+                                                    </a>
+                                                </div>
+
+                                                <div class="product-user-actions ">
+                                                    <div class="product-price ">
+                                                        <span class="product-standard-price ">
+                                                            <!-- product price -->
+                                                            <t t-esc="'$' + str(product.name.list_price)" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
+                                                    Shop Now
+                                                </a>
+
+                                            </section>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </t>
+
+                            <!-- loop end -->
+
+                        </ul>
+
+                        <div class="drag-list-controls">
+                            <button type="button" class="slider-button" id="leftTopSliderBtn">
+                                <span class="icon icon-item">
+                                    <img src="/dkaroma/static/img/icons/chevron-left.svg" width="28" height="28" class="" alt="" loading="lazy"/>
+                                </span>
+
+                                <span class="sr-only">Move to left</span>
+                            </button>
+
+                            <button type="button" class="slider-button" id="rightTopSliderBtn">
+                                <span class="icon icon-item">
+                                    <img src="/dkaroma/static/img/icons/chevron-right.svg" width="28" height="28" class="" alt="" loading="lazy"/>
+                                </span>
+
+                                <span class="sr-only">Move to right</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- promotion slider -->
+                <section class="product-list-slider-block product-list-slider js-promotion-slider hide">
+
+                    <div class="product-list-slider-intro ">
+
+                        <h2></h2>
+                        <h3>
+                            <t t-esc="home_page.scroll_products_2_text_big"/>
+                        </h3>
+
+                    </div>
+
+
+                    <div class="">
+
+                        <ul id="promotionSlider" class="hide">
+
+                            <li>
+                                <div class="product-list-slider-item text-item slider-header-item" id="slide-1 ">
+                                    <h2></h2>
+
+                                    <h3>
+                                        <t t-esc="home_page.scroll_products_2_text_big"/>
+                                    </h3>
+
+                                    <p>
+                                        <t t-esc="home_page.scroll_products_2_text_small"/>
+                                    </p>
+
+                                    <!-- <a href="# " class="btn ">
+                                        Shop Now
+                                    </a> -->
+
+                                    <a href="/shop" class="btn btn--secondary btn-bg bring-to-top">
+                                        Shop Now
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <!-- slider product loop -->
+                            <t t-foreach="home_page.scroll_products_2" t-as="product">
+                            
+                                <!-- item -->
+                                <li>
+                                    <div class="product-list-slider-item ">
+
+
+                                        <div class="product-tile product-detail-tile linked-block ">
+
+                                            <div class="product-item ">
+
+                                                <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
+                                                    <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
+                                                    <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
+                                                    <img t-attf-src="data:image/jpg;base64,{{ product.name }}" class="cover" />
+                                                </a>
+
+                                            </div>
+
+                                            <section class="product-details-content ">
+
+                                                <div class="product-title ">
+                                                    <a t-att-href="'/shop/product/' + str(product.name.id)" class="product-name-link ">
+
+                                                        <span class="product-name ">
+                                                            <!-- product name -->
+                                                            <t t-esc="product.name.name" />
+                                                        </span>
+
+                                                    </a>
+                                                </div>
+
+                                                <div class="product-user-actions ">
+                                                    <div class="product-price ">
+                                                        <span class="product-standard-price ">
+                                                            <!-- product price -->
+                                                            <t t-esc="'$' + str(product.name.list_price)" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
+                                                    Shop Now
+                                                </a>
+
+                                            </section>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </t>
+
+                            <!-- loop end -->
+
+                        </ul>
+
+                        <div class="drag-list-controls">
+                            <button type="button" class="slider-button" id="leftPromotionSliderBtn">
+                                <span class="icon icon-item">
+                                    <img src="/dkaroma/static/img/icons/chevron-left.svg" width="28" height="28" class="" alt="" loading="lazy"/>
+                                </span>
+
+                                <span class="sr-only">Move to left</span>
+                            </button>
+
+                            <button type="button" class="slider-button" id="rightPromotionSliderBtn">
+                                <span class="icon icon-item">
+                                    <img src="/dkaroma/static/img/icons/chevron-right.svg" width="28" height="28" class="" alt="" loading="lazy"/>
+                                </span>
+
+                                <span class="sr-only">Move to right</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
 
 
                 <script src="/dkaroma/static/js/jquery.js"></script>
