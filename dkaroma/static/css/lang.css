@@ -1,0 +1,10 @@
+/* translations */
+
+.en_US .lang-ch,
+.zh_CH .lang-ch,
+.en_US .lang-zh,
+.ch_CH .lang-zh,
+.ch_CH .lang-en,
+.zh_CH .lang-en {
+    display: none;
+}
