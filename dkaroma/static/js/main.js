@@ -4,6 +4,13 @@ $(document).ready(function() {
 
 });
 
+
+requirejs.config({
+    baseUrl: "",
+    paths: {},
+    waitSeconds: 0
+});
+
 //Filter and Minicart
 requirejs(["ext/body-scroll-lock"], function(bodyScrollLock) {
     //This function is called when scripts/helper/util.js is loaded.

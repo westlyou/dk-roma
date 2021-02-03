@@ -599,7 +599,8 @@
                                                         <div class="js-slider images-slider js-pdp-images-slider slick-initialized slick-slider">
                                                             <div>
                                                                 <!-- <img src="/dkaroma/static/img/product-sample-2.png" class="cover productthumbnail js-product-thumbnail product-main-image js-product-main-image"/> -->
-                                                                <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                                                                <!-- <div t-field="product.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
+                                                                <img t-att-src="'/web/content/product.template/' + str(product.id) + '/image_1920'" class="cover" />
                                                             </div>
                                                         </div>
 
@@ -631,7 +632,7 @@
                                                             <t t-esc="category.name" />
                                                         </t> -->
                                                             <t t-foreach="product.public_categ_ids" t-as="categ_id">
-                                                                <t t-esc="categ_id.name + ', '" />
+                                                                <t t-esc="categ_id.name + ' '" />
                                                             </t>
 
                                                         </span>
@@ -837,7 +838,7 @@
                                                                                     <input name="pid" type="hidden" t-att-value="product.id" />
 
                                                                                     <div class="btn-wrapper">
-                                                                                        <button type="submit" class="btn btn--secondary btn-add-to-cart js-add-to-cart js-open-minicart">
+                                                                                        <button type="submit" class="btn btn--secondary btn-add-to-cart js-add-to-cart">
 
                                                                                             <span class="icon icon-item icon-item-light">
                                                                                                 <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
@@ -900,7 +901,7 @@
                                     </t> -->
 
                                         <t t-foreach="product.public_categ_ids" t-as="categ_id">
-                                            <t t-esc="categ_id.name + ', '" />
+                                            <t t-esc="categ_id.name + ' '" />
                                         </t>
 
                                     </span>
@@ -961,7 +962,7 @@
                                     <!-- <t t-call="website_sale.product_price" /> -->
                                     <!-- <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p> -->
                                     <div class="btn-wrapper">
-                                        <button role="button" type="submit" id="add_to_cart" class="btn btn-add-to-cart js_check_product js-open-minicart">
+                                        <button role="button" type="submit" id="add_to_cart" class="btn btn-add-to-cart js_check_product">
                                             <span class="icon">
                                                 <img src="/dkaroma/static/img/icons/add-to-cart-light.svg" width="32" height="32" class="d-inline-block align-middle" alt="" loading="lazy" />
                                             </span>

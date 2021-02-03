@@ -825,7 +825,7 @@
 
                                                                             <div class="btn-wrapper">
                                                                                 <!-- add/view to cart <button></button> -->
-                                                                                <a t-att-href="'/shop/product/' + str(product.id)" class="btn btn--secondary btn-add-to-cart js-open-minicart">
+                                                                                <a t-att-href="'/shop/product/' + str(product.id)" class="btn btn--secondary btn-add-to-cart">
 
                                                                                     <span class="icon icon-item icon-item-light" style="margin: .25rem;">
                                                                                         <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
