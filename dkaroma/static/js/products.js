@@ -13,9 +13,11 @@ $(document).ready(function() {
             // alert('I am here')
             $('.search-results-header').removeClass('sticky-filters');
             $('.search-results-header').removeClass('sticky-filters-visible');
+            $('.navbar').removeClass('hide');
         } else {
             $('.search-results-header').addClass('sticky-filters');
             $('.search-results-header').addClass('sticky-filters-visible');
+            $('.navbar').addClass('hide');
         }
 
 

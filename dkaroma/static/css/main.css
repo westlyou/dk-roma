@@ -2277,7 +2277,8 @@ a.link--large {
     }
 }
 
-@media (max-width: 767px) {
+
+/* @media (max-width: 767px) {
     .search-results-header.sticky-filters .search-result-inner {
         margin-top: 60px;
     }
@@ -2293,7 +2294,7 @@ a.link--large {
     .search-results-header.sticky-filters .search-result-inner {
         margin-top: 69px;
     }
-}
+} */
 
 @media (max-width: 767px) {
     .search-results-header.sticky-filters .custom-select {
@@ -2455,5 +2456,11 @@ a.link--large {
 @media(min-width:768px) {
     .btn-add-to-cart {
         border-radius: 0px;
+    }
+    .sticky-filters-visible .selectric-wrapper .selectric .label {
+        margin-top: 4px;
+    }
+    .sticky-filters-visible .selectric-wrapper .selectric .button {
+        margin-top: 3px;
     }
 }

@@ -182,6 +182,19 @@ $(document).ready(function() {
     });
 
 
+    // translations
+    $('.js-header-top-bar .menu-top').on('click', '.js-lang-en', function() {
+        setLanguage(LANG_KEYS.en);
+    });
+
+    $('.js-header-top-bar .menu-top').on('click', '.js-lang-ch', function() {
+        setLanguage(LANG_KEYS.ch);
+    });
+
+    $('.js-header-top-bar .menu-top').on('click', '.js-lang-zh', function() {
+        setLanguage(LANG_KEYS.zh);
+    });
+
 
 });
 
@@ -256,7 +269,7 @@ function createProductMenu(results) {
 
     results.forEach((item) => {
 
-        let category = item.category.name;
+        let category = item.category;
         // let subCategories = item.subCategories.map((item) => item.name);
         let subCategories = item.subCategories;
 
@@ -301,7 +314,7 @@ function renderMobileFooterList(category, subCategories) {
     
         <li class="accordion-item" data-accordion-item>
     
-            <a class="accordion-title">${category}</a>
+            <a class="accordion-title">${category.name}</a>
 
             <div class="accordion-content" data-tab-content>
                 <ul>
@@ -340,7 +353,7 @@ function renderFooterList(category, subCategories) {
         <div class="accordion-inner ">
 
             <a class="accordion-head-inner center-mobile">
-                ${category}
+                ${category.name}
             </a>
 
             <div class="accordion-content-inner accordion-content ">
@@ -370,13 +383,13 @@ function renderList(category, subCategories) {
             className = 'inner-nav-link';
         } else {
             // let param = encodeURIComponent(category);
-            // navLink = 'href="' + urlPaths.products + param + '"';
+            navLink = urlPaths.products + category.id;
         }
 
         return `
         <a class="nav-link ${className} nav-mobile-subnav-link" ${navLink}>
             <span>
-                    ${category}
+                    ${category.name}
                 </span>
         </a>
       `;
@@ -486,16 +499,16 @@ function renderMobileList(category, subCategories) {
             hasChildren = 'has-children';
             itemHead = `
                 <button type="button" class="nav-mobile-subnav-link">
-                    <span>${category}</span>
+                    <span>${category.name}</span>
                 </button>
             `;
 
         } else {
             // let param = encodeURIComponent(category);
-            // navLink = urlPaths.products + param;
+            navLink = urlPaths.products + category.id;
             itemHead = `
                 <a class="mobile-third-level" href="${navLink}">
-                    ${category}
+                    ${category.name}
                 </a>
             `;
 
