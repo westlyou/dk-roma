@@ -805,22 +805,22 @@
                                                 <t t-if="len(product.botanical_name) > 0">
                                                     <strong>Botanical Name</strong>
                                                     <p><t t-esc="product.botanical_name"/></p>
-                                                <t/>
+                                                </t>
                                                 
                                                 <t t-if="len(product.plant_part) > 0">
                                                     <strong>Plant part</strong>
                                                     <p><t t-esc="product.plant_part"/></p>
-                                                <t/>
+                                                </t>
 
                                                 <t t-if="len(product.extraction) > 0">
                                                     <strong>Extraction</strong>
                                                     <p><t t-esc="product.extraction"/></p>
-                                                <t/>
+                                                </t>
 
                                                 <t t-if="len(product.origin) > 0">
                                                     <strong>Origin</strong>
                                                     <p><t t-esc="product.origin"/></p>
-                                                <t/>
+                                                </t>
 
                                             </div>
 
