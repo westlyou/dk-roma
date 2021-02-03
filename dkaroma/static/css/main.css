@@ -2451,3 +2451,9 @@ a.link--large {
         display: none !important;
     }
 }
+
+@media(min-width:768px) {
+    .btn-add-to-cart {
+        border-radius: 0px;
+    }
+}
