@@ -5,11 +5,6 @@ $(document).ready(function() {
 });
 
 
-requirejs.config({
-    baseUrl: "",
-    paths: {},
-    waitSeconds: 0
-});
 
 //Filter and Minicart
 requirejs(["ext/body-scroll-lock"], function(bodyScrollLock) {
