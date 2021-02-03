@@ -562,7 +562,8 @@
                                                 <div class="cover-wrapper">
                                                     <!-- <img src="/dkaroma/static/img/car-1.jpeg" class="w-100 h-100  cover" alt="..."/> -->
                                                     <!-- <div t-field="home_page.banner_image_1" t-options='{"widget": "image", "class": "w-100 h-100 cover"}' /> -->
-                                                    <img t-attf-src="data:image/jpg;base64,{{ home_page.banner_image_1 }}" class="w-100 h-100 cover" />
+                                                    <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.banner_image_1 }}" class="w-100 h-100 cover" /> -->
+                                                    <img t-attf-src="/web/content/dkaroma.home/1/banner_image_1" class=" w-100 h-100 cover" />
                                                 </div>
 
                                                 <div class="layer">
@@ -604,7 +605,8 @@
                                                 <div class="cover-wrapper">
                                                     <!-- <img src="/dkaroma/static/img/car-1.jpeg " class="w-100 h-100 cover " alt="... "/> -->
                                                     <!-- <div t-field="home_page.banner_image_1" t-options='{"widget": "image", "class": "w-100 h-100 cover"}' /> -->
-                                                    <img t-attf-src="data:image/jpg;base64,{{ home_page.banner_image_1 }}" class="w-100 h-100 cover" />
+                                                    <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.banner_image_1 }}" class="w-100 h-100 cover" /> -->
+                                                    <img t-attf-src="/web/content/dkaroma.home/1/banner_image_1" class=" w-100 h-100 cover" />
                                                 </div>
 
                                                 <div class="layer ">
@@ -652,7 +654,8 @@
                                                 <class class="cover-wrapper">
                                                     <!-- <img src="/dkaroma/static/img/car-2.jpeg " class="w-100 h-100 cover " alt="... "/> -->
                                                     <!-- <div t-field="home_page.banner_image_2" t-options='{"widget": "image", "class": "w-100 h-100 cover"}' /> -->
-                                                    <img t-attf-src="data:image/jpg;base64,{{ home_page.banner_image_2 }}" class="w-100 h-100 cover" />
+                                                    <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.banner_image_2 }}" class="w-100 h-100 cover" /> -->
+                                                    <img t-attf-src="/web/content/dkaroma.home/1/banner_image_2" class=" w-100 h-100 cover" />
                                                 </class>
 
                                                 <div class="layer ">
@@ -691,7 +694,8 @@
                                                 <div class="cover-wrapper">
                                                     <!-- <img src="/dkaroma/static/img/car-2.jpeg " class="w-100 h-100 cover " alt="... "/> -->
                                                     <!-- <div t-field="home_page.banner_image_2" t-options='{"widget": "image", "class": "w-100 h-100 cover"}' /> -->
-                                                    <img t-attf-src="data:image/jpg;base64,{{ home_page.banner_image_2 }}" class="w-100 h-100 cover" />
+                                                    <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.banner_image_2 }}" class="w-100 h-100 cover" /> -->
+                                                    <img t-attf-src="/web/content/dkaroma.home/1/banner_image_2" class=" w-100 h-100 cover" />
                                                 </div>
 
                                                 <div class="layer ">
@@ -790,7 +794,8 @@
 
                                                 <!-- <img class="cover " src="/dkaroma/static/img/left-card-img.png " alt="product "/> -->
                                                 <!-- <div t-field="home_page.card_1_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_1_image }}" class="cover" />
+                                                <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.card_1_image }}" class="cover" /> -->
+                                                <img t-attf-src="/web/content/dkaroma.home/1/card_1_image" class="cover" />
 
                                             </a>
 
@@ -823,8 +828,8 @@
                                             <a class="image-holder ">
 
                                                 <!-- <div t-field="home_page.card_2_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_2_image }}" class="cover" />
-
+                                                <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.card_2_image }}" class="cover" /> -->
+                                                <img t-attf-src="/web/content/dkaroma.home/1/card_2_image" class="cover" />
                                             </a>
 
                                         </div>
@@ -928,7 +933,8 @@
                                             <a class="image-holder ">
 
                                                 <!-- <div t-field="home_page.card_3_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_3_image }}" class="cover" />
+                                                <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.card_3_image }}" class="cover" /> -->
+                                                <img t-attf-src="/web/content/dkaroma.home/1/card_3_image" class="cover" />
 
                                             </a>
 
@@ -960,7 +966,8 @@
                                             <a class="image-holder">
 
                                                 <!-- <div t-field="home_page.card_4_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_4_image }}" class="cover" />
+                                                <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.card_4_image }}" class="cover" /> -->
+                                                <img t-attf-src="/web/content/dkaroma.home/1/card_4_image" class="cover" />
 
                                             </a>
 
@@ -993,7 +1000,8 @@
 
                                                 <!-- <img class="cover pos-up" src="/dkaroma/static/img/right-card-img-2.png" alt="product "/> -->
                                                 <!-- <div t-field="home_page.card_5_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_5_image }}" class="cover" />
+                                                <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.card_5_image }}" class="cover" /> -->
+                                                <img t-attf-src="/web/content/dkaroma.home/1/card_5_image" class="cover" />
 
                                             </a>
 
@@ -1025,7 +1033,8 @@
                                             <a class="image-holder">
 
                                                 <!-- <div t-field="home_page.card_6_image" t-options='{"widget": "image", "class": "cover"}' /> -->
-                                                <img t-attf-src="data:image/jpg;base64,{{ home_page.card_6_image }}" class="cover" />
+                                                <!-- <img t-attf-src="data:image/jpg;base64,{{ home_page.card_6_image }}" class="cover" /> -->
+                                                <img t-attf-src="/web/content/dkaroma.home/1/card_6_image" class="cover" />
 
                                             </a>
 
@@ -1796,7 +1805,8 @@
                                                 <a t-att-href="'/shop/product/' + str(product.name.id)" class="thumb-link ">
                                                     <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
                                                     <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
-                                                    <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" />
+                                                    <!-- <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" /> -->
+                                                    <img t-attf-src="'/web/content/product.template/' + str(product.name.id) + '/image_1920'" class="cover" />
                                                 </a>
 
                                             </div>
@@ -1916,7 +1926,8 @@
                                                     <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
                                                     
                                                     <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
-                                                    <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" />
+                                                    <!-- <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" /> -->
+                                                    <img t-attf-src="'/web/content/product.template/' + str(product.name.id) + '/image_1920'" class="cover" />
                                                 </a>
 
                                             </div>

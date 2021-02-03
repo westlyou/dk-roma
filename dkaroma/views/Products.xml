@@ -824,13 +824,14 @@
                                                                             <input name="pid" type="hidden" t-att-value="product.id"/>
 
                                                                             <div class="btn-wrapper">
-                                                                                <button type="submit" class="btn btn--secondary btn-add-to-cart js-open-minicart">
+                                                                                <!-- add/view to cart <button></button> -->
+                                                                                <a t-att-href="'/shop/product/' + str(product.id)" style="border-radius: 0px;" class="btn btn--secondary btn-add-to-cart js-open-minicart">
 
-                                                                                    <span class="icon icon-item icon-item-light">
+                                                                                    <span class="icon icon-item icon-item-light" style="margin: .25rem;">
                                                                                         <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
                                                                                     </span>
                                                                                     Add to cart
-                                                                                </button>
+                                                                                </a>
                                                                             </div>
                                                                         </div>
                                                                     </fieldset>
