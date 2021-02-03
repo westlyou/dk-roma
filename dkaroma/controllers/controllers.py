@@ -238,7 +238,7 @@ class Dkaroma(http.Controller):
         '''/shop/page/<int:page>''',
         '''/shop/category/<model("product.public.category"):category>''',
         '''/shop/category/<model("product.public.category"):category>/page/<int:page>'''
-    ], type='http', auth="public", website=True, sitemap=sitemap_shop)
+    ], type='http', auth="public", website=True, sitemap=sitemap_shop, csrf=False)
     def shop(self, page=0, category=None, search='', ppg=False, **post):
         add_qty = int(post.get('add_qty', 1))
         Category = request.env['product.public.category']
