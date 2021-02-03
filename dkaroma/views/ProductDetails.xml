@@ -767,6 +767,71 @@
 
 
                             <!-- Tabs section -->
+                            <!-- Tabs section -->
+                            <div class="js-product-tabs product-tabs-container" t-if="len(product.botanical_name) > 0 or len(product.plant_part) > 0 or len(product.extraction) > 0 or len(product.origin) > 0 or len(product.product_info_english_1) > 0">
+
+                                <div class="inner-wrapper">
+
+                                    <div class="tabs-holder js-tabs-holder">
+
+                                        <ul class="tabs" data-responsive-accordion-tabs="accordion medium-tabs large-tabs" id="product-details-tabs" role="tablist">
+                                            
+                                            <li t-if="len(product.product_info_english_1) > 0" class="tabs-title is-active"><a href="#panel1" aria-selected="true" id="information">Information</a></li>
+                                            <li t-if="len(product.botanical_name) > 0 or len(product.plant_part) > 0 or len(product.extraction) > 0 or len(product.origin) > 0" class="tabs-title" id="ingredients"><a href="#panel4">Ingredients</a></li>
+                                            
+                                        </ul>
+
+                                        <div class="tabs-content" data-tabs-content="product-details-tabs">
+                                            <div t-if="len(product.product_info_english_1) > 0" class="tabs-panel is-active" id="panel1">
+                                                <h3>Product Information</h3>
+                                                <p>
+                                                    <t t-esc="product.product_info_english_1"/>
+                                                </p>
+                                                <br/>
+                                                <p>
+                                                    <t t-esc="product.product_info_english_2"/>
+                                                </p>
+                                                <br/><p>
+                                                    <t t-esc="product.product_info_english_3"/>
+                                                </p>
+                                                <br/><p>
+                                                    <t t-esc="product.product_info_english_4"/>
+                                                </p>
+                                                
+
+                                            </div>
+                                          
+                                            <div  class="tabs-panel" id="panel4" t-if="len(product.botanical_name) > 0 or len(product.plant_part) > 0 or len(product.extraction) > 0 or len(product.origin) > 0">
+                                                <t t-if="len(product.botanical_name) > 0">
+                                                    <strong>Botanical Name</strong>
+                                                    <p><t t-esc="product.botanical_name"/></p>
+                                                <t/>
+                                                
+                                                <t t-if="len(product.plant_part) > 0">
+                                                    <strong>Plant part</strong>
+                                                    <p><t t-esc="product.plant_part"/></p>
+                                                <t/>
+
+                                                <t t-if="len(product.extraction) > 0">
+                                                    <strong>Extraction</strong>
+                                                    <p><t t-esc="product.extraction"/></p>
+                                                <t/>
+
+                                                <t t-if="len(product.origin) > 0">
+                                                    <strong>Origin</strong>
+                                                    <p><t t-esc="product.origin"/></p>
+                                                <t/>
+
+                                            </div>
+
+                                            
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
 
 
                             <!-- Products section -->
