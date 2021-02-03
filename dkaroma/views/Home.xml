@@ -1806,7 +1806,7 @@
                                                     <!-- <img src="/dkaroma/static/img/product-sample-2.png " class="cover "/> -->
                                                     <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
                                                     <!-- <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" /> -->
-                                                    <img t-attf-src="'/web/content/product.template/' + str(product.name.id) + '/image_1920'" class="cover" />
+                                                    <img t-att-src="'/web/content/product.template/' + str(product.name.id) + '/image_1920'" class="cover" />
                                                 </a>
 
                                             </div>
@@ -1927,7 +1927,7 @@
                                                     
                                                     <!-- <div t-field="product.name.image_1920" t-options='{"widget": "image", "preview_image": "image_1024", "class": "cover", "alt-field": "name", "zoom": product.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' /> -->
                                                     <!-- <img t-attf-src="data:image/jpg;base64,{{ product.name.image_1920 }}" class="cover" /> -->
-                                                    <img t-attf-src="'/web/content/product.template/' + str(product.name.id) + '/image_1920'" class="cover" />
+                                                    <img t-att-src="'/web/content/product.template/' + str(product.name.id) + '/image_1920'" class="cover" />
                                                 </a>
 
                                             </div>
