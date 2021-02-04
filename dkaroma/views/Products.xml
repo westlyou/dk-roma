@@ -619,7 +619,7 @@
                                             </span>
 
                                             <span class="lang-ch">
-                                                <t t-esc="category.name_traditional_chinese or 'Collection'" />
+                                                <t t-esc="category.name_chinese or 'Collection'" />
                                             </span>
 
                                             <span class="lang-ezh">
