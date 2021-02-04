@@ -387,7 +387,7 @@ function renderList(category, subCategories) {
         }
 
         return `
-        <a class="nav-link ${className} nav-mobile-subnav-link" ${navLink}>
+        <a class="nav-link ${className} nav-mobile-subnav-link" href="${navLink}">
             <span>
                     ${category.name}
                 </span>
