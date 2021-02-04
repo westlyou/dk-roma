@@ -856,8 +856,13 @@
 
                                                             <div class="product-title">
                                                                 <a class="product-name-link" t-att-href="'/shop/product/' + str(product.id)">
+
                                                                     <span class="lang-en"><t t-esc="product.name" /></span>
+
+                                                                    <span class="lang-ch"><t t-if="len(product.name_traditional_chinese) == 0" t-esc="product.name" /></span>
                                                                     <span class="lang-ch"><t t-esc="product.name_traditional_chinese" /></span>
+
+                                                                    <span class="lang-zh"><t t-if="len(product.name_simplified_chinese) == 0" t-esc="product.name" /></span>
                                                                     <span class="lang-zh"><t t-esc="product.name_simplified_chinese" /></span>
                                                                     <!-- <span>Five Element Essential Oil Set (3 pieces)</span> -->
                                                                 </a>

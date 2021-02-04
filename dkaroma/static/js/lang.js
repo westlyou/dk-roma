@@ -20,7 +20,8 @@ function initializeLanguage() {
 
     if (langValue == null || langValue == '') {
         localStorage.clear();
-        openLanguageModal();
+        // openLanguageModal();
+        setLanguage('en_US');
     } else {
         setLanguage(langValue);
     }
