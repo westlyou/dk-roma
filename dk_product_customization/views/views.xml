@@ -9,9 +9,6 @@
       <field name="arch" type="xml">
         <xpath expr="//field[@name='barcode']" position="after">
            <field name="product_code"/>
-        </xpath>
-
-        <xpath expr="//field[@name='volume']" position="before">
            <field name="product_size"/>
         </xpath>
 
