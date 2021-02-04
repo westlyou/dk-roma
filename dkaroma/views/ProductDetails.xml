@@ -683,8 +683,7 @@
 
                                                         </span>
                                                         <!-- Savage Garden (private collection) -->
-                                                        <t t-esc="product.name" />
-                                                        <!-- <span class="lang-en">
+                                                        <span class="lang-en">
                                                             <t t-esc="product.name" />
                                                         </span>
 
@@ -694,7 +693,7 @@
 
                                                         <span class="lang-zh">
                                                             <t t-esc="product.name_simplified_chinese" />
-                                                        </span> -->
+                                                        </span>
                                                     </h1>
                                                 </div>
 
