@@ -688,10 +688,12 @@
                                                         </span>
 
                                                         <span class="lang-ch">
+                                                            <t t-if="len(product.name_traditional_chinese) == 0" t-esc="product.name"/>
                                                             <t t-esc="product.name_traditional_chinese" />
                                                         </span>
 
                                                         <span class="lang-zh">
+                                                            <t t-if="len(product.name_simplified_chinese) == 0" t-esc="product.name"/>
                                                             <t t-esc="product.name_simplified_chinese" />
                                                         </span>
                                                     </h1>
@@ -858,32 +860,40 @@
 
                                                 <div class="lang-ch">
                                                     <p>
+                                                        <t t-if="len(product.product_info_chinese_1) == 0" t-esc="product.product_info_english_1"/>
                                                         <t t-esc="product.product_info_chinese_1"/>
                                                     </p>
                                                     <br/>
                                                     <p>
+                                                        <t t-if="len(product.product_info_chinese_2) == 0" t-esc="product.product_info_english_2"/>
                                                         <t t-esc="product.product_info_chinese_2"/>
                                                     </p>
                                                     <br/><p>
+                                                        <t t-if="len(product.product_info_chinese_3) == 0" t-esc="product.product_info_english_3"/>
                                                         <t t-esc="product.product_info_chinese_3"/>
                                                     </p>
                                                     <br/><p>
+                                                        <t t-if="len(product.product_info_chinese_4) == 0" t-esc="product.product_info_english_4"/>
                                                         <t t-esc="product.product_info_chinese_4"/>
                                                     </p>
                                                 </div>
 
                                                 <div class="lang-zh">
                                                     <p>
+                                                        <t t-if="len(product.product_info_simplified_chinese_1) == 0" t-esc="product.product_info_english_1"/>
                                                         <t t-esc="product.product_info_simplified_chinese_1"/>
                                                     </p>
                                                     <br/>
                                                     <p>
+                                                        <t t-if="len(product.product_info_simplified_chinese_2) == 0" t-esc="product.product_info_english_2"/>
                                                         <t t-esc="product.product_info_simplified_chinese_2"/>
                                                     </p>
                                                     <br/><p>
+                                                        <t t-if="len(product.product_info_simplified_chinese_3) == 0" t-esc="product.product_info_english_3"/>
                                                         <t t-esc="product.product_info_simplified_chinese_3"/>
                                                     </p>
                                                     <br/><p>
+                                                        <t t-if="len(product.product_info_simplified_chinese_4) == 0" t-esc="product.product_info_english_4"/>
                                                         <t t-esc="product.product_info_simplified_chinese_4"/>
                                                     </p>
                                                 </div>
@@ -895,7 +905,8 @@
                                                 <div class="lang-en">
                                                     <t t-if="len(product.botanical_name) > 0">
                                                         <strong>Botanical Name</strong>
-                                                        <p><t t-esc="product.botanical_name"/></p>
+                                                        <p><t t-esc="product.botanical_name"/>
+                                                            </p>
                                                     </t>
                                                     
                                                     <t t-if="len(product.plant_part) > 0">
@@ -917,44 +928,61 @@
                                                 <div class="lang-ch">
                                                     <t t-if="len(product.botanical_name_chinese) > 0">
                                                         <strong>Botanical Name</strong>
-                                                        <p><t t-esc="product.botanical_name_chinese"/></p>
+                                                        <p>
+                                                            <t t-if="len(product.botanical_name_chinese) == 0" t-esc="product.botanical_name"/>
+                                                            <t t-esc="product.botanical_name_chinese"/>
+                                                        </p>
                                                     </t>
                                                     
                                                     <t t-if="len(product.plant_part_chinese) > 0">
                                                         <strong>Plant part</strong>
-                                                        <p><t t-esc="product.plant_part_chinese"/></p>
+                                                        <p>
+                                                            <t t-if="len(product.plant_part_chinese) == 0" t-esc="product.plant_part"/>
+                                                            <t t-esc="product.plant_part_chinese"/></p>
                                                     </t>
 
                                                     <t t-if="len(product.extraction_chinese) > 0">
                                                         <strong>Extraction</strong>
-                                                        <p><t t-esc="product.extraction_chinese"/></p>
+                                                        <p>
+                                                            <t t-if="len(product.extraction_chinese) == 0" t-esc="product.extraction"/>
+                                                            <t t-esc="product.extraction_chinese"/></p>
                                                     </t>
 
                                                     <t t-if="len(product.origin_chinese) > 0">
                                                         <strong>Origin</strong>
-                                                        <p><t t-esc="product.origin_chinese"/></p>
+                                                        <p>
+                                                            <t t-if="len(product.origin_chinese) == 0" t-esc="product.origin"/>
+                                                            <t t-esc="product.origin_chinese"/></p>
                                                     </t>
                                                 </div>
 
                                                 <div class="lang-zh">
                                                     <t t-if="len(product.botanical_name_simplified_chinese) > 0">
                                                         <strong>Botanical Name</strong>
-                                                        <p><t t-esc="product.botanical_name_simplified_chinese"/></p>
+                                                        <p>
+                                                            <t t-if="len(product.botanical_name_simplified_chinese) == 0" t-esc="product.botanical_name"/>
+                                                            <t t-esc="product.botanical_name_simplified_chinese"/></p>
                                                     </t>
                                                     
                                                     <t t-if="len(product.plant_part_simplified_chinese) > 0">
                                                         <strong>Plant part</strong>
-                                                        <p><t t-esc="product.plant_part_simplified_chinese"/></p>
+                                                        <p>
+                                                            <t t-if="len(product.plant_part_simplified_chinese) == 0" t-esc="product.plant_part"/>
+                                                            <t t-esc="product.plant_part_simplified_chinese"/></p>
                                                     </t>
 
                                                     <t t-if="len(product.extraction_simplified_chinese) > 0">
                                                         <strong>Extraction</strong>
-                                                        <p><t t-esc="product.extraction_simplified_chinese"/></p>
+                                                        <p>
+                                                            <t t-if="len(product.extraction_simplified_chinese) == 0" t-esc="product.extraction"/>
+                                                            <t t-esc="product.extraction_simplified_chinese"/></p>
                                                     </t>
 
                                                     <t t-if="len(product.origin_simplified_chinese) > 0">
                                                         <strong>Origin</strong>
-                                                        <p><t t-esc="product.origin_simplified_chinese"/></p>
+                                                        <p>
+                                                            <t t-if="len(product.origin_simplified_chinese) == 0" t-esc="product.origin"/>
+                                                            <t t-esc="product.origin_simplified_chinese"/></p>
                                                     </t>
                                                 </div>
                                             </div>
