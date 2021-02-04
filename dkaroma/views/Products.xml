@@ -614,7 +614,8 @@
 
                                         <h1 class="heading-h1 txt--white">
                                             <!-- Essential Oils -->
-                                            <span class="lang-en">
+                                            <t t-esc="category.name or 'Collection'" />
+                                            <!-- <span class="lang-en">
                                                 <t t-esc="category.name or 'Collection'" />
                                             </span>
 
@@ -624,7 +625,7 @@
 
                                             <span class="lang-ezh">
                                                 <t t-esc="category.name_simplified_chinese or 'Collection'" />
-                                            </span>
+                                            </span> -->
                                         </h1>
 
                                     </div>
