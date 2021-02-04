@@ -11,7 +11,7 @@
            <field name="product_code"/>
         </xpath>
 
-        <xpath expr="//field[@name='weight']" position="after">
+        <xpath expr="//field[@name='volume']" position="before">
            <field name="product_size"/>
         </xpath>
 
