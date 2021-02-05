@@ -91,6 +91,14 @@ $(document).ready(function() {
 
 
     $('.nav-item-link').on('click', function(e) {
+        openNav(e);
+    });
+
+    $('.nav-item-link.whitespace-no-wrap span').on('click', function(e) {
+        openNav(e);
+    });
+
+    function openNav(e) {
         e.preventDefault();
 
         if (e.target !== this) return;
@@ -100,8 +108,7 @@ $(document).ready(function() {
 
         $(parent).siblings().children('.nav-desktop-layer.visible.opened').find('.nav-desktop-overlay').click(); //
         $('.body-class').addClass('no-scroll');
-
-    });
+    }
 
     $('.nav-mobile-layer .js-nav-mobile-subnav').on('click', '.nav-mobile-subnav-link', function(e) {
 

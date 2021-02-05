@@ -2464,3 +2464,10 @@ a.link--large {
         margin-top: 3px;
     }
 }
+
+@media (min-width: 768px) {
+    .collection-grid-block .grid-wrap .item {
+        height: max-content;
+        margin: auto;
+    }
+}
