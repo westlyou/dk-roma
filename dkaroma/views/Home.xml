@@ -260,7 +260,7 @@
                                 <ul class="navbar-nav-fix nav-dektop-main-list">
                                     <li class="nav-item active js-dekstop-product-nav" id="productNav">
 
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link whitespace-no-wrap">
                                             <span class="lang-en">Products</span>
                                             <span class="lang-ch">產品展示</span>
                                             <span class="lang-zh">产品展示</span>
@@ -290,7 +290,7 @@
 
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link whitespace-no-wrap">
                                             <span class="lang-en">Services</span>
                                             <span class="lang-ch">服務</span>
                                             <span class="lang-zh">服务</span>
@@ -482,7 +482,7 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
+                                        <Button type="button" class="nav-item-link whitespace-no-wrap" onclick="location.href='/gifts';">
                                             <span class="lang-en">Gifts</span>
                                             <span class="lang-ch">贈品</span>
                                             <span class="lang-zh">赠品</span>
@@ -490,7 +490,7 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
+                                        <Button type="button" class="nav-item-link whitespace-no-wrap" onclick="location.href='/discovery';">
                                             <span class="lang-en">Discovery</span>
                                             <span class="lang-ch">發現</span>
                                             <span class="lang-zh">发现</span>
@@ -498,7 +498,7 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="nav-item-link whitespace-no-wrap">
                                             <span class="lang-en">More</span>
                                             <span class="lang-ch">更多</span>
                                             <span class="lang-zh">更多</span>
