@@ -90,10 +90,16 @@
 
                                     <ul class="nav-mobile-main-list">
                                         <li class="nav-item js-mobile-product-nav">
-                                            <button type="button" class="nav-item-link">
-                                                <span class="lang-en">Products</span>
-                                                <span class="lang-ch">產品展示</span>
-                                                <span class="lang-zh">产品展示</span>
+                                            <button type="button" class="lang-en nav-item-link">
+                                                Products
+                                            </button>
+
+                                            <button type="button" class="lang-ch nav-item-link">
+                                                產品展示
+                                            </button>
+
+                                            <button type="button" class="lang-zh nav-item-link">
+                                                产品展示
                                             </button>
 
                                             <div class="nav-mobile-layer ">
@@ -113,10 +119,16 @@
                                         </li>
 
                                         <li class="nav-item js-mobile-service-nav">
-                                            <Button type="button" class="nav-item-link">
-                                                <span class="lang-en">Services</span>
-                                                <span class="lang-ch">服務</span>
-                                                <span class="lang-zh">服务</span>
+                                            <Button type="button" class="lang-en nav-item-link">
+                                                Services
+                                            </Button>
+
+                                            <Button type="button" class="lang-ch nav-item-link">
+                                                服務
+                                            </Button>
+
+                                            <Button type="button" class="lang-zh nav-item-link">
+                                                服务
                                             </Button>
 
                                             <div class="nav-mobile-layer">
@@ -202,26 +214,44 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
-                                                <span class="lang-en">Gifts</span>
-                                                <span class="lang-ch">贈品</span>
-                                                <span class="lang-zh">赠品</span>
+                                            <Button type="button" class="lang-en nav-item-link" onclick="location.href='/gifts';">
+                                                Gifts
+                                            </Button>
+
+                                            <Button type="button" class="lang-ch nav-item-link" onclick="location.href='/gifts';">
+                                                贈品
+                                            </Button>
+
+                                            <Button type="button" class="lang-zh nav-item-link" onclick="location.href='/gifts';">
+                                                赠品
                                             </Button>
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
-                                                <span class="lang-en">Discovery</span>
-                                                <span class="lang-ch">發現</span>
-                                                <span class="lang-zh">发现</span>
+                                            <Button type="button" class="lang-en nav-item-link" onclick="location.href='/discovery';">
+                                                Discovery
+                                            </Button>
+
+                                            <Button type="button" class="lang-ch nav-item-link" onclick="location.href='/discovery';">
+                                                發現
+                                            </Button>
+
+                                            <Button type="button" class="lang-zh nav-item-link" onclick="location.href='/discovery';">
+                                                发现
                                             </Button>
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" onclick="location.href='/news';">
-                                                <span class="lang-en">News</span>
-                                                <span class="lang-ch">新聞</span>
-                                                <span class="lang-zh">新闻</span>
+                                            <Button type="button" class="lang-en nav-item-link" onclick="location.href='/news';">
+                                                News
+                                            </Button>
+
+                                            <Button type="button" class="lang-ch nav-item-link" onclick="location.href='/news';">
+                                                新聞
+                                            </Button>
+
+                                            <Button type="button" class="lang-zh nav-item-link" onclick="location.href='/news';">
+                                                新闻
                                             </Button>
                                         </li>
                                     </ul>
@@ -260,10 +290,16 @@
                                 <ul class="navbar-nav-fix nav-dektop-main-list">
                                     <li class="nav-item active js-dekstop-product-nav" id="productNav">
 
-                                        <Button type="button" class="nav-item-link whitespace-no-wrap">
-                                            <span class="lang-en">Products</span>
-                                            <span class="lang-ch">產品展示</span>
-                                            <span class="lang-zh">产品展示</span>
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap">
+                                            Products
+                                        </Button>
+
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap">
+                                            產品展示
+                                        </Button>
+
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap">
+                                            产品展示
                                         </Button>
 
                                         <div class="nav-desktop-layer" id="productDiv">
@@ -290,10 +326,16 @@
 
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link whitespace-no-wrap">
-                                            <span class="lang-en">Services</span>
-                                            <span class="lang-ch">服務</span>
-                                            <span class="lang-zh">服务</span>
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap">
+                                            Services
+                                        </Button>
+
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap">
+                                            服務
+                                        </Button>
+
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap">
+                                            服务
                                         </Button>
 
                                         <div class="nav-desktop-layer" id="serviceDiv">
@@ -482,28 +524,45 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link whitespace-no-wrap" onclick="location.href='/gifts';">
-                                            <span class="lang-en">Gifts</span>
-                                            <span class="lang-ch">贈品</span>
-                                            <span class="lang-zh">赠品</span>
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap" onclick="location.href='/gifts';">
+                                            Gifts
+                                        </Button>
+
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap" onclick="location.href='/gifts';">
+                                            贈品
+                                        </Button>
+
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap" onclick="location.href='/gifts';">
+                                            赠品
                                         </Button>
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link whitespace-no-wrap" onclick="location.href='/discovery';">
-                                            <span class="lang-en">Discovery</span>
-                                            <span class="lang-ch">發現</span>
-                                            <span class="lang-zh">发现</span>
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap" onclick="location.href='/discovery';">
+                                            Discovery
+                                        </Button>
+
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap" onclick="location.href='/discovery';">
+                                            發現
+                                        </Button>
+
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap" onclick="location.href='/discovery';">
+                                            发现
                                         </Button>
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link whitespace-no-wrap">
-                                            <span class="lang-en">More</span>
-                                            <span class="lang-ch">更多</span>
-                                            <span class="lang-zh">更多</span>
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap">
+                                            More
+                                        </Button>
+                                        
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap">
+                                            更多
                                         </Button>
 
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap">
+                                            更多
+                                        </Button>
 
                                         <div class="nav-desktop-layer" id="moreDiv">
                                             <span class="nav-desktop-overlay" style="display: inline;"></span>
@@ -515,18 +574,30 @@
                                                     <ul class="nav-inner-subnav">
 
                                                         <li>
-                                                            <a href="/news" class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                                <span class="lang-en">News</span>
-                                                                <span class="lang-ch">新聞</span>
-                                                                <span class="lang-zh">新闻</span>
+                                                            <a href="/news" class="lang-en nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                News
+                                                            </a>
+
+                                                            <a href="/news" class="lang-ch nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                新聞
+                                                            </a>
+
+                                                            <a href="/news" class="lang-zh nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                新闻
                                                             </a>
                                                         </li>
 
                                                         <li>
-                                                            <a href="/about" class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                                <span class="lang-en">About DK Aromatherapy</span>
-                                                                <span class="lang-ch">關於DK Aromatherapy</span>
-                                                                <span class="lang-zh">关于DK Aromatherapy</span>
+                                                            <a href="/about" class="lang-en nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                About DK Aromatherapy
+                                                            </a>
+
+                                                            <a href="/about" class="lang-ch nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                關於DK Aromatherapy
+                                                            </a>
+
+                                                            <a href="/about" class="lang-zh nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                关于DK Aromatherapy
                                                             </a>
                                                         </li>
 
