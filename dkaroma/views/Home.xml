@@ -261,7 +261,7 @@
                                     <ul class="nav-mobile-additional-list js-nav-mobile-additional">
 
                                         <li class="nav-item">
-                                            <a href="/about" class="nav-item-link">
+                                            <a href="/about">
                                                 <span class="lang-en">About</span>
                                                 <span class="lang-ch">關於</span>
                                                 <span class="lang-zh">关于</span>
@@ -269,13 +269,13 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="/about" class="nav-item-link">
+                                            <a href="/about">
                                                 Customer Service
                                             </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="/web/login" class="nav-item-link">
+                                            <a href="/web/login">
                                                 Create a DK account
                                             </a>
                                         </li>

@@ -77,7 +77,6 @@
     .nav-mobile .nav-item-link {
         color: #d8d8d8;
         display: block;
-        /* font-family: "ClassGarmnd BT","Times New Roman",serif; */
         font-family: 'EB Garamond', 'Times New Roman', serif;
         opacity: 1;
         padding: 5px 0;
@@ -296,7 +295,18 @@
         padding-bottom: 39px;
     }
     
-    .nav-mobile-additional-list .nav-item-link {
+    .nav-mobile-additional-list .nav-item a {
+        color: #d8d8d8;
+        display: block;
+        font-family: 'EB Garamond', 'Times New Roman', serif;
+        opacity: 1;
+        padding: 5px 0;
+        text-align: left;
+        text-decoration: none;
+        text-indent: 20px;
+        transform: translateX(0);
+        transition: text-indent .3s cubic-bezier(.32, .24, .15, 1), opacity .3s cubic-bezier(.32, .24, .15, 1), transform .3s cubic-bezier(.32, .24, .15, 1);
+        width: 100%;
         font-size: 18px;
         letter-spacing: .7px;
         line-height: 26px;

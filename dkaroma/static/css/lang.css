@@ -6,5 +6,5 @@
 .ch_CH .lang-zh,
 .ch_CH .lang-en,
 .zh_CH .lang-en {
-    display: none;
+    display: none !important;
 }
