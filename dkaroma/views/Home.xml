@@ -731,7 +731,9 @@
                                                         </p>
 
                                                         <a href="/shop" class="btn bring-to-top">
-                                                            Shop the collection
+                                                            <span class="lang-en">Shop the collection</span>
+                                                            <span class="lang-ch">選購系列</span>
+                                                            <span class="lang-zh">选购系列</span>
                                                         </a>
 
                                                     </div>
@@ -775,7 +777,10 @@
                                                         </p>
 
                                                         <a href="/shop" class="btn bring-to-top ">
-                                                            Shop the collection
+                                                            <span class="lang-en">Shop the collection</span>
+                                                            <span class="lang-ch">選購系列</span>
+                                                            <span class="lang-zh">选购系列</span>
+
                                                         </a>
 
                                                     </div>
@@ -929,7 +934,9 @@
                                                 </p>
 
                                                 <a href="/shop" class="btn btn--secondary btn-bg bring-to-top ">
-                                                    Shop Now
+                                                    <span class="lang-en">Shop Now</span>
+                                                    <span class="lang-ch">現在去購物</span>
+                                                    <span class="lang-zh">现在去购物</span>
                                                 </a>
 
                                             </div>
@@ -964,7 +971,9 @@
                                                 </p>
 
                                                 <a href="/shop" class="btn btn--secondary btn-bg bring-to-top ">
-                                                    Shop Now
+                                                    <span class="lang-en">Shop Now</span>
+                                                    <span class="lang-ch">現在去購物</span>
+                                                    <span class="lang-zh">现在去购物</span>
                                                 </a>
 
                                             </div>
@@ -1069,7 +1078,9 @@
                                                 </p>
 
                                                 <a href="/shop" class="btn btn-bg btn--secondary ">
-                                                    Shop Now
+                                                    <span class="lang-en">Shop Now</span>
+                                                    <span class="lang-ch">現在去購物</span>
+                                                    <span class="lang-zh">现在去购物</span>
                                                 </a>
 
                                             </div>
@@ -1102,7 +1113,9 @@
                                                 </p>
 
                                                 <a href="/shop" class="btn btn-bg btn--secondary ">
-                                                    Shop Now
+                                                    <span class="lang-en">Shop Now</span>
+                                                    <span class="lang-ch">現在去購物</span>
+                                                    <span class="lang-zh">现在去购物</span>
                                                 </a>
 
                                             </div>
@@ -1135,7 +1148,9 @@
                                                 </p>
 
                                                 <a href="/shop" class="btn btn-bg btn--secondary ">
-                                                    Shop Now
+                                                    <span class="lang-en">Shop Now</span>
+                                                    <span class="lang-ch">現在去購物</span>
+                                                    <span class="lang-zh">现在去购物</span>
                                                 </a>
 
                                             </div>
@@ -1169,7 +1184,9 @@
                                                 </p>
 
                                                 <a href="/shop" class="btn btn-bg btn--secondary ">
-                                                    Shop Now
+                                                    <span class="lang-en">Shop Now</span>
+                                                    <span class="lang-ch">現在去購物</span>
+                                                    <span class="lang-zh">现在去购物</span>
                                                 </a>
 
                                             </div>
@@ -1280,7 +1297,9 @@
 
                                             <div class="centered">
                                                 <h3 class="flyout-title">
-                                                    My shopping cart
+                                                    <span class="lang-en">My shopping cart</span>
+                                                    <span class="lang-ch">我的購物車</span>
+                                                    <span class="lang-zh">我的购物车</span>
                                                 </h3>
 
                                                 <span class="flyout-title-overview js-selected-products">
@@ -1321,7 +1340,9 @@
 
                                             <div class="centered">
                                                 <h3 class="flyout-title">
-                                                    My shopping cart
+                                                    <span class="lang-en">My shopping cart</span>
+                                                    <span class="lang-ch">我的購物車</span>
+                                                    <span class="lang-zh">我的购物车</span>
                                                 </h3>
 
 
@@ -1341,7 +1362,9 @@
                                 <div class="total">
                                     <div class="total-line">
                                         <span class="total-label">
-                                            Order subtotal
+                                            <span class="lang-en">Order subtotal</span>
+                                            <span class="lang-ch">訂單小計</span>
+                                            <span class="lang-zh">订单小计</span>
                                             <div class="content-asset">
                                                 <span class="free-delivery-message">
                                                     <div class="content-asset">
@@ -1360,17 +1383,16 @@
                                 <form method="" action="/shop/cart" class="dk-form" novalidate="novalidate">
                                     <div class="minicart-continueshopping">
                                         <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
-                                            Continue shopping
+                                            <span class="lang-en">Continue shopping</span>
+                                            <span class="lang-ch">繼續購物</span>
+                                            <span class="lang-zh">继续购物</span>
                                         </button>
                                     </div>
 
                                     <button type="submit" class="btn btn--submit" tabindex="0">
-                                        Go to cart
-                                        <div class="spinner js-spinner-general white-spinner">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
+                                        <span class="lang-en">Go to cart</span>
+                                        <span class="lang-ch">去购物车</span>
+                                        <span class="lang-zh">去购物车</span>
                                     </button>
                                 </form>
                             </div>
