@@ -9,10 +9,6 @@ $(document).ready(function() {
         openNav(e, this);
     });
 
-    $('.nav-item-link.whitespace-no-wrap span').on('click', function(e) {
-        openNav(e, this);
-    });
-
     function openNav(e, item) {
         e.preventDefault();
 
@@ -101,9 +97,6 @@ $(document).ready(function() {
         openMobileNav(e, this);
     });
 
-    $('.nav-item-link.whitespace-no-wrap span').on('click', function(e) {
-        openMobileNav(e, this);
-    });
 
     function openMobileNav(e, item) {
         e.preventDefault();
