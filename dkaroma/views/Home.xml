@@ -1446,7 +1446,9 @@
                                         <div class="button-wrapper ">
 
                                             <button class="btn--white btn-bg-contrast btn-bg-light btn last " type="submit " name="newsletterSubmit " tabindex="0 ">
-                                                Subscribe
+                                                <span class="lang-en">Subscribe</span>
+                                                <span class="lang-ch">訂閱</span>
+                                                <span class="lang-zh">订阅</span>
                                             </button>
 
                                         </div>
@@ -1950,7 +1952,9 @@
                                     </a> -->
 
                                     <a href="/shop " class="btn btn--secondary btn-bg bring-to-top">
-                                        Shop Now
+                                        <span class="lang-en">Shop Now</span>
+                                        <span class="lang-ch">現在去購物</span>
+                                        <span class="lang-zh">现在去购物</span>
                                     </a>
                                 </div>
                             </li>
@@ -2000,7 +2004,9 @@
                                                 </div>
 
                                                 <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                    Shop Now
+                                                    <span class="lang-en">Shop Now</span>
+                                                    <span class="lang-ch">現在去購物</span>
+                                                    <span class="lang-zh">现在去购物</span>
                                                 </a>
 
                                             </section>
@@ -2071,7 +2077,9 @@
                                     </a> -->
 
                                     <a href="/shop" class="btn btn--secondary btn-bg bring-to-top">
-                                        Shop Now
+                                        <span class="lang-en">Shop Now</span>
+                                        <span class="lang-ch">現在去購物</span>
+                                        <span class="lang-zh">现在去购物</span>
                                     </a>
                                 </div>
                             </li>
@@ -2121,7 +2129,9 @@
                                                 </div>
 
                                                 <a t-att-href="'/shop/product/' + str(product.name.id)" class="btn btn--secondary btn-bg bring-to-top btn-mobile">
-                                                    Shop Now
+                                                    <span class="lang-en">Shop Now</span>
+                                                    <span class="lang-ch">現在去購物</span>
+                                                    <span class="lang-zh">现在去购物</span>
                                                 </a>
 
                                             </section>

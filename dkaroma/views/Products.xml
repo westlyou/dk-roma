@@ -652,7 +652,9 @@
                                         <div class="cop-filters-inner hide-scrollbar">
 
                                             <h4 class="cop-filters-heading">
-                                                Shop by Product
+                                                <span class="lang-en">Shop by product</span>
+                                                <span class="lang-ch">按產品選購</span>
+                                                <span class="lang-zh">按产品选购</span>
                                             </h4>
 
                                             <ul class="cop-filters-list cop-filters-list-product-types no-wrap hide-scrollbar">
@@ -709,7 +711,11 @@
                                                     <span class="icon icon-item icon-item-light">
                                                         <img src="/dkaroma/static/img/icons/adjustments-light.svg" width="16" height="16" class="d-inline-block align-middle" alt="" loading="lazy" />
                                                     </span>
-                                                    Filter
+
+                                                    <span class="lang-en">Filter</span>
+                                                    <span class="lang-ch">過濾</span>
+                                                    <span class="lang-zh">过滤</span>
+
                                                     <span class="filter-count">
                                                         <!-- (2) -->
                                                     </span>
@@ -729,7 +735,9 @@
                                             <div class="sorting-options">
 
                                                 <span class="mobile-sorting-label">
-                                                    Sort by
+                                                    <span class="lang-en">Sort by</span>
+                                                    <span class="lang-ch">分類</span>
+                                                    <span class="lang-zh">分类</span>
                                                 </span>
 
                                                 <div class="sort-by">
@@ -783,7 +791,9 @@
                                                         <div class="cop-filters-inner">
 
                                                             <h4 class="cop-filters-heading">
-                                                                Shop by Product
+                                                                <span class="lang-en">Shop by product</span>
+                                                                <span class="lang-ch">按產品選購</span>
+                                                                <span class="lang-zh">按产品选购</span>
                                                             </h4>
 
                                                             <ul class="cop-filters-list cop-filters-list-product-types no-wrap">
@@ -895,7 +905,9 @@
                                                                                     <span class="icon icon-item icon-item-light" style="margin: .25rem;">
                                                                                         <img src="/dkaroma/static/img/icons/add-to-cart.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
                                                                                     </span>
-                                                                                    View product
+                                                                                    <span class="lang-en">View product</span>
+                                                                                    <span class="lang-ch">查看產品</span>
+                                                                                    <span class="lang-zh">查看产品</span>
                                                                                 </a>
                                                                             </div>
                                                                         </div>
