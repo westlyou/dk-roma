@@ -87,7 +87,6 @@
                         </div>
                     </div>
 
-
                     <button class="nav-toggle" type="button" id="navToggleButton">
                         <span class=""></span>
                         <img src="/dkaroma/static/img/icons/menu.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
@@ -103,16 +102,24 @@
 
                                     <ul class="nav-mobile-main-list">
                                         <li class="nav-item js-mobile-product-nav">
-                                            <button type="button" class="nav-item-link">
+                                            <button type="button" class="lang-en nav-item-link">
                                                 Products
+                                            </button>
+
+                                            <button type="button" class="lang-ch nav-item-link">
+                                                產品展示
+                                            </button>
+
+                                            <button type="button" class="lang-zh nav-item-link">
+                                                产品展示
                                             </button>
 
                                             <div class="nav-mobile-layer ">
 
                                                 <button type="button" class="nav-back">
                                                     <span class="sr-only"> 
-                                                        Back
-                                                    </span>
+                                                            Back
+                                                        </span>
                                                 </button>
 
                                                 <div class="nav-mobile-layer-inner">
@@ -124,16 +131,24 @@
                                         </li>
 
                                         <li class="nav-item js-mobile-service-nav">
-                                            <Button type="button" class="nav-item-link">
+                                            <Button type="button" class="lang-en nav-item-link">
                                                 Services
-                                        </Button>
+                                            </Button>
+
+                                            <Button type="button" class="lang-ch nav-item-link">
+                                                服務
+                                            </Button>
+
+                                            <Button type="button" class="lang-zh nav-item-link">
+                                                服务
+                                            </Button>
 
                                             <div class="nav-mobile-layer">
 
                                                 <button type="button" class="nav-back">
                                                     <span class="sr-only"> 
-                                                        Back
-                                                    </span>
+                                                            Back
+                                                        </span>
                                                 </button>
 
                                                 <div class="nav-mobile-layer-inner">
@@ -151,8 +166,8 @@
                                                                 </span>
 
                                                                 <span class="nav-mobile-collection-title">
-                                                                DK Cuppa
-                                                            </span>
+                                                                    DK Cuppa
+                                                                </span>
                                                             </a>
 
                                                             <a href="/services" class="nav-mobile-collections-link">
@@ -165,8 +180,8 @@
                                                                 </span>
 
                                                                 <span class="nav-mobile-collection-title">
-                                                                Program and Workshop
-                                                            </span>
+                                                                    Program and Workshop
+                                                                </span>
                                                             </a>
                                                         </li>
 
@@ -183,8 +198,8 @@
                                                                 </span>
 
                                                                 <span class="nav-mobile-collection-title">
-                                                                Treatment
-                                                            </span>
+                                                                    Treatment
+                                                                </span>
                                                             </a>
 
                                                             <a href="/services" class="nav-mobile-collections-link">
@@ -197,8 +212,8 @@
                                                                 </span>
 
                                                                 <span class="nav-mobile-collection-title">
-                                                                Service
-                                                            </span>
+                                                                    Service
+                                                                </span>
                                                             </a>
                                                         </li>
 
@@ -211,20 +226,44 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
+                                            <Button type="button" class="lang-en nav-item-link" onclick="location.href='/gifts';">
                                                 Gifts
                                             </Button>
-                                        </li>
 
-                                        <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
-                                                Discovery
+                                            <Button type="button" class="lang-ch nav-item-link" onclick="location.href='/gifts';">
+                                                贈品
+                                            </Button>
+
+                                            <Button type="button" class="lang-zh nav-item-link" onclick="location.href='/gifts';">
+                                                赠品
                                             </Button>
                                         </li>
 
                                         <li class="nav-item">
-                                            <Button type="button" class="nav-item-link" onclick="location.href='/news';">
+                                            <Button type="button" class="lang-en nav-item-link" onclick="location.href='/discovery';">
+                                                Discovery
+                                            </Button>
+
+                                            <Button type="button" class="lang-ch nav-item-link" onclick="location.href='/discovery';">
+                                                發現
+                                            </Button>
+
+                                            <Button type="button" class="lang-zh nav-item-link" onclick="location.href='/discovery';">
+                                                发现
+                                            </Button>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <Button type="button" class="lang-en nav-item-link" onclick="location.href='/news';">
                                                 News
+                                            </Button>
+
+                                            <Button type="button" class="lang-ch nav-item-link" onclick="location.href='/news';">
+                                                新聞
+                                            </Button>
+
+                                            <Button type="button" class="lang-zh nav-item-link" onclick="location.href='/news';">
+                                                新闻
                                             </Button>
                                         </li>
                                     </ul>
@@ -234,21 +273,23 @@
                                     <ul class="nav-mobile-additional-list js-nav-mobile-additional">
 
                                         <li class="nav-item">
-                                            <a href="/about" class="nav-item-link">
-                                            About
-                                        </a>
+                                            <a href="/about">
+                                                <span class="lang-en">About</span>
+                                                <span class="lang-ch">關於</span>
+                                                <span class="lang-zh">关于</span>
+                                            </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="/about" class="nav-item-link">
-                                            Customer Service
-                                        </a>
+                                            <a href="/about">
+                                                Customer Service
+                                            </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="/web/login" class="nav-item-link">
-                                            Create a DK account
-                                        </a>
+                                            <a href="/web/login">
+                                                Create a DK account
+                                            </a>
                                         </li>
 
                                     </ul>
@@ -261,8 +302,16 @@
                                 <ul class="navbar-nav-fix nav-dektop-main-list">
                                     <li class="nav-item active js-dekstop-product-nav" id="productNav">
 
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap">
                                             Products
+                                        </Button>
+
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap">
+                                            產品展示
+                                        </Button>
+
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap">
+                                            产品展示
                                         </Button>
 
                                         <div class="nav-desktop-layer" id="productDiv">
@@ -289,9 +338,17 @@
 
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap">
                                             Services
-                                    </Button>
+                                        </Button>
+
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap">
+                                            服務
+                                        </Button>
+
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap">
+                                            服务
+                                        </Button>
 
                                         <div class="nav-desktop-layer" id="serviceDiv">
                                             <span class="nav-desktop-overlay" style="display: inline;"></span>
@@ -325,8 +382,8 @@
 
                                                                                 <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
                                                                                     <span class="nav-desktop-collection-title nav-desktop-collection-text">
-                                                                                    DK Cuppa
-                                                                                </span>
+                                                                                        DK Cuppa
+                                                                                    </span>
                                                                                 </div>
 
                                                                                 <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
@@ -339,8 +396,8 @@
 
                                                                                 <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
                                                                                     <span>
-                                                                                    Explore this service
-                                                                                </span>
+                                                                                        Explore this service
+                                                                                    </span>
                                                                                 </a>
 
                                                                             </li>
@@ -379,8 +436,8 @@
 
                                                                                 <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
                                                                                     <span class="nav-desktop-collection-title nav-desktop-collection-text">
-                                                                                    Program and Workshop
-                                                                                </span>
+                                                                                        Program and Workshop
+                                                                                    </span>
                                                                                 </div>
 
                                                                                 <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
@@ -393,8 +450,8 @@
 
                                                                                 <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
                                                                                     <span>
-                                                                                    Explore this service
-                                                                                </span>
+                                                                                        Explore this service
+                                                                                    </span>
                                                                                 </a>
 
                                                                             </li>
@@ -433,8 +490,8 @@
 
                                                                                 <div class="nav-collection-flyin-wrap js-nav-desktop-sublink-flyin">
                                                                                     <span class="nav-desktop-collection-title nav-desktop-collection-text">
-                                                                                    Treatment
-                                                                                </span>
+                                                                                        Treatment
+                                                                                    </span>
                                                                                 </div>
 
                                                                                 <a href="/services" class="image-holder nav-desktop-collection-text js-nav-desktop-sublink-flyin">
@@ -447,8 +504,8 @@
 
                                                                                 <a href="/services" class="nav-desktop-collection-discover nav-desktop-collection-text js-nav-desktop-sublink-flyin js-nav-desktop-tab">
                                                                                     <span>
-                                                                                    Explore this service
-                                                                                </span>
+                                                                                        Explore this service
+                                                                                    </span>
                                                                                 </a>
 
                                                                             </li>
@@ -479,22 +536,45 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link" onclick="location.href='/gifts';">
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap" onclick="location.href='/gifts';">
                                             Gifts
                                         </Button>
+
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap" onclick="location.href='/gifts';">
+                                            贈品
+                                        </Button>
+
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap" onclick="location.href='/gifts';">
+                                            赠品
+                                        </Button>
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link" onclick="location.href='/discovery';">
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap" onclick="location.href='/discovery';">
                                             Discovery
                                         </Button>
+
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap" onclick="location.href='/discovery';">
+                                            發現
+                                        </Button>
+
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap" onclick="location.href='/discovery';">
+                                            发现
+                                        </Button>
                                     </li>
 
                                     <li class="nav-item">
-                                        <Button type="button" class="nav-item-link">
+                                        <Button type="button" class="lang-en nav-item-link whitespace-no-wrap">
                                             More
                                         </Button>
+                                        
+                                        <Button type="button" class="lang-ch nav-item-link whitespace-no-wrap">
+                                            更多
+                                        </Button>
 
+                                        <Button type="button" class="lang-zh nav-item-link whitespace-no-wrap">
+                                            更多
+                                        </Button>
 
                                         <div class="nav-desktop-layer" id="moreDiv">
                                             <span class="nav-desktop-overlay" style="display: inline;"></span>
@@ -506,14 +586,30 @@
                                                     <ul class="nav-inner-subnav">
 
                                                         <li>
-                                                            <a href="/news" class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                                <span>News</span>
+                                                            <a href="/news" class="lang-en nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                News
+                                                            </a>
+
+                                                            <a href="/news" class="lang-ch nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                新聞
+                                                            </a>
+
+                                                            <a href="/news" class="lang-zh nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                新闻
                                                             </a>
                                                         </li>
 
                                                         <li>
-                                                            <a href="/about" class="nav-link inner-nav-link nav-mobile-subnav-link">
-                                                                <span>About DK Aromatherapy</span>
+                                                            <a href="/about" class="lang-en nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                About DK Aromatherapy
+                                                            </a>
+
+                                                            <a href="/about" class="lang-ch nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                關於DK Aromatherapy
+                                                            </a>
+
+                                                            <a href="/about" class="lang-zh nav-link inner-nav-link nav-mobile-subnav-link">
+                                                                关于DK Aromatherapy
                                                             </a>
                                                         </li>
 
@@ -549,8 +645,8 @@
 
                                         <button type="submit" class="btn-stripped icon-search-magnifier" id="searchInputToggle">
                                             <span class="sr-only">
-                                                I'm looking for...
-                                            </span>
+                                                    I'm looking for...
+                                                </span>
                                             <img src="/dkaroma/static/img/icons/search.svg" width="24" height="24" class="d-inline-block align-middle" alt="" loading="lazy" />
                                         </button>
 
@@ -1255,8 +1351,10 @@
 
                                             <div class="centered">
                                                 <h3 class="flyout-title">
-                                                My shopping cart
-                                            </h3>
+                                                    <span class="lang-en">My shopping cart</span>
+                                                    <span class="lang-ch">我的購物車</span>
+                                                    <span class="lang-zh">我的购物车</span>
+                                                </h3>
 
                                                 <span class="flyout-title-overview js-selected-products">
                                                     <!-- products count: 2 products -->
@@ -1272,6 +1370,7 @@
                                             <div class="wrapper--minicart__list">
                                                 <!-- Cart Products START -->
 
+                                                
 
                                                 <div class="gwp-minicart-wrapper"></div>
                                             </div>
@@ -1295,8 +1394,10 @@
 
                                             <div class="centered">
                                                 <h3 class="flyout-title">
-                                                My shopping cart
-                                            </h3>
+                                                    <span class="lang-en">My shopping cart</span>
+                                                    <span class="lang-ch">我的購物車</span>
+                                                    <span class="lang-zh">我的购物车</span>
+                                                </h3>
 
 
                                             </div>
@@ -1304,8 +1405,8 @@
 
                                         <div class="mini-cart-empty">
                                             <div class="mini-cart-empty-text">
-                                            Oh, it's empty! Let's fill it up with joy
-                                        </div>
+                                                Oh, it's empty! Let's fill it up with joy
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1315,34 +1416,37 @@
                                 <div class="total">
                                     <div class="total-line">
                                         <span class="total-label">
-                                            Order subtotal
+                                            <span class="lang-en">Order subtotal</span>
+                                            <span class="lang-ch">訂單小計</span>
+                                            <span class="lang-zh">订单小计</span>
                                             <div class="content-asset">
                                                 <span class="free-delivery-message">
                                                     <div class="content-asset">
-                                                    Delivery in 1-3 workdays.
-                                                </div>
+                                                        Delivery in 1-3 workdays.
+                                                    </div>
                                                 </span>
                                             </div>
                                         </span>
 
-                                        <span class="total-value js-total-price"></span>
+                                        <span class="total-value js-total-price">
+                                            
+                                        </span>
                                     </div>
                                 </div>
 
                                 <form method="" action="/shop/cart" class="dk-form" novalidate="novalidate">
                                     <div class="minicart-continueshopping">
                                         <button type="button" class="btn btn--secondary js-side--close continue-shopping-btn" tabindex="0">
-                                        Continue shopping
-                                    </button>
+                                            <span class="lang-en">Continue shopping</span>
+                                            <span class="lang-ch">繼續購物</span>
+                                            <span class="lang-zh">继续购物</span>
+                                        </button>
                                     </div>
 
                                     <button type="submit" class="btn btn--submit" tabindex="0">
-                                        Go to cart
-                                        <div class="spinner js-spinner-general white-spinner">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
+                                        <span class="lang-en">Go to cart</span>
+                                        <span class="lang-ch">去购物车</span>
+                                        <span class="lang-zh">去购物车</span>
                                     </button>
                                 </form>
                             </div>
