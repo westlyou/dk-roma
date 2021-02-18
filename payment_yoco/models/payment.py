@@ -49,7 +49,7 @@ class PaymentTransactionYoco(models.Model):
         _logger.info('_yoco_verify_charge: Sending values to URL %s, values:\n%s \n with sec_key %s', api_url_charge, pprint.pformat(payload), sec_key)
         r = requests.post(api_url_charge,headers=headers, data=json.dumps(payload))
         # res = r.json()
-        print(r.json())
+        _logger.info(r.json())
         _logger.info('_rave_verify_charge: Values received:\n%s', pprint.pformat(r))
         return self._yoco_validate_tree(r.json(),data)
 
