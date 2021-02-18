@@ -39,7 +39,7 @@ class PaymentTransactionYoco(models.Model):
         sec_key = request.env['payment.acquirer'].browse(data['acquirer_id']).yoco_sec_key
         payload = {
             'token': data['token'],
-            'amountInCents': int(data['amount']),
+            'amountInCents': (data['amount']),
             'currency': data['currency']
         }
         headers = {
@@ -60,7 +60,7 @@ class PaymentTransactionYoco(models.Model):
             return True
 
         status = tree.get('status')
-        amount = int(tree["amountInCents"])
+        amount = (tree["amountInCents"])
         currency = tree["currency"]
         
         if status == 'successful' and amount == data["amount"] and currency == data["currency"] :
