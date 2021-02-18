@@ -21,7 +21,7 @@ _logger = logging.getLogger(__name__)
 class PaymentAcquirerYoco(models.Model):
     _inherit = 'payment.acquirer'
 
-    provider = fields.Selection(selection_add=[('yoco', 'Yoco')])#, ondelete={'yoco': 'set default'})
+    provider = fields.Selection(selection_add=[('yoco', 'Yoco')], ondelete={'yoco': 'set default'})
     # yoco_merchant_id = fields.Char(string="Yoco Merchant ID", required_if_provider='yoco', groups='base.group_user')
     yoco_pub_key = fields.Char(string="Yoco Pub Key", required_if_provider='yoco', groups='base.group_user')
     yoco_sec_key = fields.Char(string="Yoco Sec Key", required_if_provider='yoco', groups='base.group_user')
