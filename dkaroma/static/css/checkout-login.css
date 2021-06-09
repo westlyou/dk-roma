@@ -3384,3 +3384,89 @@ input.read-only {
 .server-error-container .error-message {
     margin: 0px 10px;
 }
+
+
+/* 9-06-2021 */
+
+form .indicator {
+    height: 3px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+@media(min-width: 768px) {
+    form .indicator {
+        width: 50%;
+    }
+}
+
+form .indicator span {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 4px;
+    /* transition: all .8s ease-in-out, color .2s ease-in-out; */
+    transition: transform 0.4s cubic-bezier(0.05, 0.5, 0.3, 1) 0s;
+}
+
+form .indicator span:nth-child(2) {
+    margin: 0 3px;
+}
+
+form .indicator span:nth-child(3) {
+    margin: 0px 3px 0px 0px;
+}
+
+form .indicator span.active:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.indicator span.weak:before {
+    background-color: #ff4757;
+}
+
+.indicator span.medium:before {
+    background-color: orange;
+}
+
+.indicator span.strong:before {
+    background-color: #ffdf00;
+}
+
+.indicator span.very-strong:before {
+    background-color: #23ad5c;
+}
+
+form .text.weak {
+    color: #ff4757;
+}
+
+form .text.medium {
+    color: orange;
+}
+
+form .text.strong {
+    color: orange;
+}
+
+form .text.very-strong {
+    color: #23ad5c;
+}
+
+.m-top-0-important {
+    margin-top: 0px !important;
+}
+
+.password-label {
+    display: none;
+}

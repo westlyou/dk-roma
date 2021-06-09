@@ -317,11 +317,13 @@ function renderMobileFooterList(category, subCategories) {
         `;
     }).join('');
 
+    headerLink = urlPaths.products + category.id;
+
     return `
     
         <li class="accordion-item" data-accordion-item>
     
-            <a class="accordion-title">${category.name}</a>
+            <a class="accordion-title" href="${headerLink}">${category.name}</a>
 
             <div class="accordion-content" data-tab-content>
                 <ul>
@@ -352,6 +354,7 @@ function renderFooterList(category, subCategories) {
         `;
     }).join('');
 
+    headerLink = urlPaths.products + category.id;
 
     return `
 
@@ -359,7 +362,7 @@ function renderFooterList(category, subCategories) {
 
         <div class="accordion-inner ">
 
-            <a class="accordion-head-inner center-mobile">
+            <a class="accordion-head-inner center-mobile" href="${headerLink}">
                 ${category.name}
             </a>
 
@@ -396,8 +399,8 @@ function renderList(category, subCategories) {
         return `
         <a class="nav-link ${className} nav-mobile-subnav-link" href="${navLink}">
             <span>
-                    ${category.name}
-                </span>
+                ${category.name}
+            </span>
         </a>
       `;
     };

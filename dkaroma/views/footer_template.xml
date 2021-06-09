@@ -1,0 +1,493 @@
+<odoo>
+    <data>
+
+        <template id="main_footer">
+
+            <!-- footer -->
+            <footer class="main-footer ">
+
+                <div class="footer-top-elements ">
+
+                    <div class="inner-wrapper ">
+
+                        <h3 class="footer-title center-mobile">Or shop by category</h3>
+
+
+                        <div class="category-accordion accordion-wrapper footer-accordion">
+
+                            <div class="row item-grid js-category-accordion-inner">
+                                <!-- categories -->
+                            </div>
+
+                        </div>
+
+
+                        <div class="mobile-category-accordion">
+
+                            <ul class="accordion" data-accordion="1" data-allow-all-closed="true" id="mobile-category-accordion">
+                                <!-- categories-mobile -->
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-middle-elements ">
+
+                    <div class="inner-wrapper ">
+
+                        <div class="accordion-wrapper footer-accordion ">
+
+                            <div class="row item-grid ">
+
+                                <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                    <div class="accordion-inner ">
+
+                                        <a class="accordion-head-inner center-mobile">
+                                            Customer Service
+                                        </a>
+
+                                        <div class="accordion-content-inner accordion-content persist-visible ">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Shipping and returns
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        FAQ
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Contact
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Cookie policy
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Cookie setting
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                    <div class="accordion-inner ">
+
+                                        <a class="accordion-head-inner center-mobile">
+                                            Discovery
+                                        </a>
+
+                                        <div class="accordion-content-inner accordion-content persist-visible center-mobile">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Podcast
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Blog
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Video
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Book
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                    <div class="accordion-inner ">
+
+                                        <a class="accordion-head-inner center-mobile">
+                                            Our Brand
+                                        </a>
+
+                                        <div class="accordion-content-inner accordion-content persist-visible ">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        DK Aromatherapy
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        DK Cuppa Tea
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        KAT LAI
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-3 col-md-3 col-sm-12 item-holder ">
+
+                                    <div class="accordion-inner ">
+
+                                        <a class="accordion-head-inner center-mobile">
+                                            About Us
+                                        </a>
+
+                                        <div class="accordion-content-inner accordion-content persist-visible">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        About DK
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Store location
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Department stores
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Brand story   
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        Mission   
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        CSR and ESG   
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="# " class="accordion-link-inner center-mobile"> 
+                                                        DK equilibrum people/plant   
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row item-grid ">
+
+                                <div class="col-3 col-lg-9 col-md-8 col-ms-12 item-holder footer-column ">
+
+                                    <div class="footer-contact ">
+
+                                        <h3 class="center-mobile">Need help?</h3>
+
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="secondary ">
+                                                        Telephone
+                                                    </td>
+
+                                                    <td>
+                                                        +852 2386 3588
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="secondary ">
+                                                        Whatsapp
+                                                    </td>
+
+                                                    <td>
+                                                        +852 9788 9378
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="secondary ">
+                                                        Email
+                                                    </td>
+
+                                                    <td>
+                                                        dk@aroma.com.hk
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <div class="icons-section footer-column social--icons table">
+
+                                        <ul class="social__icons">
+
+                                            <li>
+                                                <a>
+                                                    <i class="fab fa-facebook-f "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a>
+                                                    <i class="fab fa-instagram "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a>
+                                                    <i class="fab fa-youtube "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a>
+                                                    <i class="fab fa-whatsapp "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a>
+                                                    <i class="fab fa-linkedin "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a>
+                                                    <i class="far fa-envelope "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a class="wechat">
+                                                    <span class="icon icon-item">
+                                                        <img src="/dkaroma/static/img/icons/wechat.svg" width="15" height="15" class="" alt="" loading="lazy"/>
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a>
+                                                    <i class="fab fa-twitter "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a>
+                                                    <i class="fab fa-telegram "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a>
+                                                    <i class="fab fa-google-plus "></i>
+                                                </a>
+                                            </li>
+
+                                            <li>
+
+                                            </li>
+
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-3 col-lg-3 col-md-4 col-sm-12 item-holder ">
+
+                                    <div class="footer-right-side ">
+
+                                        <div class="footer-column ">
+
+                                            <h3 class="h3 ">
+                                                Choose your country and language
+                                            </h3>
+
+                                            <div class="wrapper__country-selector ">
+
+                                                <label for="countrySelector ">
+                                                    Country
+                                                </label>
+
+                                                <div class="country-selector select-box__container ">
+
+                                                    <select id="countrySelector" class="custom-select select--custom country select-box js-custom-select js-country_select" style="background-image: url('https://www.rituals.com/on/demandware.static/Sites-Global-Site/-/en_NL/v1607668413458/images/flags/nl.svg?select=true');">
+                                                        <option>
+                                                            English (English)
+                                                        </option>
+
+                                                        <option>
+                                                            Netherlands (English)
+                                                        </option>
+                                                    </select>
+
+                                                    <em class="arrow-down ">
+                                                        <i></i>
+                                                    </em>
+
+                                                </div>
+
+                                                <label for="languageSelector ">
+                                                    Language
+                                                </label>
+
+                                                <div class="country-selector select-box__container ">
+                                                    <select id="languageSelector" class="custom-select select--custom language select-box js-custom-select js-language_select" style="background-image: url('https://www.rituals.com/on/demandware.static/Sites-Global-Site/-/en_NL/v1607668413458/images/flags/gb.svg?select=true');">
+                                                        <option>
+                                                            English
+                                                        </option>
+
+                                                        <option>
+                                                            Netherlands
+                                                        </option>
+                                                    </select>
+
+                                                    <em class="arrow-down ">
+                                                        <i></i>
+                                                    </em>
+
+                                                </div>
+
+                                                <a href="# " class="btn--text fright ">
+                                                    Continue
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-bottom-elements ">
+                    <div class="inner-wrapper ">
+
+                        <p class="copyright ">
+                            All rights reserved © 2020 DK Aromatherapy
+                        </p>
+
+                        <ul class="bottom-links ">
+
+                            <li>
+                                <a href="# ">
+                                    Privacy
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="# ">
+                                    General terms
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </footer>
+
+        </template>
+
+
+        <template id="alt_footer">
+            <!-- footer -->
+            <footer class="main-footer">
+                <div class="footer-bottom-elements ">
+                    <div class="inner-wrapper ">
+
+                        <p class="copyright ">
+                            All rights reserved © 2020 DK Aromatherapy
+                        </p>
+
+                        <ul class="bottom-links ">
+
+                            <li>
+                                <a href="#">
+                                    Privacy
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    General terms
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </footer>
+        </template>
+
+    </data>
+</odoo>
