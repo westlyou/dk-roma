@@ -374,8 +374,9 @@ input {
 
 @media (min-width: 768px) {
     .footer-accordion .accordion-head-inner {
-        pointer-events: none;
+        /* pointer-events: none; */
         margin: 0 0 13px;
+        text-decoration: none;
     }
 }
 
@@ -383,7 +384,6 @@ input {
     background: none;
     border-bottom: none !important;
     color: #1a1919;
-    /* display: block; */
     display: none;
     /* Display none if you wanna accordion */
     font-size: 16px;
@@ -1063,4 +1063,23 @@ a {
     .category-accordion {
         display: none !important;
     }
+}
+
+
+/* 10-06-2021 */
+
+.mobile-category-accordion .accordion .accordion-title .accordion-inner-btn {
+    color: #fff;
+    display: block;
+    font-family: PT Sans, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }
