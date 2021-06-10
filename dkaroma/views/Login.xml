@@ -207,26 +207,27 @@
 
                 </div>
 
+                <!-- footer -->
                 <footer class="main-footer">
                     <div class="footer-bottom-elements ">
                         <div class="inner-wrapper ">
 
                             <p class="copyright ">
-                    All rights reserved © 2020 DK Aromatherapy
-                </p>
+                                All rights reserved © 2020 DK Aromatherapy
+                            </p>
 
                             <ul class="bottom-links ">
 
                                 <li>
                                     <a href="# ">
-                            Privacy
-                        </a>
+                                        Privacy
+                                    </a>
                                 </li>
 
                                 <li>
                                     <a href="# ">
-                            General terms
-                        </a>
+                                        General terms
+                                    </a>
                                 </li>
 
                             </ul>

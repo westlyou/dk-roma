@@ -176,6 +176,23 @@
 
                                                     </div>
 
+
+                                                    <!-- password strength checker -->
+                                                    <div class="form-row full-width-row m-top-0-important password js-slidedown required">
+                                                        <div class="field-wrapper inputfield-row">
+                                                            <div class="indicator">
+                                                                <span class="weak"></span>
+                                                                <span class="medium"></span>
+                                                                <span class="strong"></span>
+                                                                <span class="very-strong"></span>
+                                                            </div>
+                                                            <div>
+                                                                <strong class="password-label">Password strength:</strong> <span class="text"></span>
+                                                            </div>
+                                                            <div class="feedback-suggestion"></div>
+                                                        </div>
+                                                    </div>
+
                                                     
                                                     <!-- confirm password -->
                                                     <div class="form-row full-width-row password js-slidedown required">
@@ -307,6 +324,7 @@
 
                 <script src="/dkaroma/static/js/jquery.js"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
                 <script src="/dkaroma/static/js/jquery.selectric.js" type="text/javascript"></script>
                 <script src="/dkaroma/static/js/scrolltoview.js" type="text/javascript"></script>
                 <script src="/dkaroma/static/js/utility.js" type="text/javascript"></script>

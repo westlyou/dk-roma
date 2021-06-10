@@ -9,6 +9,10 @@
       </t>
     </template>
      -->
+    
+    <template id="main_footer">
+      <div></div>
+    </template>
 
   </data>
 </odoo>
