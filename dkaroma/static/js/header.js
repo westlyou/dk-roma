@@ -324,7 +324,7 @@ function renderMobileFooterList(category, subCategories) {
         <li class="accordion-item" data-accordion-item>
     
             <a class="accordion-title">
-                <button class="accordion-inner-btn" onclick="location.href='/${headerLink}';">${category.name}</button>
+                <button class="accordion-inner-btn" onclick="location.href='${headerLink}';">${category.name}</button>
             </a>
 
             <div class="accordion-content" data-tab-content>
