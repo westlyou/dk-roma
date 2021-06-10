@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+    const indicator = $(".indicator");
+    const input = $("#password");
+    const weak = $(".weak");
+    const medium = $(".medium");
+    const strong = $(".strong");
+    const veryStrong = $(".very-strong");
+    const text = $(".text");
+    const feedback = $(".feedback-suggestion");
+    const label = $(".password-label");
+
     $('#password').on('keyup focusout', function(e) {
         if (input.val() != "") {
             indicator.css('display', 'block');
