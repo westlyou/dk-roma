@@ -138,7 +138,7 @@
                                                         No account? Create one
                                                     </a>
 
-                                                    <a href="/web/reset-password" class="password-reset js-password-reset-link js-slidedown">
+                                                    <a href="/web/reset_password" class="password-reset js-password-reset-link js-slidedown">
                                                         Forgot password?
                                                     </a>
 
